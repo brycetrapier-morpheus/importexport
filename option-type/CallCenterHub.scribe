@@ -1,0 +1,12 @@
+resource "option-type" "CallCenterHub" {
+  code = "CallCenterHub"
+  name = "Call Center Hub"
+  uuid = "2ee13e09-20fa-4b92-b13e-c284567ab2fd"
+  description = "City identifier for call center location"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Call Center Hub"
+  fieldName = "CallCenterHub"
+  helpBlock = "The nearest major city for the call center"
+  labels = [ "Demo", "voice" ]
+  required = true
+}
