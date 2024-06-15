@@ -1,0 +1,110 @@
+resource "option-type-form" "firewall" {
+  code = "firewall"
+  name = "Firewall Template"
+  uuid = "56de5be7-458c-4865-9d47-959dc6c4a476"
+  config = {
+    enableVar = false
+    form = false
+    formField = ""
+    formOptions = ""
+    formType = false
+  }
+  description = "For Firewall items in the Self-Service Catalogue"
+  field-groups = [
+    {
+      code = "bc1e73e1-8ae5-4a86-92e9-f6d598dc526f"
+      name = "Packet Tuple"
+      collapsible = false
+      defaultCollapsed = false
+      options = [
+        {
+          code = "FWSourceIP"
+          name = "Firewall Source IP"
+          uuid = "1e9c3f2e-be8e-4fd2-ac9f-7a9c9637be43"
+          defaultValue = "0.0.0.0"
+          description = "IPv4 Source IP"
+          displayOrder = 2
+          displayValueOnDetails = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Source IPv4 Address"
+          fieldName = "FWSourceIP"
+          helpBlock = "In IPv4 a.b.c.d notation"
+          labels = [ "Security" ]
+          placeHolder = "IPv4 address"
+          refCode = "FWSourceIP"
+          required = true
+        },
+        {
+          code = "FWDestinationIP"
+          name = "Firewall Destination IP"
+          uuid = "996961f4-9467-4f7f-986c-285f285cbdb7"
+          defaultValue = "0.0.0.0"
+          description = "IPv4"
+          displayOrder = 3
+          displayValueOnDetails = true
+          editable = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Destination IPv4 address"
+          fieldName = "FWDestinationIP"
+          helpBlock = "In IPv4 a.b.c.d format"
+          labels = [ "Security" ]
+          placeHolder = "ipv4 address"
+          refCode = "FWDestinationIP"
+          required = true
+        },
+        {
+          code = "FWService"
+          name = "Firewall Service"
+          uuid = "6f1b51dd-1ef5-4232-9cf3-dfee994d9da8"
+          description = "Layer4 Service"
+          displayOrder = 4
+          displayValueOnDetails = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Firewall Service"
+          fieldName = "FWService"
+          helpBlock = "Services not listed are not available for self-service.  Please open a help desk ticket to open firewall rules for services that are not listed."
+          labels = [ "Security" ]
+          optionList = { name = "Firewall Service" }
+          optionSource = "list"
+          refCode = "FWService"
+          required = true
+          type = "select"
+        }
+      ]
+    }
+  ]
+  labels = [ "Demo" ]
+  options = [
+    {
+      code = "FWACLname"
+      name = "Firewall ACL Name"
+      uuid = "82ed8e91-1187-4a99-8bb5-3488c3adc26d"
+      displayValueOnDetails = true
+      fieldContext = "config.customOptions"
+      fieldLabel = "ACL Name"
+      fieldName = "FWACLname"
+      labels = [ "Security" ]
+      optionList = { name = "Firewall ACL Names (From Root Tenant)" }
+      optionSource = "list"
+      required = true
+      type = "select"
+    },
+    {
+      code = "FWAction"
+      name = "Firewall Action"
+      uuid = "48bedf67-3e2c-49f9-92de-6fc99ad3c662"
+      defaultValue = "permit"
+      description = "Permit or Deny"
+      displayOrder = 1
+      displayValueOnDetails = true
+      fieldContext = "config.customOptions"
+      fieldLabel = "Policy Action"
+      fieldName = "FWAction"
+      labels = [ "Security" ]
+      optionList = { name = "Firewall Policy Action" }
+      optionSource = "list"
+      required = true
+      type = "select"
+    }
+  ]
+}
