@@ -1,0 +1,12 @@
+resource "option-type-list" "Filtered List of Plans (GCP)" {
+  name = "Filtered List of Plans (GCP)"
+  uuid = "6d1fc78b-81e0-4a0f-ab69-a78d63c7e30c"
+  initialDataset = <<EOFSCRIBE
+[
+{"name":"GCP F1 Micro 1 x 0.6" , "value":1639},
+{"name":"GCP G1 Small 1 x 1.7" , "value":1640},
+{"name":"GCP N1 Standard 1 x 3.75 " , "value":1663}
+]
+EOFSCRIBE
+  type = "manual"
+}

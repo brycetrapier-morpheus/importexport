@@ -1,0 +1,12 @@
+resource "option-type" "filteredplansgcp" {
+  code = "filteredplansgcp"
+  name = "Filtered Plan Choice (GCP)"
+  uuid = "a6a95747-0aa2-4f4a-b088-0baff97de5e0"
+  fieldContext = "config.customOptions"
+  fieldLabel = "GCP VM Size and Plan"
+  fieldName = "filteredplansgcp"
+  optionList = { name = "Filtered List of Plans (GCP)" }
+  optionSource = "list"
+  required = true
+  type = "radio"
+}
