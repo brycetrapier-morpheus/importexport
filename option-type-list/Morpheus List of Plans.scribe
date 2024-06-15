@@ -1,0 +1,7 @@
+resource "option-type-list" "Morpheus List of Plans" {
+  name = "Morpheus List of Plans"
+  uuid = "fabdd65a-9955-4349-9589-b2dd638bd06f"
+  apiType = "servicePlans"
+  realTime = true
+  type = "api"
+}
