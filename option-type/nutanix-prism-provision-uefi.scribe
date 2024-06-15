@@ -1,0 +1,10 @@
+resource "option-type" "nutanix-prism-provision-uefi" {
+  code = "nutanix-prism-provision-uefi"
+  name = "uefi"
+  uuid = "2392f5d6-6ce3-476b-b18a-bdb47c1038c8"
+  displayOrder = 103
+  fieldGroup = "Nutanix Prism Boot Options"
+  fieldLabel = "UEFI"
+  fieldName = "uefi"
+  type = "checkbox"
+}
