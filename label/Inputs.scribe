@@ -1,0 +1,3 @@
+resource "label" "Inputs" {
+  name = "Inputs"
+}
