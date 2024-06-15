@@ -1,0 +1,9 @@
+resource "task-set" "Execute Jenkins Build" {
+  name = "Execute Jenkins Build"
+  uuid = "3433a9d8-39a9-4221-8c82-c24343e62c5f"
+  dateCreated = "2023-04-20T19:13:58.000Z"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-04-20T19:13:58.000Z"
+  taskSetTasks = [ { uuid = "fe3473df-4bda-42be-9785-331df294303b" } ]
+  taskSetType = "operation"
+}

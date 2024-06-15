@@ -1,0 +1,24 @@
+resource "task" "Hello World Jenkins" {
+  name = "Hello World Jenkins"
+  uuid = "80032f7f-7a32-4595-bee5-23164a236781"
+  dateCreated = "2023-03-20T17:39:54.000Z"
+  executeTarget = "local"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-05-17T16:08:37.000Z"
+  options = [
+    {
+      optionType = { code = "jenkins.jobName" }
+      value = "SomeExampleJob"
+    },
+    {
+      optionType = { code = "jenkins.serviceUrl" }
+      value = "https://1.2.3.4/"
+    },
+    {
+      optionType = { code = "jenkins.buildParameters" }
+      value = "packageType=war&jdkVersion=11&debug=true"
+    },
+    { optionType = { code = "jenkins.serviceUser" }, value = "user" }
+  ]
+  taskType = { code = "jenkins" }
+}

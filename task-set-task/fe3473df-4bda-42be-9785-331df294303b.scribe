@@ -1,0 +1,5 @@
+resource "task-set-task" "fe3473df-4bda-42be-9785-331df294303b" {
+  uuid = "fe3473df-4bda-42be-9785-331df294303b"
+  task = { name = "Hello World Jenkins" }
+  taskPhase = "operation"
+}
