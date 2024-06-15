@@ -1,0 +1,15 @@
+resource "option-type" "AppTierInstanceName" {
+  code = "AppTierInstanceName"
+  name = "Tier App Instance Name"
+  uuid = "30fa3f79-ba2c-49e0-81e1-bf9fad21014e"
+  displayValueOnDetails = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "AppTierInstanceName"
+  fieldLabel = "App Tier Instance Name"
+  fieldName = "AppTierInstanceName"
+  fieldSetName = "AppTierInstanceName"
+  helpBlock = "App Tier Instance Name"
+  placeHolder = "Application Tier Name"
+  required = true
+}

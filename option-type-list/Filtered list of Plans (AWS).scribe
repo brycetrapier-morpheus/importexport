@@ -1,0 +1,14 @@
+resource "option-type-list" "Filtered list of Plans (AWS)" {
+  name = "Filtered list of Plans (AWS)"
+  uuid = "baa2bb1d-1880-4259-a86f-2617f80102b5"
+  initialDataset = <<EOFSCRIBE
+[
+{"name":"AWS T2 Nano 1 x 0.5" , "value":489},
+{"name":"AWS T3 Small 2 x 2" , "value":423},
+{"name":"AWS C5 XL  4 x 8 " , "value":359}
+]
+EOFSCRIBE
+  realTime = true
+  type = "manual"
+  visibility = "public"
+}

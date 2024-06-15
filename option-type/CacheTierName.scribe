@@ -1,0 +1,13 @@
+resource "option-type" "CacheTierName" {
+  code = "CacheTierName"
+  name = "Tier Cache Name"
+  uuid = "a80cd5c9-e4ac-49eb-98fb-e602cdd9ccb9"
+  displayValueOnDetails = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Cache Tier Name"
+  fieldName = "CacheTierName"
+  helpBlock = "Cache Tier Instance Name"
+  placeHolder = "Cache Tier Name"
+  required = true
+}

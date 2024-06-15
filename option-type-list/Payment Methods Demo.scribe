@@ -1,0 +1,11 @@
+resource "option-type-list" "Payment Methods Demo" {
+  name = "Payment Methods Demo"
+  uuid = "c433be14-3503-412c-b2cd-b7685631c929"
+  initialDataset = <<EOFSCRIBE
+Cash,Cash
+Credit Card, Credit Card
+Meatballs, Meatballs
+EOFSCRIBE
+  realTime = true
+  type = "manual"
+}

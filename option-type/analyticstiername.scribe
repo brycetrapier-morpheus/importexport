@@ -1,0 +1,13 @@
+resource "option-type" "analyticstiername" {
+  code = "analyticstiername"
+  name = "Tier Analytics Name"
+  uuid = "fd667ad5-2312-4349-a242-65e8e5a3f03b"
+  displayValueOnDetails = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Analytics Tier Name"
+  fieldName = "analyticstiername"
+  helpBlock = "Analytics Tier Name"
+  placeHolder = "Analytics Tier Name"
+  required = true
+}

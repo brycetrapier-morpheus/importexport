@@ -1,0 +1,14 @@
+resource "option-type" "filteredplansaws" {
+  code = "filteredplansaws"
+  name = "Filtered Plan Choice (AWS)"
+  uuid = "7cd1466a-0bd0-4c65-88ec-046ab1ebbe52"
+  config = { _multiSelect = "" }
+  fieldContext = "config.customOptions"
+  fieldLabel = "VM Size and Plan"
+  fieldName = "filteredplansaws"
+  optionList = { name = "Filtered list of Plans (AWS)" }
+  optionSource = "list"
+  required = true
+  showOnEdit = false
+  type = "select"
+}

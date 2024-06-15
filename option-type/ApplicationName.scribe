@@ -1,0 +1,16 @@
+resource "option-type" "ApplicationName" {
+  code = "ApplicationName"
+  name = "Application Name"
+  uuid = "a259310e-dcfc-448e-be12-a3dd1ededde6"
+  description = "VM Hostname and the Instance Name of a Catalog Item"
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "ApplicationName"
+  fieldLabel = "Application Name"
+  fieldName = "ApplicationName"
+  fieldSetName = "ApplicationName"
+  helpBlock = "In a multi-tiered application, the Application Name is the name of the \"wrapper entity\" which contains individual instances.  It has no bearing on the VM names."
+  labels = [ "Demo" ]
+  placeHolder = "Application Name"
+  required = true
+}

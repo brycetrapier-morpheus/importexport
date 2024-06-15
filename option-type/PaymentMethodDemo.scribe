@@ -1,0 +1,17 @@
+resource "option-type" "PaymentMethodDemo" {
+  code = "PaymentMethodDemo"
+  name = "Payment Method Demo"
+  uuid = "d8a686b1-3336-4564-a44f-9cf1c17f317d"
+  defaultValue = "Meatballs"
+  displayValueOnDetails = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "How do you want to pay:"
+  fieldName = "PaymentMethodDemo"
+  helpBlock = "Please choose how you will pay for the requested resources."
+  labels = [ "Demo" ]
+  optionList = { name = "Payment Methods Demo" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}

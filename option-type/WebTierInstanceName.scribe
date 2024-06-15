@@ -1,0 +1,15 @@
+resource "option-type" "WebTierInstanceName" {
+  code = "WebTierInstanceName"
+  name = "Tier Web Instance Name"
+  uuid = "e8997fe8-e88a-4121-81ce-6f18bd66ea4b"
+  displayValueOnDetails = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "WebTierInstanceName"
+  fieldLabel = "Web Tier"
+  fieldName = "WebTierInstanceName"
+  fieldSetName = "WebTierInstanceName"
+  helpBlock = "Web Tier Instance Name"
+  placeHolder = "WebTierName"
+  required = true
+}
