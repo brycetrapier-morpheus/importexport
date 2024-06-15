@@ -1,0 +1,14 @@
+resource "task" "Hello World Powershell" {
+  name = "Hello World Powershell"
+  uuid = "5a7b91be-36b0-46ff-9a00-9577942a1c8a"
+  dateCreated = "2022-07-26T22:48:22.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-08-23T21:35:58.000Z"
+  options = [
+    {
+      content = { uuid = "7df6f5b8-d9c9-42a4-b157-0976b5358de5" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}

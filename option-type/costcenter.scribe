@@ -1,0 +1,18 @@
+resource "option-type" "costcenter" {
+  code = "costcenter"
+  name = "Cost Center"
+  uuid = "adb10f68-6a93-4553-9f81-10770ed83748"
+  displayValueOnDetails = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "costcenter"
+  fieldLabel = "Cost Center"
+  fieldName = "costcenter"
+  fieldSetName = "costcenter"
+  helpBlock = "This department will be charged for the resource."
+  labels = [ "Demo", "List" ]
+  optionList = { name = "Cost Center Values" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}

@@ -1,0 +1,9 @@
+resource "task-set" "Echo Cost Center" {
+  name = "Echo Cost Center"
+  uuid = "daa670cf-fb2b-46e3-b4b2-545e3f41614e"
+  dateCreated = "2022-07-26T22:36:07.000Z"
+  lastUpdated = "2022-07-26T23:01:51.000Z"
+  optionTypes = [ { code = "costcenter" } ]
+  taskSetTasks = [ { uuid = "cdfcb50b-cf14-4b46-9b39-a9048512a1f0" } ]
+  taskSetType = "operation"
+}

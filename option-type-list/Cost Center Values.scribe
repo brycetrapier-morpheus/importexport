@@ -1,0 +1,14 @@
+resource "option-type-list" "Cost Center Values" {
+  name = "Cost Center Values"
+  uuid = "27c760eb-020b-43f4-979f-2de42a5b8e47"
+  description = "A list of deparments with budget"
+  initialDataset = <<EOFSCRIBE
+Finance, Finance
+Legal, Legal
+Marketing, Marketing
+Engineering, Engineering
+EOFSCRIBE
+  labels = [ "Demo" ]
+  type = "manual"
+  visibility = "public"
+}
