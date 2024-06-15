@@ -1,0 +1,17 @@
+resource "option-type" "AspectServerType" {
+  code = "AspectServerType"
+  name = "Aspect Server Type"
+  uuid = "d297da34-5c5f-4edb-b99d-4fa8b5bfbcdd"
+  description = "Persona of Aspect Server"
+  displayValueOnDetails = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Aspect Server Persona"
+  fieldName = "AspectServerType"
+  helpBlock = "Select the type of Aspect server which should be deployed."
+  labels = [ "voice" ]
+  optionList = { name = "Aspect Server Layout IDs" }
+  optionSource = "list"
+  required = true
+  type = "radio"
+}

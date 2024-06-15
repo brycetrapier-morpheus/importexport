@@ -1,0 +1,16 @@
+resource "option-type-list" "Aspect Server Layout IDs" {
+  name = "Aspect Server Layout IDs"
+  uuid = "a5875be7-b92c-40d3-8e39-4238fa056be7"
+  description = "IDs of Aspect Layouts in the Aspect Instance Type"
+  initialDataset = <<EOFSCRIBE
+[
+{"name":"Call Agent v1 in AWS", "value" : 1112},
+{"name":"Call Recording v1 in AWS", "value" : 1200},
+{"name":"Voicemail Server v1 in AWS", "value" : 1111},
+{"name":"Voicemail Server v2 in AWS", "value" : 1114}
+ ]
+EOFSCRIBE
+  labels = [ "voice" ]
+  realTime = true
+  type = "manual"
+}
