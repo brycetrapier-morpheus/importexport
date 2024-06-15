@@ -1,0 +1,14 @@
+resource "instance-type-layout" "a60c451c-de96-4267-897e-d048462b5858" {
+  code = "a60c451c-de96-4267-897e-d048462b5858"
+  name = "DEMO New GCE Instance"
+  uuid = "ed566732-faae-4eea-8b66-800c1448fcc1"
+  config = "{\"tfvarSecret\":\"\"}"
+  instanceType = { code = "iac.samples" }
+  instanceVersion = "GCP"
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [
+    { uuid = "465217b1-73ae-4e3e-94a3-86e2583f7d6b" },
+    { uuid = "72042dfd-4e73-4b13-9005-14b50178d41a" }
+  ]
+}
