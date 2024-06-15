@@ -1,0 +1,13 @@
+resource "instance-type-layout" "71244723-84ee-4316-88bf-cbe5d75b47ea" {
+  code = "71244723-84ee-4316-88bf-cbe5d75b47ea"
+  name = "Apache in Azure Standard Ports"
+  uuid = "df6409ec-af37-4934-a418-d6f99ef2f881"
+  actions = [ { code = "generic-add-node" } ]
+  description = "Uses the built-in Apache 2.4 Node Type"
+  hasAutoScale = true
+  instanceType = { code = "apachelab" }
+  instanceVersion = "Deprecated Node Type"
+  memoryRequirement = 0
+  provisionType = { code = "azure" }
+  workloads = [ { code = "apache-azure-2.4-ubuntu-20.04" } ]
+}
