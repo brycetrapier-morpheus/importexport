@@ -1,0 +1,19 @@
+resource "instance-type-layout" "01717208-e0bf-45e1-81d8-9f05aa9cf31a" {
+  code = "01717208-e0bf-45e1-81d8-9f05aa9cf31a"
+  name = "XaaS Firewall Rule, Provisioning Workflow"
+  uuid = "bd0c4161-9da0-46e3-afa1-cf8876e09ecc"
+  description = "Provisioning workflow example"
+  instanceType = { code = "XaaS" }
+  instanceVersion = "CLI-based Firewall"
+  labels = [ "Demo" ]
+  memoryRequirement = 0
+  optionTypes = [
+    { code = "FWACLname" },
+    { code = "FWAction" },
+    { code = "FWSourceIP" },
+    { code = "FWDestinationIP" },
+    { code = "FWPort" }
+  ]
+  provisionType = { code = "workflow" }
+  taskSets = [ { name = "Firewall Rule, Cisco - PROVISIONING" } ]
+}
