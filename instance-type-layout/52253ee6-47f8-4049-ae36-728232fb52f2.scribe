@@ -1,0 +1,15 @@
+resource "instance-type-layout" "52253ee6-47f8-4049-ae36-728232fb52f2" {
+  code = "52253ee6-47f8-4049-ae36-728232fb52f2"
+  name = "New GCP e2-micro, static name of \"mopho\""
+  uuid = "20b99cd7-bdab-4f71-a8ff-661e3b3fa77d"
+  config = "{\"tfvarSecret\":\"\"}"
+  description = "New Debian e2-micro in GCP US-West1"
+  instanceType = { code = "terraformplans" }
+  instanceVersion = "GCP"
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [
+    { uuid = "465217b1-73ae-4e3e-94a3-86e2583f7d6b" },
+    { uuid = "72042dfd-4e73-4b13-9005-14b50178d41a" }
+  ]
+}
