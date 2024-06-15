@@ -1,0 +1,13 @@
+resource "instance-type-layout" "366732f3-a46e-4270-bd5f-72ba02de1ed4" {
+  code = "366732f3-a46e-4270-bd5f-72ba02de1ed4"
+  name = "2 NGINX on Ubuntu 22.04 in AWS"
+  uuid = "9e5c1de6-d3ea-4520-899c-fd80790658df"
+  description = "Two NGINX boxes in AWS, on Ubuntu"
+  instanceType = { code = "multinode" }
+  instanceVersion = "NGINX"
+  labels = [ "Scale" ]
+  memoryRequirement = 536870912
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "NGINX on Ubuntu (Shell Scripts)" } ]
+  workloads = [ { code = "ubuntu-amazon-22.04" }, { code = "ubuntu-amazon-22.04" } ]
+}
