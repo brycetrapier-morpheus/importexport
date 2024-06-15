@@ -1,0 +1,15 @@
+resource "container-type" "0e88f2c5-c072-49e6-ba56-4e8d2dcc879c" {
+  code = "0e88f2c5-c072-49e6-ba56-4e8d2dcc879c"
+  name = "AWS Empty Node Type - Ubuntu 20 in NorCal"
+  uuid = "7863cf1a-3f2c-480e-af1d-43f298d73d45"
+  containerVersion = "Empty"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awsempty"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "786fb63d-5b53-4420-878a-5bfd1c0d3628" }
+}
