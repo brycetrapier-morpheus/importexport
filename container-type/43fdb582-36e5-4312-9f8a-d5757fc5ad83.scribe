@@ -1,0 +1,11 @@
+resource "container-type" "43fdb582-36e5-4312-9f8a-d5757fc5ad83" {
+  code = "43fdb582-36e5-4312-9f8a-d5757fc5ad83"
+  name = "Wordpress on K8s v1"
+  uuid = "e2a93049-d398-4719-8a36-0bb67f6eeb28"
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "docker"
+  provisionType = { code = "kubernetes" }
+  shortName = "wordpressk8s"
+  statTypeCode = "docker"
+}
