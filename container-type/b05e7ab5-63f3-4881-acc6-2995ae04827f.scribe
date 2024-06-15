@@ -1,0 +1,15 @@
+resource "container-type" "b05e7ab5-63f3-4881-acc6-2995ae04827f" {
+  code = "b05e7ab5-63f3-4881-acc6-2995ae04827f"
+  name = "AWS CentOS 7 x64 NorCal"
+  uuid = "ef94722f-f7d7-46ca-8fdc-8296e9fe491f"
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "centos7x64norcal"
+  showServerLogs = true
+  statTypeCode = "amazon"
+  virtualImage = { uuid = "2897a783-7b80-48f2-86dc-90ecb4cf30cc" }
+}
