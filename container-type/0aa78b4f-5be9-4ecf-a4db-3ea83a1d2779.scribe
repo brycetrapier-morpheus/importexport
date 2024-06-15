@@ -1,0 +1,19 @@
+resource "container-type" "0aa78b4f-5be9-4ecf-a4db-3ea83a1d2779" {
+  code = "0aa78b4f-5be9-4ecf-a4db-3ea83a1d2779"
+  name = "Shenanigal EKS Master Node"
+  uuid = "94442768-6f4e-4a24-9c08-30a023974d8b"
+  containerScript = <<EOFSCRIBE
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  ...
+spec:
+  ...
+EOFSCRIBE
+  containerVersion = "lab"
+  entryPoint = ""
+  logTypeCode = "docker"
+  provisionType = { code = "kubernetes" }
+  shortName = "k8seksmaster"
+  statTypeCode = "docker"
+}
