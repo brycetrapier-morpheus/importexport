@@ -1,0 +1,6 @@
+resource "task-set-task" "fe9993df-3702-4204-8f38-b368faa39782" {
+  uuid = "fe9993df-3702-4204-8f38-b368faa39782"
+  task = { name = "Email Test" }
+  taskOrder = 3
+  taskPhase = "teardown"
+}

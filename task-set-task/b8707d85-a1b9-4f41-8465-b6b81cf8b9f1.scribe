@@ -1,0 +1,5 @@
+resource "task-set-task" "b8707d85-a1b9-4f41-8465-b6b81cf8b9f1" {
+  uuid = "b8707d85-a1b9-4f41-8465-b6b81cf8b9f1"
+  task = { name = "Email Test" }
+  taskOrder = 1
+}

@@ -1,0 +1,6 @@
+resource "task-set-task" "bcd41d11-2310-492d-aa6a-7445e7efbd8f" {
+  uuid = "bcd41d11-2310-492d-aa6a-7445e7efbd8f"
+  task = { name = "Email Test" }
+  taskOrder = 2
+  taskPhase = "reconfigure"
+}

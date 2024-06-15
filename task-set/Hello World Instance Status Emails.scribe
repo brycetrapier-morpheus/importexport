@@ -1,0 +1,14 @@
+resource "task-set" "Hello World Instance Status Emails" {
+  name = "Hello World Instance Status Emails"
+  uuid = "4c3a8eed-1f6e-45cc-b703-69ffa5e34060"
+  dateCreated = "2023-04-08T00:25:09.000Z"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-04-08T00:30:58.000Z"
+  taskSetTasks = [
+    { uuid = "b8707d85-a1b9-4f41-8465-b6b81cf8b9f1" },
+    { uuid = "bcd41d11-2310-492d-aa6a-7445e7efbd8f" },
+    { uuid = "fdd078ed-488b-490a-8d62-eed8c3f93a9f" },
+    { uuid = "fe35024f-616e-4670-8e02-4838e106edd4" },
+    { uuid = "fe9993df-3702-4204-8f38-b368faa39782" }
+  ]
+}

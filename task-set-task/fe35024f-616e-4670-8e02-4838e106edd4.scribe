@@ -1,0 +1,5 @@
+resource "task-set-task" "fe35024f-616e-4670-8e02-4838e106edd4" {
+  uuid = "fe35024f-616e-4670-8e02-4838e106edd4"
+  task = { name = "Email Test" }
+  taskPhase = "preProvision"
+}

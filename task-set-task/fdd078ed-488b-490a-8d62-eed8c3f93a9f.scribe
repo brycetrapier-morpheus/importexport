@@ -1,0 +1,6 @@
+resource "task-set-task" "fdd078ed-488b-490a-8d62-eed8c3f93a9f" {
+  uuid = "fdd078ed-488b-490a-8d62-eed8c3f93a9f"
+  task = { name = "Email Test" }
+  taskOrder = 4
+  taskPhase = "shutdown"
+}
