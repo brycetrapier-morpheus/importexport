@@ -1,0 +1,24 @@
+resource "file-content" "747080e1-6bfc-4571-8b9c-27c479ae3212" {
+  uuid = "747080e1-6bfc-4571-8b9c-27c479ae3212"
+  content = <<EOFSCRIBE
+provider "aws" {
+  region = "us-west-1"
+  access_key = var.access_key
+  secret_key = var.secret_key
+}
+
+variable "access_key" {
+# This must be named 'access_key'
+  type = string
+  sensitive = true
+}
+
+variable "secret_key" {
+# This must be named 'secret_key'
+  type = string
+  sensitive = true
+}
+EOFSCRIBE
+  dateCreated = "2022-10-05T23:49:43.000Z"
+  lastUpdated = "2023-08-02T21:06:48.000Z"
+}

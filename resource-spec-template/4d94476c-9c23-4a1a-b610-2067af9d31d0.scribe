@@ -1,0 +1,11 @@
+resource "resource-spec-template" "4d94476c-9c23-4a1a-b610-2067af9d31d0" {
+  name = "AWS - 1. Provider Block for AWS NorCal"
+  uuid = "4d94476c-9c23-4a1a-b610-2067af9d31d0"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-10-05T23:49:43.000Z"
+  labels = [ "AWS", "Demo", "Terraform" ]
+  lastUpdated = "2023-08-02T21:06:48.000Z"
+  template = { uuid = "747080e1-6bfc-4571-8b9c-27c479ae3212" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
