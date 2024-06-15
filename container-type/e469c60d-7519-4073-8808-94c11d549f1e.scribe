@@ -1,0 +1,15 @@
+resource "container-type" "e469c60d-7519-4073-8808-94c11d549f1e" {
+  code = "e469c60d-7519-4073-8808-94c11d549f1e"
+  name = "Amazon Linux"
+  uuid = "91e1cd0b-2a57-4297-8d60-5005feb49cd0"
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "amazonlinux"
+  showServerLogs = true
+  statTypeCode = "amazon"
+  virtualImage = { code = "amazon.ec2.image.1.ami-0074ef78ecb07948c" }
+}
