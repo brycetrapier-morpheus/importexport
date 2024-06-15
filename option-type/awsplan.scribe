@@ -1,0 +1,15 @@
+resource "option-type" "awsplan" {
+  code = "awsplan"
+  name = "AWS Plan"
+  uuid = "a810599d-c4c7-44c1-8332-1a9b7f4d1ca1"
+  config = { _multiSelect = "" }
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Pick your custom plan"
+  fieldName = "awsplan"
+  optionList = { name = "AWS Plans" }
+  optionSource = "list"
+  required = true
+  showOnEdit = false
+  type = "typeahead"
+}

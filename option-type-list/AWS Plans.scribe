@@ -1,0 +1,13 @@
+resource "option-type-list" "AWS Plans" {
+  name = "AWS Plans"
+  uuid = "de3e8034-b801-4b9d-b130-4dacbc42683a"
+  initialDataset = <<EOFSCRIBE
+[
+{"name" : "T2 Nano: 1 x 0.5" , "value" : "489"},
+{"name" : "T2 Small: 1 x 1" , "value" : "506"},
+{"name" : "T2 Large: 1 x 2" , "value" : "333"}
+]
+EOFSCRIBE
+  labels = [ "Demo" ]
+  type = "manual"
+}
