@@ -1,0 +1,16 @@
+resource "container-type" "6304ec5e-10a4-4d13-ac22-fcb602b0ec6f" {
+  code = "6304ec5e-10a4-4d13-ac22-fcb602b0ec6f"
+  name = "POC Node CentOS"
+  uuid = "118a51bb-b36c-4542-980e-ad3e9f3b3555"
+  containerVersion = "7"
+  entryPoint = ""
+  labels = [ "Demo" ]
+  logTypeCode = "vmware"
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "customCentOS"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "vcd.image.morpheus.centos-7_9.ovf" }
+}

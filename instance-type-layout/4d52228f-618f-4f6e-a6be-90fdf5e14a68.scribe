@@ -1,0 +1,12 @@
+resource "instance-type-layout" "4d52228f-618f-4f6e-a6be-90fdf5e14a68" {
+  code = "4d52228f-618f-4f6e-a6be-90fdf5e14a68"
+  name = "POC CentOS"
+  uuid = "713add7e-7cdf-4090-af63-77614562ba13"
+  instanceType = { code = "custominstance" }
+  instanceVersion = "7"
+  labels = [ "Demo" ]
+  memoryRequirement = 1073741824
+  provisionType = { code = "vmware" }
+  taskSets = [ { name = "POC CentOS -RHEL" } ]
+  workloads = [ { code = "6304ec5e-10a4-4d13-ac22-fcb602b0ec6f" } ]
+}
