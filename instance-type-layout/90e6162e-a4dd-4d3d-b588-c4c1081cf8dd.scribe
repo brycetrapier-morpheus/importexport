@@ -1,0 +1,12 @@
+resource "instance-type-layout" "90e6162e-a4dd-4d3d-b588-c4c1081cf8dd" {
+  code = "90e6162e-a4dd-4d3d-b588-c4c1081cf8dd"
+  name = "Server 2022 DC 1787"
+  uuid = "85836a1e-71a4-4795-89ee-de9e7d5687c1"
+  description = "Windows Server 2022 Datcenter v1787"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "2022 Datacenter 1787"
+  labels = [ "Demo" ]
+  memoryRequirement = 0
+  provisionType = { code = "azure" }
+  workloads = [ { code = "fc3204ca-1c1a-44c5-9f61-9c2ff1072592" } ]
+}

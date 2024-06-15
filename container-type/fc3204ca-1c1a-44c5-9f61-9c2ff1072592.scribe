@@ -1,0 +1,16 @@
+resource "container-type" "fc3204ca-1c1a-44c5-9f61-9c2ff1072592" {
+  code = "fc3204ca-1c1a-44c5-9f61-9c2ff1072592"
+  name = "Azure Server 2022 Datacenter 1787"
+  uuid = "5279cd85-9e9b-48c9-a53f-3172e2eff8bb"
+  containerVersion = "Datacenter 2022 1787"
+  entryPoint = ""
+  labels = [ "Demo" ]
+  logTypeCode = "vm"
+  provisionType = { code = "azure" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "azureserver2022dc1787"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "e42c5007-5854-4a12-a748-711a2836244c" }
+}
