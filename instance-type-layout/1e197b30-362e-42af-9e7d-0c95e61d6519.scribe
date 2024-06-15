@@ -1,0 +1,18 @@
+resource "instance-type-layout" "1e197b30-362e-42af-9e7d-0c95e61d6519" {
+  code = "1e197b30-362e-42af-9e7d-0c95e61d6519"
+  name = "XaaS Firewall Rule, Sample"
+  uuid = "186700c2-b590-4b22-8d01-59d0005c1fba"
+  description = "Framework for a Cisco firewall rule"
+  instanceType = { code = "XaaS" }
+  instanceVersion = "CLI-based Firewall"
+  memoryRequirement = 0
+  optionTypes = [
+    { code = "FWACLname" },
+    { code = "FWAction" },
+    { code = "FWSourceIP" },
+    { code = "FWDestinationIP" },
+    { code = "FWPort" }
+  ]
+  provisionType = { code = "workflow" }
+  taskSets = [ { name = "Firewall Rule, CLI-based" } ]
+}
