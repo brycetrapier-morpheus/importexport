@@ -1,0 +1,12 @@
+resource "task-set" "Input to EVAR" {
+  name = "Input to EVAR"
+  uuid = "7084da03-e77f-4a3b-b401-83bf9e73a2a9"
+  dateCreated = "2021-12-11T04:20:17.000Z"
+  description = "Write Inputs to EVARs"
+  lastUpdated = "2023-01-04T03:47:42.000Z"
+  platform = "linux"
+  taskSetTasks = [
+    { uuid = "794e81b8-bde4-43c5-b0f6-3807f9ece44b" },
+    { uuid = "e3b078c7-77cc-4828-a0a1-b6af7b9a0521" }
+  ]
+}

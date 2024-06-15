@@ -1,0 +1,20 @@
+resource "file-content" "e562249c-ea4b-4540-ac7d-5024de4158d8" {
+  uuid = "e562249c-ea4b-4540-ac7d-5024de4158d8"
+  content = <<EOFSCRIBE
+#!/bin/bash
+#####
+# Assign {unmaskedpw} to the input provided at provisioning
+
+
+maskedEVAR="<%=customOptions.maskedinput%>"
+unmaskedEVAR="<%=customOptions.unmaskedinput%>"
+
+sed -i /unmaskedEVAR/d /etc/profile.d/morpheus.sh
+
+echo "export unmaskedpw=$unmaskedEVAR #MorpheusEvar" >> /etc/profile.d/morpheus.sh
+
+source /etc/profile
+EOFSCRIBE
+  dateCreated = "2021-12-17T22:38:26.000Z"
+  lastUpdated = "2023-01-04T03:46:43.000Z"
+}

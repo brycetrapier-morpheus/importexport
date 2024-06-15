@@ -1,0 +1,5 @@
+resource "task-set-task" "e3b078c7-77cc-4828-a0a1-b6af7b9a0521" {
+  uuid = "e3b078c7-77cc-4828-a0a1-b6af7b9a0521"
+  task = { name = "Write Inputs to EVARs" }
+  taskOrder = 1
+}

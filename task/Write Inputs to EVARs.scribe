@@ -1,0 +1,15 @@
+resource "task" "Write Inputs to EVARs" {
+  name = "Write Inputs to EVARs"
+  uuid = "fe124e42-4768-4c92-8042-28d511e1a6a7"
+  dateCreated = "2021-12-17T22:38:26.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-01-04T03:29:03.000Z"
+  options = [
+    {
+      content = { uuid = "e562249c-ea4b-4540-ac7d-5024de4158d8" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
