@@ -1,0 +1,23 @@
+resource "task" "installpuppet" {
+  code = "installpuppet"
+  name = "Install Puppet"
+  uuid = "58a4d587-d981-4760-abd6-6825c8936f43"
+  dateCreated = "2022-05-26T21:19:02.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-05-26T21:21:43.000Z"
+  options = [
+    {
+      optionType = { code = "puppetMasterId" }
+      value = { name = "MasterOfPuppets" }
+    },
+    {
+      optionType = { code = "puppetEnvironment" }
+      value = "Copenhagen"
+    },
+    {
+      optionType = { code = "puppetNodeName" }
+      value = "FlemmingRasmussen"
+    }
+  ]
+  taskType = { code = "puppetTask" }
+}

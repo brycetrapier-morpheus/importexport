@@ -1,0 +1,16 @@
+resource "account-integration" "MasterOfPuppets" {
+  name = "MasterOfPuppets"
+  uuid = "e3c697ec-ed44-4506-b8be-83c4a360022a"
+  category = "automation"
+  config = {
+    cm = {
+      puppetFireNow = "true"
+      puppetMaster = "https://1.2.3.4"
+      puppetSshPassword = "partywipe2020!"
+      puppetSshUser = "JimmyHetfield"
+    }
+  }
+  integrationType = { code = "puppet" }
+  serviceUrl = ""
+  type = "puppet"
+}
