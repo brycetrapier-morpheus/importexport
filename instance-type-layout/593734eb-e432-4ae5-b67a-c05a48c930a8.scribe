@@ -1,0 +1,12 @@
+resource "instance-type-layout" "593734eb-e432-4ae5-b67a-c05a48c930a8" {
+  code = "593734eb-e432-4ae5-b67a-c05a48c930a8"
+  name = "Redis on Ubuntu 20.04 in AWS"
+  uuid = "249afc87-b3c4-421b-b977-de162c0c6134"
+  hasAutoScale = false
+  instanceType = { code = "rediscustom" }
+  instanceVersion = "Ubuntu 20.04"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "Install Redis on Ubuntu" } ]
+  workloads = [ { code = "ubuntu-amazon-20.04" } ]
+}
