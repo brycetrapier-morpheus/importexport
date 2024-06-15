@@ -1,0 +1,17 @@
+resource "file-content" "8beda8f0-cf28-40c7-8940-06d1d35eb4ab" {
+  uuid = "8beda8f0-cf28-40c7-8940-06d1d35eb4ab"
+  content = <<EOFSCRIBE
+{
+    "Resources": {
+        "NewVPC": {
+            "Type": "AWS::EC2::VPC",
+            "Properties": {
+                "CidrBlock": "10.0.0.0/16" 
+            }
+        }
+    }
+}
+EOFSCRIBE
+  dateCreated = "2022-08-01T22:47:16.000Z"
+  lastUpdated = "2022-08-03T06:12:58.000Z"
+}

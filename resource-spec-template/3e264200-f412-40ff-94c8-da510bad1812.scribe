@@ -1,0 +1,17 @@
+resource "resource-spec-template" "3e264200-f412-40ff-94c8-da510bad1812" {
+  name = "AWS Just a VPC - 10.0.0.0/16"
+  uuid = "3e264200-f412-40ff-94c8-da510bad1812"
+  config = {
+    cloudformation = {
+      _CAPABILITY_AUTO_EXPAND = ""
+      _CAPABILITY_NAMED_IAM = ""
+      _IAM = ""
+    }
+    terraform = { tfVersion = "" }
+  }
+  dateCreated = "2022-08-01T22:47:16.000Z"
+  lastUpdated = "2022-08-03T06:12:58.000Z"
+  template = { uuid = "8beda8f0-cf28-40c7-8940-06d1d35eb4ab" }
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
