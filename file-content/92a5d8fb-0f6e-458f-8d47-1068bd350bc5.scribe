@@ -1,0 +1,18 @@
+resource "file-content" "92a5d8fb-0f6e-458f-8d47-1068bd350bc5" {
+  uuid = "92a5d8fb-0f6e-458f-8d47-1068bd350bc5"
+  content = <<EOFSCRIBE
+cd /var/www/html
+
+sudo wget https://morpheusdatachannelswest.s3.us-west-1.amazonaws.com/index-snoopycrash.html
+sudo wget https://morpheusdatachannelswest.s3.us-west-1.amazonaws.com/index-snoopyfly.html
+sudo wget https://morpheusdatachannelswest.s3.us-west-1.amazonaws.com/index-nosnoopy.html
+
+
+mv -f index-snoopycrash.html index.html 
+
+service apache2 reload
+
+EOFSCRIBE
+  dateCreated = "2022-09-09T05:10:35.000Z"
+  lastUpdated = "2022-09-09T05:10:35.000Z"
+}

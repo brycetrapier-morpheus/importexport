@@ -1,0 +1,15 @@
+resource "task" "Update Apache to Snoopy Crash, Ubuntu" {
+  name = "Update Apache to Snoopy Crash, Ubuntu"
+  uuid = "fbd22096-1133-461e-98f8-222c6b5726ef"
+  dateCreated = "2022-09-09T05:10:35.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-09-09T05:10:35.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "92a5d8fb-0f6e-458f-8d47-1068bd350bc5" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
