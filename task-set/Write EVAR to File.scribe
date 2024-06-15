@@ -1,0 +1,7 @@
+resource "task-set" "Write EVAR to File" {
+  name = "Write EVAR to File"
+  uuid = "c9771035-65b2-4d7a-8437-256410d36d1a"
+  dateCreated = "2021-12-11T03:19:55.000Z"
+  lastUpdated = "2022-05-11T04:13:48.000Z"
+  taskSetTasks = [ { uuid = "9e2eb9d4-5c92-4d3e-ab1c-ab10768d5dbc" } ]
+}

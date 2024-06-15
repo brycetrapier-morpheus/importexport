@@ -1,0 +1,14 @@
+resource "file-content" "bf88eca6-5a6e-4f5a-bf86-5dde6073a094" {
+  uuid = "bf88eca6-5a6e-4f5a-bf86-5dde6073a094"
+  content = <<EOFSCRIBE
+#### 
+# Write the local Environment Variable to a file
+#
+
+echo $COMMON_SQLPW > COMMON_SQLPW.txt
+
+echo $SQLPW > SQLPW.txt
+EOFSCRIBE
+  dateCreated = "2021-12-11T02:53:42.000Z"
+  lastUpdated = "2021-12-11T03:38:53.000Z"
+}

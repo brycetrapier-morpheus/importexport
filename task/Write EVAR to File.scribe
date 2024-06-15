@@ -1,0 +1,15 @@
+resource "task" "Write EVAR to File" {
+  name = "Write EVAR to File"
+  uuid = "304e2e8f-acfb-441d-90bd-d431697ced58"
+  dateCreated = "2021-12-11T02:53:42.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-05-11T04:13:28.000Z"
+  options = [
+    {
+      content = { uuid = "bf88eca6-5a6e-4f5a-bf86-5dde6073a094" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
