@@ -1,0 +1,18 @@
+resource "resource-spec-template" "1392e6ac-4ee2-48d9-9b39-270bf6825d2b" {
+  name = "AWS - EC2 Instance"
+  uuid = "1392e6ac-4ee2-48d9-9b39-270bf6825d2b"
+  category = "Ubuntu in NorCal"
+  config = {
+    cloudformation = {
+      _CAPABILITY_AUTO_EXPAND = ""
+      _CAPABILITY_NAMED_IAM = ""
+      _IAM = ""
+    }
+    terraform = { tfVersion = "" }
+  }
+  dateCreated = "2022-08-02T23:49:48.000Z"
+  lastUpdated = "2022-08-02T23:52:11.000Z"
+  template = { uuid = "2996efd0-a63a-4a49-8c5b-12c308c51eba" }
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}

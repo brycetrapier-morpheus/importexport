@@ -1,0 +1,19 @@
+resource "file-content" "2996efd0-a63a-4a49-8c5b-12c308c51eba" {
+  uuid = "2996efd0-a63a-4a49-8c5b-12c308c51eba"
+  content = <<EOFSCRIBE
+Resources:
+  LameEC2Instance:
+    Type: 'AWS::EC2::Instance'
+    Properties: 
+      InstanceType: t2.micro
+      ImageId: ami-085284d24fe829cd0
+      Tags:
+        - Key: Name
+          Value: "Lame EC2 Instance"
+        - Key: Owner
+          Value: Bryce
+
+EOFSCRIBE
+  dateCreated = "2022-08-02T23:49:48.000Z"
+  lastUpdated = "2022-08-02T23:52:11.000Z"
+}
