@@ -1,0 +1,11 @@
+resource "file-content" "f600458e-cb44-48b6-abbb-9c47cdaee9da" {
+  uuid = "f600458e-cb44-48b6-abbb-9c47cdaee9da"
+  content = <<EOFSCRIBE
+echo !
+echo "<%= container.externalIp %>"
+echo !
+
+EOFSCRIBE
+  dateCreated = "2022-12-28T22:37:14.000Z"
+  lastUpdated = "2022-12-28T22:37:14.000Z"
+}

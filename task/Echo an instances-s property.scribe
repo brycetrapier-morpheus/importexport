@@ -1,0 +1,16 @@
+resource "task" "Echo an instances's property" {
+  name = "Echo an instances's property"
+  uuid = "0cb95a30-eb3a-4c26-9c89-d5ec2eae1723"
+  dateCreated = "2022-12-28T22:37:14.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-02-24T23:11:58.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "f600458e-cb44-48b6-abbb-9c47cdaee9da" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
