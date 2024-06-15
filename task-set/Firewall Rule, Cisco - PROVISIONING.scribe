@@ -1,0 +1,8 @@
+resource "task-set" "Firewall Rule, Cisco - PROVISIONING" {
+  name = "Firewall Rule, Cisco - PROVISIONING"
+  uuid = "7597dbd5-c30d-4002-93f9-580791c67f89"
+  dateCreated = "2023-08-30T17:27:21.000Z"
+  labels = [ "Demo", "Provisioning workflow" ]
+  lastUpdated = "2023-08-30T17:27:44.000Z"
+  taskSetTasks = [ { uuid = "2672718c-dd2e-45e1-a963-46209543ea3b" } ]
+}
