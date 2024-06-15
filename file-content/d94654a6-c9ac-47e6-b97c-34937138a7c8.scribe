@@ -1,0 +1,32 @@
+resource "file-content" "d94654a6-c9ac-47e6-b97c-34937138a7c8" {
+  uuid = "d94654a6-c9ac-47e6-b97c-34937138a7c8"
+  content = <<EOFSCRIBE
+### Note: This is a framework Task only.  
+# In the real world, the {id} in the HTTP URL would need to be set to an appropriate value
+# For more information see the following URL:
+# https://clouddocs.f5.com/products/big-iq/mgmt-api/v0.0/HowToSamples/bigiq_public_api_wf/t_pools_and_pool_members_management.html#pool-members
+
+{
+   "connectionLimit":0,
+   "port":80,
+   "priorityGroup":0,
+   "rateLimit":"disabled",
+   "ratio":1,
+   "sessionConfig":"user-enabled",
+   "stateConfig":"user-up",
+   "nodeReference":{
+      "link":"https://localhost/mgmt/cm/adc-core/working-config/ltm/node/36d49760-3d0e-3368-a679-52e79ff44227"
+   },
+   "partition":"Common",
+   "name":"testNode:80",
+   "description":"a test member",
+   "id":"e93af93a-c397-39ba-853f-c2808b818ef3",
+   "generation":1,
+   "lastUpdateMicros":1480551570546280,
+   "kind":"cm:adc-core:working-config:ltm:pool:members:adcpoolmemberstate",
+   "selfLink":"https://localhost/mgmt/cm/adc-core/working-config/ltm/pool/56e0bcd8-b3e7-358b-bf0f-965fc798e507/members/e93af93a-c397-39ba-853f-c2808b818ef3"
+}
+EOFSCRIBE
+  dateCreated = "2023-08-30T20:50:27.000Z"
+  lastUpdated = "2023-08-30T20:50:27.000Z"
+}

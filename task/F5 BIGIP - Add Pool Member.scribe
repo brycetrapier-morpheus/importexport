@@ -1,0 +1,15 @@
+resource "task" "F5 BIGIP - Add Pool Member" {
+  name = "F5 BIGIP - Add Pool Member"
+  uuid = "cb97a1dd-29df-48eb-8bef-abf2ec365af2"
+  dateCreated = "2023-08-30T20:50:27.000Z"
+  executeTarget = "resource"
+  labels = [ "Framework", "example" ]
+  lastUpdated = "2023-08-30T20:50:27.000Z"
+  options = [
+    {
+      content = { uuid = "d94654a6-c9ac-47e6-b97c-34937138a7c8" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
