@@ -1,0 +1,11 @@
+resource "option-type" "nutanix-prism-provision-image" {
+  code = "nutanix-prism-provision-image"
+  name = "virtual image"
+  uuid = "caaa91a7-849a-4b30-8aef-dd38c7a70e87"
+  displayOrder = 102
+  fieldLabel = "Image"
+  fieldName = "imageId"
+  optionSource = "nutanixPrismProvisionImage"
+  required = true
+  type = "select"
+}
