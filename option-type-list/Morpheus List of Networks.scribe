@@ -1,0 +1,7 @@
+resource "option-type-list" "Morpheus List of Networks" {
+  name = "Morpheus List of Networks"
+  uuid = "d817f2a5-d4cc-40e9-9067-850775e2aa2d"
+  apiType = "networks"
+  realTime = true
+  type = "api"
+}
