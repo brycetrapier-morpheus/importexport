@@ -1,0 +1,8 @@
+resource "option-type-list" "CCL Azure Example Resource Group" {
+  name = "CCL Azure Example Resource Group"
+  uuid = "f432b236-020b-462c-b617-f8d5c1f619d6"
+  apiType = "resourcePools"
+  config = "{\"realTime\":\"\",\"ignoreSSLErrors\":\"\",\"clientId\":\"\",\"accessTokenUrl\":\"\",\"scope\":\"\",\"clientSecret\":\"\",\"grantType\":\"\",\"clientAuth\":\"\"}"
+  realTime = true
+  type = "api"
+}

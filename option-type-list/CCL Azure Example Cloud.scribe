@@ -1,0 +1,8 @@
+resource "option-type-list" "CCL Azure Example Cloud" {
+  name = "CCL Azure Example Cloud"
+  uuid = "6ec9ada6-e29d-487c-b0ad-b7b01d710f49"
+  apiType = "clouds"
+  config = "{\"realTime\":\"\",\"ignoreSSLErrors\":\"\",\"clientId\":\"\",\"accessTokenUrl\":\"\",\"scope\":\"\",\"clientSecret\":\"\",\"grantType\":\"\",\"clientAuth\":\"\"}"
+  realTime = true
+  type = "api"
+}

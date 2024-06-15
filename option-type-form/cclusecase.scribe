@@ -1,0 +1,232 @@
+resource "option-type-form" "cclusecase" {
+  code = "cclusecase"
+  name = "CCL Use Case"
+  uuid = "e96dda2c-bf24-43eb-b75d-095c9a6896ef"
+  config = {
+    enableVar = ""
+    form = ""
+    formField = ""
+    formOptions = ""
+    formType = ""
+  }
+  options = [
+    {
+      code = "2a62f1d9-6925-4267-bf68-f90a841b1f83"
+      name = "2a62f1d9-6925-4267-bf68-f90a841b1f83"
+      uuid = "617b9216-7423-4f92-8be5-baa7e5f365b9"
+      config = {
+        addonPosition = ""
+        multiSelect = false
+        sortable = ""
+      }
+      defaultValue = "2"
+      fieldContext = "config.customOptions"
+      fieldLabel = "Group"
+      fieldName = "group1"
+      formField = true
+      optionList = { name = "CCL Azure Example Resource Group" }
+      optionSource = "list"
+      refCode = "2a62f1d9-6925-4267-bf68-f90a841b1f83"
+      type = "group"
+    },
+    {
+      code = "2c0e1495-b37f-4cf4-afd6-6d4aab66aa9a"
+      name = "2c0e1495-b37f-4cf4-afd6-6d4aab66aa9a"
+      uuid = "2ec16076-df05-415f-8ac9-3df35ced313b"
+      config = {
+        addon = ""
+        addonPosition = ""
+        cloudType = "9"
+        filterResource = false
+        group = [
+          {
+            name = "Group"
+            id = 2421
+            type = "group"
+            value = "2a62f1d9-6925-4267-bf68-f90a841b1f83"
+          }
+        ]
+        instanceType = ""
+        multiSelect = false
+        sortable = ""
+      }
+      displayOrder = 1
+      fieldContext = "config.customOptions"
+      fieldLabel = "Cloud"
+      fieldName = "cloud1"
+      formField = true
+      optionList = { name = "CCL Azure Example Cloud" }
+      optionSource = "list"
+      refCode = "2c0e1495-b37f-4cf4-afd6-6d4aab66aa9a"
+      type = "cloud"
+    },
+    {
+      code = "449eea79-c7c5-4649-a0c2-1e433830b7c1"
+      name = "449eea79-c7c5-4649-a0c2-1e433830b7c1"
+      uuid = "ef3e9e9d-0cba-4d1a-a7f4-5e206c6d0790"
+      config = {
+        addon = ""
+        addonPosition = ""
+        cloudField = [
+          {
+            name = "Cloud"
+            id = 2422
+            type = "cloud"
+            value = "2c0e1495-b37f-4cf4-afd6-6d4aab66aa9a"
+          }
+        ]
+        groupField = [
+          {
+            name = "Group"
+            id = 2421
+            type = "group"
+            value = "2a62f1d9-6925-4267-bf68-f90a841b1f83"
+          }
+        ]
+        layoutField = [
+          {
+            name = "Input 4"
+            id = 2438
+            type = "layout"
+            value = "601141cc-a86d-42bc-ac7d-896fb8806e2e"
+          }
+        ]
+        planField = [
+          {
+            name = "Input 5"
+            id = 2439
+            type = "plan"
+            value = "56c20c03-817c-43ea-ae9d-77e84c49734f"
+          }
+        ]
+        resourcePoolField = ""
+      }
+      dependsOnCode = "cloud1, group1"
+      displayOrder = 2
+      fieldContext = "config.customOptions"
+      fieldLabel = "RG"
+      fieldName = "rg"
+      formField = true
+      refCode = "449eea79-c7c5-4649-a0c2-1e433830b7c1"
+      type = "resourcePool"
+    },
+    {
+      code = "56c20c03-817c-43ea-ae9d-77e84c49734f"
+      name = "56c20c03-817c-43ea-ae9d-77e84c49734f"
+      uuid = "14039e03-9548-440e-9131-ef35a7b45834"
+      config = {
+        addon = ""
+        addonPosition = ""
+        cloudField = [
+          {
+            name = "Cloud"
+            id = 2422
+            type = "cloud"
+            value = "2c0e1495-b37f-4cf4-afd6-6d4aab66aa9a"
+          }
+        ]
+        diskField = [
+          {
+            name = "Input 6"
+            id = "3acbd5e1-547f-4048-bf1c-8bce2cdefbfc"
+            type = "diskManager"
+            value = "3acbd5e1-547f-4048-bf1c-8bce2cdefbfc"
+          }
+        ]
+        groupField = [
+          {
+            name = "Group"
+            id = 2421
+            type = "group"
+            value = "2a62f1d9-6925-4267-bf68-f90a841b1f83"
+          }
+        ]
+        layoutField = [
+          {
+            name = "Input 4"
+            id = 2438
+            type = "layout"
+            value = "601141cc-a86d-42bc-ac7d-896fb8806e2e"
+          }
+        ]
+        poolField = [
+          {
+            name = "RG"
+            id = 2423
+            type = "resourcePool"
+            value = "449eea79-c7c5-4649-a0c2-1e433830b7c1"
+          }
+        ]
+        showPricing = false
+      }
+      dependsOnCode = "rg"
+      displayOrder = 3
+      fieldContext = "config.customOptions"
+      fieldLabel = "Input 5"
+      fieldName = "input5"
+      formField = true
+      refCode = "56c20c03-817c-43ea-ae9d-77e84c49734f"
+      requireOnCode = "rg"
+      type = "plan"
+    },
+    {
+      code = "fdf4bb35-b2e0-4438-ac2e-ad27b4685ab3"
+      name = "fdf4bb35-b2e0-4438-ac2e-ad27b4685ab3"
+      uuid = "6ce51b2a-c642-42fc-a9b9-2ed946917295"
+      config = {
+        addon = ""
+        addonPosition = ""
+        cloudField = [
+          {
+            name = "Cloud"
+            id = 2422
+            type = "cloud"
+            value = "2c0e1495-b37f-4cf4-afd6-6d4aab66aa9a"
+          }
+        ]
+        groupField = [
+          {
+            name = "Group"
+            id = 2421
+            type = "group"
+            value = "2a62f1d9-6925-4267-bf68-f90a841b1f83"
+          }
+        ]
+        resourcePoolField = [
+          {
+            name = "RG"
+            id = 2423
+            type = "resourcePool"
+            value = "449eea79-c7c5-4649-a0c2-1e433830b7c1"
+          }
+        ]
+      }
+      displayOrder = 4
+      fieldContext = "config.customOptions"
+      fieldLabel = "SG"
+      fieldName = "sg"
+      formField = true
+      refCode = "fdf4bb35-b2e0-4438-ac2e-ad27b4685ab3"
+      type = "secGroup"
+    },
+    {
+      code = "68eaae26-8313-498f-8e30-a54e6c4b9c19"
+      name = "68eaae26-8313-498f-8e30-a54e6c4b9c19"
+      uuid = "d513480c-ef3b-4a8c-b712-283dbe15f6f3"
+      config = {
+        addonPosition = ""
+        multiSelect = false
+        sortable = ""
+      }
+      displayOrder = 5
+      fieldContext = "config.customOptions"
+      fieldLabel = "Test"
+      fieldName = "input7"
+      formField = true
+      optionList = { name = "CCL Azure Example Resource Group" }
+      optionSource = "list"
+      refCode = "68eaae26-8313-498f-8e30-a54e6c4b9c19"
+      type = "select"
+    }
+  ]
+}
