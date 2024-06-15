@@ -1,0 +1,14 @@
+resource "option-type" "maskedinput" {
+  code = "maskedinput"
+  name = "Input, Generic, Masked"
+  uuid = "b1bc07c8-7803-40ae-af46-33865002bd5f"
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "maskedinput"
+  fieldLabel = "Masked Input"
+  fieldName = "maskedinput"
+  fieldSetName = "maskedinput"
+  helpBlock = "This is a generic masked input variable used for testing and demo.  This uses an Input of type \"Password\" with a \"Placeholder\" value of \"Please enter a password\""
+  placeHolder = "Please enter a password"
+  type = "password"
+}
