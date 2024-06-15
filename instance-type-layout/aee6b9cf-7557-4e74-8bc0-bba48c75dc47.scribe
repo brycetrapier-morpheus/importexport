@@ -1,0 +1,11 @@
+resource "instance-type-layout" "aee6b9cf-7557-4e74-8bc0-bba48c75dc47" {
+  code = "aee6b9cf-7557-4e74-8bc0-bba48c75dc47"
+  name = "AWS CF - Just a VPC"
+  uuid = "e12ce94a-4a49-4455-8697-11ab6a363a6d"
+  description = "Just a VPC"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "IaC"
+  memoryRequirement = 0
+  provisionType = { code = "cloudFormation" }
+  specTemplates = [ { uuid = "3e264200-f412-40ff-94c8-da510bad1812" } ]
+}
