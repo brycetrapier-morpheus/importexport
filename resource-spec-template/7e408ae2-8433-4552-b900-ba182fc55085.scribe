@@ -1,0 +1,17 @@
+resource "resource-spec-template" "7e408ae2-8433-4552-b900-ba182fc55085" {
+  name = "AWS CF New Stuff"
+  uuid = "7e408ae2-8433-4552-b900-ba182fc55085"
+  config = {
+    cloudformation = {
+      _CAPABILITY_AUTO_EXPAND = ""
+      _CAPABILITY_NAMED_IAM = ""
+      _IAM = ""
+    }
+    terraform = { tfVersion = "" }
+  }
+  dateCreated = "2022-08-01T22:41:43.000Z"
+  lastUpdated = "2022-08-01T22:41:43.000Z"
+  template = { uuid = "6063042f-9935-4423-ace0-1ff7877b98da" }
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
