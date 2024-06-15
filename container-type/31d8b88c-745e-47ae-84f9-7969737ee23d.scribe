@@ -1,0 +1,19 @@
+resource "container-type" "31d8b88c-745e-47ae-84f9-7969737ee23d" {
+  code = "31d8b88c-745e-47ae-84f9-7969737ee23d"
+  name = "Apache Lab Node"
+  uuid = "5e9a6018-b02c-4345-99b8-37094da57f24"
+  containerPorts = [
+    { uuid = "e5753095-6537-4854-aed9-90331781b259" },
+    { uuid = "eea4c06a-767f-4a5b-a984-b649894783d3" }
+  ]
+  containerVersion = "1.0"
+  entryPoint = ""
+  logTypeCode = "vmware"
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "ApacheLabNodeVMW"
+  showServerLogs = true
+  statTypeCode = "vmware"
+  virtualImage = { code = "vmware.vsphere.image.morpheus.apache.2.4-v1.centos.7.3" }
+}
