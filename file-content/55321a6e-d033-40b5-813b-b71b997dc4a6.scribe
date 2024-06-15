@@ -1,0 +1,6 @@
+resource "file-content" "55321a6e-d033-40b5-813b-b71b997dc4a6" {
+  uuid = "55321a6e-d033-40b5-813b-b71b997dc4a6"
+  content = "yum -y install wget"
+  dateCreated = "2021-12-10T19:19:18.000Z"
+  lastUpdated = "2021-12-10T19:19:18.000Z"
+}

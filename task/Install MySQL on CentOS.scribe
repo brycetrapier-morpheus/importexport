@@ -1,0 +1,15 @@
+resource "task" "Install MySQL on CentOS" {
+  name = "Install MySQL on CentOS"
+  uuid = "964d89ee-8645-4f19-a37e-3390617b5c09"
+  dateCreated = "2021-12-10T19:33:57.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-12-10T20:39:57.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "3fca63e0-a9af-48c3-a198-b60d0516af31" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

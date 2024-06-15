@@ -1,0 +1,10 @@
+resource "task-set" "MySQL on CentOS" {
+  name = "MySQL on CentOS"
+  uuid = "1e5003b6-d898-4052-b963-71995369a325"
+  dateCreated = "2021-12-10T22:54:18.000Z"
+  lastUpdated = "2021-12-11T04:35:22.000Z"
+  taskSetTasks = [
+    { uuid = "10313801-d17c-4a89-a152-c73fbf5c4cf8" },
+    { uuid = "c81241a7-6f24-48fb-9695-7ae53dc37eb6" }
+  ]
+}
