@@ -1,0 +1,11 @@
+resource "option-type" "jlclouds" {
+  code = "jlclouds"
+  name = "JL-Clouds"
+  uuid = "2c0c1171-724c-444d-9206-b0fe35fe9977"
+  dependsOnCode = "jlgroups"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Clouds"
+  fieldName = "jlclouds"
+  optionList = { name = "JL Clouds" }
+  type = "select"
+}

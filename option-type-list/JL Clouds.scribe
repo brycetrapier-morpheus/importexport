@@ -1,0 +1,16 @@
+resource "option-type-list" "JL Clouds" {
+  name = "JL Clouds"
+  uuid = "084a811b-a637-4920-ab88-c296331e8a98"
+  apiType = "clouds"
+  realTime = true
+  requestScript = <<EOFSCRIBE
+if (input.jlgroups) {
+  results.siteId = input.jlgroups
+}
+EOFSCRIBE
+  translationScript = <<EOFSCRIBE
+for (var x = 0; x < data.length; x++) { results.push({name:data[x].name,value:data[x].id});
+}
+EOFSCRIBE
+  type = "api"
+}
