@@ -1,0 +1,14 @@
+resource "option-type" "nestedESXivMEM" {
+  code = "nestedESXivMEM"
+  name = "nestedESXivMEM"
+  uuid = "b2e55994-63ef-4915-80ce-c78ca789c68a"
+  defaultValue = "4096"
+  fieldContext = "config.customOptions"
+  fieldLabel = "RAM Per Host"
+  fieldName = "nestedESXivMEM"
+  labels = [ "nested deployment", "prod" ]
+  optionList = { name = "Nested Esxi Sizes" }
+  refCode = "nestedESXivMEM"
+  required = true
+  type = "select"
+}
