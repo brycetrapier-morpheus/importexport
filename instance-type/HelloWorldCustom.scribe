@@ -1,0 +1,11 @@
+resource "instance-type" "HelloWorldCustom" {
+  code = "HelloWorldCustom"
+  name = "Hello World Custom Instance Types"
+  uuid = "7cfcabaf-d235-46ca-b1ae-e4e80a9ea87a"
+  category = "utility"
+  deploymentService = ""
+  description = "Custom Instance Layouts for different cloud types"
+  environmentPrefix = "Hello"
+  labels = [ "Demo" ]
+  optionTypes = [ { code = "firstname" } ]
+}

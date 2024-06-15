@@ -1,0 +1,13 @@
+resource "instance-type-layout" "12cbf998-d64c-45d3-a3e5-bce1ea8b736c" {
+  code = "12cbf998-d64c-45d3-a3e5-bce1ea8b736c"
+  name = "Sample 1 AWS"
+  uuid = "37ec22e5-424f-4399-9df4-79faf37019ad"
+  instanceType = { code = "HelloWorldCustom" }
+  instanceVersion = "sample1aws"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  workloads = [
+    { code = "586426bc-0a22-442d-8508-c5209f190686" },
+    { code = "4a666243-d337-4e26-875f-4bc98f1e1954" }
+  ]
+}

@@ -1,0 +1,17 @@
+resource "container-type" "4a666243-d337-4e26-875f-4bc98f1e1954" {
+  code = "4a666243-d337-4e26-875f-4bc98f1e1954"
+  name = "Single big web server"
+  uuid = "562f5704-e18b-42d5-8bae-dadeeacc42b6"
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awslargewebserver"
+  showServerLogs = true
+  statTypeCode = "amazon"
+  virtualImage = {
+    code = "amazon.ec2.image.morpheus.amazonlinux.2-v1.amazonlinux.2.amd64"
+  }
+}

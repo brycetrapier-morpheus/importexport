@@ -1,0 +1,15 @@
+resource "container-type" "586426bc-0a22-442d-8508-c5209f190686" {
+  code = "586426bc-0a22-442d-8508-c5209f190686"
+  name = "Distributed web cluster"
+  uuid = "5e44823c-a7f5-4fae-a3d7-ca17b3a30a9d"
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awscluster"
+  showServerLogs = true
+  statTypeCode = "amazon"
+  virtualImage = { code = "amazon.ec2.image.1.ami-0074ef78ecb07948c" }
+}
