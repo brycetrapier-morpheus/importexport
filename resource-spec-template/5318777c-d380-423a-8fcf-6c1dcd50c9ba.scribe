@@ -1,0 +1,17 @@
+resource "resource-spec-template" "5318777c-d380-423a-8fcf-6c1dcd50c9ba" {
+  name = "CloudFormation Template Example"
+  uuid = "5318777c-d380-423a-8fcf-6c1dcd50c9ba"
+  config = {
+    cloudformation = {
+      _CAPABILITY_AUTO_EXPAND = ""
+      _CAPABILITY_NAMED_IAM = ""
+      _IAM = ""
+    }
+    terraform = { tfVersion = "" }
+  }
+  dateCreated = "2022-02-24T00:34:12.000Z"
+  lastUpdated = "2022-02-24T00:39:52.000Z"
+  template = { uuid = "e75310d9-d6c6-483a-8569-e75509c45435" }
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
