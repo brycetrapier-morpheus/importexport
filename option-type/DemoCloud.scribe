@@ -1,0 +1,15 @@
+resource "option-type" "DemoCloud" {
+  code = "DemoCloud"
+  name = "Demo Cloud"
+  uuid = "fa918247-5929-4c88-b493-442175db3b28"
+  displayValueOnDetails = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Deployment Environment"
+  fieldName = "DemoCloud"
+  helpBlock = "Maps to the Option List  \"Demo Clouds\""
+  optionList = { name = "Demo Clouds" }
+  optionSource = "list"
+  required = true
+  type = "radio"
+}

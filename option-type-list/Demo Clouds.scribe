@@ -1,0 +1,13 @@
+resource "option-type-list" "Demo Clouds" {
+  name = "Demo Clouds"
+  uuid = "9ab4f59e-4d60-405b-b901-81f82025124e"
+  apiType = "clouds"
+  realTime = true
+  translationScript = <<EOFSCRIBE
+for (var x = 0; x < data.length; x++) {
+  results.push({name: data[x].name, value:data[x].id});
+}
+EOFSCRIBE
+  type = "api"
+  visibility = "public"
+}
