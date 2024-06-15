@@ -1,0 +1,12 @@
+resource "option-type" "DBPASS" {
+  code = "DBPASS"
+  name = "DBPASS"
+  uuid = "3210dcb5-3232-48d6-b66a-01e49c763db6"
+  description = "User-provided value for MySQL Database Password"
+  fieldContext = "config.customOptions"
+  fieldGetName = "DBPASS"
+  fieldLabel = "Custom Database Password"
+  fieldName = "DBPASS"
+  fieldSetName = "DBPASS"
+  required = true
+}
