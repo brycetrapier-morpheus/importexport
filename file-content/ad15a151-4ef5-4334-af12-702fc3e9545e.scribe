@@ -1,0 +1,14 @@
+resource "file-content" "ad15a151-4ef5-4334-af12-702fc3e9545e" {
+  uuid = "ad15a151-4ef5-4334-af12-702fc3e9545e"
+  content = <<EOFSCRIBE
+#
+# Echo the full option list (500 elements)
+
+LISTOPTIONS="<%= customOptions.NCLApplicationSelectList %>"
+
+echo $LISTOPTIONS
+
+EOFSCRIBE
+  dateCreated = "2022-02-14T17:47:11.000Z"
+  lastUpdated = "2023-02-25T01:44:46.000Z"
+}

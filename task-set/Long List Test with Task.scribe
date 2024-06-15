@@ -1,0 +1,11 @@
+resource "task-set" "Long List Test with Task" {
+  name = "Long List Test with Task"
+  uuid = "e5a0ecc3-fa94-46ad-9210-81746818334c"
+  dateCreated = "2022-02-14T17:33:13.000Z"
+  description = "Scalability test for length of Option List entries"
+  labels = [ "Scalability" ]
+  lastUpdated = "2023-02-25T01:45:21.000Z"
+  optionTypes = [ { code = "LongListSelectList" } ]
+  taskSetTasks = [ { uuid = "7c45a694-ccb8-4549-b222-7c772874e489" } ]
+  taskSetType = "operation"
+}

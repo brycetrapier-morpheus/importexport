@@ -1,0 +1,16 @@
+resource "task" "Long List Test 001" {
+  name = "Long List Test 001"
+  uuid = "95f8bb94-6aa7-49d1-8a44-0608f9e8c1a6"
+  dateCreated = "2022-02-14T17:47:11.000Z"
+  executeTarget = "local"
+  labels = [ "Scalability" ]
+  lastUpdated = "2023-02-25T01:44:46.000Z"
+  options = [
+    {
+      content = { uuid = "ad15a151-4ef5-4334-af12-702fc3e9545e" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}

@@ -1,0 +1,5 @@
+resource "task-set-task" "7c45a694-ccb8-4549-b222-7c772874e489" {
+  uuid = "7c45a694-ccb8-4549-b222-7c772874e489"
+  task = { name = "Long List Test 001" }
+  taskPhase = "operation"
+}
