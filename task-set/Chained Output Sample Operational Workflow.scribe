@@ -1,0 +1,13 @@
+resource "task-set" "Chained Output Sample Operational Workflow" {
+  name = "Chained Output Sample Operational Workflow"
+  uuid = "e6bb4388-7176-4c47-bd1b-1b8e1c7b9919"
+  allowCustomConfig = true
+  dateCreated = "2022-09-21T19:31:12.000Z"
+  description = "Output from Task 1 is fed as input to Task 2"
+  lastUpdated = "2023-02-08T17:51:18.000Z"
+  taskSetTasks = [
+    { uuid = "2b6434c1-e3d6-4140-b76d-4d63d728f6ae" },
+    { uuid = "77b0b422-9800-4d09-a3a5-ab0da9b7f847" }
+  ]
+  taskSetType = "operation"
+}

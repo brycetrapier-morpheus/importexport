@@ -1,0 +1,17 @@
+resource "task" "ChainedOutputTask1" {
+  code = "ChainedOutputTask1"
+  name = "Chained Output Task #1"
+  uuid = "4f6f8ff2-c3e3-451b-ae3c-c6c34559d6ca"
+  dateCreated = "2022-09-21T19:29:36.000Z"
+  executeTarget = "local"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-02-24T23:12:08.000Z"
+  options = [
+    {
+      content = { uuid = "6986f1e3-f27c-4fdf-84ae-0830c8fd9c26" }
+      optionType = { code = "script" }
+    }
+  ]
+  resultType = "value"
+  taskType = { code = "script" }
+}

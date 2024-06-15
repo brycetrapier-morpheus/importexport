@@ -1,0 +1,9 @@
+resource "file-content" "6986f1e3-f27c-4fdf-84ae-0830c8fd9c26" {
+  uuid = "6986f1e3-f27c-4fdf-84ae-0830c8fd9c26"
+  content = <<EOFSCRIBE
+echo "This is text from the first Task"
+
+EOFSCRIBE
+  dateCreated = "2022-09-21T19:29:36.000Z"
+  lastUpdated = "2022-09-21T19:31:22.000Z"
+}

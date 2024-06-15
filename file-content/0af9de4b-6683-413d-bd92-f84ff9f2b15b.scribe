@@ -1,0 +1,13 @@
+resource "file-content" "0af9de4b-6683-413d-bd92-f84ff9f2b15b" {
+  uuid = "0af9de4b-6683-413d-bd92-f84ff9f2b15b"
+  content = <<EOFSCRIBE
+echo . This is the beginning of the second task
+echo .
+echo "<%=results.ChainedOutputTask1%>"
+echo .
+echo . This is the end of the second task
+
+EOFSCRIBE
+  dateCreated = "2022-09-21T19:30:51.000Z"
+  lastUpdated = "2022-09-21T19:35:08.000Z"
+}
