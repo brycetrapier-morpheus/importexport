@@ -1,0 +1,30 @@
+resource "file-content" "97d4f664-9397-471f-a179-497b75d2a768" {
+  uuid = "97d4f664-9397-471f-a179-497b75d2a768"
+  content = <<EOFSCRIBE
+# Declare the AWS Provider, and load Terraform variables from 
+# the cloud entity's Terraform Profile stored in Morpheus Cypher.
+#
+provider "aws" {
+  region = var.region
+  access_key = var.access_key
+  secret_key = var.secret_key
+}
+
+variable "access_key" {
+  type = string
+  sensitive = true
+}
+
+variable "secret_key" {
+  type = string
+  sensitive = true
+}
+
+variable "region" {
+  type = string
+  sensitive = true
+}
+EOFSCRIBE
+  dateCreated = "2022-05-07T00:41:33.000Z"
+  lastUpdated = "2023-04-03T15:32:16.000Z"
+}

@@ -1,0 +1,11 @@
+resource "resource-spec-template" "89fe6e6b-83af-42fd-ba55-3a510020d066" {
+  name = "AWS - 1. Provider Block for all Clouds"
+  uuid = "89fe6e6b-83af-42fd-ba55-3a510020d066"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-05-07T00:41:33.000Z"
+  labels = [ "AWS", "Demo", "Terraform" ]
+  lastUpdated = "2023-08-02T21:08:17.000Z"
+  template = { uuid = "97d4f664-9397-471f-a179-497b75d2a768" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
