@@ -1,0 +1,33 @@
+resource "file-content" "b5fb976e-ffcd-4a37-ae11-1e01cee5d3d5" {
+  uuid = "b5fb976e-ffcd-4a37-ae11-1e01cee5d3d5"
+  content = <<EOFSCRIBE
+def rtn = [
+  priceData: [
+    [
+      incurCharges: 'always',
+      currency: 'USD',
+      unit: 'minute',
+      cost: 2.0,
+      price: 2.0
+    ],
+    [
+      incurCharges: 'running',
+      currency: 'USD',
+      unit: 'minute',
+      cost: 3.0,
+      price: 3.0
+    ],
+    [
+      incurCharges: 'stopped',
+      currency: 'USD',
+      unit: 'minute',
+      cost: 1.0,
+      price: 1.0
+    ]
+  ]
+]
+return rtn
+EOFSCRIBE
+  dateCreated = "2023-03-30T01:33:25.000Z"
+  lastUpdated = "2023-03-30T01:38:01.000Z"
+}

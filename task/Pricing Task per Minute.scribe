@@ -1,0 +1,16 @@
+resource "task" "Pricing Task per Minute" {
+  name = "Pricing Task per Minute"
+  uuid = "07b23c75-c003-4791-aad3-d4667711ffcb"
+  dateCreated = "2023-03-30T01:33:25.000Z"
+  executeTarget = "local"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-03-30T01:38:01.000Z"
+  options = [
+    {
+      content = { uuid = "b5fb976e-ffcd-4a37-ae11-1e01cee5d3d5" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  resultType = "json"
+  taskType = { code = "groovyTask" }
+}

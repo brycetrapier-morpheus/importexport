@@ -1,0 +1,5 @@
+resource "task-set-task" "ae768dc4-e29b-4092-871f-1ecd0e2db78a" {
+  uuid = "ae768dc4-e29b-4092-871f-1ecd0e2db78a"
+  task = { name = "Pricing Task Hourly" }
+  taskPhase = "price"
+}
