@@ -1,0 +1,7 @@
+resource "task-set" "1Apache on Ubuntu" {
+  name = "1Apache on Ubuntu"
+  uuid = "bf98b4b7-722e-4db7-a61e-0c470f8270eb"
+  dateCreated = "2023-12-04T19:35:42.000Z"
+  lastUpdated = "2023-12-04T19:35:42.000Z"
+  taskSetTasks = [ { uuid = "1f8d56cd-7ce4-4573-99a5-324a39115d1f" } ]
+}

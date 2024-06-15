@@ -1,0 +1,5 @@
+resource "task-set-task" "1f8d56cd-7ce4-4573-99a5-324a39115d1f" {
+  uuid = "1f8d56cd-7ce4-4573-99a5-324a39115d1f"
+  task = { name = "Apache Install (Ubuntu) - 1 Install" }
+  taskPhase = "provision"
+}
