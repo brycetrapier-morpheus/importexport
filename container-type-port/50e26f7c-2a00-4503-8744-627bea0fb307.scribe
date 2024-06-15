@@ -1,0 +1,11 @@
+resource "container-type-port" "50e26f7c-2a00-4503-8744-627bea0fb307" {
+  name = "www"
+  uuid = "50e26f7c-2a00-4503-8744-627bea0fb307"
+  export = true
+  exportName = "WWW"
+  externalPort = 80
+  internalPort = 80
+  loadBalance = true
+  loadBalanceProtocol = "TCP"
+  visible = true
+}

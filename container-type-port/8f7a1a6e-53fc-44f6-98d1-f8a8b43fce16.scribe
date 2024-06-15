@@ -1,0 +1,12 @@
+resource "container-type-port" "8f7a1a6e-53fc-44f6-98d1-f8a8b43fce16" {
+  name = "websecure"
+  uuid = "8f7a1a6e-53fc-44f6-98d1-f8a8b43fce16"
+  export = true
+  exportName = "WEBSECURE"
+  externalPort = 443
+  internalPort = 443
+  link = true
+  loadBalance = true
+  loadBalanceProtocol = "HTTPS"
+  visible = true
+}

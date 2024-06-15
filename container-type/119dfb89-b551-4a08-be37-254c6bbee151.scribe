@@ -1,0 +1,23 @@
+resource "container-type" "119dfb89-b551-4a08-be37-254c6bbee151" {
+  code = "119dfb89-b551-4a08-be37-254c6bbee151"
+  name = "Bryce's Spiffy Node Type"
+  uuid = "330ffd78-01df-47ae-a1d1-8c42f3fc1d8a"
+  containerLogs = [ { uuid = "3b7153b2-0429-4211-b945-2f6198503969" } ]
+  containerMounts = [ { uuid = "2059e037-9483-4cc2-b786-4dfeab4dc674" } ]
+  containerPorts = [
+    { uuid = "50e26f7c-2a00-4503-8744-627bea0fb307" },
+    { uuid = "8f7a1a6e-53fc-44f6-98d1-f8a8b43fce16" }
+  ]
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  mountData = "/"
+  mountLogs = "/logs"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "bryce"
+  showServerLogs = true
+  statTypeCode = "amazon"
+  virtualImage = { code = "amazon.ec2.image.1.ami-013224a2900ed7232" }
+}
