@@ -1,0 +1,15 @@
+resource "option-type" "PrivateSubnetName" {
+  code = "PrivateSubnetName"
+  name = "Private Subnet Name"
+  uuid = "f9529c76-f89e-47e5-92e6-aed65b453d15"
+  defaultValue = "Database"
+  description = "Name tag of the Private subnet to create"
+  displayValueOnDetails = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "PrivateSubnetName"
+  fieldLabel = "Private subnet name tag"
+  fieldName = "PrivateSubnetName"
+  fieldSetName = "PrivateSubnetName"
+  required = true
+}

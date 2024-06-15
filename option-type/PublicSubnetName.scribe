@@ -1,0 +1,15 @@
+resource "option-type" "PublicSubnetName" {
+  code = "PublicSubnetName"
+  name = "Public Subnet Name"
+  uuid = "ea35f50e-3c69-4d0a-a3f5-2c879af244d0"
+  defaultValue = "Web"
+  description = "Name tag of the Public subnet to create"
+  displayValueOnDetails = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "PublicSubnetName"
+  fieldLabel = "Public subnet name tag"
+  fieldName = "PublicSubnetName"
+  fieldSetName = "PublicSubnetName"
+  required = true
+}
