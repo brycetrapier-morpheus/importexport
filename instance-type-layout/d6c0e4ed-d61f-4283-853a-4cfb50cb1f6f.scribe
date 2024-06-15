@@ -1,0 +1,16 @@
+resource "instance-type-layout" "d6c0e4ed-d61f-4283-853a-4cfb50cb1f6f" {
+  code = "d6c0e4ed-d61f-4283-853a-4cfb50cb1f6f"
+  name = "New Virtual Network in Azure, with Facilities charge."
+  uuid = "fb386a65-f2b0-4045-8ea2-147597a65da5"
+  config = "{\"tfvarSecret\":\"\"}"
+  description = "New VN using the 198.51.100.0/24 address space.  With Facilities charge,"
+  instanceType = { code = "iac.samples" }
+  instanceVersion = "Azure"
+  labels = [ "Azure", "Demo", "Terraform" ]
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [
+    { uuid = "cc430c08-e488-4288-8e0a-9524bb781ba4" },
+    { uuid = "d714ba5e-d404-45a8-8371-dd2a72d4b475" }
+  ]
+}
