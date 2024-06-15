@@ -1,0 +1,11 @@
+resource "resource-spec-template" "72042dfd-4e73-4b13-9005-14b50178d41a" {
+  name = "GCP - Provider Block US-West1 Key from Cypher TFvars"
+  uuid = "72042dfd-4e73-4b13-9005-14b50178d41a"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2023-03-20T20:05:14.000Z"
+  labels = [ "GCP", "Terraform" ]
+  lastUpdated = "2023-03-31T15:33:31.000Z"
+  template = { uuid = "d99f566a-cd6f-45f3-9571-786619aae85d" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
