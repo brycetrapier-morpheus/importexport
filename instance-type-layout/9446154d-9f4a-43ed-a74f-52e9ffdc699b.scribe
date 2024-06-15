@@ -1,0 +1,12 @@
+resource "instance-type-layout" "9446154d-9f4a-43ed-a74f-52e9ffdc699b" {
+  code = "9446154d-9f4a-43ed-a74f-52e9ffdc699b"
+  name = "Apache Manual Install"
+  uuid = "b5e90e18-076c-45e8-9320-43097c5e69a8"
+  description = "Apache on Ubuntu 20.04"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "Web"
+  memoryRequirement = 1073741824
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "Apache Install (Ubuntu)" } ]
+  workloads = [ { code = "cc07e62c-39a2-459b-b003-0068b5a298e7" } ]
+}
