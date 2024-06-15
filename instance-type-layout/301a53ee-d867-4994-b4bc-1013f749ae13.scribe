@@ -1,0 +1,13 @@
+resource "instance-type-layout" "301a53ee-d867-4994-b4bc-1013f749ae13" {
+  code = "301a53ee-d867-4994-b4bc-1013f749ae13"
+  name = "Apache in AWS Standard Ports"
+  uuid = "53baafee-1d7d-4d86-8f41-82c27a2b3657"
+  actions = [ { code = "generic-add-node" } ]
+  description = "Uses the built-in Apache 2.4 Node Type"
+  hasAutoScale = true
+  instanceType = { code = "apachelab" }
+  instanceVersion = "Deprecated Node Type"
+  memoryRequirement = 536870912
+  provisionType = { code = "amazon" }
+  workloads = [ { code = "apache-amazon-2.4" } ]
+}
