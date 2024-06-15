@@ -1,0 +1,14 @@
+resource "option-type" "nestedESXivCPU" {
+  code = "nestedESXivCPU"
+  name = "nestedESXivCPU"
+  uuid = "b0abafe6-69f5-469b-9443-f6b6ce384491"
+  defaultValue = "2"
+  fieldContext = "config.customOptions"
+  fieldLabel = "CPUs Per Host"
+  fieldName = "nestedESXivCPU"
+  labels = [ "nested deployment", "prod" ]
+  optionList = { name = "Nested Esxi CPU Count" }
+  refCode = "nestedESXivCPU"
+  required = true
+  type = "select"
+}
