@@ -1,0 +1,6 @@
+resource "task-set-task" "08eb455a-5001-4e4b-b76e-dc6a01d5efd6" {
+  uuid = "08eb455a-5001-4e4b-b76e-dc6a01d5efd6"
+  task = { code = "parsedattributes" }
+  taskOrder = 1
+  taskPhase = "provision"
+}

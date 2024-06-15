@@ -1,0 +1,19 @@
+resource "task" "Write Attributes to Instance Payload" {
+  name = "Write Attributes to Instance Payload"
+  uuid = "6921ccc5-5eeb-4868-aa7a-dbf1f4eb467e"
+  dateCreated = "2023-08-28T13:46:46.000Z"
+  executeTarget = "local"
+  labels = [ "nested deployment", "prod" ]
+  lastUpdated = "2023-08-28T13:46:46.000Z"
+  options = [
+    {
+      optionType = { code = "writeAttributes.attributes" }
+      value = <<EOFSCRIBE
+{
+  "instances": <%=results.parsedattributes?.encodeAsJSON()%>
+}
+EOFSCRIBE
+    }
+  ]
+  taskType = { code = "writeAttributes" }
+}

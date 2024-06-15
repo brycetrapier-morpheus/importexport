@@ -1,0 +1,6 @@
+resource "task-set-task" "948b34ba-5889-4ead-b9b0-c2e85de4b4ca" {
+  uuid = "948b34ba-5889-4ead-b9b0-c2e85de4b4ca"
+  task = { name = "Teardown Script" }
+  taskOrder = 4
+  taskPhase = "teardown"
+}

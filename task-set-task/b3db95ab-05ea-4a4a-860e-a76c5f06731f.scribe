@@ -1,0 +1,6 @@
+resource "task-set-task" "b3db95ab-05ea-4a4a-860e-a76c5f06731f" {
+  uuid = "b3db95ab-05ea-4a4a-860e-a76c5f06731f"
+  task = { name = "vCenter Configuration" }
+  taskOrder = 3
+  taskPhase = "provision"
+}

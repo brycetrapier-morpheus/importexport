@@ -1,0 +1,20 @@
+resource "task" "Teardown Script" {
+  name = "Teardown Script"
+  uuid = "f5552aa7-8175-4553-8781-72eeafe826ab"
+  dateCreated = "2023-08-28T13:46:46.000Z"
+  executeTarget = "local"
+  labels = [ "nested deployment", "prod" ]
+  lastUpdated = "2023-08-28T13:46:46.000Z"
+  options = [
+    { optionType = { code = "pythonBinary" }, value = "python3" },
+    {
+      optionType = { code = "pythonAdditionalPackages" }
+      value = "requests pyVim pyVmomi"
+    },
+    {
+      content = { uuid = "b8ac779a-ed55-4f15-a5a5-9cc67979465f" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  taskType = { code = "jythonTask" }
+}

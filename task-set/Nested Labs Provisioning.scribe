@@ -1,0 +1,14 @@
+resource "task-set" "Nested Labs Provisioning" {
+  name = "Nested Labs Provisioning"
+  uuid = "f69e7ce1-bd13-4195-9ef4-3d8f9be37635"
+  dateCreated = "2023-08-28T13:46:46.000Z"
+  labels = [ "lifecycle management", "nested deployment", "prod" ]
+  lastUpdated = "2023-08-28T13:46:46.000Z"
+  taskSetTasks = [
+    { uuid = "05576c9b-2bcf-416e-999f-cd2c7c6609a1" },
+    { uuid = "08eb455a-5001-4e4b-b76e-dc6a01d5efd6" },
+    { uuid = "5f1a63b3-49fa-4898-99bb-5d91309cb0b6" },
+    { uuid = "948b34ba-5889-4ead-b9b0-c2e85de4b4ca" },
+    { uuid = "b3db95ab-05ea-4a4a-860e-a76c5f06731f" }
+  ]
+}

@@ -1,0 +1,5 @@
+resource "task-set-task" "05576c9b-2bcf-416e-999f-cd2c7c6609a1" {
+  uuid = "05576c9b-2bcf-416e-999f-cd2c7c6609a1"
+  task = { code = "writeattribparse" }
+  taskPhase = "provision"
+}

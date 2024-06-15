@@ -1,0 +1,11 @@
+resource "account-integration" "NestedDelivery 01" {
+  name = "NestedDelivery 01"
+  uuid = "e76e1890-eaf0-45cc-b3ba-42026b9a6ad4"
+  category = "cm-server"
+  config = { cacheEnabled = false, defaultBranch = "feat_addhost" }
+  integrationType = { code = "git" }
+  serviceFlag = true
+  serviceUrl = "https://gitlab.com/jaredlutgen/op_nestedova.git"
+  statusMessage = "unable to call git repo"
+  type = "git"
+}

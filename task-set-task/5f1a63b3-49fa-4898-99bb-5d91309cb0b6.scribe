@@ -1,0 +1,6 @@
+resource "task-set-task" "5f1a63b3-49fa-4898-99bb-5d91309cb0b6" {
+  uuid = "5f1a63b3-49fa-4898-99bb-5d91309cb0b6"
+  task = { name = "Write Attributes to Instance Payload" }
+  taskOrder = 2
+  taskPhase = "provision"
+}

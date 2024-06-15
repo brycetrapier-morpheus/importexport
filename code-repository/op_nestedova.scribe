@@ -1,0 +1,14 @@
+resource "code-repository" "op_nestedova" {
+  name = "op_nestedova"
+  uuid = "0bae7d81-f6c1-4055-ad1f-a52d51b105ec"
+  dateCreated = "2023-08-28T13:43:32.000Z"
+  defaultBranch = "feat_addhost"
+  description = "Nested Lab Environment - DO NOT USE FOR IMPORT EXPORT"
+  displayName = "NestedDelivery 01"
+  externalId = "https://gitlab.com/jaredlutgen/op_nestedova.git"
+  integration = { name = "NestedDelivery 01" }
+  lastUpdated = "2023-09-05T18:52:02.000Z"
+  orgId = "//gitlab.com/jaredlutgen"
+  orgName = "//gitlab.com/jaredlutgen"
+  serviceUrl = "https://gitlab.com/jaredlutgen/op_nestedova.git"
+}
