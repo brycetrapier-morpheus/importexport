@@ -1,0 +1,11 @@
+resource "task-set" "EVAR Demo for Database (Provisioning)" {
+  name = "EVAR Demo for Database (Provisioning)"
+  uuid = "0df8e135-23d7-42e3-9e6f-21e5ae6aa30c"
+  dateCreated = "2021-12-17T22:39:47.000Z"
+  lastUpdated = "2021-12-18T00:46:46.000Z"
+  taskSetTasks = [
+    { uuid = "0d9c1a96-b26e-4ed3-99a6-7635f640ea28" },
+    { uuid = "72de506e-d29f-42f2-b8fa-5004916b9b75" },
+    { uuid = "868d4864-9ae9-4316-99c0-8c52f501d166" }
+  ]
+}

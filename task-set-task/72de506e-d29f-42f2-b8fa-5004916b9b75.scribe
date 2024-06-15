@@ -1,0 +1,6 @@
+resource "task-set-task" "72de506e-d29f-42f2-b8fa-5004916b9b75" {
+  uuid = "72de506e-d29f-42f2-b8fa-5004916b9b75"
+  task = { name = "Install MySQL on CentOS" }
+  taskOrder = 1
+  taskPhase = "provision"
+}
