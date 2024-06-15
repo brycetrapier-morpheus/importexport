@@ -1,0 +1,10 @@
+resource "option-type" "dbinstancename" {
+  code = "dbinstancename"
+  name = "Instance Name - Database"
+  uuid = "5e893dbc-3cd6-4175-9359-3ce9f6f7c4cc"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Database Instance Name"
+  fieldName = "dbinstancename"
+  required = true
+  showOnEdit = false
+}
