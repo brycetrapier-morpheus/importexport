@@ -1,0 +1,11 @@
+resource "instance-type-layout" "a9da7a6b-5450-4c0c-af35-d311d6cffeec" {
+  code = "a9da7a6b-5450-4c0c-af35-d311d6cffeec"
+  name = "MySQL in AWS"
+  uuid = "737e49b7-30cb-4516-9aab-0958bf0c6a61"
+  hasAutoScale = false
+  instanceType = { code = "testinstance" }
+  instanceVersion = "Test"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  workloads = [ { code = "mysql-amazon-5.6" } ]
+}
