@@ -1,0 +1,17 @@
+resource "file-content" "434ba156-a549-4f01-952d-c7da432f19c5" {
+  uuid = "434ba156-a549-4f01-952d-c7da432f19c5"
+  content = <<EOFSCRIBE
+apiVersion: v1
+kind: Pod
+metadata:
+  name: <%= app.name %>-nginx
+spec:
+  containers:
+  - name: <%= app.name %>-nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
+EOFSCRIBE
+  dateCreated = "2022-12-22T22:18:33.000Z"
+  lastUpdated = "2022-12-22T22:18:33.000Z"
+}

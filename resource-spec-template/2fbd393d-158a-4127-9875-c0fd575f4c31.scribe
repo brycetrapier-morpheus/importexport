@@ -1,0 +1,11 @@
+resource "resource-spec-template" "2fbd393d-158a-4127-9875-c0fd575f4c31" {
+  name = "NGINX Kubernetes"
+  uuid = "2fbd393d-158a-4127-9875-c0fd575f4c31"
+  category = "Load Balancer"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-12-22T22:18:33.000Z"
+  lastUpdated = "2022-12-22T22:18:33.000Z"
+  template = { uuid = "434ba156-a549-4f01-952d-c7da432f19c5" }
+  templateType = "Kubernetes Spec"
+  type = { code = "kubernetes" }
+}
