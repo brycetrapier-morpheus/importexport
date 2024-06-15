@@ -1,0 +1,4 @@
+resource "task-set-task" "6be0a9d1-054b-41c0-971c-a53c564dd3a7" {
+  uuid = "6be0a9d1-054b-41c0-971c-a53c564dd3a7"
+  task = { name = "Install LAMP Stack and capture MySQL Password - CentOS" }
+}

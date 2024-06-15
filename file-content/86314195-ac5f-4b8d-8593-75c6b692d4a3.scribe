@@ -1,0 +1,49 @@
+resource "file-content" "86314195-ac5f-4b8d-8593-75c6b692d4a3" {
+  uuid = "86314195-ac5f-4b8d-8593-75c6b692d4a3"
+  content = <<EOFSCRIBE
+# https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7
+
+##############################
+### Install Apache and start the service
+#
+yum -y install httpd
+systemctl start httpd.service
+
+# Set Apache to start on boot
+systemctl enable httpd.service
+
+##############################
+### Install MySQL and do a test login
+#
+# Get the repo RPM and install it.
+wget https://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm 
+yum -y install ./mysql57-community-release-el7-7.noarch.rpm 
+#
+# Install the server and start it
+#
+yum -y install mysql-community-server 
+systemctl start mysqld 
+#
+# Get the temporary password
+#grep password /var/log/mysqld.log | awk '{print $NF}'
+temp_password=$(grep password /var/log/mysqld.log | awk '{print $NF}')
+echo $temp_password > /etc/mysqlpassword.txt
+#
+# Log in to the server with the temporary password
+#mysql -u root --password="$temp_password"
+#exit
+
+
+
+##############################
+### Install PHP
+# Restart the Apache service after installing PHP
+
+sudo yum -y install php php-mysql
+sudo systemctl restart httpd.service
+
+
+EOFSCRIBE
+  dateCreated = "2021-12-10T21:12:42.000Z"
+  lastUpdated = "2022-05-11T04:16:45.000Z"
+}
