@@ -1,0 +1,8 @@
+resource "task-set" "Flip Web Pages" {
+  name = "Flip Web Pages"
+  uuid = "ba76587a-f9f2-4dc8-8241-a29024c54534"
+  dateCreated = "2021-11-17T06:24:48.000Z"
+  lastUpdated = "2021-11-17T06:24:48.000Z"
+  taskSetTasks = [ { uuid = "b31ae4e7-56b1-41d6-a52b-0372a9661443" } ]
+  taskSetType = "operation"
+}

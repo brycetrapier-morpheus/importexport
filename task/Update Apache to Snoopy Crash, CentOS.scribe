@@ -1,0 +1,15 @@
+resource "task" "Update Apache to Snoopy Crash, CentOS" {
+  name = "Update Apache to Snoopy Crash, CentOS"
+  uuid = "0d35e061-f087-4ddc-b166-8afe5b3170dd"
+  dateCreated = "2021-11-17T06:15:21.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-09-09T05:03:24.000Z"
+  options = [
+    {
+      content = { uuid = "8ed6d36a-553b-4ea3-95b1-f6067bd48fdc" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
