@@ -1,0 +1,10 @@
+resource "instance-type" "mysqlcustom" {
+  code = "mysqlcustom"
+  name = "MySQL Custom - Prompt for Password"
+  uuid = "c97f3ab5-3563-4ef2-80dd-c33738904e24"
+  category = "sql"
+  deploymentService = ""
+  description = "Captures user input to be used for the database password; also sets EVARs of MaskedPW and UnmaskedPW"
+  environmentPrefix = "MYSQL"
+  optionTypes = [ { code = "sqlpassword" } ]
+}

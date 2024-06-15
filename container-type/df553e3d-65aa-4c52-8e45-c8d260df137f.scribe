@@ -1,0 +1,15 @@
+resource "container-type" "df553e3d-65aa-4c52-8e45-c8d260df137f" {
+  code = "df553e3d-65aa-4c52-8e45-c8d260df137f"
+  name = "MySQL Custom 8Gi"
+  uuid = "f72e7562-b352-469e-a15d-a50f3f0423d7"
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "mysql8g"
+  showServerLogs = true
+  statTypeCode = "amazon"
+  virtualImage = { code = "amazon.ec2.image.1.ami-0074ef78ecb07948c" }
+}

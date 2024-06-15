@@ -1,0 +1,11 @@
+resource "instance-type-layout" "98047f1e-b6d8-4a23-b9e4-326252faf69e" {
+  code = "98047f1e-b6d8-4a23-b9e4-326252faf69e"
+  name = "MySQL Custom in AWS"
+  uuid = "101d8eae-63b2-492c-938e-368ad4db6827"
+  instanceType = { code = "mysqlcustom" }
+  instanceVersion = "1"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "EVAR DB Tier" } ]
+  workloads = [ { code = "df553e3d-65aa-4c52-8e45-c8d260df137f" } ]
+}
