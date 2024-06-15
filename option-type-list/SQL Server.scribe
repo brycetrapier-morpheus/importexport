@@ -1,0 +1,6 @@
+resource "option-type-list" "SQL Server" {
+  name = "SQL Server"
+  uuid = "712752c9-f5c0-40b2-94a4-025b2ab21fa4"
+  initialDataset = "ProvidedPW,sqlpassword"
+  type = "manual"
+}
