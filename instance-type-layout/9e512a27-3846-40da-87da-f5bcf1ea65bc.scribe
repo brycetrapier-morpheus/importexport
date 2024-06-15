@@ -1,0 +1,9 @@
+resource "instance-type-layout" "9e512a27-3846-40da-87da-f5bcf1ea65bc" {
+  code = "9e512a27-3846-40da-87da-f5bcf1ea65bc"
+  name = "Synopsys Empty Node Type Test"
+  uuid = "142c4ef9-6412-4362-b415-d3b972edd9b2"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "Customer"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+}
