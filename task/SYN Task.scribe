@@ -1,0 +1,14 @@
+resource "task" "SYN Task" {
+  name = "SYN Task"
+  uuid = "8a0e00f5-44bc-4e90-87fd-c8127ae1dc6e"
+  dateCreated = "2022-10-06T00:48:30.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-10-06T00:53:50.000Z"
+  options = [
+    {
+      content = { uuid = "03dec9c6-0dd1-41ef-9131-51532c01e7a2" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

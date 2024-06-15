@@ -1,0 +1,8 @@
+resource "task-set" "SYN Workflow Provisioning" {
+  name = "SYN Workflow Provisioning"
+  uuid = "b7ab03a0-6815-4cb5-8e94-adedc5d8b6d6"
+  dateCreated = "2022-10-06T00:48:53.000Z"
+  description = "Synopsys workflow"
+  lastUpdated = "2022-10-06T00:54:54.000Z"
+  taskSetTasks = [ { uuid = "05afc013-07fc-479e-83d7-309531ed767f" } ]
+}
