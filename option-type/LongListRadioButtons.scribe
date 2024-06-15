@@ -1,0 +1,15 @@
+resource "option-type" "LongListRadioButtons" {
+  code = "LongListRadioButtons"
+  name = "Long List Radio Buttons"
+  uuid = "20121132-81f8-4955-ae12-40ba64a94da4"
+  displayOrder = 2
+  fieldContext = "config.customOptions"
+  fieldGetName = "NCLApplicationRadioButtons"
+  fieldLabel = "Long List of Options"
+  fieldName = "LongListRadioButtons"
+  fieldSetName = "NCLApplicationRadioButtons"
+  labels = [ "Scalability" ]
+  optionList = { name = "List of 500 Options" }
+  optionSource = "list"
+  type = "radio"
+}

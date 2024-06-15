@@ -1,0 +1,14 @@
+resource "task-set" "Long List" {
+  name = "Long List"
+  uuid = "93d52f00-22ff-481d-9b17-03c04fd81d86"
+  dateCreated = "2022-02-14T21:50:28.000Z"
+  description = "Scalability test for length of Option List entries"
+  labels = [ "Scalability" ]
+  lastUpdated = "2023-02-25T01:45:13.000Z"
+  optionTypes = [
+    { code = "LongListSelectList" },
+    { code = "LongListTypeAhead" },
+    { code = "LongListRadioButtons" }
+  ]
+  taskSetType = "operation"
+}

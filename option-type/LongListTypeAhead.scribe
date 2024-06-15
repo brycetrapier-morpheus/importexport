@@ -1,0 +1,16 @@
+resource "option-type" "LongListTypeAhead" {
+  code = "LongListTypeAhead"
+  name = "Long List Type Ahead"
+  uuid = "3036accb-65bf-4b63-8af1-400a0aa86b13"
+  config = { _multiSelect = "" }
+  displayOrder = 1
+  fieldContext = "config.customOptions"
+  fieldGetName = "NCLApplicationTypeAhead"
+  fieldLabel = "Long List Type Ahead"
+  fieldName = "LongListTypeAhead"
+  fieldSetName = "NCLApplicationTypeAhead"
+  labels = [ "Scalability" ]
+  optionList = { name = "List of 500 Options" }
+  optionSource = "list"
+  type = "typeahead"
+}
