@@ -1,0 +1,15 @@
+resource "container-type" "75b0a811-2f06-4980-bc03-4fa4d8593199" {
+  code = "75b0a811-2f06-4980-bc03-4fa4d8593199"
+  name = "Distributed Web Cluster on CentOS (5 VMs)"
+  uuid = "4d14d768-5a07-46a0-8c0b-f58422ae13d5"
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "vmware"
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "vmwwebcluster"
+  showServerLogs = true
+  statTypeCode = "vmware"
+  virtualImage = { code = "vmware.vsphere.image.morpheus.apache.2.4-v1.centos.7.3" }
+}

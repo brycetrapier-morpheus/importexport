@@ -1,0 +1,13 @@
+resource "instance-type-layout" "70723a79-cd55-4866-a805-518cde962a60" {
+  code = "70723a79-cd55-4866-a805-518cde962a60"
+  name = "Sample 1 vSphere"
+  uuid = "d1d06a62-3190-4bde-bd83-83ec4b561255"
+  instanceType = { code = "HelloWorldCustom" }
+  instanceVersion = "sample1vmware"
+  memoryRequirement = 0
+  provisionType = { code = "vmware" }
+  workloads = [
+    { code = "75b0a811-2f06-4980-bc03-4fa4d8593199" },
+    { code = "08337a9a-fd75-4726-88b4-1d1e7de531f5" }
+  ]
+}

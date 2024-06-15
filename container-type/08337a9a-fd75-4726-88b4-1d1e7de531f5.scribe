@@ -1,0 +1,15 @@
+resource "container-type" "08337a9a-fd75-4726-88b4-1d1e7de531f5" {
+  code = "08337a9a-fd75-4726-88b4-1d1e7de531f5"
+  name = "Single Web Server on Ubuntu"
+  uuid = "4b4b4163-911e-443b-9435-c6392db0ea4c"
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "vmware"
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "vmwsinglewebserver"
+  showServerLogs = true
+  statTypeCode = "vmware"
+  virtualImage = { code = "fusion.image.morpheus.apache.2.4" }
+}
