@@ -1,0 +1,19 @@
+resource "file-content" "3259a7ea-14dc-4e1a-80dc-e4d1272bda17" {
+  uuid = "3259a7ea-14dc-4e1a-80dc-e4d1272bda17"
+  content = <<EOFSCRIBE
+echo !
+echo !
+echo "<%= container.externalIp %>"
+echo !
+echo !
+echo config t
+echo !
+echo access-list "<%= customOptions.FWACLname %>" extended "<%= customOptions.FWAction %>" tcp host "<%=server.internalIp%>" host  "<%= customOptions.FWDestinationIP %>" eq  "<%= customOptions.FWPort %>"
+echo !
+echo exit
+echo write mem
+echo !
+EOFSCRIBE
+  dateCreated = "2022-09-22T18:37:10.000Z"
+  lastUpdated = "2022-12-28T22:36:47.000Z"
+}

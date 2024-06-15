@@ -1,0 +1,15 @@
+resource "task" "Add Firewall Rule Cisco ASA Framework Provisioning" {
+  name = "Add Firewall Rule Cisco ASA Framework Provisioning"
+  uuid = "52830722-99db-4859-b405-0cad40af3675"
+  dateCreated = "2022-09-22T18:37:10.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-02-24T23:13:35.000Z"
+  options = [
+    {
+      content = { uuid = "3259a7ea-14dc-4e1a-80dc-e4d1272bda17" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

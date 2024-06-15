@@ -1,0 +1,4 @@
+resource "task-set-task" "36b79a82-73ea-44fa-a53e-59cda43960eb" {
+  uuid = "36b79a82-73ea-44fa-a53e-59cda43960eb"
+  task = { name = "Add Firewall Rule Cisco ASA Framework Provisioning" }
+}
