@@ -1,0 +1,6 @@
+resource "task-set-task" "24f71dda-a580-4c3c-ba64-d09f80309050" {
+  uuid = "24f71dda-a580-4c3c-ba64-d09f80309050"
+  task = { code = "helloworldemail" }
+  taskOrder = 7
+  taskPhase = "reconfigure"
+}

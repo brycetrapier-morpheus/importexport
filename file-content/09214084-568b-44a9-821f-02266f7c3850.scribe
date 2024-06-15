@@ -1,0 +1,20 @@
+resource "file-content" "09214084-568b-44a9-821f-02266f7c3850" {
+  uuid = "09214084-568b-44a9-821f-02266f7c3850"
+  content = <<EOFSCRIBE
+## Using pre-provision variables
+Morpheus instance ${instance.displayName}, deployed by ${createdByUsername}, is online.
+
+# Using script variables
+ Morpheus Instance '<%=instance.name%>', provisioned by '<%=instance.createdByUsername,%>' into '<%=cloudName%>' is '<%=instance.status%>'.
+
+Morpheus Instance is online
+
+Cores:   '<%=instance.cores%>'
+Memory:  '<%=instance.memory%>'
+Storage: '<%=instance.storage%>'
+
+
+EOFSCRIBE
+  dateCreated = "2022-08-25T06:21:07.000Z"
+  lastUpdated = "2023-04-08T00:24:02.000Z"
+}

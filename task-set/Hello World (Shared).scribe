@@ -1,0 +1,18 @@
+resource "task-set" "Hello World (Shared)" {
+  name = "Hello World (Shared)"
+  uuid = "d667eb78-93fd-499e-9ecd-a0ac750c5b88"
+  dateCreated = "2022-10-02T01:15:29.000Z"
+  description = "Sample tasks at different lifecycle phases"
+  lastUpdated = "2023-04-08T00:03:17.000Z"
+  taskSetTasks = [
+    { uuid = "24f71dda-a580-4c3c-ba64-d09f80309050" },
+    { uuid = "37abc59a-6479-48cf-a5a6-d1a50c404eff" },
+    { uuid = "6cbe84ba-5de8-4f4e-8f4a-5ab9a11a51e4" },
+    { uuid = "6d4f656e-dc68-4c04-a18d-1f2a6809e040" },
+    { uuid = "6e64040a-0188-46b8-9b35-4f1d3e32865a" },
+    { uuid = "bb2b8556-81c9-4ab0-b18e-eb741aa06ff2" },
+    { uuid = "bb397681-bd1d-419d-9370-457aed9e51fd" },
+    { uuid = "bdded91c-5a40-41ab-b224-35fd404022af" }
+  ]
+  visibility = "public"
+}

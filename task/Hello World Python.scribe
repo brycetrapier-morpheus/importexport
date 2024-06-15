@@ -1,0 +1,15 @@
+resource "task" "Hello World Python" {
+  name = "Hello World Python"
+  uuid = "d01895f1-d9e4-4053-93ed-4aa1a2095604"
+  dateCreated = "2022-09-13T03:18:05.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-03-23T03:20:43.000Z"
+  options = [
+    { optionType = { code = "pythonBinary" }, value = "/bin/python3" },
+    {
+      content = { uuid = "5b051b63-4147-4eee-bd6b-05c972a1c5ee" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  taskType = { code = "jythonTask" }
+}

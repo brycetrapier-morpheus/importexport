@@ -1,0 +1,6 @@
+resource "task-set-task" "6d4f656e-dc68-4c04-a18d-1f2a6809e040" {
+  uuid = "6d4f656e-dc68-4c04-a18d-1f2a6809e040"
+  task = { name = "Hello World Python" }
+  taskOrder = 6
+  taskPhase = "reconfigure"
+}

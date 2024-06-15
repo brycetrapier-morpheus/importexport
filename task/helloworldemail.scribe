@@ -1,0 +1,24 @@
+resource "task" "helloworldemail" {
+  code = "helloworldemail"
+  name = "Hello World Email"
+  uuid = "64c8400b-e129-43f4-b858-600ef82f9e6e"
+  dateCreated = "2022-08-25T06:21:07.000Z"
+  executeTarget = "local"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-02-24T23:11:41.000Z"
+  options = [
+    {
+      optionType = { code = "emailSubject" }
+      value = "Morpheus Instance Status"
+    },
+    {
+      optionType = { code = "emailAddress" }
+      value = "somebody@somemail.com"
+    },
+    {
+      content = { uuid = "09214084-568b-44a9-821f-02266f7c3850" }
+      optionType = { code = "emailBody" }
+    }
+  ]
+  taskType = { code = "email" }
+}

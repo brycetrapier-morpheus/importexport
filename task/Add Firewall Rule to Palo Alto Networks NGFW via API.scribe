@@ -1,0 +1,79 @@
+resource "task" "Add Firewall Rule to Palo Alto Networks NGFW via API" {
+  name = "Add Firewall Rule to Palo Alto Networks NGFW via API"
+  uuid = "d9cfa433-86b2-434b-b127-6a5172263233"
+  dateCreated = "2022-09-06T23:09:30.000Z"
+  executeTarget = "local"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-02-24T23:13:30.000Z"
+  options = [
+    { optionType = { code = "webMethod" }, value = "POST" },
+    { optionType = { code = "webHeaders" }, value = "[]" },
+    { optionType = { code = "webUser" }, value = "firewalladmin" },
+    {
+      optionType = { code = "webUrl" }
+      value = "https://1.2.3.4/restapi/v9.1/Policies/SecurityRules?location=vsys&vsys=vsys1&name=rule-example1"
+    },
+    { optionType = { code = "ignoreSSL" }, value = "on" },
+    {
+      optionType = { code = "webBody" }
+      value = <<EOFSCRIBE
+{
+    "entry": [
+        {
+            "@location": "vsys",
+            "@name": "rule-example1",
+            "@vsys": "vsys1",
+            "action": "allow",
+            "application": {
+                "member": [
+                    "<%= customOptions.FWACLname %>"
+                ]
+            },
+            "category": {
+                "member": [
+                    "any"
+                ]
+            },
+            "destination": {
+                "member": [
+                    "any"
+                ]
+            },
+            "from": {
+                "member": [
+                    "any"
+                ]
+            },
+            "hip-profiles": {
+                "member": [
+                    "any"
+                ]
+            },
+            "service": {
+                "member": [
+                    "<%= customOptions.FWService %>"
+                ]
+            },
+            "source": {
+                "member": [
+                    "<%= customOptions.FWSourceIP %>"
+                ]
+            },
+            "source-user": {
+                "member": [
+                    "any"
+                ]
+            },
+            "to": {
+                "member": [
+                    "<%= customOptions.FWDestinationIP %>"
+                ]
+            }
+        }
+    ]
+}
+EOFSCRIBE
+    }
+  ]
+  taskType = { code = "httpTask" }
+}

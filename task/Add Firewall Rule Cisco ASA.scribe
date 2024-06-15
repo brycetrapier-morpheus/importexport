@@ -1,0 +1,18 @@
+resource "task" "Add Firewall Rule Cisco ASA" {
+  name = "Add Firewall Rule Cisco ASA"
+  uuid = "e66ecbda-f286-4449-9d9c-cfd0b0050ff6"
+  dateCreated = "2022-09-06T22:38:22.000Z"
+  executeTarget = "remote"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-02-24T23:13:40.000Z"
+  options = [
+    { optionType = { code = "host" }, value = "1.2.3.4" },
+    { optionType = { code = "port" }, value = "22" },
+    { optionType = { code = "username" }, value = "firewalluser" },
+    {
+      content = { uuid = "34ae5e3a-43dd-4bed-8324-c883c3cf8bc8" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

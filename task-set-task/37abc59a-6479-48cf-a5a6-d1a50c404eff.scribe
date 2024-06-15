@@ -1,0 +1,6 @@
+resource "task-set-task" "37abc59a-6479-48cf-a5a6-d1a50c404eff" {
+  uuid = "37abc59a-6479-48cf-a5a6-d1a50c404eff"
+  task = { name = "Add Firewall Rule to Palo Alto Networks NGFW via API" }
+  taskOrder = 1
+  taskPhase = "preProvision"
+}

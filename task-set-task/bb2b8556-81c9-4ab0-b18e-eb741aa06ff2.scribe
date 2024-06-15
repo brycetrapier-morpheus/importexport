@@ -1,0 +1,6 @@
+resource "task-set-task" "bb2b8556-81c9-4ab0-b18e-eb741aa06ff2" {
+  uuid = "bb2b8556-81c9-4ab0-b18e-eb741aa06ff2"
+  task = { name = "Hello World Powershell" }
+  taskOrder = 3
+  taskPhase = "provision"
+}

@@ -1,0 +1,5 @@
+resource "task-set-task" "6cbe84ba-5de8-4f4e-8f4a-5ab9a11a51e4" {
+  uuid = "6cbe84ba-5de8-4f4e-8f4a-5ab9a11a51e4"
+  task = { name = "Hello World Ansible" }
+  taskOrder = 4
+}

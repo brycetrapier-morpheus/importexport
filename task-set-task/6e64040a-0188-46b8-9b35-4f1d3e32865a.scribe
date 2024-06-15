@@ -1,0 +1,5 @@
+resource "task-set-task" "6e64040a-0188-46b8-9b35-4f1d3e32865a" {
+  uuid = "6e64040a-0188-46b8-9b35-4f1d3e32865a"
+  task = { code = "helloworldemail" }
+  taskOrder = 5
+}

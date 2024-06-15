@@ -1,0 +1,6 @@
+resource "task-set-task" "bb397681-bd1d-419d-9370-457aed9e51fd" {
+  uuid = "bb397681-bd1d-419d-9370-457aed9e51fd"
+  task = { name = "Hello World Bash" }
+  taskOrder = 2
+  taskPhase = "provision"
+}
