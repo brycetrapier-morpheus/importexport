@@ -1,0 +1,14 @@
+resource "task" "LambaFunction" {
+  name = "LambaFunction"
+  uuid = "0520b351-b4d5-4c8a-8d28-f377f8a440ac"
+  dateCreated = "2023-03-01T21:32:49.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-03-01T21:32:49.000Z"
+  options = [
+    {
+      content = { uuid = "a3240e2a-ce20-4078-bdb6-9b492220b797" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

@@ -1,0 +1,5 @@
+resource "file-content" "a3240e2a-ce20-4078-bdb6-9b492220b797" {
+  uuid = "a3240e2a-ce20-4078-bdb6-9b492220b797"
+  dateCreated = "2023-03-01T21:32:49.000Z"
+  lastUpdated = "2023-03-01T21:32:49.000Z"
+}
