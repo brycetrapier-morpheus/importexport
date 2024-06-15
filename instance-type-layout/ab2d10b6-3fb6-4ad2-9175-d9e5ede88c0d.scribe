@@ -1,0 +1,11 @@
+resource "instance-type-layout" "ab2d10b6-3fb6-4ad2-9175-d9e5ede88c0d" {
+  code = "ab2d10b6-3fb6-4ad2-9175-d9e5ede88c0d"
+  name = "Apache on Ubuntu 20"
+  uuid = "d59e9ddd-2ebe-4f6f-92c0-171ee944652c"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "20"
+  memoryRequirement = 536870912
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "Apache Install (Ubuntu)" } ]
+  workloads = [ { code = "cc07e62c-39a2-459b-b003-0068b5a298e7" } ]
+}
