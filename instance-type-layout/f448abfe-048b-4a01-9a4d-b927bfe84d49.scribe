@@ -1,0 +1,17 @@
+resource "instance-type-layout" "f448abfe-048b-4a01-9a4d-b927bfe84d49" {
+  code = "f448abfe-048b-4a01-9a4d-b927bfe84d49"
+  name = "Add User Account in Okta"
+  uuid = "aa3c31fd-35f4-43ba-bec8-f2ef56a88c1c"
+  description = "Sample XaaS to add a user account to an external IdP"
+  instanceType = { code = "XaaS" }
+  instanceVersion = "User Account"
+  labels = [ "Framework", "example" ]
+  memoryRequirement = 0
+  optionTypes = [
+    { code = "firstname" },
+    { code = "lastname" },
+    { code = "UserProvidedPassword" }
+  ]
+  provisionType = { code = "workflow" }
+  taskSets = [ { name = "Add User Account Sample" } ]
+}
