@@ -1,0 +1,15 @@
+resource "option-type" "vcenterNetworkSelect" {
+  code = "vcenterNetworkSelect"
+  name = "vCenter Network Selection"
+  uuid = "c351ad6e-f07d-434a-a3b6-2d0e0388bf88"
+  dependsOnCode = "vCenterSelect"
+  displayOrder = 1
+  fieldContext = "config.customOptions"
+  fieldLabel = "Network Selection"
+  fieldName = "vcenterNetworkSelect"
+  labels = [ "nested deployment", "prod" ]
+  refCode = "vcenterNetworkSelect"
+  requireOnCode = "vCenterSelect"
+  required = true
+  type = "select"
+}
