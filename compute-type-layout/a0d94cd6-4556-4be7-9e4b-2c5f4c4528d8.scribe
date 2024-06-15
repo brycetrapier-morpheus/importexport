@@ -1,0 +1,15 @@
+resource "compute-type-layout" "a0d94cd6-4556-4be7-9e4b-2c5f4c4528d8" {
+  code = "a0d94cd6-4556-4be7-9e4b-2c5f4c4528d8"
+  name = "KVM Custom 3-node Debian 11 on Bare-Metal"
+  computeServers = [ { code = "a0d94cd6-4556-4be7-9e4b-2c5f4c4528d8-debian-11.0-qcow" } ]
+  computeVersion = "Debian"
+  dateCreated = "2023-08-18T07:46:46.000Z"
+  description = "KVM Custom 3-node Debian 11 on Bare-Metal"
+  groupType = { code = "kvm-cluster" }
+  hasAutoScale = true
+  labels = [ "Debian", "Lab" ]
+  lastUpdated = "2023-08-18T15:51:04.000Z"
+  memoryRequirement = 4294967296
+  optionTypes = [ { code = "costcenter" } ]
+  provisionType = { code = "kvm" }
+}
