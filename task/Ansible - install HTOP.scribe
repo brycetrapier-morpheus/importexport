@@ -1,0 +1,19 @@
+resource "task" "Ansible - install HTOP" {
+  name = "Ansible - install HTOP"
+  uuid = "0496a074-4598-4c86-a575-f15a9009d2a9"
+  dateCreated = "2023-03-23T01:58:10.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo", "POC" ]
+  lastUpdated = "2023-04-18T18:23:51.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleGitId" }
+      value = { name = "Ansible POC Playbooks - Agent Command Bus" }
+    },
+    {
+      optionType = { code = "ansiblePlaybook" }
+      value = "install-htop"
+    }
+  ]
+  taskType = { code = "ansibleTask" }
+}
