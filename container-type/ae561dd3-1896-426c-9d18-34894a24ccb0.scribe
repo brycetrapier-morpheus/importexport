@@ -1,0 +1,15 @@
+resource "container-type" "ae561dd3-1896-426c-9d18-34894a24ccb0" {
+  code = "ae561dd3-1896-426c-9d18-34894a24ccb0"
+  name = "BLAH - Centos Core 7"
+  uuid = "49cc4ba8-8b16-4202-b8d3-a1dc67006669"
+  containerVersion = "1.0"
+  entryPoint = ""
+  logTypeCode = "vmware"
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "BLAH"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "vcd.image.morpheus.centos-7_3.ovf" }
+}
