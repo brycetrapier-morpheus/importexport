@@ -1,0 +1,16 @@
+resource "instance-type-layout" "50bc4893-e8d8-4fd9-9763-faa07d992e60" {
+  code = "50bc4893-e8d8-4fd9-9763-faa07d992e60"
+  name = "New Debian e2-micro in GCP US-West1"
+  uuid = "9e27fe6f-f11c-4b07-8e75-cb3474c8f5d5"
+  config = "{\"tfvarSecret\":\"\"}"
+  description = "New Debian e2-micro in GCP US-West1"
+  instanceType = { code = "iac.samples" }
+  instanceVersion = "GCP"
+  labels = [ "Demo" ]
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [
+    { uuid = "465217b1-73ae-4e3e-94a3-86e2583f7d6b" },
+    { uuid = "72042dfd-4e73-4b13-9005-14b50178d41a" }
+  ]
+}
