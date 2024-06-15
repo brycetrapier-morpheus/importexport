@@ -1,0 +1,7 @@
+resource "task-set" "Empty Workflow" {
+  name = "Empty Workflow"
+  uuid = "9c204631-fa16-486b-b986-f2843ec6c171"
+  dateCreated = "2022-08-05T02:15:20.000Z"
+  description = "Used for skeleton configs"
+  lastUpdated = "2022-08-05T02:15:20.000Z"
+}
