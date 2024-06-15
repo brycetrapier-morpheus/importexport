@@ -1,0 +1,16 @@
+resource "task" "Install MySQL on Ubuntu" {
+  name = "Install MySQL on Ubuntu"
+  uuid = "fcefb57c-2427-473c-b717-1472c159ce58"
+  dateCreated = "2023-05-10T23:37:29.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-05-10T23:37:29.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "6e3148cf-6ff1-4fa1-9087-69505e3ad14a" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+  visibility = "public"
+}

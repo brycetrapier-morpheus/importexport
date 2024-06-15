@@ -1,0 +1,23 @@
+resource "file-content" "6e3148cf-6ff1-4fa1-9087-69505e3ad14a" {
+  uuid = "6e3148cf-6ff1-4fa1-9087-69505e3ad14a"
+  content = <<EOFSCRIBE
+## Updates
+
+apt update -y
+
+apt upgrade -y
+
+## Install MySQL
+
+apt install mysql-server -y
+
+
+## Verify
+
+mysql --version
+
+systemctl status mysql
+EOFSCRIBE
+  dateCreated = "2023-05-10T23:37:29.000Z"
+  lastUpdated = "2023-05-10T23:37:29.000Z"
+}
