@@ -1,0 +1,4 @@
+resource "task-set-task" "6b6fbff0-1c38-4dc8-baf3-d601fe8080a1" {
+  uuid = "6b6fbff0-1c38-4dc8-baf3-d601fe8080a1"
+  task = { name = "Write SQLPW to EVAR" }
+}

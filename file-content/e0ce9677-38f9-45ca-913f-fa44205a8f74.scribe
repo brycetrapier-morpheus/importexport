@@ -1,0 +1,23 @@
+resource "file-content" "e0ce9677-38f9-45ca-913f-fa44205a8f74" {
+  uuid = "e0ce9677-38f9-45ca-913f-fa44205a8f74"
+  content = <<EOFSCRIBE
+######
+# Write the local MySQL Password to Environment Variables
+
+# Get the temporary password that was used during MySQL install
+#
+temp_password=$(grep password /var/log/mysqld.log | awk '{print $NF}')
+#
+
+# Write that temporary password to the Environment Variables
+#
+SQLPW=$temp_password
+#
+COMMON_SQLPW=$temp_password
+#
+
+
+EOFSCRIBE
+  dateCreated = "2021-12-11T02:01:24.000Z"
+  lastUpdated = "2021-12-11T02:50:08.000Z"
+}

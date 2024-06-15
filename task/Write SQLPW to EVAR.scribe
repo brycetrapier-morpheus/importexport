@@ -1,0 +1,15 @@
+resource "task" "Write SQLPW to EVAR" {
+  name = "Write SQLPW to EVAR"
+  uuid = "dd35205d-3c60-4d76-a76f-6871d0f8e8ab"
+  dateCreated = "2021-12-11T02:01:24.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-12-11T03:18:26.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "e0ce9677-38f9-45ca-913f-fa44205a8f74" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

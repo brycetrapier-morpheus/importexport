@@ -1,0 +1,7 @@
+resource "task-set" "Write SQLPW to EVAR" {
+  name = "Write SQLPW to EVAR"
+  uuid = "171b14c0-6e44-4584-ae30-f56d9b194836"
+  dateCreated = "2021-12-11T03:19:37.000Z"
+  lastUpdated = "2021-12-11T03:19:37.000Z"
+  taskSetTasks = [ { uuid = "6b6fbff0-1c38-4dc8-baf3-d601fe8080a1" } ]
+}
