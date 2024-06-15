@@ -1,0 +1,5 @@
+resource "task-set-task" "256affff-c198-43c5-9250-e8ec2d434a68" {
+  uuid = "256affff-c198-43c5-9250-e8ec2d434a68"
+  task = { name = "POC Debian Updates" }
+  taskPhase = "provision"
+}

@@ -1,0 +1,12 @@
+resource "task-set" "POC Debian -Ubuntu" {
+  name = "POC Debian -Ubuntu"
+  uuid = "326e2393-6524-438e-8fb0-7cfb85846e35"
+  dateCreated = "2023-03-28T16:52:10.000Z"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-04-15T03:18:41.000Z"
+  platform = "linux"
+  taskSetTasks = [
+    { uuid = "256affff-c198-43c5-9250-e8ec2d434a68" },
+    { uuid = "3d595942-dbd3-44e1-8a3c-1c9884dc6012" }
+  ]
+}

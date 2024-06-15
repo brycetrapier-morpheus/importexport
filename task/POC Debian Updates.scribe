@@ -1,0 +1,16 @@
+resource "task" "POC Debian Updates" {
+  name = "POC Debian Updates"
+  uuid = "bdda4c78-672a-4583-b88b-ad7936972032"
+  dateCreated = "2023-03-27T22:41:04.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-03-28T16:47:29.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "e3945e6e-ce50-489b-9239-f09b52b5c850" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

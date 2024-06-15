@@ -1,0 +1,6 @@
+resource "task-set-task" "3d595942-dbd3-44e1-8a3c-1c9884dc6012" {
+  uuid = "3d595942-dbd3-44e1-8a3c-1c9884dc6012"
+  task = { name = "POC Linux wget google" }
+  taskOrder = 1
+  taskPhase = "provision"
+}

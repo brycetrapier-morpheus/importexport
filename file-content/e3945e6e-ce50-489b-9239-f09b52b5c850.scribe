@@ -1,0 +1,6 @@
+resource "file-content" "e3945e6e-ce50-489b-9239-f09b52b5c850" {
+  uuid = "e3945e6e-ce50-489b-9239-f09b52b5c850"
+  content = "apt-get update -y"
+  dateCreated = "2023-03-27T22:41:04.000Z"
+  lastUpdated = "2023-03-27T22:43:33.000Z"
+}
