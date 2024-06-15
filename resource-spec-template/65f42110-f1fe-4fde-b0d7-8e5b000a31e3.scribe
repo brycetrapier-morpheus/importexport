@@ -1,0 +1,11 @@
+resource "resource-spec-template" "65f42110-f1fe-4fde-b0d7-8e5b000a31e3" {
+  name = "New Account in AWS"
+  uuid = "65f42110-f1fe-4fde-b0d7-8e5b000a31e3"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2023-09-28T17:41:49.000Z"
+  labels = [ "New Account" ]
+  lastUpdated = "2023-09-28T17:41:49.000Z"
+  template = { uuid = "27fe0ec5-ecbb-4631-911e-229128080c1f" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
