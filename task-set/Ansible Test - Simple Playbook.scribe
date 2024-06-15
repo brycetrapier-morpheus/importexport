@@ -1,0 +1,12 @@
+resource "task-set" "Ansible Test - Simple Playbook" {
+  name = "Ansible Test - Simple Playbook"
+  uuid = "a3dd69aa-d6a3-4f3c-a9ac-786ea0aa871e"
+  dateCreated = "2023-01-20T20:31:30.000Z"
+  description = "Install Ansible and run a simple Playbook"
+  lastUpdated = "2023-01-20T20:31:30.000Z"
+  platform = "linux"
+  taskSetTasks = [
+    { uuid = "da0df09f-d5ab-4c67-aff1-b2441ad55366" },
+    { uuid = "f76898aa-935a-4c01-bf94-3b7616fd3600" }
+  ]
+}

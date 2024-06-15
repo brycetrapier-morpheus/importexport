@@ -1,0 +1,19 @@
+resource "task" "Ansible - Install NGINX and HTOP" {
+  name = "Ansible - Install NGINX and HTOP"
+  uuid = "66a8ec29-1637-42a9-9327-2b9a27cdabdf"
+  dateCreated = "2023-01-20T20:30:33.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo", "POC" ]
+  lastUpdated = "2023-04-18T18:22:49.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleGitId" }
+      value = { name = "Ansible Simple Tasks - Agent Command Bus" }
+    },
+    {
+      optionType = { code = "ansiblePlaybook" }
+      value = "sm_install_app_ubt.yml"
+    }
+  ]
+  taskType = { code = "ansibleTask" }
+}

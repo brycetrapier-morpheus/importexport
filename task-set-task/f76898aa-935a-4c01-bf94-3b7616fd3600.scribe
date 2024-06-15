@@ -1,0 +1,5 @@
+resource "task-set-task" "f76898aa-935a-4c01-bf94-3b7616fd3600" {
+  uuid = "f76898aa-935a-4c01-bf94-3b7616fd3600"
+  task = { name = "Ansible - Install NGINX and HTOP" }
+  taskOrder = 1
+}

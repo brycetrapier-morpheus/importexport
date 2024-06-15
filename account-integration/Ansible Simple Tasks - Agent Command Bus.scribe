@@ -1,0 +1,29 @@
+resource "account-integration" "Ansible Simple Tasks - Agent Command Bus" {
+  name = "Ansible Simple Tasks - Agent Command Bus"
+  uuid = "1bdf5a04-2c76-4875-8170-bc5b2d4b1df6"
+  category = "cm-server"
+  config = {
+    ansibleCommandBus = "on"
+    ansibleGalaxyEnabled = null
+    ansibleGroupVars = "/"
+    ansibleHostVars = "/"
+    ansiblePlaybooks = "/"
+    ansibleRoles = "/"
+    ansibleVerbose = null
+    cacheEnabled = null
+    cm = {
+      ansibleCommandBus = "on"
+      ansibleDefaultBranch = "main"
+      ansibleGalaxyEnabled = false
+      ansibleGroupVars = ""
+      ansibleHostVars = ""
+      ansiblePlaybooks = "/"
+      ansibleRoles = ""
+      ansibleVerbose = "on"
+    }
+    defaultBranch = "master"
+  }
+  integrationType = { code = "ansible" }
+  serviceUrl = "https://gitlab.com/jaredlutgen/simple-ansible-tasks.git"
+  type = "ansible"
+}

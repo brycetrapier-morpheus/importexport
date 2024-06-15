@@ -1,0 +1,5 @@
+resource "task-set-task" "da0df09f-d5ab-4c67-aff1-b2441ad55366" {
+  uuid = "da0df09f-d5ab-4c67-aff1-b2441ad55366"
+  task = { name = "Toolkit - install Ansible on Debian or Ubuntu" }
+  taskPhase = "provision"
+}
