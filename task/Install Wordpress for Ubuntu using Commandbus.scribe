@@ -1,0 +1,19 @@
+resource "task" "Install Wordpress for Ubuntu using Commandbus" {
+  name = "Install Wordpress for Ubuntu using Commandbus"
+  uuid = "345b8e69-7b9a-4998-aa12-091b9ef187db"
+  dateCreated = "2023-03-23T03:25:27.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-04-18T18:24:02.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleGitId" }
+      value = { name = "Wordpress_Install_Ubuntu - Agent Command Bus" }
+    },
+    {
+      optionType = { code = "ansiblePlaybook" }
+      value = "playbook.yml"
+    }
+  ]
+  taskType = { code = "ansibleTask" }
+}

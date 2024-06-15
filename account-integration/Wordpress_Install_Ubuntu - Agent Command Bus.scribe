@@ -1,0 +1,30 @@
+resource "account-integration" "Wordpress_Install_Ubuntu - Agent Command Bus" {
+  name = "Wordpress_Install_Ubuntu - Agent Command Bus"
+  uuid = "2eb88f7e-d8f4-48f8-88d4-dbc4a666b5fa"
+  category = "cm-server"
+  config = {
+    ansibleCommandBus = "on"
+    ansibleDefaultBranch = "dev_branch"
+    ansibleGalaxyEnabled = null
+    ansibleGroupVars = "/"
+    ansibleHostVars = "/"
+    ansiblePlaybooks = "/cb_playbooks/wordpress_ubuntu"
+    ansibleRoles = "/cb_playbooks/wordpress_ubuntu/roles"
+    ansibleVerbose = null
+    cacheEnabled = null
+    cm = {
+      ansibleCommandBus = true
+      ansibleDefaultBranch = "dev_branch"
+      ansibleGalaxyEnabled = false
+      ansibleGroupVars = ""
+      ansibleHostVars = ""
+      ansiblePlaybooks = "/cb_playbooks/wordpress_ubuntu"
+      ansibleRoles = "/cb_playbooks/wordpress_ubuntu/roles"
+      ansibleVerbose = false
+    }
+    defaultBranch = "main"
+  }
+  integrationType = { code = "ansible" }
+  serviceUrl = "https://gitlab.com/jaredlutgen/simple-ansible-tasks.git"
+  type = "ansible"
+}
