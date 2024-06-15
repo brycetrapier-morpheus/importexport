@@ -1,0 +1,5 @@
+resource "task-set-task" "6ab53829-ea21-4b70-8e13-71fff1295efe" {
+  uuid = "6ab53829-ea21-4b70-8e13-71fff1295efe"
+  task = { name = "NGINX Install (Ubuntu) - 2 Open HBFW" }
+  taskOrder = 1
+}

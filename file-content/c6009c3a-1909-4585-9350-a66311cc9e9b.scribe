@@ -1,0 +1,19 @@
+resource "file-content" "c6009c3a-1909-4585-9350-a66311cc9e9b" {
+  uuid = "c6009c3a-1909-4585-9350-a66311cc9e9b"
+  content = <<EOFSCRIBE
+#Ubuntu
+# For options, use 'ufw app list'
+echo -----------------------
+echo Opening NGINX FW Ports
+echo -----------------------
+
+ufw allow 'Nginx Full'
+
+echo --------------------
+echo NGINX FW Ports Open
+echo --------------------
+
+EOFSCRIBE
+  dateCreated = "2022-08-12T22:16:15.000Z"
+  lastUpdated = "2022-08-17T19:34:28.000Z"
+}

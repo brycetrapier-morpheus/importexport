@@ -1,0 +1,14 @@
+resource "task-set" "NGINX on Ubuntu (Shell Scripts)" {
+  name = "NGINX on Ubuntu (Shell Scripts)"
+  uuid = "38b0e666-1485-4858-854a-8d2047af9d1a"
+  dateCreated = "2022-08-12T22:24:56.000Z"
+  description = "Bash scripts to install NGINX on Ubuntu instances"
+  labels = [ "Demo", "NGINX" ]
+  lastUpdated = "2023-08-31T15:52:11.000Z"
+  platform = "linux"
+  taskSetTasks = [
+    { uuid = "0caf20ff-a500-495f-b268-048936b7eea6" },
+    { uuid = "6ab53829-ea21-4b70-8e13-71fff1295efe" }
+  ]
+  visibility = "public"
+}

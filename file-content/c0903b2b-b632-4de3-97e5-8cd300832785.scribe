@@ -1,0 +1,18 @@
+resource "file-content" "c0903b2b-b632-4de3-97e5-8cd300832785" {
+  uuid = "c0903b2b-b632-4de3-97e5-8cd300832785"
+  content = <<EOFSCRIBE
+# Ubuntu
+echo -----------------
+echo Installing NGINX
+echo -----------------
+    
+sudo apt -y update
+sudo apt -y install nginx
+
+echo ---------------
+echo NGINX Installed
+echo ---------------
+EOFSCRIBE
+  dateCreated = "2022-08-12T22:12:42.000Z"
+  lastUpdated = "2022-08-12T22:12:42.000Z"
+}

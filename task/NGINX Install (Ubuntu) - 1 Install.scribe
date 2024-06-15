@@ -1,0 +1,16 @@
+resource "task" "NGINX Install (Ubuntu) - 1 Install" {
+  name = "NGINX Install (Ubuntu) - 1 Install"
+  uuid = "837b40e7-0f3f-458e-947c-da5a3a26644c"
+  dateCreated = "2022-08-12T22:12:42.000Z"
+  executeTarget = "resource"
+  labels = [ "POC" ]
+  lastUpdated = "2023-02-08T17:26:20.000Z"
+  options = [
+    {
+      content = { uuid = "c0903b2b-b632-4de3-97e5-8cd300832785" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
