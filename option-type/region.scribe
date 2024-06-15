@@ -1,0 +1,9 @@
+resource "option-type" "region" {
+  code = "region"
+  name = "TF AWS Region"
+  uuid = "3fe14950-8f18-44d4-a4f2-00e9eeff6af0"
+  defaultValue = "us-west-1"
+  fieldContext = "config.customOptions"
+  fieldLabel = "AWS Region"
+  fieldName = "region"
+}
