@@ -1,0 +1,18 @@
+resource "task" "Ansible Test Local Functionality" {
+  name = "Ansible Test Local Functionality"
+  uuid = "30faed43-8009-4d8c-957b-d941b4e082a1"
+  dateCreated = "2023-07-11T20:20:04.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-07-11T20:20:04.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleGitId" }
+      value = { name = "Ansible POC Playbooks - Agent Command Bus" }
+    },
+    {
+      optionType = { code = "ansiblePlaybook" }
+      value = "TestAnsibleLocal.yml"
+    }
+  ]
+  taskType = { code = "ansibleTask" }
+}
