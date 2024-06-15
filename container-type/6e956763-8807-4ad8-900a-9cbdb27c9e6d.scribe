@@ -1,0 +1,11 @@
+resource "container-type" "6e956763-8807-4ad8-900a-9cbdb27c9e6d" {
+  code = "6e956763-8807-4ad8-900a-9cbdb27c9e6d"
+  name = "Kubernetes Worker Node with Shenanigan Toolkit Installed"
+  uuid = "243186fd-ffd3-4695-a4ac-a6e272c515bd"
+  containerVersion = "0.1"
+  entryPoint = ""
+  logTypeCode = "docker"
+  provisionType = { code = "kubernetes" }
+  shortName = "k8sshenaniganworker"
+  statTypeCode = "docker"
+}

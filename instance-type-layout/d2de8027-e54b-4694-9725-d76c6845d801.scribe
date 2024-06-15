@@ -1,0 +1,14 @@
+resource "instance-type-layout" "d2de8027-e54b-4694-9725-d76c6845d801" {
+  code = "d2de8027-e54b-4694-9725-d76c6845d801"
+  name = "Kubernetes Shenanigans: 2 Controllers, 3 Workers"
+  uuid = "ad594f31-078e-4faf-bbbf-f9b9d3714223"
+  creatable = false
+  instanceType = { code = "k8sloonar" }
+  instanceVersion = "1"
+  memoryRequirement = 0
+  provisionType = { code = "kubernetes" }
+  workloads = [
+    { code = "a427d172-1a3c-4bff-847f-0d5bf54a1b99" },
+    { code = "6e956763-8807-4ad8-900a-9cbdb27c9e6d" }
+  ]
+}

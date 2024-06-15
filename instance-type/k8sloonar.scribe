@@ -1,0 +1,8 @@
+resource "instance-type" "k8sloonar" {
+  code = "k8sloonar"
+  name = "K8s Clusters"
+  uuid = "58ff588d-e619-4a4a-b460-095a9cd2198b"
+  category = "cloud"
+  deploymentService = ""
+  environmentPrefix = "K8S_FOR_LOONAR"
+}
