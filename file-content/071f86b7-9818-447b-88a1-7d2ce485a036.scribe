@@ -1,0 +1,6 @@
+resource "file-content" "071f86b7-9818-447b-88a1-7d2ce485a036" {
+  uuid = "071f86b7-9818-447b-88a1-7d2ce485a036"
+  content = "python3 print('WTF')"
+  dateCreated = "2023-03-23T03:04:10.000Z"
+  lastUpdated = "2023-03-23T03:04:10.000Z"
+}
