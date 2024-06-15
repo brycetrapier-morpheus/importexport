@@ -1,0 +1,11 @@
+resource "instance-type-layout" "dc797196-cb25-4a26-87a6-04b4ef0611bb" {
+  code = "dc797196-cb25-4a26-87a6-04b4ef0611bb"
+  name = "AWS CF New R&S Stack and EC2 Instance"
+  uuid = "1c0578fe-a9f6-476b-b8bf-a44bf23f5455"
+  description = "New VPC, Route Table, Security Group, and EC2 Instance"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "IaC"
+  memoryRequirement = 0
+  provisionType = { code = "cloudFormation" }
+  specTemplates = [ { uuid = "693b15e0-39bb-4ad7-b97f-e9b53008a3f9" } ]
+}
