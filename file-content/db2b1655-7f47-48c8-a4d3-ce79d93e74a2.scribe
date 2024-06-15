@@ -1,0 +1,27 @@
+resource "file-content" "db2b1655-7f47-48c8-a4d3-ce79d93e74a2" {
+  uuid = "db2b1655-7f47-48c8-a4d3-ce79d93e74a2"
+  content = <<EOFSCRIBE
+# Installing on MaaS on Ubuntu
+
+sudo snap install --channel=3.4 maas
+ 
+# Setup Test Database
+
+sudo snap install maas-test-db
+ 
+# Configure MaaS
+
+sudo maas init region+rack --database-uri maas-test-db:///
+ 
+ubuntu@maas:~$ sudo maas init region+rack --database-uri maas-test-db:///
+
+MAAS URL [default=http://<%=instance.containers.externalIp%>:5240/MAAS]: 
+
+sudo maas createadmin
+ 
+Import SSH keys [] (lp:user-id or gh:user-id): 
+
+EOFSCRIBE
+  dateCreated = "2024-02-01T16:41:48.000Z"
+  lastUpdated = "2024-02-01T16:41:48.000Z"
+}
