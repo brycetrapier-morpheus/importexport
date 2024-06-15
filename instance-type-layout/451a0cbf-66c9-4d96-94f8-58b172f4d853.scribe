@@ -1,0 +1,12 @@
+resource "instance-type-layout" "451a0cbf-66c9-4d96-94f8-58b172f4d853" {
+  code = "451a0cbf-66c9-4d96-94f8-58b172f4d853"
+  name = "NGINX Manual Install"
+  uuid = "44650e91-cd84-438f-93af-d9a5e0da462c"
+  description = "NGINX on Ubuntu 20.04"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "Web"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "NGINX on Ubuntu (Shell Scripts)" } ]
+  workloads = [ { code = "ubuntu-amazon-20.04" } ]
+}
