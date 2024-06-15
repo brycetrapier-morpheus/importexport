@@ -1,0 +1,5 @@
+resource "task-set-task" "620159f0-14a6-4abb-8c1d-1027e3674366" {
+  uuid = "620159f0-14a6-4abb-8c1d-1027e3674366"
+  task = { name = "Ansible Core Use Case Setup" }
+  taskPhase = "operation"
+}

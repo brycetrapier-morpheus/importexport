@@ -1,0 +1,21 @@
+resource "task" "Ansible Core Use Case Setup" {
+  name = "Ansible Core Use Case Setup"
+  uuid = "a748ee7b-143a-4aa7-96d2-b7203ea8d100"
+  dateCreated = "2023-04-12T21:54:36.000Z"
+  executeTarget = "local"
+  labels = [ "Ansible", "Demo", "POC", "example", "setup" ]
+  lastUpdated = "2023-04-12T21:54:36.000Z"
+  options = [
+    { optionType = { code = "pythonArgs" }, value = "ansible" },
+    { optionType = { code = "pythonBinary" }, value = "python3" },
+    {
+      optionType = { code = "pythonAdditionalPackages" }
+      value = "requests morphcp click"
+    },
+    {
+      content = { uuid = "d38704da-1202-49aa-a6f5-39c59a04c0df" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  taskType = { code = "jythonTask" }
+}

@@ -1,0 +1,10 @@
+resource "task-set" "Ansible Core Use Case Setup" {
+  name = "Ansible Core Use Case Setup"
+  uuid = "8f693283-e82e-45f0-aaec-386dfe4890ec"
+  dateCreated = "2023-04-12T21:54:36.000Z"
+  description = "Ansible Core Setup - utilized by the Ansible Core Content Pack"
+  labels = [ "Ansible", "Demo", "POC", "example", "setup" ]
+  lastUpdated = "2023-04-12T21:54:36.000Z"
+  taskSetTasks = [ { uuid = "620159f0-14a6-4abb-8c1d-1027e3674366" } ]
+  taskSetType = "operation"
+}
