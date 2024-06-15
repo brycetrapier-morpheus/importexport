@@ -1,0 +1,9 @@
+resource "option-type-list" "Workflow Selection" {
+  name = "Workflow Selection"
+  uuid = "70b1ca99-d4f2-407d-befd-f4dab2f8e656"
+  initialDataset = <<EOFSCRIBE
+Make it Snoopy, 3
+Do Debian Updates, 24
+EOFSCRIBE
+  type = "manual"
+}

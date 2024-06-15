@@ -1,0 +1,22 @@
+resource "option-type" "WorkflowToExecute" {
+  code = "WorkflowToExecute"
+  name = "Workflow To Execute"
+  uuid = "3b0035ba-9434-4870-89e0-d9ae92f8742e"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Which workflow should execute on this"
+  fieldName = "WorkflowToExecute"
+  helpBlock = <<EOFSCRIBE
+In the root config stanza:
+  "workflow": {
+    "taskSetId": 24
+  },
+
+Sample Option List:
+Make it Snoopy, 3
+Do Debian Updates, 24
+EOFSCRIBE
+  optionList = { name = "Workflow Selection" }
+  optionSource = "list"
+  required = true
+  type = "radio"
+}
