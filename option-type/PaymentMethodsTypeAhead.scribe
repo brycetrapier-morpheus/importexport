@@ -1,0 +1,16 @@
+resource "option-type" "PaymentMethodsTypeAhead" {
+  code = "PaymentMethodsTypeAhead"
+  name = "Payment Methods Type Ahead"
+  uuid = "355d7160-59df-402e-8d5a-5197226665b5"
+  config = { _multiSelect = "", multiSelect = "on" }
+  defaultValue = "Meatballs"
+  displayOrder = 2
+  fieldContext = "config.customOptions"
+  fieldGetName = "PaymentMethodsTypeAhead"
+  fieldLabel = "Select Your Payment Method"
+  fieldName = "PaymentMethodsTypeAhead"
+  fieldSetName = "PaymentMethodsTypeAhead"
+  optionList = { name = "Payment Methods" }
+  optionSource = "list"
+  type = "typeahead"
+}

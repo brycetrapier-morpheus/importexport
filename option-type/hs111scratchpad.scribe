@@ -1,0 +1,13 @@
+resource "option-type" "hs111scratchpad" {
+  code = "hs111scratchpad"
+  name = "HS111 scratchpad"
+  uuid = "cb05e718-2533-4aa5-b778-d217a870e8e3"
+  config = { rows = "5" }
+  displayOrder = 3
+  fieldContext = "config.customOptions"
+  fieldGetName = "hs111scratchpad"
+  fieldLabel = "Knock yourself out"
+  fieldName = "hs111scratchpad"
+  fieldSetName = "hs111scratchpad"
+  type = "textarea"
+}

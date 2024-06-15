@@ -1,0 +1,15 @@
+resource "option-type-list" "Payment Methods" {
+  name = "Payment Methods"
+  uuid = "f690e8d9-f496-4e2b-a695-3fbc9e44b789"
+  initialDataset = <<EOFSCRIBE
+Cash, Cash
+Credit Card, Credit Card
+Favors,Favors
+IOU,IOU
+Meatballs, Meatballs
+PO, PO
+EOFSCRIBE
+  labels = [ "Demo" ]
+  type = "manual"
+  visibility = "public"
+}

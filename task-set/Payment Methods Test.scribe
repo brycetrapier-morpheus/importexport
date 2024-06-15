@@ -1,0 +1,13 @@
+resource "task-set" "Payment Methods Test" {
+  name = "Payment Methods Test"
+  uuid = "a64574ec-7ede-4297-be64-ff6c6546f700"
+  dateCreated = "2022-02-15T01:38:46.000Z"
+  lastUpdated = "2022-02-15T02:34:24.000Z"
+  optionTypes = [
+    { code = "PaymentMethodsRadioButtons" },
+    { code = "PaymentMethodsSelectList" },
+    { code = "PaymentMethodsTypeAhead" },
+    { code = "hs111scratchpad" }
+  ]
+  taskSetType = "operation"
+}

@@ -1,0 +1,21 @@
+resource "option-type" "PaymentMethodsSelectList" {
+  code = "PaymentMethodsSelectList"
+  name = "Payment Methods Select List"
+  uuid = "c2e1bba7-c098-4040-92d2-474e642c292a"
+  defaultValue = "Meatballs"
+  description = "Payment Methods, presented as a Select List"
+  displayOrder = 1
+  displayValueOnDetails = true
+  editable = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "PaymentMethodsSelectList"
+  fieldLabel = "Payment Method"
+  fieldName = "PaymentMethodsSelectList"
+  fieldSetName = "PaymentMethodsSelectList"
+  helpBlock = "To update the values here, edit the Option List <<Payment Methods>>"
+  labels = [ "Demo" ]
+  optionList = { name = "Payment Methods" }
+  optionSource = "list"
+  type = "select"
+}

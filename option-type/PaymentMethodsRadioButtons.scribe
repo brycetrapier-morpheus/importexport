@@ -1,0 +1,16 @@
+resource "option-type" "PaymentMethodsRadioButtons" {
+  code = "PaymentMethodsRadioButtons"
+  name = "Payment Methods Radio Buttons"
+  uuid = "42a03567-fd26-4690-b054-7b1fb920feb5"
+  displayValueOnDetails = true
+  editable = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "PaymentMethodsRadioButtons"
+  fieldLabel = "Select Your Payment Method"
+  fieldName = "PaymentMethodsRadioButtons"
+  fieldSetName = "PaymentMethodsRadioButtons"
+  optionList = { name = "Payment Methods" }
+  optionSource = "list"
+  type = "radio"
+}
