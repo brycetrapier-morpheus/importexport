@@ -1,0 +1,80 @@
+resource "file-content" "b0804a8e-5dc2-4672-bb37-4cb958528a4c" {
+  uuid = "b0804a8e-5dc2-4672-bb37-4cb958528a4c"
+  content = <<EOFSCRIBE
+###################################################
+# THIS CODE IS DESIGNED TO FAIL 
+# This shows error-checking within the Terraform engine
+#
+
+###################################################
+# NOTE: This block requires the Provider block to be 
+# added to the entity that is being instantiated.
+#
+
+###################################################
+# Detecting changes in HCL syntax: quotes around a variable type
+#
+variable "Designed_To_Fail_Typecast" {
+  description = "A variable definition which will fail beyond HCL 0.11"
+  type        = "string"
+  default     = "This isn't going to work."
+}
+
+# Failing variable condition bounding
+#
+variable "Designed_To_Fail_Validation" {
+  description = "Enter a string fewer than 25 characters - this will fail validation"
+  type        = string
+  default     = "Try me."
+  validation {
+                     condition = length (var.variable-name) > 4
+                     error_message = "Must be more than 4 characters"
+                     } 
+
+}
+
+# Reusing Variable Names - yes, it is valid
+#
+variable "Reused_Variable" {
+  description = "This is the first declaration of the variable"
+  type        = string
+  default     = "Declaration one."
+}
+variable "Reused_Variable" {
+  description = "This is the first declaration of the variable"
+  type        = string
+  default     = "Declaration two."
+}
+
+
+
+###################################################
+# Main.  Note the Morpheus customOptions and static variables
+#
+# Create a new VPC, and associate the 10.0.0.0/16 space
+# Also, set the name tag on the VPC Terraform-VPC
+#
+resource "aws_vpc" "NewVPC" {
+  cidr_block           = "10.0.0.0/16"
+  enable_dns_support   = true
+  enable_dns_hostnames = true
+}
+
+###################################################
+# Invalid Output name
+#
+output "New VPC ID" {
+  description = "Will fail due to spaces in the output name" 
+  value = aws_vpc.NewVPC.id
+}
+#
+# Undeclared Resource as the Output
+output "New_VPC_ID" {
+  description = "VM’s private IP" 
+  value = aws_vpc.NewVPC.id
+}
+
+EOFSCRIBE
+  dateCreated = "2022-10-05T23:12:52.000Z"
+  lastUpdated = "2022-10-05T23:25:20.000Z"
+}

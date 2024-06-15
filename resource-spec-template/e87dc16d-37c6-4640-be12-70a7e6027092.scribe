@@ -1,0 +1,12 @@
+resource "resource-spec-template" "e87dc16d-37c6-4640-be12-70a7e6027092" {
+  name = "AWS - 2. Bad Code Example"
+  uuid = "e87dc16d-37c6-4640-be12-70a7e6027092"
+  category = "QA"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-10-05T23:12:52.000Z"
+  labels = [ "AWS", "Demo", "Terraform" ]
+  lastUpdated = "2023-08-02T21:07:17.000Z"
+  template = { uuid = "b0804a8e-5dc2-4672-bb37-4cb958528a4c" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
