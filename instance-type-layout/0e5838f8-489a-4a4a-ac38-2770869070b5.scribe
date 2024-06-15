@@ -1,0 +1,18 @@
+resource "instance-type-layout" "0e5838f8-489a-4a4a-ac38-2770869070b5" {
+  code = "0e5838f8-489a-4a4a-ac38-2770869070b5"
+  name = "New Cloud Hyperscaler Account"
+  uuid = "ccd3fd22-78e8-457a-872a-d69e8046cdc5"
+  instanceType = { code = "iac.samples" }
+  instanceVersion = "AWS"
+  labels = [ "New Account" ]
+  memoryRequirement = 0
+  optionTypes = [
+    { code = "NewAWSAccountName" },
+    { code = "NewAccountContactEmail" },
+    { code = "NewAccountContactName" },
+    { code = "NewAccountDepartment" },
+    { code = "CorporateProjectID" }
+  ]
+  provisionType = { code = "terraform" }
+  specTemplates = [ { uuid = "65f42110-f1fe-4fde-b0d7-8e5b000a31e3" } ]
+}
