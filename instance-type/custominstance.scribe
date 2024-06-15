@@ -1,0 +1,11 @@
+resource "instance-type" "custominstance" {
+  code = "custominstance"
+  name = "POC Custom Instance"
+  uuid = "dd123c6e-73c1-4e30-9a71-46b63eab9758"
+  category = "utility"
+  deploymentService = ""
+  description = "Layouts for AWS Ubuntu, Azure Ubuntu, GCP Debian, and VMware CentOS"
+  environmentPrefix = "POC_CUSTOM_INSTANCE"
+  featured = true
+  optionTypes = [ { code = "costcenter" } ]
+}

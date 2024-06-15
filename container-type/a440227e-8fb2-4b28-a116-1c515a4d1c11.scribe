@@ -1,0 +1,15 @@
+resource "container-type" "a440227e-8fb2-4b28-a116-1c515a4d1c11" {
+  code = "a440227e-8fb2-4b28-a116-1c515a4d1c11"
+  name = "POC Node Debian"
+  uuid = "8e3cf581-bbbe-4352-bd0d-a84a486eb633"
+  containerVersion = "11"
+  entryPoint = ""
+  labels = [ "Demo" ]
+  logTypeCode = "google"
+  provisionType = { code = "google" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "customodedebian"
+  showServerLogs = true
+  statTypeCode = "vm"
+}

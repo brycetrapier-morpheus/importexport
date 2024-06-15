@@ -1,0 +1,12 @@
+resource "instance-type-layout" "0e7f292c-1f65-4a9b-a5f0-c21adebcaafa" {
+  code = "0e7f292c-1f65-4a9b-a5f0-c21adebcaafa"
+  name = "POC Debian"
+  uuid = "a3096452-bcb7-4c43-a5c4-124e96be014d"
+  instanceType = { code = "custominstance" }
+  instanceVersion = "11"
+  labels = [ "Demo" ]
+  memoryRequirement = 1073741824
+  provisionType = { code = "google" }
+  taskSets = [ { name = "POC CentOS -RHEL" } ]
+  workloads = [ { code = "a440227e-8fb2-4b28-a116-1c515a4d1c11" } ]
+}
