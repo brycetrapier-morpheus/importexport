@@ -1,0 +1,14 @@
+resource "instance-type-layout" "f0fda7b0-2cc0-4c53-a9da-17cbc4cd21ae" {
+  code = "f0fda7b0-2cc0-4c53-a9da-17cbc4cd21ae"
+  name = "Terraform new VPC and IGW"
+  uuid = "02c5c620-2723-40ef-853f-01287ec3cbbd"
+  config = "{\"tfvarSecret\":\"\"}"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "IaC"
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [
+    { uuid = "89fe6e6b-83af-42fd-ba55-3a510020d066" },
+    { uuid = "9242a1c7-7dbf-4623-aea4-b8d84106270b" }
+  ]
+}
