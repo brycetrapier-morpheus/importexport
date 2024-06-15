@@ -1,0 +1,31 @@
+resource "option-type-list" "SJ-Filtered-Plans" {
+  name = "SJ-Filtered-Plans"
+  uuid = "d62466fc-5f51-4825-9540-182bbd32a693"
+  initialDataset = <<EOFSCRIBE
+AWS T2 Nano,489
+AWS T3 Small,423
+AWS C5 Xlarge,359
+GCP F1 Micro, 1639
+GCP G1 Small, 1640
+GCP N1 Standard, 1663
+EOFSCRIBE
+  realTime = true
+  translationScript = <<EOFSCRIBE
+if (input.sjCloudSelect){
+    // Splits the input from the cloud select on space and colon and then selects the index 1. 
+    // This assumes a naming convention with the cloud type in the beginning of the name followed by a space.
+    // EXAMPLE: AWS US-EAST-1 this works. AWS-US-EAST-1 does not work
+    var cn = input.sjCloudSelect.split(" ")[1]
+    for (var x = 0; x < data.length; x++) {
+        // Splits the data on . which assumes the manual list is set up with cloud type as the first index to match the cloud select
+        // EXAMPLE: AWS.T3.Small, 423 works
+        // Case sensitive match currently
+        var pn = data[x].name.split(" ")[0]
+        if (pn === cn) {
+        results.push({name:data[x].name, value:data[x].id});
+      }
+    }
+}
+EOFSCRIBE
+  type = "manual"
+}

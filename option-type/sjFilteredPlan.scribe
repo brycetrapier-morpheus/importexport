@@ -1,0 +1,13 @@
+resource "option-type" "sjFilteredPlan" {
+  code = "sjFilteredPlan"
+  name = "SJ-Filtered-Plan"
+  uuid = "83786483-31d7-4454-a950-53bb3973b9b1"
+  dependsOnCode = "sjCloudSelect"
+  displayOrder = 1
+  fieldContext = "config.customOptions"
+  fieldLabel = "Plan"
+  fieldName = "sjFilteredPlan"
+  optionList = { name = "SJ-Filtered-Plans" }
+  optionSource = "list"
+  type = "select"
+}

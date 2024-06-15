@@ -1,0 +1,9 @@
+resource "task-set" "SJ-Filtered-Plans" {
+  name = "SJ-Filtered-Plans"
+  uuid = "9538a8b7-6d2d-49db-a2ad-c1060f9463a2"
+  dateCreated = "2022-09-13T23:38:16.000Z"
+  lastUpdated = "2022-09-13T23:40:33.000Z"
+  optionTypes = [ { code = "sjCloudSelect" }, { code = "sjFilteredPlan" } ]
+  taskSetTasks = [ { uuid = "617598df-02a5-483d-b967-896901d36c30" } ]
+  taskSetType = "operation"
+}

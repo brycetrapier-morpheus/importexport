@@ -1,0 +1,14 @@
+resource "task" "SJ-Echo-Stuff" {
+  name = "SJ-Echo-Stuff"
+  uuid = "d6cc3a6d-d690-4f5e-bc01-9d4302d5d411"
+  dateCreated = "2022-09-13T23:39:41.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-09-13T23:40:23.000Z"
+  options = [
+    {
+      content = { uuid = "6c3e9db9-65bf-45ac-9709-3ef6dd54ce64" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

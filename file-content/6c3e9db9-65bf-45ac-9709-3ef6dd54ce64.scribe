@@ -1,0 +1,6 @@
+resource "file-content" "6c3e9db9-65bf-45ac-9709-3ef6dd54ce64" {
+  uuid = "6c3e9db9-65bf-45ac-9709-3ef6dd54ce64"
+  content = "echo \"<%=customOptions.sjCloudSelect%>\""
+  dateCreated = "2022-09-13T23:39:41.000Z"
+  lastUpdated = "2022-09-13T23:40:23.000Z"
+}

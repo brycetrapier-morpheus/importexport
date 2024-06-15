@@ -1,0 +1,11 @@
+resource "option-type" "sjCloudSelect" {
+  code = "sjCloudSelect"
+  name = "SJ-Cloud-Select"
+  uuid = "3c530913-b2a9-4b15-a73c-a8860ccbe7c2"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Cloud"
+  fieldName = "sjCloudSelect"
+  optionList = { name = "SJ-Cloud-Test" }
+  optionSource = "list"
+  type = "select"
+}

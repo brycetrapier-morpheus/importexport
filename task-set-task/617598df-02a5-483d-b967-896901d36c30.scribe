@@ -1,0 +1,5 @@
+resource "task-set-task" "617598df-02a5-483d-b967-896901d36c30" {
+  uuid = "617598df-02a5-483d-b967-896901d36c30"
+  task = { name = "SJ-Echo-Stuff" }
+  taskPhase = "operation"
+}
