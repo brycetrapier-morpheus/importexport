@@ -1,0 +1,21 @@
+resource "instance-type-layout" "7120b0e8-89c0-4470-a9b6-7710af032a5f" {
+  code = "7120b0e8-89c0-4470-a9b6-7710af032a5f"
+  name = "New Cloud Hyperscaler Account"
+  uuid = "bf593fe9-6222-46f3-a93e-476eac90dc19"
+  config = "{\"tfvarSecret\":\"\"}"
+  instanceType = { code = "iac.samples" }
+  instanceVersion = "Azure"
+  labels = [ "New Account" ]
+  memoryRequirement = 0
+  optionTypes = [
+    { code = "NewAccountContactEmail" },
+    { code = "NewAccountContactName" },
+    { code = "NewAccountDepartment" },
+    { code = "NewAWSAccountName" },
+    { code = "CorporateProjectID" },
+    { code = "NewAzureSubscriptionName" },
+    { code = "NewAzureAppRegName" }
+  ]
+  provisionType = { code = "terraform" }
+  specTemplates = [ { uuid = "cc430c08-e488-4288-8e0a-9524bb781ba4" } ]
+}
