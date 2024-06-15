@@ -1,0 +1,14 @@
+resource "option-type-list" "Firewall Service" {
+  name = "Firewall Service"
+  uuid = "6c6b77d0-ebbf-4d2d-9a66-c844ddc74816"
+  description = "Network services referenced in firewall rules - SNMP, SSH, WWW, etc"
+  initialDataset = <<EOFSCRIBE
+http,http
+https,https
+snmp,snmp
+ssh,ssh
+www,www
+EOFSCRIBE
+  labels = [ "Security" ]
+  type = "manual"
+}

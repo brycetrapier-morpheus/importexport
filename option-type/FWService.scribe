@@ -1,0 +1,18 @@
+resource "option-type" "FWService" {
+  code = "FWService"
+  name = "Firewall Service"
+  uuid = "6f1b51dd-1ef5-4232-9cf3-dfee994d9da8"
+  description = "Layer4 Service"
+  displayOrder = 4
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Firewall Service"
+  fieldName = "FWService"
+  helpBlock = "Services not listed are not available for self-service.  Please open a help desk ticket to open firewall rules for services that are not listed."
+  labels = [ "Security" ]
+  optionList = { name = "Firewall Service" }
+  optionSource = "list"
+  refCode = "FWService"
+  required = true
+  type = "select"
+}

@@ -1,0 +1,15 @@
+resource "task" "Add Firewall Rule to Palo Alto Networks NGFW via API, Framework" {
+  name = "Add Firewall Rule to Palo Alto Networks NGFW via API, Framework"
+  uuid = "723a1efe-1e8f-4296-aec4-e55ba00a6d0e"
+  dateCreated = "2022-09-09T02:46:41.000Z"
+  executeTarget = "local"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-02-24T23:14:49.000Z"
+  options = [
+    {
+      content = { uuid = "27f5a0da-176f-4b89-bea0-120c13bf3b9f" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

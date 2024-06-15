@@ -1,0 +1,71 @@
+resource "file-content" "27f5a0da-176f-4b89-bea0-120c13bf3b9f" {
+  uuid = "27f5a0da-176f-4b89-bea0-120c13bf3b9f"
+  content = <<EOFSCRIBE
+# This is only a framework of updating a firewall rule to a Palo Alto NGFW using an API call
+# To apply this to a real firewall, change the Task Type to HTTP POST, and provide IPv4 address and credentials
+#
+# To see the results of this Task, in the Morpheus web UI, go to Provisioning > Executions
+#
+echo . curl -X POST \
+echo . 
+echo .   'https://10.1.1.4/restapi/v9.1/Policies/SecurityRules?location=vsys&vsys=vsys1&name=rule-example1' \
+echo .   -H 'X-PAN-KEY: LUFRPT=' \
+echo .   -d '{
+echo .     "entry": [
+echo .         {
+echo .             "@location": "vsys",
+echo .             "@name": "rule-example1",
+echo .             "@vsys": "vsys1",
+echo .             "action": "allow",
+echo .             "application": {
+echo .                 "member": [
+echo .                     "<%= customOptions.FWACLname %>"
+echo .                 ]
+echo .             },
+echo .             "category": {
+echo .                 "member": [
+echo .                     "any"
+echo .                 ]
+echo .             },
+echo .             "destination": {
+echo .                 "member": [
+echo .                     "any"
+echo .                 ]
+echo .             },
+echo .             "from": {
+echo .                 "member": [
+echo .                     "any"
+echo .                 ]
+echo .             },
+echo .             "hip-profiles": {
+echo .                 "member": [
+echo .                     "any"
+echo .                 ]
+echo .             },
+echo .             "service": {
+echo .                 "member": [
+echo .                     "<%= customOptions.FWService %>"
+echo .                 ]
+echo .             },
+echo .             "source": {
+echo .                 "member": [
+echo .                     "<%= customOptions.FWSourceIP %>"
+echo .                 ]
+echo .             },
+echo .             "source-user": {
+echo .                 "member": [
+echo .                     "any"
+echo .                 ]
+echo .             },
+echo .             "to": {
+echo .                 "member": [
+echo .                     "<%= customOptions.FWDestinationIP %>"
+echo .                 ]
+echo .             }
+echo .         }
+echo .     ]
+echo . }'
+EOFSCRIBE
+  dateCreated = "2022-09-09T02:46:41.000Z"
+  lastUpdated = "2022-09-27T16:50:21.000Z"
+}
