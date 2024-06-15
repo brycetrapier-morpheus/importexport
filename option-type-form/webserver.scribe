@@ -1,0 +1,156 @@
+resource "option-type-form" "webserver" {
+  code = "webserver"
+  name = "Web Server"
+  uuid = "89532493-51a2-42df-82f1-f4dbb90d2b47"
+  config = {
+    enableVar = false
+    form = false
+    formField = ""
+    formOptions = ""
+    formType = false
+  }
+  field-groups = [
+    {
+      code = "c1920114-479d-4d47-afa7-07b26f4905c0"
+      name = "Deployment Environment"
+      collapsible = false
+      defaultCollapsed = false
+      description = "Infrastructure Group and Cloud"
+      options = [
+        {
+          code = "DeploymentGroup"
+          name = "Deployment Group"
+          uuid = "3e725005-40cb-4e5c-ae00-3bbc30659b65"
+          fieldContext = "config.customOptions"
+          fieldLabel = "Deployment Group"
+          fieldName = "DeploymentGroup"
+          helpBlock = "This is the Infrastructure Group in Morpheus.  This group provides access to clouds within the group.  This input consumes the option list \"Morpheus List of Groups (Public), which has been set to public visibility."
+          labels = [ "Public" ]
+          optionList = { name = "Morpheus List of Groups (Public)" }
+          optionSource = "list"
+          refCode = "DeploymentGroup"
+          required = true
+          type = "select"
+        },
+        {
+          code = "DeploymentCloud"
+          name = "Deployment Cloud"
+          uuid = "e869f95e-6d3b-4907-97f0-becd9fda8ce1"
+          displayValueOnDetails = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Deployment Cloud"
+          fieldName = "DeploymentCloud"
+          helpBlock = <<EOFSCRIBE
+References the Morpheus API dataset "Clouds" using the Option List "Morpheus List of Clouds (Private)" which has been set to **Private visibility**.  
+
+Will not work in a Subtenant scenario.
+EOFSCRIBE
+          labels = [ "Private" ]
+          optionList = { name = "Morpheus List of Clouds (Private)" }
+          optionSource = "list"
+          refCode = "DeploymentCloud"
+          type = "select"
+        }
+      ]
+    },
+    {
+      code = "b272a256-7ccf-4406-983d-64e7b246800c"
+      name = "VM Parameters"
+      collapsible = false
+      defaultCollapsed = false
+      options = [
+        {
+          code = "awsnetwork"
+          name = "AWS Network"
+          uuid = "508489f2-67f1-418e-8531-a0dae578f175"
+          fieldContext = "config.customOptions"
+          fieldLabel = "Deployment Network (AWS Manual)"
+          fieldName = "awsnetwork"
+          helpBlock = "References static Option List"
+          optionList = { name = "AWS Networks" }
+          optionSource = "list"
+          required = true
+          type = "radio"
+        },
+        {
+          code = "awsplan"
+          name = "AWS Plan"
+          uuid = "a810599d-c4c7-44c1-8332-1a9b7f4d1ca1"
+          config = { _multiSelect = "" }
+          displayValueOnDetails = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Pick your custom plan"
+          fieldName = "awsplan"
+          optionList = { name = "AWS Plans" }
+          optionSource = "list"
+          required = true
+          showOnEdit = false
+          type = "typeahead"
+        },
+        {
+          code = "costcenter"
+          name = "Cost Center"
+          uuid = "adb10f68-6a93-4553-9f81-10770ed83748"
+          displayValueOnDetails = true
+          exportMeta = true
+          fieldContext = "config.customOptions"
+          fieldGetName = "costcenter"
+          fieldLabel = "Cost Center"
+          fieldName = "costcenter"
+          fieldSetName = "costcenter"
+          helpBlock = "This department will be charged for the resource."
+          labels = [ "Demo", "List" ]
+          optionList = { name = "Cost Center Values" }
+          optionSource = "list"
+          required = true
+          type = "select"
+        },
+        {
+          code = "PaymentYesOrNo"
+          name = "Payment Yes or No"
+          uuid = "e2595238-6604-48b4-88ab-7b716c5ff357"
+          description = "Require payment for this entity?"
+          fieldContext = "config.customOptions"
+          fieldLabel = "Require payment for this entity?"
+          fieldName = "PaymentYesOrNo"
+          type = "checkbox"
+        },
+        {
+          code = "OptionalPaymentMethods"
+          name = "Payment Methods Optional"
+          uuid = "136a8762-f191-42fd-af51-ca82cad74662"
+          defaultValue = "Meatballs"
+          description = "Only invoked if PaymentYesOrNo is set to \"on\""
+          fieldContext = "config.customOptions"
+          fieldLabel = "Payment Method"
+          fieldName = "OptionalPaymentMethods"
+          labels = [ "Demo" ]
+          optionList = { name = "Payment Methods" }
+          optionSource = "list"
+          requireOnCode = "PaymentYesOrNo:on"
+          type = "radio"
+          visibleOnCode = "PaymentYesOrNo:on"
+        }
+      ]
+    }
+  ]
+  labels = [ "Demo" ]
+  options = [
+    {
+      code = "ApplicationName"
+      name = "Application Name"
+      uuid = "a259310e-dcfc-448e-be12-a3dd1ededde6"
+      description = "VM Hostname and the Instance Name of a Catalog Item"
+      displayValueOnDetails = true
+      fieldContext = "config.customOptions"
+      fieldGetName = "ApplicationName"
+      fieldLabel = "Application Name"
+      fieldName = "ApplicationName"
+      fieldSetName = "ApplicationName"
+      helpBlock = "In a multi-tiered application, the Application Name is the name of the \"wrapper entity\" which contains individual instances.  It has no bearing on the VM names."
+      labels = [ "Demo" ]
+      placeHolder = "Application Name"
+      required = true
+    }
+  ]
+}

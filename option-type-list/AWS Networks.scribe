@@ -1,0 +1,11 @@
+resource "option-type-list" "AWS Networks" {
+  name = "AWS Networks"
+  uuid = "24a9ff85-39bb-462c-8064-03dfb4f6c5eb"
+  initialDataset = <<EOFSCRIBE
+[
+{"name": "NorCal Public 2 172.16.5.0/24" , "value":"30"},
+{"name":"NorCal Public 3 172.16.6.0/24" , "value" :"31"}
+]
+EOFSCRIBE
+  type = "manual"
+}

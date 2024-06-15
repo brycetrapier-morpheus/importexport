@@ -1,0 +1,10 @@
+resource "option-type-list" "Morpheus List of Groups (Public)" {
+  name = "Morpheus List of Groups (Public)"
+  uuid = "ffd528aa-eedc-4f3a-b01a-3467054482b8"
+  apiType = "groups"
+  description = "Used by subtenants - must be public"
+  labels = [ "Public" ]
+  realTime = true
+  type = "api"
+  visibility = "public"
+}
