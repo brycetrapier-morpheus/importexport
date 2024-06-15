@@ -1,0 +1,5 @@
+resource "task-set-task" "95fe6239-04bc-47e8-a86f-d04e85fe49e7" {
+  uuid = "95fe6239-04bc-47e8-a86f-d04e85fe49e7"
+  task = { name = "Test Filtered Plans" }
+  taskPhase = "operation"
+}

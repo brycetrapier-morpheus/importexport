@@ -1,0 +1,15 @@
+resource "option-type" "DeploymentPlan" {
+  code = "DeploymentPlan"
+  name = "Deployment Plan"
+  uuid = "63735cbc-2317-4651-bf9a-31c10ba68c1b"
+  dependsOnCode = "DeploymentCloudName"
+  displayOrder = 1
+  fieldContext = "config.customOptions"
+  fieldLabel = "Plan to Deploy"
+  fieldName = "DeploymentPlan"
+  labels = [ "Broken" ]
+  optionList = { name = "Filtered Plans" }
+  optionSource = "list"
+  type = "select"
+  visibleOnCode = "DeploymentCloudName"
+}

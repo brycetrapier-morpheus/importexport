@@ -1,0 +1,12 @@
+resource "file-content" "9cef7db1-2ca7-4103-a23b-10a200bb79d4" {
+  uuid = "9cef7db1-2ca7-4103-a23b-10a200bb79d4"
+  content = <<EOFSCRIBE
+echo "<% = customOptions.DeploymentCloudName %>"
+
+echo "<% = customOptions.DeploymentPlan %>"
+
+
+EOFSCRIBE
+  dateCreated = "2022-09-13T23:29:19.000Z"
+  lastUpdated = "2022-09-13T23:31:55.000Z"
+}

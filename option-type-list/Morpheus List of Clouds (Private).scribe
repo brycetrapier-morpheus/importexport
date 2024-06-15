@@ -1,0 +1,14 @@
+resource "option-type-list" "Morpheus List of Clouds (Private)" {
+  name = "Morpheus List of Clouds (Private)"
+  uuid = "63289aae-fc53-4ef1-a855-e7e3c5b86de6"
+  apiType = "clouds"
+  description = "Using this Option List in entities published to subtenants will break the shared entity.  The Input must consume an Option List with Public visibility."
+  labels = [ "DesignedToFail" ]
+  realTime = true
+  translationScript = <<EOFSCRIBE
+for (var x = 0; x < data.length; x++) {
+    results.push({name:data[x].name, value:data[x].name});
+  }
+EOFSCRIBE
+  type = "api"
+}

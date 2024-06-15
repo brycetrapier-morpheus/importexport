@@ -1,0 +1,26 @@
+resource "option-type-list" "Filtered Plans" {
+  name = "Filtered Plans"
+  uuid = "fa4d7985-2240-499e-a9b9-5483d965c263"
+  initialDataset = <<EOFSCRIBE
+AWS.T2.Nano,489,
+AWS.T3.Small,423,
+AWS.C5.Xlarge,359,
+GCP.F1.Micro, 1639,
+GCP.G1.Small, 1640,
+GCP.N1.Standard, 1663
+EOFSCRIBE
+  labels = [ "Broken" ]
+  realTime = true
+  translationScript = <<EOFSCRIBE
+for(x in input.DeploymentCloudName) 
+ { 
+
+  if (input.DeploymentCloudName[x].name.match("AWS NorCal"))
+   {
+    results.push({name:data[x].name, value:data[x].name});
+
+   }
+  }
+EOFSCRIBE
+  type = "manual"
+}

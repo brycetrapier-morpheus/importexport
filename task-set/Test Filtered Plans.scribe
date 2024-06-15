@@ -1,0 +1,11 @@
+resource "task-set" "Test Filtered Plans" {
+  name = "Test Filtered Plans"
+  uuid = "6425811c-b6f2-48a1-93f9-3ce2f4265672"
+  dateCreated = "2022-09-13T22:02:02.000Z"
+  description = "Cascading Workflow for Deployment Cloud and Deployment Plan"
+  labels = [ "Broken" ]
+  lastUpdated = "2023-06-07T04:11:23.000Z"
+  optionTypes = [ { code = "DeploymentCloud" }, { code = "DeploymentPlan" } ]
+  taskSetTasks = [ { uuid = "95fe6239-04bc-47e8-a86f-d04e85fe49e7" } ]
+  taskSetType = "operation"
+}

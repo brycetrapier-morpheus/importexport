@@ -1,0 +1,19 @@
+resource "option-type" "DeploymentCloud" {
+  code = "DeploymentCloud"
+  name = "Deployment Cloud"
+  uuid = "e869f95e-6d3b-4907-97f0-becd9fda8ce1"
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Deployment Cloud"
+  fieldName = "DeploymentCloud"
+  helpBlock = <<EOFSCRIBE
+References the Morpheus API dataset "Clouds" using the Option List "Morpheus List of Clouds (Private)" which has been set to **Private visibility**.  
+
+Will not work in a Subtenant scenario.
+EOFSCRIBE
+  labels = [ "Private" ]
+  optionList = { name = "Morpheus List of Clouds (Private)" }
+  optionSource = "list"
+  refCode = "DeploymentCloud"
+  type = "select"
+}
