@@ -1,0 +1,15 @@
+resource "instance-type-layout" "c5462455-5072-4518-b0fe-0c438b169743" {
+  code = "c5462455-5072-4518-b0fe-0c438b169743"
+  name = "Add User Acocunt in AD"
+  uuid = "3ec85c4e-3624-4124-a01f-bf653f1640d5"
+  instanceType = { code = "XaaS" }
+  instanceVersion = "User Account"
+  memoryRequirement = 0
+  optionTypes = [
+    { code = "firstname" },
+    { code = "lastname" },
+    { code = "UserProvidedPassword" }
+  ]
+  provisionType = { code = "workflow" }
+  taskSets = [ { name = "Add Active Directory User" } ]
+}
