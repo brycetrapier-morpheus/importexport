@@ -1,0 +1,7 @@
+resource "task-set" "Test Teardown" {
+  name = "Test Teardown"
+  uuid = "4eda4b06-6956-4b9e-9167-f0c06af52a85"
+  dateCreated = "2022-06-14T23:24:43.000Z"
+  lastUpdated = "2022-06-14T23:27:31.000Z"
+  taskSetTasks = [ { uuid = "77c21237-8e40-4b76-8ba9-00dca233caa5" } ]
+}

@@ -1,0 +1,16 @@
+resource "task" "Hello World Bash" {
+  name = "Hello World Bash"
+  uuid = "1f91242e-2d28-401b-896d-a330846bcd74"
+  dateCreated = "2022-06-14T23:25:34.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-02-24T23:11:30.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "d9501a63-ea7f-4c56-964a-b227dfc62ae9" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

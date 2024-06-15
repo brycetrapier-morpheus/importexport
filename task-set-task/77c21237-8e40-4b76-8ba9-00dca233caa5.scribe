@@ -1,0 +1,5 @@
+resource "task-set-task" "77c21237-8e40-4b76-8ba9-00dca233caa5" {
+  uuid = "77c21237-8e40-4b76-8ba9-00dca233caa5"
+  task = { name = "Hello World Bash" }
+  taskPhase = "teardown"
+}
