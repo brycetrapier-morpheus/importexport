@@ -1,0 +1,15 @@
+resource "container-type" "728afe78-21b8-4cc3-ad64-5ca08247107d" {
+  code = "728afe78-21b8-4cc3-ad64-5ca08247107d"
+  name = "Ubuntu 20.04 Custom in AWS"
+  uuid = "26910158-c723-4af3-b208-a26e3ab6e50f"
+  containerVersion = "20.04 NorCal"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "ubuntucustom"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "786fb63d-5b53-4420-878a-5bfd1c0d3628" }
+}
