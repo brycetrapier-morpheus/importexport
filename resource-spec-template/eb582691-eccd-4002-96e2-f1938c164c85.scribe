@@ -1,0 +1,10 @@
+resource "resource-spec-template" "eb582691-eccd-4002-96e2-f1938c164c85" {
+  name = "AWS EC2 Complete Module"
+  uuid = "eb582691-eccd-4002-96e2-f1938c164c85"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-10-06T00:10:11.000Z"
+  lastUpdated = "2022-10-06T00:10:11.000Z"
+  template = { uuid = "b3bf9eee-1405-4e2e-8654-d16b0d588291" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}

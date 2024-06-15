@@ -1,0 +1,12 @@
+resource "file-content" "b3bf9eee-1405-4e2e-8654-d16b0d588291" {
+  uuid = "b3bf9eee-1405-4e2e-8654-d16b0d588291"
+  content = <<EOFSCRIBE
+module "ec2-instance_example_complete" {
+  source  = "terraform-aws-modules/ec2-instance/aws//examples/complete"
+  version = "4.1.4"
+}
+
+EOFSCRIBE
+  dateCreated = "2022-10-06T00:10:11.000Z"
+  lastUpdated = "2022-10-06T00:10:11.000Z"
+}
