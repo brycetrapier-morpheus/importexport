@@ -1,0 +1,12 @@
+resource "option-type" "SYNmysqluser" {
+  code = "SYNmysqluser"
+  name = "SYN MySQL User"
+  uuid = "3e647d41-dccc-4e0b-9d5a-12efae3cf0f6"
+  defaultValue = "DefaultSQLUser"
+  displayOrder = 2
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "My SQL User"
+  fieldName = "SYNmysqluser"
+  required = true
+}

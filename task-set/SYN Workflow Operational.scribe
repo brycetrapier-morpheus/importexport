@@ -1,0 +1,15 @@
+resource "task-set" "SYN Workflow Operational" {
+  name = "SYN Workflow Operational"
+  uuid = "5ce4bf0e-63b2-4bef-b578-b066116928ca"
+  dateCreated = "2022-10-06T00:53:31.000Z"
+  description = "Synopsys workflow"
+  lastUpdated = "2022-10-06T00:55:04.000Z"
+  optionTypes = [
+    { code = "SYNApplicationName" },
+    { code = "SYNmysqlpass" },
+    { code = "SYNmysqluser" },
+    { code = "SYNvmtype" }
+  ]
+  taskSetTasks = [ { uuid = "679358b5-4a20-4516-bedf-91de0ab079af" } ]
+  taskSetType = "operation"
+}

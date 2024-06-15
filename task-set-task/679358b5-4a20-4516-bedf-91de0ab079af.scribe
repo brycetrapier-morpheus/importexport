@@ -1,0 +1,5 @@
+resource "task-set-task" "679358b5-4a20-4516-bedf-91de0ab079af" {
+  uuid = "679358b5-4a20-4516-bedf-91de0ab079af"
+  task = { name = "SYN Task" }
+  taskPhase = "operation"
+}

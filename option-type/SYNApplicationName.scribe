@@ -1,0 +1,12 @@
+resource "option-type" "SYNApplicationName" {
+  code = "SYNApplicationName"
+  name = "SYN Application Name"
+  uuid = "0a47b529-8646-42b3-9a07-c5e3cfc90015"
+  defaultValue = "DefaultAppName"
+  displayValueOnDetails = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "SYNApplicationName"
+  fieldName = "SYNApplicationName"
+  required = true
+}

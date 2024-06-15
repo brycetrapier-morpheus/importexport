@@ -1,0 +1,11 @@
+resource "option-type" "SYNvmtype" {
+  code = "SYNvmtype"
+  name = "SYN VM Type"
+  uuid = "b8c5a33f-8b51-47cd-a5a2-925182fbdda7"
+  defaultValue = "Default VM Type"
+  displayOrder = 3
+  fieldContext = "config.customOptions"
+  fieldLabel = "VM Type"
+  fieldName = "SYNvmtype"
+  required = true
+}

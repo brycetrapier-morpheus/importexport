@@ -1,0 +1,11 @@
+resource "option-type" "SYNmysqlpass" {
+  code = "SYNmysqlpass"
+  name = "SYN My SQL Password"
+  uuid = "c69a5854-85ab-419a-89e6-3d49a87dcb4a"
+  defaultValue = "DefaultSQLPassword"
+  displayOrder = 1
+  fieldContext = "config.customOptions"
+  fieldLabel = "SYN mysqlpass"
+  fieldName = "SYNmysqlpass"
+  required = true
+}
