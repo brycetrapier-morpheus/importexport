@@ -1,0 +1,6 @@
+resource "file-content" "eae24b75-fabf-4340-ac53-c9737c1e71ce" {
+  uuid = "eae24b75-fabf-4340-ac53-c9737c1e71ce"
+  content = "XML Goes Here"
+  dateCreated = "2022-02-24T00:50:23.000Z"
+  lastUpdated = "2022-02-24T00:50:23.000Z"
+}

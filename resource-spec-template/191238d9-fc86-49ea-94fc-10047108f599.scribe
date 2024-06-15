@@ -1,0 +1,10 @@
+resource "resource-spec-template" "191238d9-fc86-49ea-94fc-10047108f599" {
+  name = "UCS Service Profile Template"
+  uuid = "191238d9-fc86-49ea-94fc-10047108f599"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-02-24T00:50:23.000Z"
+  lastUpdated = "2022-02-24T00:50:23.000Z"
+  template = { uuid = "eae24b75-fabf-4340-ac53-c9737c1e71ce" }
+  templateType = "UCS Service Profile Template"
+  type = { code = "ucs" }
+}
