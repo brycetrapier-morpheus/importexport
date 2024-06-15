@@ -1,0 +1,13 @@
+resource "option-type" "VerintServerType" {
+  code = "VerintServerType"
+  name = "Verint Server Type"
+  uuid = "c5cb0299-929a-4e03-9701-45e8508324be"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Verint Server Type"
+  fieldName = "VerintServerType"
+  helpBlock = "Verint server persona to deploy"
+  optionList = { name = "Verint Servers" }
+  optionSource = "list"
+  required = true
+  type = "radio"
+}

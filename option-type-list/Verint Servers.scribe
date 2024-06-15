@@ -1,0 +1,13 @@
+resource "option-type-list" "Verint Servers" {
+  name = "Verint Servers"
+  uuid = "5de2d468-1300-4a92-99bc-44e721ddca9e"
+  description = "Layout IDs of Verint Layouts in the Verint Instance Type"
+  initialDataset = <<EOFSCRIBE
+[
+{"name":"Verint App Server in GCP", "value" : 1107},
+{"name":"Verint DMS Server in GCP", "value" : 1108},
+{"name":"Verint Forecast in GCP", "value" : 1109}
+ ]
+EOFSCRIBE
+  type = "manual"
+}
