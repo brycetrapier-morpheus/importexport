@@ -1,0 +1,5 @@
+resource "task-set-task" "ac67cdb0-675f-4db6-a5d7-e72e2d69c76c" {
+  uuid = "ac67cdb0-675f-4db6-a5d7-e72e2d69c76c"
+  task = { name = "Update OS: Debian and Ubuntu" }
+  taskPhase = "provision"
+}

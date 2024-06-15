@@ -1,0 +1,7 @@
+resource "task-set" "Debian Updates" {
+  name = "Debian Updates"
+  uuid = "1281ca7a-581b-4edf-8aa6-b88dd69347fc"
+  dateCreated = "2022-04-29T16:20:48.000Z"
+  lastUpdated = "2022-04-29T16:20:48.000Z"
+  taskSetTasks = [ { uuid = "ac67cdb0-675f-4db6-a5d7-e72e2d69c76c" } ]
+}

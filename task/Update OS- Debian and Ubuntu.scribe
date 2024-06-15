@@ -1,0 +1,15 @@
+resource "task" "Update OS: Debian and Ubuntu" {
+  name = "Update OS: Debian and Ubuntu"
+  uuid = "4aa170ea-499e-47e2-a2fd-d3d0105dbc31"
+  dateCreated = "2022-04-29T16:15:56.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-10-02T01:12:08.000Z"
+  options = [
+    {
+      content = { uuid = "30872680-24b0-4f2c-8aac-da981c90c8e0" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
