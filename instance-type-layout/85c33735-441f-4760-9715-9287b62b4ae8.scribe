@@ -1,0 +1,11 @@
+resource "instance-type-layout" "85c33735-441f-4760-9715-9287b62b4ae8" {
+  code = "85c33735-441f-4760-9715-9287b62b4ae8"
+  name = "Apache in Azure, Snoopy Branded"
+  uuid = "63d17f3b-3880-441c-8eab-b9219cae13c6"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "Azure"
+  memoryRequirement = 536870912
+  provisionType = { code = "azure" }
+  taskSets = [ { name = "Make It Snoopy, Apache CentOS" } ]
+  workloads = [ { code = "apache-azure-2.4" } ]
+}
