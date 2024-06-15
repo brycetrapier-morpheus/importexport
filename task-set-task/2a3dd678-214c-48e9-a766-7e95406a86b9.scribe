@@ -1,0 +1,4 @@
+resource "task-set-task" "2a3dd678-214c-48e9-a766-7e95406a86b9" {
+  uuid = "2a3dd678-214c-48e9-a766-7e95406a86b9"
+  task = { name = "OU Hamburgers" }
+}

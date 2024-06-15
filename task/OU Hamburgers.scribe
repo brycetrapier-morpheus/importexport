@@ -1,0 +1,16 @@
+resource "task" "OU Hamburgers" {
+  name = "OU Hamburgers"
+  uuid = "10427267-b322-4d85-82f8-aa2b77ab5566"
+  dateCreated = "2023-03-31T17:17:34.000Z"
+  executeTarget = "remote"
+  lastUpdated = "2023-03-31T17:17:34.000Z"
+  options = [
+    { optionType = { code = "host" }, value = "1.2.3.4" },
+    { optionType = { code = "winrm.elevated" }, value = "on" },
+    {
+      content = { uuid = "fbc95e3c-fda9-446d-b7a8-56c997143379" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}

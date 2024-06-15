@@ -1,0 +1,11 @@
+resource "file-content" "fbc95e3c-fda9-446d-b7a8-56c997143379" {
+  uuid = "fbc95e3c-fda9-446d-b7a8-56c997143379"
+  content = <<EOFSCRIBE
+
+# Move the provisioned VM to Active Directory OU = Hamburgerss
+
+
+EOFSCRIBE
+  dateCreated = "2023-03-31T17:17:34.000Z"
+  lastUpdated = "2023-03-31T17:17:34.000Z"
+}

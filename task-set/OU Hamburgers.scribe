@@ -1,0 +1,8 @@
+resource "task-set" "OU Hamburgers" {
+  name = "OU Hamburgers"
+  uuid = "04dbc22e-c8c7-40fc-b2ee-6471405a3bad"
+  dateCreated = "2023-03-31T17:18:41.000Z"
+  description = "Move the VM to AD OU = Hamburgers"
+  lastUpdated = "2023-03-31T17:18:41.000Z"
+  taskSetTasks = [ { uuid = "2a3dd678-214c-48e9-a766-7e95406a86b9" } ]
+}
