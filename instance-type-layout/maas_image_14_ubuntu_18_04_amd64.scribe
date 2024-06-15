@@ -1,0 +1,15 @@
+resource "instance-type-layout" "maas.image.14.ubuntu.18.04.amd64" {
+  code = "maas.image.14.ubuntu.18.04.amd64"
+  name = "ubuntu 18.04"
+  uuid = "74e403d0-71c7-4ce2-bcb3-4bdcb4fa1f92"
+  description = "Provision a ubuntu 18.04 server"
+  externalId = "ubuntu.18.04.amd64"
+  instanceType = { code = "ubuntu" }
+  instanceVersion = "18.04"
+  portCount = 0
+  provisionType = { code = "maas" }
+  refId = 14
+  refType = "ComputeZone"
+  serverType = "metal"
+  workloads = [ { code = "maas.image.14.ubuntu.18.04.amd64" } ]
+}

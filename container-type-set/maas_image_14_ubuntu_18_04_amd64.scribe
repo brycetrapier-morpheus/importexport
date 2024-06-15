@@ -1,0 +1,7 @@
+resource "container-type-set" "maas.image.14.ubuntu.18.04.amd64" {
+  code = "maas.image.14.ubuntu.18.04.amd64"
+  uuid = "3102a8de-3e2e-4361-b560-b3736b249b30"
+  refId = 14
+  refType = "ComputeZone"
+  workloadType = { code = "maas.image.14.ubuntu.18.04.amd64" }
+}

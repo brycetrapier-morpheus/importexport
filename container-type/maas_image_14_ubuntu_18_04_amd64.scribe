@@ -1,0 +1,15 @@
+resource "container-type" "maas.image.14.ubuntu.18.04.amd64" {
+  code = "maas.image.14.ubuntu.18.04.amd64"
+  name = "MaaS in AWS VPC16 - ubuntu 18.04"
+  uuid = "3bba1694-9007-4d1a-9082-297607f25dc0"
+  category = "ubuntu"
+  checkTypeCode = "vmCheck"
+  containerVersion = "18.04"
+  logTypeCode = "ubuntu"
+  provisionType = { code = "maas" }
+  refId = 14
+  refType = "ComputeZone"
+  shortName = "ubuntu"
+  statTypeCode = "server"
+  virtualImage = { code = "maas.image.14.ubuntu/bionic" }
+}
