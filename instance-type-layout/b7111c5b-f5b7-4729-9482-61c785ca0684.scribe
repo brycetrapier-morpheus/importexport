@@ -1,0 +1,11 @@
+resource "instance-type-layout" "b7111c5b-f5b7-4729-9482-61c785ca0684" {
+  code = "b7111c5b-f5b7-4729-9482-61c785ca0684"
+  name = "Dockerfile Example"
+  uuid = "70eaa8e1-b180-40e0-af15-d174ac4ed311"
+  description = "Docker Hello World"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "Containers"
+  memoryRequirement = 0
+  provisionType = { code = "docker" }
+  workloads = [ { code = "651e1d6d-5048-4f72-b664-5fd4061cc690" } ]
+}

@@ -1,0 +1,13 @@
+resource "container-type" "651e1d6d-5048-4f72-b664-5fd4061cc690" {
+  code = "651e1d6d-5048-4f72-b664-5fd4061cc690"
+  name = "Docker Hello World"
+  uuid = "2688cc16-bb33-4bc2-af78-9cd39862f95c"
+  containerVersion = "latest"
+  entryPoint = ""
+  logTypeCode = "docker"
+  provisionService = "dockerContainerService"
+  provisionType = { code = "docker" }
+  repositoryImage = "hello-world"
+  shortName = "dockerHelloWorld"
+  statTypeCode = "docker"
+}
