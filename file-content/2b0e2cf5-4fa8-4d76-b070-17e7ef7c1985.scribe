@@ -1,0 +1,17 @@
+resource "file-content" "2b0e2cf5-4fa8-4d76-b070-17e7ef7c1985" {
+  uuid = "2b0e2cf5-4fa8-4d76-b070-17e7ef7c1985"
+  content = <<EOFSCRIBE
+# WARNING 
+# Does not update the Morpheus database
+#
+
+hostnamectl set-hostname "<%= customOptions.NewHostName %>"
+
+# hostnamectl set-hostname "<%= customOptions.NewHostName %>" --pretty
+# hostnamectl set-hostname "<%= customOptions.NewHostName %>" --static
+# hostnamectl set-hostname "<%= customOptions.NewHostName %>" --transient
+
+EOFSCRIBE
+  dateCreated = "2023-05-25T18:16:47.000Z"
+  lastUpdated = "2023-05-25T18:21:10.000Z"
+}

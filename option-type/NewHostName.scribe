@@ -1,0 +1,11 @@
+resource "option-type" "NewHostName" {
+  code = "NewHostName"
+  name = "NewHostname"
+  uuid = "3043d2ab-a586-4c9a-9d49-dd1ec073ae59"
+  description = "Consumed in Operational Workflow to update VM Host Name"
+  fieldContext = "config.customOptions"
+  fieldLabel = "New Host Name"
+  fieldName = "NewHostName"
+  labels = [ "Demo" ]
+  required = true
+}

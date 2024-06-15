@@ -1,0 +1,11 @@
+resource "task-set" "Update Hostname" {
+  name = "Update Hostname"
+  uuid = "58fc8301-4f2d-462b-a134-d7080915dc33"
+  dateCreated = "2023-05-25T18:14:50.000Z"
+  description = "Updates a Hostname on a VM - *WARNING* does not update the Morpheus database"
+  labels = [ "Demo", "Warning" ]
+  lastUpdated = "2023-05-25T18:27:50.000Z"
+  optionTypes = [ { code = "NewHostName" } ]
+  taskSetTasks = [ { uuid = "04c9603b-642c-42f9-8d0a-e6bf6d61e108" } ]
+  taskSetType = "operation"
+}

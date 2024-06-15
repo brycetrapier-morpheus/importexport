@@ -1,0 +1,16 @@
+resource "task" "Update HostName" {
+  name = "Update HostName"
+  uuid = "ad221281-8b40-4468-ad87-f7ad5487c4c0"
+  dateCreated = "2023-05-25T18:16:47.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo", "Warning" ]
+  lastUpdated = "2023-05-25T18:19:21.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "2b0e2cf5-4fa8-4d76-b070-17e7ef7c1985" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

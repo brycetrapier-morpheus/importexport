@@ -1,0 +1,5 @@
+resource "task-set-task" "04c9603b-642c-42f9-8d0a-e6bf6d61e108" {
+  uuid = "04c9603b-642c-42f9-8d0a-e6bf6d61e108"
+  task = { name = "Update HostName" }
+  taskPhase = "operation"
+}
