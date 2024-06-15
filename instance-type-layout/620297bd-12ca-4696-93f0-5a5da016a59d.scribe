@@ -1,0 +1,13 @@
+resource "instance-type-layout" "620297bd-12ca-4696-93f0-5a5da016a59d" {
+  code = "620297bd-12ca-4696-93f0-5a5da016a59d"
+  name = "Apache Extra Ports on Ubuntu 20.04"
+  uuid = "681c0b05-9741-44d0-bff2-ea3ed68eafb3"
+  actions = [ { code = "generic-add-node" } ]
+  description = "Apache on Ubuntu 20.04, with extra exposed service ports"
+  hasAutoScale = true
+  instanceType = { code = "apachelab" }
+  instanceVersion = "Ubuntu 20.04"
+  memoryRequirement = 0
+  provisionType = { code = "azure" }
+  workloads = [ { code = "apache-azure-2.4-ubuntu-20.04" } ]
+}
