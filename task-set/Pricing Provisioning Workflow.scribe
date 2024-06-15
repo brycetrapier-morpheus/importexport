@@ -1,0 +1,7 @@
+resource "task-set" "Pricing Provisioning Workflow" {
+  name = "Pricing Provisioning Workflow"
+  uuid = "4091dcfd-5d4f-4291-83db-a67121301e4c"
+  dateCreated = "2023-03-08T17:14:10.000Z"
+  lastUpdated = "2023-03-08T17:17:33.000Z"
+  taskSetTasks = [ { uuid = "16b9cd38-6f7c-4fc7-9b4a-168860305e50" } ]
+}

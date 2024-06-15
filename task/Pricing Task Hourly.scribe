@@ -1,0 +1,16 @@
+resource "task" "Pricing Task Hourly" {
+  name = "Pricing Task Hourly"
+  uuid = "b0b293d5-1160-4be2-8645-f56e4d886778"
+  dateCreated = "2023-03-08T17:15:38.000Z"
+  executeTarget = "local"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-03-30T01:34:54.000Z"
+  options = [
+    {
+      content = { uuid = "d632e64d-48aa-422d-93f2-b0b773df3de6" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  resultType = "json"
+  taskType = { code = "groovyTask" }
+}
