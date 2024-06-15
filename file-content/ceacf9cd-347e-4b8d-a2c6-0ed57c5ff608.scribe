@@ -1,0 +1,43 @@
+resource "file-content" "ceacf9cd-347e-4b8d-a2c6-0ed57c5ff608" {
+  uuid = "ceacf9cd-347e-4b8d-a2c6-0ed57c5ff608"
+  content = <<EOFSCRIBE
+########
+# Quick and dirty deployment of two EC2 instances
+# NOTE: The AMIs are t3.micro instances in NorCal
+# This Terraform plan must be applied against the AWS NorCal region, due to the AMI used
+#
+
+resource aws_instance "SomeNewInstance" {
+  ami = "ami-09208e69ff3feb1db"
+  instance_type = "t3.micro"
+  tags = {
+    Name = "<%=instance.name%> VM1"
+    Source = "Morpheus Terraform Instance"
+  }
+}
+
+resource "aws_instance" "SomeOtherNewInstance" {
+  ami = "ami-09208e69ff3feb1db"
+  instance_type = "t3.micro"
+  tags = {
+    Name = "<%=instance.name%> VM2"
+    Source = "Morpheus Terraform Instance"
+  }
+}
+
+##########################
+#  Outputs
+
+output "ARN_VM1" {
+  description = "TF Variable Output" 
+  value = aws_instance.SomeNewInstance.id
+}
+output "ARN_VM2" {
+  description = "TF Variable Output" 
+  value = aws_instance.SomeOtherNewInstance.id
+}
+
+EOFSCRIBE
+  dateCreated = "2023-04-12T16:23:40.000Z"
+  lastUpdated = "2024-01-10T17:43:57.000Z"
+}
