@@ -1,0 +1,11 @@
+resource "resource-spec-template" "465217b1-73ae-4e3e-94a3-86e2583f7d6b" {
+  name = "GCP - New e2-micro VM with static name \"mopho\""
+  uuid = "465217b1-73ae-4e3e-94a3-86e2583f7d6b"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2023-03-20T20:27:31.000Z"
+  labels = [ "Demo", "GCP" ]
+  lastUpdated = "2023-03-31T15:37:47.000Z"
+  template = { uuid = "eb339861-a6b0-451b-bcb6-857bade96081" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
