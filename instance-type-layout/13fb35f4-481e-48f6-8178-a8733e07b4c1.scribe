@@ -1,0 +1,11 @@
+resource "instance-type-layout" "13fb35f4-481e-48f6-8178-a8733e07b4c1" {
+  code = "13fb35f4-481e-48f6-8178-a8733e07b4c1"
+  name = "Aspect Call Recording Witness Server"
+  uuid = "c4ad6fc3-0ff4-4aee-b64d-6851ca28076d"
+  description = "Based on Debian 11"
+  instanceType = { code = "aspect" }
+  instanceVersion = "1"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  workloads = [ { code = "debian-amazon-11.0" } ]
+}
