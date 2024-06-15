@@ -1,0 +1,14 @@
+resource "container-type" "e0b83b80-45ec-455c-b5cb-2887c5557bd8" {
+  code = "e0b83b80-45ec-455c-b5cb-2887c5557bd8"
+  name = "Ubuntu 20.04 Focal on GCP"
+  uuid = "9bcff971-3b06-4968-a09e-0a495f67fcc9"
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "google"
+  provisionType = { code = "google" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "ubuntugcp20focal"
+  showServerLogs = true
+  statTypeCode = "google"
+}
