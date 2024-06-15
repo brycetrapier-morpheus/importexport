@@ -1,0 +1,9 @@
+resource "instance-type" "nestedenv" {
+  code = "nestedenv"
+  name = "Nested Environment"
+  uuid = "83dcd058-77b4-4d10-baf5-10ba95a0e7de"
+  category = "utility"
+  deploymentService = ""
+  environmentPrefix = "NESTED_ENVIRONMENT"
+  labels = [ "nested deployment", "prod" ]
+}

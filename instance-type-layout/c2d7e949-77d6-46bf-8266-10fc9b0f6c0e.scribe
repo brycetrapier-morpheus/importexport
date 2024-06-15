@@ -1,0 +1,11 @@
+resource "instance-type-layout" "c2d7e949-77d6-46bf-8266-10fc9b0f6c0e" {
+  code = "c2d7e949-77d6-46bf-8266-10fc9b0f6c0e"
+  name = "XaaS"
+  uuid = "d79afe2f-8364-4c18-a88d-5e1e138cb4f4"
+  instanceType = { code = "nestedenv" }
+  instanceVersion = "1.0"
+  labels = [ "nested deployment", "prod" ]
+  memoryRequirement = 0
+  provisionType = { code = "workflow" }
+  taskSets = [ { name = "Nested Labs Provisioning" } ]
+}
