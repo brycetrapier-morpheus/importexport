@@ -1,0 +1,9 @@
+resource "task-set" "Finastra BankServ" {
+  name = "Finastra BankServ"
+  uuid = "0d7cb062-1251-45dc-84f4-6f7d5d764148"
+  dateCreated = "2023-08-29T15:42:30.000Z"
+  description = "Framework for Self Service Catalog Item"
+  labels = [ "Demo", "Financial" ]
+  lastUpdated = "2023-08-29T15:42:30.000Z"
+  taskSetType = "operation"
+}
