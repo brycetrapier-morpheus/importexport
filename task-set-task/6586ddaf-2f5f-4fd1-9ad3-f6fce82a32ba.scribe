@@ -1,0 +1,5 @@
+resource "task-set-task" "6586ddaf-2f5f-4fd1-9ad3-f6fce82a32ba" {
+  uuid = "6586ddaf-2f5f-4fd1-9ad3-f6fce82a32ba"
+  task = { name = "Touch NewFile" }
+  taskPhase = "operation"
+}

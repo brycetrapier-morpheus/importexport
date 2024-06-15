@@ -1,0 +1,11 @@
+resource "task-set" "Touch NewFile" {
+  name = "Touch NewFile"
+  uuid = "ded44506-c51a-4515-9af3-e498c2cf7e05"
+  dateCreated = "2023-06-07T05:15:14.000Z"
+  description = "Touch a file in the root user home"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-06-07T05:15:14.000Z"
+  platform = "linux"
+  taskSetTasks = [ { uuid = "6586ddaf-2f5f-4fd1-9ad3-f6fce82a32ba" } ]
+  taskSetType = "operation"
+}

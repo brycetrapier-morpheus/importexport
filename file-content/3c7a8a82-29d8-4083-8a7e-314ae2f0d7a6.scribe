@@ -1,0 +1,6 @@
+resource "file-content" "3c7a8a82-29d8-4083-8a7e-314ae2f0d7a6" {
+  uuid = "3c7a8a82-29d8-4083-8a7e-314ae2f0d7a6"
+  content = "touch ~/newfile"
+  dateCreated = "2023-06-07T05:14:26.000Z"
+  lastUpdated = "2023-06-07T05:14:26.000Z"
+}
