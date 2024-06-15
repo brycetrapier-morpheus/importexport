@@ -1,0 +1,37 @@
+resource "file-content" "9059cbf7-fa75-44af-8004-65724717343d" {
+  uuid = "9059cbf7-fa75-44af-8004-65724717343d"
+  content = <<EOFSCRIBE
+# Build a new Security Group
+# Note that the IPv6 entries are commented-out
+#
+resource "aws_security_group" "Permit_HTTPS_Any" {
+  name        = "Morpheus Lab Day Web ACL "
+  description = "Allow inbound web traffic"
+  vpc_id      = aws_vpc.TFVPC.id
+
+  ingress {
+    description      = "Allow inbout TCP 443 from any IPv4"
+    from_port        = 443
+    to_port          = 443
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+    # ipv6_cidr_blocks = [aws_vpc.TFVPC.ipv6_cidr_block]
+  }
+
+  egress {
+    from_port        = 0
+    to_port          = 0
+    protocol         = "-1"
+    cidr_blocks      = ["0.0.0.0/0"]
+    # ipv6_cidr_blocks = ["::/0"]
+  }
+
+  tags = {
+    Name = "Morpheus Lab Security Group"
+  }
+}
+
+EOFSCRIBE
+  dateCreated = "2022-02-15T20:06:18.000Z"
+  lastUpdated = "2022-02-15T20:06:18.000Z"
+}

@@ -1,0 +1,10 @@
+resource "resource-spec-template" "b8e39509-8429-448d-9017-ffffc38a5be4" {
+  name = "AWS - 5b - Build a new Security Group in the VPC, allowing HTTPS from Any Source to Any Destination"
+  uuid = "b8e39509-8429-448d-9017-ffffc38a5be4"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-02-15T20:06:18.000Z"
+  lastUpdated = "2023-03-22T22:52:01.000Z"
+  template = { uuid = "9059cbf7-fa75-44af-8004-65724717343d" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
