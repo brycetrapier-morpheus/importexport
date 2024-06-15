@@ -1,0 +1,11 @@
+resource "option-type" "NewAzureAppRegName" {
+  code = "NewAzureAppRegName"
+  name = "NewAzureAppRegName"
+  uuid = "113fffea-b291-4534-ba62-df3e195a7f81"
+  fieldContext = "config.customOptions"
+  fieldLabel = "New App Reg Name"
+  fieldName = "NewAzureAppRegName"
+  helpBlock = "This value cannot be changed after creation."
+  labels = [ "New Account" ]
+  required = true
+}

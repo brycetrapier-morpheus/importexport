@@ -1,0 +1,12 @@
+resource "option-type" "NewAzureSubscriptionName" {
+  code = "NewAzureSubscriptionName"
+  name = "NewAzureSubscriptionName"
+  uuid = "4e80b8f0-8378-45ea-a138-4556f0cf9964"
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Subscription Name"
+  fieldName = "NewAzureSubscriptionName"
+  helpBlock = "This value cannot be changed after deployment."
+  labels = [ "New Account" ]
+  required = true
+}
