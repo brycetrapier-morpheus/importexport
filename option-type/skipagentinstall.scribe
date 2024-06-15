@@ -1,0 +1,9 @@
+resource "option-type" "skipagentinstall" {
+  code = "skipagentinstall"
+  name = "SkipAgentInstall"
+  uuid = "79d04673-99a3-467b-b3c0-c464633281c9"
+  fieldContext = "config.customOptions"
+  fieldLabel = "SkipAgentInstallYesOrNo"
+  fieldName = "skipagentinstall"
+  type = "checkbox"
+}
