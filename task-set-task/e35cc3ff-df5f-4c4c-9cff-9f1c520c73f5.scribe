@@ -1,0 +1,5 @@
+resource "task-set-task" "e35cc3ff-df5f-4c4c-9cff-9f1c520c73f5" {
+  uuid = "e35cc3ff-df5f-4c4c-9cff-9f1c520c73f5"
+  task = { name = "Add AD User, via PowerShell Script" }
+  taskPhase = "operation"
+}

@@ -1,0 +1,20 @@
+resource "task" "Add AD User, via PowerShell Script" {
+  name = "Add AD User, via PowerShell Script"
+  uuid = "aa3748b0-d3ee-45ea-9d9b-bcf98adc17df"
+  dateCreated = "2021-11-18T23:31:02.000Z"
+  executeTarget = "remote"
+  labels = [ "example" ]
+  lastUpdated = "2023-08-22T18:42:10.000Z"
+  options = [
+    {
+      optionType = { code = "host" }
+      value = "Active.Directory.server.ip.address"
+    },
+    { optionType = { code = "username" }, value = "AdminUser" },
+    {
+      content = { uuid = "9cf41af6-8dc3-48a8-96b4-6a59bc253b87" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}

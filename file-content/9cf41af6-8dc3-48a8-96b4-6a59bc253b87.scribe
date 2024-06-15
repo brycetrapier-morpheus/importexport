@@ -1,0 +1,46 @@
+resource "file-content" "9cf41af6-8dc3-48a8-96b4-6a59bc253b87" {
+  uuid = "9cf41af6-8dc3-48a8-96b4-6a59bc253b87"
+  content = <<EOFSCRIBE
+$FirstName = "<%= customOptions.firstname %>"
+$MiddleInitial = "<%= customOptions.middleinitial %>"
+$LastName = "<%= customOptions.lastname %>"
+$Username = "$($FirstName.SubString(0, 1))$LastName"
+$Title = "<%= customOptions.title %>"
+$Department = "<%= customOptions.department %>"
+$DefaultPassword = "<%= customOptions.defaultpassword %>"
+$Location = "<%= customOptions.location %>"
+$DomainDn = (Get-AdDomain).DistinguishedName
+
+## Write-Output $FirstName $MiddleInitial $LastName $Username $Title $Department $Location $DomainDn | Out-File C:\output.txt
+
+if (Get-ADUser -Filter "Name -eq '$Username'")
+{
+    Write-Warning -Message "The username [$($Username)] is not available. Checking alternate..."
+    ## If so, check to see if the first initial/middle initial/last name is taken.
+    $Username = "$($FirstName.SubString(0, 1))$MiddleInitial$LastName"
+}
+
+#region Create the new user
+$NewUserParams = @{
+    'UserPrincipalName' = $Username
+    'Name' = $Username
+    'GivenName' = $FirstName
+    'Surname' = $LastName
+    'Title' = $Title
+    'Department' = $Department
+    'SamAccountName' = $Username
+    'AccountPassword' = (ConvertTo-SecureString $DefaultPassword -AsPlainText -Force)
+    'Enabled' = $true
+    'Initials' = $MiddleInitial
+    'Path' = (Get-ADOrganizationalUnit -Filter {(name -like $Location)}).distinguishedName
+    'ChangePasswordAtLogon' = $false
+}
+Write-Verbose -Message "Creating the new user account [$($Username)] in OU [$($ouDN)]"
+New-AdUser @NewUserParams
+
+Add-ADGroupMember -Members $Username -Identity $Department
+
+EOFSCRIBE
+  dateCreated = "2021-11-18T23:31:02.000Z"
+  lastUpdated = "2021-11-18T23:31:02.000Z"
+}

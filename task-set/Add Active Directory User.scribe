@@ -1,0 +1,11 @@
+resource "task-set" "Add Active Directory User" {
+  name = "Add Active Directory User"
+  uuid = "361a18d4-1301-4473-a6f5-eb5f16c95c95"
+  dateCreated = "2021-11-18T23:32:41.000Z"
+  description = "Prompts for variable input, then adds a user to Active Directory via Powershell script on the domain controller."
+  labels = [ "Demo", "example" ]
+  lastUpdated = "2024-02-14T22:49:19.000Z"
+  optionTypes = [ { code = "firstname" }, { code = "lastname" } ]
+  taskSetTasks = [ { uuid = "e35cc3ff-df5f-4c4c-9cff-9f1c520c73f5" } ]
+  taskSetType = "operation"
+}

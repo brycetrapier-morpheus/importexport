@@ -1,0 +1,11 @@
+resource "option-type" "firstname" {
+  code = "firstname"
+  name = "First Name"
+  uuid = "13b6ecd4-5378-4768-8348-d15be7342d8b"
+  fieldContext = "config.customOptions"
+  fieldGetName = "firstname"
+  fieldLabel = "First Name"
+  fieldName = "firstname"
+  fieldSetName = "firstname"
+  required = true
+}

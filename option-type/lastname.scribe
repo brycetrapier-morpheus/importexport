@@ -1,0 +1,9 @@
+resource "option-type" "lastname" {
+  code = "lastname"
+  name = "Last Name"
+  uuid = "a4328601-956d-4996-bc5e-3d1da9c3e7e1"
+  displayOrder = 1
+  fieldContext = "config.customOptions"
+  fieldLabel = "Last Name"
+  fieldName = "lastname"
+}
