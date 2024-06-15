@@ -1,0 +1,11 @@
+resource "instance-type-layout" "f261afa2-b07b-43a2-959a-8072b6145bd2" {
+  code = "f261afa2-b07b-43a2-959a-8072b6145bd2"
+  name = "POC Azure"
+  uuid = "338bc4ce-cd2c-474e-85cb-815026abe5b0"
+  instanceType = { code = "custominstance" }
+  instanceVersion = "Ubuntu 20.04"
+  labels = [ "Demo" ]
+  memoryRequirement = 0
+  provisionType = { code = "azure" }
+  workloads = [ { code = "02fac714-b37b-4d0f-a1d4-35a9afd241de" } ]
+}

@@ -1,0 +1,16 @@
+resource "container-type" "02fac714-b37b-4d0f-a1d4-35a9afd241de" {
+  code = "02fac714-b37b-4d0f-a1d4-35a9afd241de"
+  name = "POC Node Azure"
+  uuid = "bacbba7c-9ed2-4f17-a578-4a4ea4c22c75"
+  containerVersion = "custom"
+  entryPoint = ""
+  labels = [ "Demo" ]
+  logTypeCode = "azure"
+  provisionType = { code = "azure" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "customAzure"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "2e297f69-3d2d-46c2-9d78-c41c4aa4fb34" }
+}
