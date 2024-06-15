@@ -1,0 +1,17 @@
+resource "file-content" "ad5c5c1b-86ad-48b5-aac4-2c662d5d64cf" {
+  uuid = "ad5c5c1b-86ad-48b5-aac4-2c662d5d64cf"
+  content = <<EOFSCRIBE
+## Using pre-provision variables
+Morpheus instance ${instance.displayName}, deployed by ${createdByUsername}, is being shutdown or terminated.
+
+# Using script variables
+Morpheus Instance '<%=instance.name%>', provisioned by '<%=instance.createdByUsername,%>' into '<%=cloudName%>' is '<%=instance.status%>'.
+
+Cores:   '<%=instance.cores%>'
+Memory:  '<%=instance.memory%>'
+Storage: '<%=instance.storage%>'
+
+EOFSCRIBE
+  dateCreated = "2023-04-08T00:04:57.000Z"
+  lastUpdated = "2023-04-08T00:04:57.000Z"
+}

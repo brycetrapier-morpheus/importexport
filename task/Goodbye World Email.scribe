@@ -1,0 +1,23 @@
+resource "task" "Goodbye World Email" {
+  name = "Goodbye World Email"
+  uuid = "04af70b3-b065-4c6e-8ef3-cd545060e78f"
+  dateCreated = "2023-04-08T00:04:57.000Z"
+  executeTarget = "local"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-04-08T00:04:57.000Z"
+  options = [
+    {
+      optionType = { code = "emailAddress" }
+      value = "somebody@somemail.com"
+    },
+    {
+      content = { uuid = "ad5c5c1b-86ad-48b5-aac4-2c662d5d64cf" }
+      optionType = { code = "emailBody" }
+    },
+    {
+      optionType = { code = "emailSubject" }
+      value = "Instance $${status}"
+    }
+  ]
+  taskType = { code = "email" }
+}
