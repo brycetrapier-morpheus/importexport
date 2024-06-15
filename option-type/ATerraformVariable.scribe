@@ -1,0 +1,14 @@
+resource "option-type" "ATerraformVariable" {
+  code = "ATerraformVariable"
+  name = "ATerraformVariable"
+  uuid = "a7c4b6e1-f3e1-4b1d-a77b-194c130e30a2"
+  defaultValue = "Hello World"
+  description = "Used in Self-Service Catalog Entries of type Terraform"
+  fieldContext = "config.customOptions"
+  fieldLabel = "A Terraform Variable"
+  fieldName = "ATerraformVariable"
+  helpBlock = "A variable defined within Terraform. Unknown to Morpheus natively.  Required to be configured as an Input if consuming Terraform in the self-service catalog."
+  labels = [ "Demo", "IaC", "Terraform" ]
+  required = true
+  showOnEdit = false
+}

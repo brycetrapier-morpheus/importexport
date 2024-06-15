@@ -1,0 +1,11 @@
+resource "option-type" "ASensitiveTerraformVariable" {
+  code = "ASensitiveTerraformVariable"
+  name = "ASensitiveTerraformVariable"
+  uuid = "7f2eec5f-5fe2-4d2e-9dfc-73cfaf8b99ae"
+  description = "A sensitive TF variable, to be consumed by a self-service catalog entity."
+  fieldContext = "config.customOptions"
+  fieldLabel = "ASensitiveTerraformVariable"
+  fieldName = "ASensitiveTerraformVariable"
+  labels = [ "Demo", "IaC", "Terraform" ]
+  type = "password"
+}

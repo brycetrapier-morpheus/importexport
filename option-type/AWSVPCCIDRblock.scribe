@@ -1,0 +1,15 @@
+resource "option-type" "AWSVPCCIDRblock" {
+  code = "AWSVPCCIDRblock"
+  name = "AWS VPC CIDR Block"
+  uuid = "2ae19d22-019d-418d-b99e-1b9383fdbb85"
+  defaultValue = "198.51.100.0/24"
+  description = "To be used in Terraform Layouts"
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "IPv4 CIDR Block"
+  fieldName = "AWSVPCCIDRblock"
+  helpBlock = "Use IPv4 CIDR notation (w.x.y.z/mask).  NOTE: This must be a valid AWS CIDR block notation - Terraform will perform input validation before sending the payload to AWS."
+  labels = [ "AWS", "IaC", "Terraform" ]
+  required = true
+  showOnEdit = false
+}

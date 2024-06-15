@@ -1,0 +1,12 @@
+resource "option-type" "ASensitiveTerraformVariableHidden" {
+  code = "ASensitiveTerraformVariableHidden"
+  name = "ASensitiveTerraformVariable Hidden"
+  uuid = "4b571306-a14a-4dea-82d8-232c332d8406"
+  defaultValue = "var.ASensitiveTerraformVariableHidden"
+  description = "ASensitiveTerraformVariable"
+  fieldContext = "config.customOptions"
+  fieldName = "ASensitiveTerraformVariableHidden"
+  labels = [ "Demo", "IaC", "Terraform" ]
+  showOnEdit = false
+  type = "hidden"
+}
