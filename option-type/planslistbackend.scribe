@@ -1,0 +1,13 @@
+resource "option-type" "planslistbackend" {
+  code = "planslistbackend"
+  name = "Filtered Plans (AWS Back-End)"
+  uuid = "8db90c9c-8c70-4c55-af83-c4b626053431"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Back-End VM Size"
+  fieldName = "planslistbackend"
+  helpBlock = "This input references the Option List \"Filtered List of Plans (AWS)\""
+  optionList = { name = "Filtered list of Plans (AWS)" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}

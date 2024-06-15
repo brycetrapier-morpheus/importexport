@@ -1,0 +1,13 @@
+resource "option-type" "planslistfrontend" {
+  code = "planslistfrontend"
+  name = "Filtered Plans (AWS Front-End)"
+  uuid = "36ffa12f-97e5-4acd-8e78-6e11687f3fc5"
+  fieldContext = "config.customOptions"
+  fieldLabel = "VM Size for Front-End VM"
+  fieldName = "planslistfrontend"
+  helpBlock = "This input references the Option List \"Filtered List of Plans (AWS)\""
+  optionList = { name = "Filtered list of Plans (AWS)" }
+  optionSource = "list"
+  required = true
+  type = "radio"
+}
