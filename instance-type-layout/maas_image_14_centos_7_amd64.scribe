@@ -1,0 +1,15 @@
+resource "instance-type-layout" "maas.image.14.centos.7.amd64" {
+  code = "maas.image.14.centos.7.amd64"
+  name = "centos 7"
+  uuid = "8addb579-765c-4661-a827-cc9aeaa85a08"
+  description = "Provision a centos 7 server"
+  externalId = "centos.7.amd64"
+  instanceType = { code = "centos" }
+  instanceVersion = "7"
+  portCount = 0
+  provisionType = { code = "maas" }
+  refId = 14
+  refType = "ComputeZone"
+  serverType = "metal"
+  workloads = [ { code = "maas.image.14.centos.7.amd64" } ]
+}

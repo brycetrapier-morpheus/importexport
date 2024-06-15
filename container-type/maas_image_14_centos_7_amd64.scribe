@@ -1,0 +1,15 @@
+resource "container-type" "maas.image.14.centos.7.amd64" {
+  code = "maas.image.14.centos.7.amd64"
+  name = "MaaS in AWS VPC16 - centos 7"
+  uuid = "e3cd8e33-1c99-4d1f-ba77-aaf318fd1706"
+  category = "centos"
+  checkTypeCode = "vmCheck"
+  containerVersion = "7"
+  logTypeCode = "centos"
+  provisionType = { code = "maas" }
+  refId = 14
+  refType = "ComputeZone"
+  shortName = "centos"
+  statTypeCode = "server"
+  virtualImage = { code = "maas.image.14.centos/centos70" }
+}

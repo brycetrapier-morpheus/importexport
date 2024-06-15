@@ -1,0 +1,7 @@
+resource "container-type-set" "maas.image.14.centos.7.amd64" {
+  code = "maas.image.14.centos.7.amd64"
+  uuid = "4eb18267-948d-46a7-99ab-8d7ff2aecb65"
+  refId = 14
+  refType = "ComputeZone"
+  workloadType = { code = "maas.image.14.centos.7.amd64" }
+}
