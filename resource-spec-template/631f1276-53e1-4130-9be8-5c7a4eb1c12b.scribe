@@ -1,0 +1,10 @@
+resource "resource-spec-template" "631f1276-53e1-4130-9be8-5c7a4eb1c12b" {
+  name = "Fake Azure Blueprint - Thingy 2"
+  uuid = "631f1276-53e1-4130-9be8-5c7a4eb1c12b"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-06-02T21:45:35.000Z"
+  lastUpdated = "2022-06-02T21:46:56.000Z"
+  template = { uuid = "c99b8b27-9c14-49ab-9632-0ca15f1ea1a8" }
+  templateType = "ARM Template"
+  type = { code = "arm" }
+}
