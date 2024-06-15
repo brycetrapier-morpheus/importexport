@@ -1,0 +1,10 @@
+resource "resource-spec-template" "d2e5118e-7f17-4952-af97-b11dbe52b267" {
+  name = "AWS - Ingest the Variables in the Terraform Profile"
+  uuid = "d2e5118e-7f17-4952-af97-b11dbe52b267"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-02-15T20:05:38.000Z"
+  lastUpdated = "2023-02-23T17:00:22.000Z"
+  template = { uuid = "ab96e12f-e53c-4e45-b178-5bda65c20d1c" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
