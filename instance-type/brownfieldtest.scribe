@@ -1,0 +1,10 @@
+resource "instance-type" "brownfieldtest" {
+  code = "brownfieldtest"
+  name = "Brownfield Test"
+  uuid = "12b405f9-2e0a-44ac-bc00-840e9e8b093f"
+  category = "utility"
+  deploymentService = ""
+  description = "For converting Discovered intstances to Managed instances.  This Instance Type is not deployable."
+  environmentPrefix = "BROWNFIELD"
+  featured = true
+}

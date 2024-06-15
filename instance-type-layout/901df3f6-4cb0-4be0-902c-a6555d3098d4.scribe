@@ -1,0 +1,11 @@
+resource "instance-type-layout" "901df3f6-4cb0-4be0-902c-a6555d3098d4" {
+  code = "901df3f6-4cb0-4be0-902c-a6555d3098d4"
+  name = "Brownfield from AWS"
+  uuid = "c725606a-4a4a-4afd-baf1-90bfb57e1de3"
+  description = "Used to import Discovered instances in AWS.  Not deployable (no Node Type configured)"
+  instanceType = { code = "brownfieldtest" }
+  instanceVersion = "brownfieldaws"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  supportsConvertToManaged = true
+}
