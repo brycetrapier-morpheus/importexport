@@ -1,0 +1,13 @@
+resource "container-type" "de5d8749-ff78-4422-b17d-946b722cfe53" {
+  code = "de5d8749-ff78-4422-b17d-946b722cfe53"
+  name = "Azure Debian 11"
+  uuid = "ba9d35e0-46f0-41c0-baa6-ff42c99fea69"
+  containerVersion = "11"
+  entryPoint = ""
+  logTypeCode = "azure"
+  provisionType = { code = "azure" }
+  serverType = "vm"
+  shortName = "azuredebian11"
+  showServerLogs = true
+  statTypeCode = "azure"
+}

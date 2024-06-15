@@ -1,0 +1,10 @@
+resource "instance-type-layout" "7c4cea69-19da-4b98-8851-7fc995443fea" {
+  code = "7c4cea69-19da-4b98-8851-7fc995443fea"
+  name = "Azure Debian"
+  uuid = "67bd0f6d-313a-4a28-a333-5b2d6ecd529f"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "Azure"
+  memoryRequirement = 134217728
+  provisionType = { code = "azure" }
+  workloads = [ { code = "de5d8749-ff78-4422-b17d-946b722cfe53" } ]
+}
