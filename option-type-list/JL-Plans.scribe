@@ -1,0 +1,19 @@
+resource "option-type-list" "JL-Plans" {
+  name = "JL-Plans"
+  uuid = "8f58cdc1-eda7-4523-8ef1-702e036a466f"
+  apiType = "servicePlans"
+  realTime = true
+  requestScript = <<EOFSCRIBE
+if (input.jlclouds && input.jlgroups){
+results.zoneId = input.jlclouds
+results.siteId = input.jlgroups
+}
+EOFSCRIBE
+  translationScript = <<EOFSCRIBE
+if (input.jlclouds && input.jlgroups ) {
+for (var x = 0; x < data.length; x++) { results.push({name:data[x].name,value:data[x].id});
+}
+}
+EOFSCRIBE
+  type = "api"
+}

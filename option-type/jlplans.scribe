@@ -1,0 +1,12 @@
+resource "option-type" "jlplans" {
+  code = "jlplans"
+  name = "JL-Plans"
+  uuid = "3490b17f-bd4d-478f-a3e4-6309d50bbdc9"
+  dependsOnCode = "jlclouds"
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Plans"
+  fieldName = "jlplans"
+  optionList = { name = "JL-Plans" }
+  type = "select"
+}
