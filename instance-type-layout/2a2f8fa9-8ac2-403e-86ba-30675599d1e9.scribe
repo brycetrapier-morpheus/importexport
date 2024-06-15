@@ -1,0 +1,11 @@
+resource "instance-type-layout" "2a2f8fa9-8ac2-403e-86ba-30675599d1e9" {
+  code = "2a2f8fa9-8ac2-403e-86ba-30675599d1e9"
+  name = "Verint Forecast in GCP"
+  uuid = "3619fecf-80c0-4004-a46b-286c083e8ecf"
+  description = "Forecasting and Scheduling Server"
+  instanceType = { code = "verint" }
+  instanceVersion = "1"
+  memoryRequirement = 134217728
+  provisionType = { code = "google" }
+  workloads = [ { code = "90ed532b-afdd-424e-bbf4-1e04271407fc" } ]
+}
