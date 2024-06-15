@@ -1,0 +1,12 @@
+resource "task-set" "POC CentOS -RHEL" {
+  name = "POC CentOS -RHEL"
+  uuid = "0dd3be0e-ded8-4df6-be19-281324872236"
+  dateCreated = "2023-03-28T16:51:38.000Z"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-04-15T03:15:16.000Z"
+  platform = "linux"
+  taskSetTasks = [
+    { uuid = "11bcfd43-3b28-452e-a509-e833acbf3a88" },
+    { uuid = "82f3714e-2e52-4e07-9261-96726987d389" }
+  ]
+}

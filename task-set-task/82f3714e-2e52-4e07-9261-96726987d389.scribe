@@ -1,0 +1,5 @@
+resource "task-set-task" "82f3714e-2e52-4e07-9261-96726987d389" {
+  uuid = "82f3714e-2e52-4e07-9261-96726987d389"
+  task = { name = "POC CentOS Updates" }
+  taskPhase = "provision"
+}

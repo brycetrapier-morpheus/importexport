@@ -1,0 +1,6 @@
+resource "file-content" "874114dc-d825-4bf4-9ee0-571990a6069f" {
+  uuid = "874114dc-d825-4bf4-9ee0-571990a6069f"
+  content = "yum update -y"
+  dateCreated = "2023-03-27T22:43:23.000Z"
+  lastUpdated = "2023-03-27T22:43:23.000Z"
+}
