@@ -1,0 +1,10 @@
+resource "task-set" "Cascading Inputs Example" {
+  name = "Cascading Inputs Example"
+  uuid = "edef049f-16b4-4578-a092-e652b17d89e9"
+  dateCreated = "2022-09-09T23:21:35.000Z"
+  description = "Sample workflow to show cascading inputs of Group and Cloud"
+  lastUpdated = "2022-10-02T01:10:05.000Z"
+  optionTypes = [ { code = "SelectedGroup" }, { code = "SelectedCloud" } ]
+  taskSetType = "operation"
+  visibility = "public"
+}

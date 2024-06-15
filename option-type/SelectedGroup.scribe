@@ -1,0 +1,13 @@
+resource "option-type" "SelectedGroup" {
+  code = "SelectedGroup"
+  name = "Selected Group"
+  uuid = "89c9341b-e619-4285-b2d9-9ed782c55cd4"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Selected Group"
+  fieldName = "SelectedGroup"
+  labels = [ "Cascading" ]
+  optionList = { name = "Infrastructure Groups" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}

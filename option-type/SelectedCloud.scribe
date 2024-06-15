@@ -1,0 +1,18 @@
+resource "option-type" "SelectedCloud" {
+  code = "SelectedCloud"
+  name = "Selected Cloud"
+  uuid = "5e24adf5-797e-4cc7-9f54-f2e5cbd4c424"
+  config = { _multiSelect = "" }
+  dependsOnCode = "SelectedGroup"
+  description = "Consumes an Option List which uses a Request Script and Translation Script to filter only the Clouds which are accessible to the selected Group"
+  displayOrder = 1
+  fieldContext = "config.customOptions"
+  fieldLabel = "Selected Cloud"
+  fieldName = "SelectedCloud"
+  labels = [ "Cascading" ]
+  optionList = { name = "Infrastructure Clouds, Filtered" }
+  optionSource = "list"
+  required = true
+  type = "select"
+  visibleOnCode = "SelectedGroup"
+}

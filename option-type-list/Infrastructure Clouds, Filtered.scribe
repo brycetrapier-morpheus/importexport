@@ -1,0 +1,24 @@
+resource "option-type-list" "Infrastructure Clouds, Filtered" {
+  name = "Infrastructure Clouds, Filtered"
+  uuid = "3aff9e17-d04a-4e77-816b-177aaf072600"
+  apiType = "clouds"
+  description = "Plubic Visibility for Catalog Sharing"
+  labels = [ "Cascading", "Demo", "Public" ]
+  realTime = true
+  requestScript = <<EOFSCRIBE
+if (input.SelectedGroup) {
+  results.siteId = input.SelectedGroup
+}
+EOFSCRIBE
+  translationScript = <<EOFSCRIBE
+if (input.SelectedGroup) 
+{
+  for (var x = 0; x < data.length; x++) 
+  {
+    results.push({name:data[x].name, value:data[x].id});
+  }
+}
+EOFSCRIBE
+  type = "api"
+  visibility = "public"
+}
