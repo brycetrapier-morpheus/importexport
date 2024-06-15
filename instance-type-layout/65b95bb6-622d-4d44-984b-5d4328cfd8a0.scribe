@@ -1,0 +1,20 @@
+resource "instance-type-layout" "65b95bb6-622d-4d44-984b-5d4328cfd8a0" {
+  code = "65b95bb6-622d-4d44-984b-5d4328cfd8a0"
+  name = "Apache with Firewall Updates"
+  uuid = "efbc83e7-0522-42fe-8782-2056a530c82e"
+  description = "Deploys an Apache node, and configures a firewall rule according to user-provided input"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "AWS"
+  memoryRequirement = 134217728
+  optionTypes = [
+    { code = "FWACLname" },
+    { code = "FWAction" },
+    { code = "FWSourceIP" },
+    { code = "FWDestinationIP" },
+    { code = "FWPort" },
+    { code = "FWService" }
+  ]
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "Firewall Rule at Provisioning (Shared)" } ]
+  workloads = [ { code = "apache-amazon-2.4" } ]
+}
