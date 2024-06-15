@@ -1,0 +1,9 @@
+resource "option-type" "access_key" {
+  code = "access_key"
+  name = "TF AWS Access Key"
+  uuid = "7bd52190-80fd-4f2b-bb9e-e6c2994f22bb"
+  fieldContext = "config.customOptions"
+  fieldLabel = "AWS Access Key"
+  fieldName = "access_key"
+  showOnEdit = false
+}
