@@ -1,0 +1,11 @@
+resource "instance-type-layout" "30110989-1395-4fd4-87c0-80ef001ee39e" {
+  code = "30110989-1395-4fd4-87c0-80ef001ee39e"
+  name = "POC AWS"
+  uuid = "b3e2cf37-2819-4267-a328-f3bcf88bb3d8"
+  instanceType = { code = "custominstance" }
+  instanceVersion = "Ubuntu 20.04"
+  labels = [ "Demo" ]
+  memoryRequirement = 536870912
+  provisionType = { code = "amazon" }
+  workloads = [ { code = "e03c50d2-bb47-479e-9a66-61571a39fe19" } ]
+}

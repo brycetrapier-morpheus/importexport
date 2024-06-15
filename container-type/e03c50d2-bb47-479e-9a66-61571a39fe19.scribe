@@ -1,0 +1,16 @@
+resource "container-type" "e03c50d2-bb47-479e-9a66-61571a39fe19" {
+  code = "e03c50d2-bb47-479e-9a66-61571a39fe19"
+  name = "POC Node AWS"
+  uuid = "854f9bfa-dfdf-4cc6-8154-6d5391b4fcf8"
+  containerVersion = "20.04"
+  entryPoint = ""
+  labels = [ "Demo" ]
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "customUbuntu"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "786fb63d-5b53-4420-878a-5bfd1c0d3628" }
+}
