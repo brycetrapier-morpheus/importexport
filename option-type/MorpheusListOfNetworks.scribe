@@ -1,0 +1,12 @@
+resource "option-type" "MorpheusListOfNetworks" {
+  code = "MorpheusListOfNetworks"
+  name = "Morpheus List of Networks"
+  uuid = "3a3a9b57-0ceb-485e-93f6-df3cee395668"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Deployment Network (Morpheus API)"
+  fieldName = "MorpheusListOfNetworks"
+  helpBlock = "References the Morpheus API dataset \"Networks\""
+  optionSource = "list"
+  required = true
+  type = "select"
+}
