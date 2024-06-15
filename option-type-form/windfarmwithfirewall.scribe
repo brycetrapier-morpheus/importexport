@@ -1,0 +1,128 @@
+resource "option-type-form" "windfarmwithfirewall" {
+  code = "windfarmwithfirewall"
+  name = "Secure Wind Farm"
+  uuid = "d25f3166-7637-449a-af4c-cae136b74bbc"
+  config = {
+    enableVar = false
+    form = false
+    formField = ""
+    formOptions = ""
+    formType = false
+  }
+  description = "Wind Farm with Firewall"
+  field-groups = [
+    {
+      code = "f07ab89c-19d1-4722-962b-bfae0ed200ed"
+      name = "Wind Turbine Properties"
+      collapsible = false
+      defaultCollapsed = false
+      options = [
+        {
+          code = "WindFarmGroundWaterTable"
+          name = "Wind Farm Ground Water Table"
+          uuid = "84a823ad-3f98-4198-add3-211404def65a"
+          displayOrder = 4
+          displayValueOnDetails = true
+          editable = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Ground Water Table"
+          fieldName = "WindFarmGroundWaterTable"
+          optionList = { name = "Wind Farm Water Table Options" }
+          optionSource = "list"
+          required = true
+          type = "radio"
+        },
+        {
+          code = "WindFarmSoilErosionRate"
+          name = "Wind Farm Soil Erosion Rate"
+          uuid = "c57db2ad-24a8-4641-a765-7dd46ce1b6ec"
+          defaultValue = "Slow"
+          description = "How quickly is soil eroding on the install site?"
+          displayOrder = 3
+          fieldContext = "config.customOptions"
+          fieldLabel = "Soil Erosion Rate"
+          fieldName = "WindFarmSoilErosionRate"
+          helpBlock = "How quickly is soil eroding on the install site?"
+          optionList = { name = "Wind Farm Soil Erosion Rate" }
+          optionSource = "list"
+          required = true
+          type = "select"
+        }
+      ]
+    },
+    {
+      code = "b3843f4d-d998-4183-9a28-49e3b383f863"
+      name = "Firewall Properties"
+      collapsible = false
+      defaultCollapsed = false
+      options = [
+        {
+          code = "FWACLname"
+          name = "Firewall ACL Name"
+          uuid = "82ed8e91-1187-4a99-8bb5-3488c3adc26d"
+          displayValueOnDetails = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "ACL Name"
+          fieldName = "FWACLname"
+          labels = [ "Security" ]
+          optionList = { name = "Firewall ACL Names (From Root Tenant)" }
+          optionSource = "list"
+          required = true
+          type = "select"
+        },
+        {
+          code = "FWSourceIP"
+          name = "Firewall Source IP"
+          uuid = "1e9c3f2e-be8e-4fd2-ac9f-7a9c9637be43"
+          defaultValue = "0.0.0.0"
+          description = "IPv4 Source IP"
+          displayOrder = 2
+          displayValueOnDetails = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Source IPv4 Address"
+          fieldName = "FWSourceIP"
+          helpBlock = "In IPv4 a.b.c.d notation"
+          labels = [ "Security" ]
+          placeHolder = "IPv4 address"
+          refCode = "FWSourceIP"
+          required = true
+        },
+        {
+          code = "FWSourceIP"
+          name = "Firewall Source IP"
+          uuid = "1e9c3f2e-be8e-4fd2-ac9f-7a9c9637be43"
+          defaultValue = "0.0.0.0"
+          description = "IPv4 Source IP"
+          displayOrder = 2
+          displayValueOnDetails = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Source IPv4 Address"
+          fieldName = "FWSourceIP"
+          helpBlock = "In IPv4 a.b.c.d notation"
+          labels = [ "Security" ]
+          placeHolder = "IPv4 address"
+          refCode = "FWSourceIP"
+          required = true
+        },
+        {
+          code = "FWService"
+          name = "Firewall Service"
+          uuid = "6f1b51dd-1ef5-4232-9cf3-dfee994d9da8"
+          description = "Layer4 Service"
+          displayOrder = 4
+          displayValueOnDetails = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Firewall Service"
+          fieldName = "FWService"
+          helpBlock = "Services not listed are not available for self-service.  Please open a help desk ticket to open firewall rules for services that are not listed."
+          labels = [ "Security" ]
+          optionList = { name = "Firewall Service" }
+          optionSource = "list"
+          refCode = "FWService"
+          required = true
+          type = "select"
+        }
+      ]
+    }
+  ]
+}
