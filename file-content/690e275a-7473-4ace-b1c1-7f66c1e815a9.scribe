@@ -1,0 +1,9 @@
+resource "file-content" "690e275a-7473-4ace-b1c1-7f66c1e815a9" {
+  uuid = "690e275a-7473-4ace-b1c1-7f66c1e815a9"
+  content = <<EOFSCRIBE
+sudo yum install epel-release
+python --version
+EOFSCRIBE
+  dateCreated = "2022-10-03T13:10:01.000Z"
+  lastUpdated = "2022-10-03T13:11:23.000Z"
+}
