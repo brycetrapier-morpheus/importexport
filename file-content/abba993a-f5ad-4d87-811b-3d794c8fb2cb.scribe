@@ -1,0 +1,18 @@
+resource "file-content" "abba993a-f5ad-4d87-811b-3d794c8fb2cb" {
+  uuid = "abba993a-f5ad-4d87-811b-3d794c8fb2cb"
+  content = <<EOFSCRIBE
+# resource "ec2.vm" "SomeNewInstance" {
+# }
+
+resource aws_instance "SomeNewInstance" {
+  ami = "ami-09208e69ff3feb1db"
+  instance_type = "t3.micro"
+  tags = {
+    Name = "<%=instance.name%>"
+    SomeOtherTag = "Some Other Value"
+  }
+}
+EOFSCRIBE
+  dateCreated = "2021-11-16T19:20:44.000Z"
+  lastUpdated = "2023-08-03T02:55:04.000Z"
+}

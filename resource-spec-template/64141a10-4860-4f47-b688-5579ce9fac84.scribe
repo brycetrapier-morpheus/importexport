@@ -1,0 +1,10 @@
+resource "resource-spec-template" "64141a10-4860-4f47-b688-5579ce9fac84" {
+  name = "AWS - 2. EC2 T3.micro instance in NorCal"
+  uuid = "64141a10-4860-4f47-b688-5579ce9fac84"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2021-11-16T19:20:44.000Z"
+  lastUpdated = "2023-08-03T02:55:04.000Z"
+  template = { uuid = "abba993a-f5ad-4d87-811b-3d794c8fb2cb" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
