@@ -1,0 +1,10 @@
+resource "resource-spec-template" "b5914988-7bf9-4f38-9640-0fb260f2fb9f" {
+  name = "GitHub Test"
+  uuid = "b5914988-7bf9-4f38-9640-0fb260f2fb9f"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-03-12T03:03:48.000Z"
+  lastUpdated = "2022-05-07T00:36:53.000Z"
+  template = { uuid = "10b0fc15-daf1-4020-a07e-1ef782fe10ab" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}

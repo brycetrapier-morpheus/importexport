@@ -1,0 +1,9 @@
+resource "file-content" "10b0fc15-daf1-4020-a07e-1ef782fe10ab" {
+  uuid = "10b0fc15-daf1-4020-a07e-1ef782fe10ab"
+  contentPath = "/"
+  contentRef = ""
+  dateCreated = "2022-03-12T03:03:48.000Z"
+  lastUpdated = "2022-05-07T00:36:53.000Z"
+  repository = { name = "hotshots201" }
+  sourceType = "repository"
+}
