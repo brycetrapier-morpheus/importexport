@@ -1,0 +1,16 @@
+resource "file-content" "03cc5ca4-bc8f-488e-aaad-5332171ca610" {
+  uuid = "03cc5ca4-bc8f-488e-aaad-5332171ca610"
+  content = <<EOFSCRIBE
+#export LC_ALL=en_US.utf8
+#export LANG=en_US.utf8
+#locale 
+
+#export LANG="en_US.utf8"
+#export LC_ALL="en_US.utf8"
+
+#locale
+yum update -y
+EOFSCRIBE
+  dateCreated = "2023-04-12T22:03:50.000Z"
+  lastUpdated = "2023-04-12T22:26:31.000Z"
+}

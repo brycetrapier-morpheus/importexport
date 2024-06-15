@@ -1,0 +1,15 @@
+resource "task" "Python encoding" {
+  name = "Python encoding"
+  uuid = "2a8dc74b-de61-45b5-b3b5-a5cad12af743"
+  dateCreated = "2023-04-12T22:03:50.000Z"
+  executeTarget = "local"
+  labels = [ "encode" ]
+  lastUpdated = "2023-04-12T22:03:50.000Z"
+  options = [
+    {
+      content = { uuid = "03cc5ca4-bc8f-488e-aaad-5332171ca610" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
