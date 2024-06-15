@@ -1,0 +1,16 @@
+resource "task" "Python Version - Because Bryce doesn't know and centos still sucks" {
+  name = "Python Version - Because Bryce doesn't know and centos still sucks"
+  uuid = "9dba1637-a96f-4577-9b2d-7414738ee29c"
+  dateCreated = "2023-03-30T16:27:55.000Z"
+  executeTarget = "local"
+  labels = [ "centossucks", "ubuntuisbetter" ]
+  lastUpdated = "2023-03-30T16:28:20.000Z"
+  options = [
+    { optionType = { code = "pythonBinary" }, value = "python3" },
+    {
+      content = { uuid = "e583c297-d8dc-4107-8092-8c738fd0c29b" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  taskType = { code = "jythonTask" }
+}

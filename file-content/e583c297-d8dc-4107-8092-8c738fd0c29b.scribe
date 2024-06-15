@@ -1,0 +1,12 @@
+resource "file-content" "e583c297-d8dc-4107-8092-8c738fd0c29b" {
+  uuid = "e583c297-d8dc-4107-8092-8c738fd0c29b"
+  content = <<EOFSCRIBE
+import sys
+print("Python version")
+print (sys.version)
+print("Version info.")
+print (sys.version_info)
+EOFSCRIBE
+  dateCreated = "2023-03-30T16:27:55.000Z"
+  lastUpdated = "2023-03-30T16:27:55.000Z"
+}
