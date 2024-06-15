@@ -1,0 +1,13 @@
+resource "option-type" "copies" {
+  code = "copies"
+  name = "Copies"
+  uuid = "840ee6e5-f36b-43a1-b410-3e45f9c2614f"
+  description = "Number of VMs to Deploy"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Copies"
+  fieldName = "copies"
+  helpBlock = "Copies of the instance.  Not to be confused with Scale."
+  labels = [ "Demo" ]
+  required = true
+  type = "number"
+}
