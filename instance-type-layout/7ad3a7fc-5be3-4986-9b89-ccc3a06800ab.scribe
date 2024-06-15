@@ -1,0 +1,16 @@
+resource "instance-type-layout" "7ad3a7fc-5be3-4986-9b89-ccc3a06800ab" {
+  code = "7ad3a7fc-5be3-4986-9b89-ccc3a06800ab"
+  name = "EC2 - one new t3.micro"
+  uuid = "3f8b4eb5-13ac-4eff-93c2-5838a157b84d"
+  config = "{\"tfvarSecret\":\"\"}"
+  description = "One new T3.micro in AWS NorCal"
+  instanceType = { code = "terraformplans" }
+  instanceVersion = "AWS"
+  labels = [ "AWS", "IaC" ]
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [
+    { uuid = "64141a10-4860-4f47-b688-5579ce9fac84" },
+    { uuid = "89fe6e6b-83af-42fd-ba55-3a510020d066" }
+  ]
+}
