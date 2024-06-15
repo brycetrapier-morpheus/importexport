@@ -1,0 +1,24 @@
+resource "option-type-list" "Morpheus List of Clouds (Public)" {
+  name = "Morpheus List of Clouds (Public)"
+  uuid = "e2412c8e-3c17-43e7-8826-41d79e5a484a"
+  apiType = "clouds"
+  description = "Used by subtenants - must be public"
+  labels = [ "Public" ]
+  realTime = true
+  requestScript = <<EOFSCRIBE
+if (input.DeploymentGroup) {
+  results.siteId = input.DeploymentGroup
+}
+EOFSCRIBE
+  translationScript = <<EOFSCRIBE
+if (input.DeploymentGroup) 
+{
+  for (var x = 0; x < data.length; x++) 
+  {
+    results.push({name:data[x].name, value:data[x].id});
+  }
+}
+EOFSCRIBE
+  type = "api"
+  visibility = "public"
+}

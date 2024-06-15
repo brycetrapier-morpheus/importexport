@@ -1,0 +1,13 @@
+resource "option-type" "filteredplansmulticloud" {
+  code = "filteredplansmulticloud"
+  name = "Filtered Plan Choice (Multicloud)"
+  uuid = "a2736287-624e-4d21-9ac5-e4942c27e80f"
+  dependsOnCode = "DeploymentEnvironment"
+  displayOrder = 1
+  fieldContext = "config.customOptions"
+  fieldLabel = "VM Plans"
+  fieldName = "filteredplansmulticloud"
+  optionList = { name = "Filtered list of Plans (Multicloud)" }
+  optionSource = "list"
+  type = "select"
+}

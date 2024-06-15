@@ -1,0 +1,15 @@
+resource "option-type" "DeploymentEnvironment" {
+  code = "DeploymentEnvironment"
+  name = "Deployment Environment"
+  uuid = "dac2d1b6-5a93-496a-81bb-59db0f435aef"
+  fieldContext = "config.customOptions"
+  fieldGetName = "DeploymentEnvironment"
+  fieldLabel = "Deployment Environment"
+  fieldName = "DeploymentEnvironment"
+  fieldSetName = "DeploymentEnvironment"
+  helpBlock = "References the Morpheus API dataset \"Clouds\" using the Option List \"Morpheus List of Clouds (Public)\" which has been set to Public visibility."
+  optionList = { name = "Morpheus List of Clouds (Public)" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}

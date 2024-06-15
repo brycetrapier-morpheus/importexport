@@ -1,0 +1,17 @@
+resource "option-type-list" "Filtered list of Plans (Multicloud)" {
+  name = "Filtered list of Plans (Multicloud)"
+  uuid = "38684d5b-238c-48f4-93c0-e8a295587cb7"
+  description = "AWS and GCP Plans"
+  initialDataset = <<EOFSCRIBE
+[
+{"name":"AWS T2 Nano 1 x 0.5" , "value":489},
+{"name":"AWS T3 Small 2 x 2 " , "value":423},
+{"name":"AWS C5 XL  4 x 8 " , "value":359},
+{"name":"GCP F1 Micro 1 x 0.6" , "value":1639},
+{"name":"GCP G1 Small 1 x 1.7" , "value":1640},
+{"name":"GCP N1 Standard 1 x 3.75 " , "value":1663}
+]
+EOFSCRIBE
+  labels = [ "Broken" ]
+  type = "manual"
+}

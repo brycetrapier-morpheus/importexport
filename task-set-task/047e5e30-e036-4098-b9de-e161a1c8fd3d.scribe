@@ -1,0 +1,5 @@
+resource "task-set-task" "047e5e30-e036-4098-b9de-e161a1c8fd3d" {
+  uuid = "047e5e30-e036-4098-b9de-e161a1c8fd3d"
+  task = { name = "Multicloud Self-Serv Options" }
+  taskPhase = "operation"
+}
