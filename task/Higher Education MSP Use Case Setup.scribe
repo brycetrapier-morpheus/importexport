@@ -1,0 +1,20 @@
+resource "task" "Higher Education MSP Use Case Setup" {
+  name = "Higher Education MSP Use Case Setup"
+  uuid = "90c42289-7a67-48cc-a5d7-2eed1095dcbc"
+  dateCreated = "2023-04-12T21:54:33.000Z"
+  executeTarget = "local"
+  labels = [ "Demo", "POC", "example", "highered_msp", "setup" ]
+  lastUpdated = "2023-04-12T21:54:33.000Z"
+  options = [
+    { optionType = { code = "pythonArgs" }, value = "highered" },
+    {
+      optionType = { code = "pythonAdditionalPackages" }
+      value = "requests morphcp click"
+    },
+    {
+      content = { uuid = "17347f26-af1f-4120-9f6f-27519a78fdd3" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  taskType = { code = "jythonTask" }
+}

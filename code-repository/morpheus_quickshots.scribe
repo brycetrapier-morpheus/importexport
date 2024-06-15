@@ -1,0 +1,13 @@
+resource "code-repository" "morpheus_quickshots" {
+  name = "morpheus_quickshots"
+  uuid = "307a9438-674c-42a8-88a5-1bb1f62301a1"
+  dateCreated = "2023-04-12T21:54:18.000Z"
+  defaultBranch = "highered"
+  displayName = "Morpheus Quickshots Base Repo"
+  externalId = "https://gitlab.com/jaredlutgen/morpheus_quickshots.git"
+  integration = { name = "Morpheus Quickshots Base Repo" }
+  lastUpdated = "2024-01-31T07:20:28.000Z"
+  orgId = "//gitlab.com/jaredlutgen"
+  orgName = "//gitlab.com/jaredlutgen"
+  serviceUrl = "https://gitlab.com/jaredlutgen/morpheus_quickshots.git"
+}

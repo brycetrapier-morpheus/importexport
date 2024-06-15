@@ -1,0 +1,9 @@
+resource "account-integration" "Morpheus Quickshots Base Repo" {
+  name = "Morpheus Quickshots Base Repo"
+  uuid = "3fec6d38-1262-4ca6-a229-386fd526d3f7"
+  category = "cm-server"
+  config = { cacheEnabled = false, defaultBranch = "highered" }
+  integrationType = { code = "git" }
+  serviceUrl = "https://gitlab.com/jaredlutgen/morpheus_quickshots.git"
+  type = "git"
+}

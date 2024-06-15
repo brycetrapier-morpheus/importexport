@@ -1,0 +1,5 @@
+resource "task-set-task" "0487476f-dc85-4b41-9b86-5a3508979ac3" {
+  uuid = "0487476f-dc85-4b41-9b86-5a3508979ac3"
+  task = { name = "Higher Education MSP Use Case Setup" }
+  taskPhase = "operation"
+}

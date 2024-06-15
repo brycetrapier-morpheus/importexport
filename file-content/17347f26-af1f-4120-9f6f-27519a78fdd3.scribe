@@ -1,0 +1,9 @@
+resource "file-content" "17347f26-af1f-4120-9f6f-27519a78fdd3" {
+  uuid = "17347f26-af1f-4120-9f6f-27519a78fdd3"
+  contentPath = "morph_contentpack/main.py"
+  contentRef = "highered"
+  dateCreated = "2023-04-12T21:54:33.000Z"
+  lastUpdated = "2023-04-12T23:56:29.000Z"
+  repository = { name = "morpheus_quickshots" }
+  sourceType = "repository"
+}

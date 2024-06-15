@@ -1,0 +1,10 @@
+resource "task-set" "Higher Education MSP Use Case Setup" {
+  name = "Higher Education MSP Use Case Setup"
+  uuid = "69b93a8a-20e7-46f8-8ba5-a3ed20e2c267"
+  dateCreated = "2023-04-12T21:54:35.000Z"
+  description = "Higher Education MSP Setup - utilized by the Higher Education MSP Content Pack"
+  labels = [ "Demo", "POC", "example", "highered_msp", "setup" ]
+  lastUpdated = "2023-04-12T21:54:35.000Z"
+  taskSetTasks = [ { uuid = "0487476f-dc85-4b41-9b86-5a3508979ac3" } ]
+  taskSetType = "operation"
+}
