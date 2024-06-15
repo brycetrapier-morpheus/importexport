@@ -1,0 +1,14 @@
+resource "instance-type-layout" "29c463bb-5f82-4b45-85e1-f9b0f4f4c049" {
+  code = "29c463bb-5f82-4b45-85e1-f9b0f4f4c049"
+  name = "Azure Blueprints"
+  uuid = "af6d11c7-ee36-470b-a821-033aaaf4599d"
+  hasAutoScale = false
+  instanceType = { code = "testinstance" }
+  instanceVersion = "IaC"
+  memoryRequirement = 0
+  provisionType = { code = "arm" }
+  specTemplates = [
+    { uuid = "631f1276-53e1-4130-9be8-5c7a4eb1c12b" },
+    { uuid = "9cc1bec8-2fa6-4301-9a91-6f073f1f9874" }
+  ]
+}
