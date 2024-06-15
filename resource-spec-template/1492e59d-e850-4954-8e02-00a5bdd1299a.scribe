@@ -1,0 +1,18 @@
+resource "resource-spec-template" "1492e59d-e850-4954-8e02-00a5bdd1299a" {
+  name = "AWS - Sample from Demo"
+  uuid = "1492e59d-e850-4954-8e02-00a5bdd1299a"
+  category = "From Demo Environment"
+  config = {
+    cloudformation = {
+      _CAPABILITY_AUTO_EXPAND = ""
+      _CAPABILITY_NAMED_IAM = ""
+      _IAM = ""
+    }
+    terraform = { tfVersion = "" }
+  }
+  dateCreated = "2022-08-02T21:24:35.000Z"
+  lastUpdated = "2022-08-02T21:33:24.000Z"
+  template = { uuid = "900d264f-d5db-4a1a-8121-05053e07085f" }
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
