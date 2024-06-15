@@ -1,0 +1,17 @@
+resource "container-type" "75be076f-6b9b-457d-9db3-19f11d1dab74" {
+  code = "75be076f-6b9b-457d-9db3-19f11d1dab74"
+  name = "EVAR DEMO Linux2"
+  uuid = "2050201c-6357-4ffa-95c9-1ab16c723c9b"
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "evardemoamilinux2"
+  showServerLogs = true
+  statTypeCode = "amazon"
+  virtualImage = {
+    code = "amazon.ec2.image.morpheus.amazonlinux.2-v1.amazonlinux.2.amd64"
+  }
+}

@@ -1,0 +1,11 @@
+resource "instance-type-layout" "0ee6edcd-a900-4f21-87b4-4729ff45fd08" {
+  code = "0ee6edcd-a900-4f21-87b4-4729ff45fd08"
+  name = "EVAR Demo in AWS"
+  uuid = "a35230cb-5565-45b3-aacb-d10943f71056"
+  instanceType = { code = "evardemo" }
+  instanceVersion = "1"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "Input to EVAR" } ]
+  workloads = [ { code = "75be076f-6b9b-457d-9db3-19f11d1dab74" } ]
+}

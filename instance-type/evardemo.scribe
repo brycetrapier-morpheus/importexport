@@ -1,0 +1,11 @@
+resource "instance-type" "evardemo" {
+  code = "evardemo"
+  name = "EVAR Demo"
+  uuid = "dc4822a1-85d6-4a36-93bc-5fb2c3fbeefb"
+  category = "apps"
+  deploymentService = ""
+  description = "Captures a cleartext field and a masked input field.  Use a post-provisioning task to set EVARs to the values of the Inputs."
+  environmentPrefix = "EVARdemo"
+  labels = [ "test" ]
+  optionTypes = [ { code = "maskedinput" }, { code = "unmaskedinput" } ]
+}
