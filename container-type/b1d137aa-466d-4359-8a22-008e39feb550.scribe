@@ -1,0 +1,17 @@
+resource "container-type" "b1d137aa-466d-4359-8a22-008e39feb550" {
+  code = "b1d137aa-466d-4359-8a22-008e39feb550"
+  name = "CentOS 7 in Nutanix"
+  uuid = "76641706-f697-4cb3-97e7-cc8a3432d6df"
+  containerPorts = [ { uuid = "d1a142e5-93d6-4797-b47b-80e997c48426" } ]
+  containerVersion = "7"
+  entryPoint = ""
+  logTypeCode = "nutanix"
+  provisionType = { code = "nutanix" }
+  repositoryImage = ""
+  scripts = [ { code = "e0c8d79c-91dc-4dc3-acc9-469362bc8a74" } ]
+  serverType = "vm"
+  shortName = "centos7nutanix1"
+  showServerLogs = true
+  statTypeCode = "nutanix"
+  virtualImage = { uuid = "00a65ff0-3b0c-48d5-86fe-c07b5df7ba7c" }
+}

@@ -1,0 +1,13 @@
+resource "container-script" "e0c8d79c-91dc-4dc3-acc9-469362bc8a74" {
+  code = "e0c8d79c-91dc-4dc3-acc9-469362bc8a74"
+  name = "Hello World"
+  uuid = "9d4921b8-28bb-42e3-beb3-152577fd0c14"
+  dateCreated = "2022-02-24T01:24:28.000Z"
+  lastUpdated = "2022-03-11T21:07:35.000Z"
+  script = <<EOFSCRIBE
+#!/bin/bash
+
+echo Hello World
+EOFSCRIBE
+  scriptPhase = "postProvision"
+}

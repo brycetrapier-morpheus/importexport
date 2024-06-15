@@ -1,0 +1,11 @@
+resource "instance-type-layout" "0a06e8ed-a675-4803-9255-89ed796194d0" {
+  code = "0a06e8ed-a675-4803-9255-89ed796194d0"
+  name = "Nuntanix CentOS 7"
+  uuid = "1a0d1584-7881-49de-af4b-7c48db2a5ad0"
+  description = "CentoS 7 in Nutanix"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "7"
+  memoryRequirement = 134217728
+  provisionType = { code = "nutanix" }
+  workloads = [ { code = "b1d137aa-466d-4359-8a22-008e39feb550" } ]
+}

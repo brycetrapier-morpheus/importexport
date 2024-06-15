@@ -1,0 +1,11 @@
+resource "container-type-port" "d1a142e5-93d6-4797-b47b-80e997c48426" {
+  name = "NetDoom"
+  uuid = "d1a142e5-93d6-4797-b47b-80e997c48426"
+  export = true
+  exportName = "NETDOOM"
+  externalPort = 666
+  internalPort = 666
+  loadBalance = true
+  loadBalanceProtocol = "TCP"
+  visible = true
+}
