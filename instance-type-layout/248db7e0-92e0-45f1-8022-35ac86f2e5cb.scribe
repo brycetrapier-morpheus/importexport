@@ -1,0 +1,10 @@
+resource "instance-type-layout" "248db7e0-92e0-45f1-8022-35ac86f2e5cb" {
+  code = "248db7e0-92e0-45f1-8022-35ac86f2e5cb"
+  name = "AWS CF from Demo Lab"
+  uuid = "e5841f4e-48ef-493b-8343-7b2262837820"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "IaC"
+  memoryRequirement = 0
+  provisionType = { code = "cloudFormation" }
+  specTemplates = [ { uuid = "1492e59d-e850-4954-8e02-00a5bdd1299a" } ]
+}
