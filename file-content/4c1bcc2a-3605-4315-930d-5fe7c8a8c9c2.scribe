@@ -1,0 +1,36 @@
+resource "file-content" "4c1bcc2a-3605-4315-930d-5fe7c8a8c9c2" {
+  uuid = "4c1bcc2a-3605-4315-930d-5fe7c8a8c9c2"
+  content = <<EOFSCRIBE
+import requests
+import json
+import sys
+import time
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+morpheus_api_url = morpheus['morpheus']['applianceUrl']
+morpheus_master_tenant_bearer = morpheus['morpheus']['apiAccessToken']
+#morpheus_master_tenant_bearer = "d99aef7c-d4ad-4883-8bd7-354c8ef84178"
+#morpheus_api_url = "https://dmo5411.virtualtier.local"
+headers = {"accept": "application/json", "authorization": f"Bearer {morpheus_master_tenant_bearer}"}
+network1 = {
+     "network": {
+          "active": False
+     }
+}
+network_id = 7
+def disable_network(data):
+    data = json.dumps(data)
+    result = requests.post(f"{morpheus_api_url}/api/networks/{network_id}", verify=False, headers=headers, data = data)
+    response = result.json()
+    print(response)
+def main_app():
+    network_list = [network1]
+    print("Disable Networks")
+    for i in network_list:
+        disable_network(i)
+if __name__ == "__main__":
+    main_app()
+EOFSCRIBE
+  dateCreated = "2022-12-08T22:36:10.000Z"
+  lastUpdated = "2022-12-08T22:36:10.000Z"
+}

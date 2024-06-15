@@ -1,0 +1,19 @@
+resource "task" "Jareds Shenanigans" {
+  name = "Jareds Shenanigans"
+  uuid = "0224ad54-ffd8-4cd3-9d49-4174bc6f6756"
+  dateCreated = "2022-12-08T22:36:10.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-12-08T22:36:10.000Z"
+  options = [
+    { optionType = { code = "pythonBinary" }, value = "python3" },
+    {
+      optionType = { code = "pythonAdditionalPackages" }
+      value = "requests urllib3"
+    },
+    {
+      content = { uuid = "4c1bcc2a-3605-4315-930d-5fe7c8a8c9c2" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  taskType = { code = "jythonTask" }
+}
