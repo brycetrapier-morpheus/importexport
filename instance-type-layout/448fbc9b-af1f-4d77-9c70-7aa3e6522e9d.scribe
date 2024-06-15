@@ -1,0 +1,11 @@
+resource "instance-type-layout" "448fbc9b-af1f-4d77-9c70-7aa3e6522e9d" {
+  code = "448fbc9b-af1f-4d77-9c70-7aa3e6522e9d"
+  name = "Redis on Ubuntu 22.04 in AWS"
+  uuid = "d583428f-3a69-4d17-826d-ae27ce5a9467"
+  instanceType = { code = "rediscustom" }
+  instanceVersion = "Ubuntu 22.04"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "Install Redis on Ubuntu" } ]
+  workloads = [ { code = "ubuntu-amazon-22.04" } ]
+}

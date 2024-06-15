@@ -1,0 +1,10 @@
+resource "instance-type" "rediscustom" {
+  code = "rediscustom"
+  name = "Redis Custom Instance Type"
+  uuid = "c43e8a87-ae3a-47dd-b627-86b40a80fc58"
+  category = "utility"
+  deploymentService = ""
+  description = "Redis Clusters, modeled as custom Layouts"
+  environmentPrefix = "REDIS_CUSTOM_INSTANCE_TYPE"
+  labels = [ "Custom" ]
+}
