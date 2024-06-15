@@ -1,0 +1,13 @@
+resource "option-type" "InstanceForWorkflow" {
+  code = "InstanceForWorkflow"
+  name = "Instance for Workflow"
+  uuid = "3b7cf1e0-cbe7-4684-a721-97e37e321244"
+  description = "Testing with Renato"
+  displayOrder = 5
+  fieldContext = "config.customOptions"
+  fieldLabel = "Instance Target"
+  fieldName = "InstanceForWorkflow"
+  optionList = { name = "Morpheus List of Instances" }
+  optionSource = "list"
+  type = "select"
+}

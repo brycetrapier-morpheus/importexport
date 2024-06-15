@@ -1,0 +1,7 @@
+resource "option-type-list" "Morpheus List of Instances" {
+  name = "Morpheus List of Instances"
+  uuid = "e426665a-0ba8-42f5-a53d-4a57bf2d2620"
+  apiType = "instances"
+  realTime = true
+  type = "api"
+}
