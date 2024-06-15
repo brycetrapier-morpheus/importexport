@@ -1,0 +1,17 @@
+resource "instance-type-layout" "8e3a861a-e3f1-48ad-943e-376b98527846" {
+  code = "8e3a861a-e3f1-48ad-943e-376b98527846"
+  name = "Synopsys Test"
+  uuid = "da256f17-188f-4761-811c-863a54c131d7"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "Customer"
+  memoryRequirement = 134217728
+  optionTypes = [
+    { code = "SYNApplicationName" },
+    { code = "SYNmysqlpass" },
+    { code = "SYNmysqluser" },
+    { code = "SYNvmtype" }
+  ]
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "SYN Workflow Provisioning" } ]
+  workloads = [ { code = "amazonlinux-amazon-2" } ]
+}
