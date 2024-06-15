@@ -1,0 +1,14 @@
+resource "instance-type-layout" "a56cf0eb-914f-41a2-89ec-4027b1f7bf28" {
+  code = "a56cf0eb-914f-41a2-89ec-4027b1f7bf28"
+  name = "NewVM in GCP, name from a TF variable"
+  uuid = "01ff7644-87ba-4e43-9982-b5f577dd681c"
+  config = "{\"tfvarSecret\":\"\"}"
+  instanceType = { code = "terraformplans" }
+  instanceVersion = "GCP"
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [
+    { uuid = "72042dfd-4e73-4b13-9005-14b50178d41a" },
+    { uuid = "86aabab1-54a9-43d9-b2ec-92cdffd51061" }
+  ]
+}
