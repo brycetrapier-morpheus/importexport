@@ -1,0 +1,11 @@
+resource "resource-spec-template" "9242a1c7-7dbf-4623-aea4-b8d84106270b" {
+  name = "AWS - 5a - New VPC and New IGW with static CIDR"
+  uuid = "9242a1c7-7dbf-4623-aea4-b8d84106270b"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2021-12-15T22:43:41.000Z"
+  labels = [ "AWS", "Terraform" ]
+  lastUpdated = "2023-12-06T08:24:00.000Z"
+  template = { uuid = "a3c1783e-f494-48e1-83e2-1a0d7ab8837e" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}

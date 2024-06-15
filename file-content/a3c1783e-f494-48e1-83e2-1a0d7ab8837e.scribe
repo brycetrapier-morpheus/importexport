@@ -1,0 +1,59 @@
+resource "file-content" "a3c1783e-f494-48e1-83e2-1a0d7ab8837e" {
+  uuid = "a3c1783e-f494-48e1-83e2-1a0d7ab8837e"
+  content = <<EOFSCRIBE
+###############################
+# NOTE: No subnets, routing, or security
+#
+
+
+###################################################
+# Provider Block is assumed to be in another spec template
+
+###################################################
+# Resource Blocks
+
+# Create a new VPC, and associate the 10.0.0.0/16 space
+# Set the name tag on the VPC Terraform-VPC
+#
+resource "aws_vpc" "NewVPC" {
+  cidr_block           = "10.0.0.0/16"
+  enable_dns_support   = true
+  enable_dns_hostnames = true
+  tags = {
+    Name = "Morpheus Demo VPC <%=instance.name%>"
+  }
+}
+
+# Create a new IGW, and associate it with the newly-created VPC
+# Also, set the name tag on the new IGW to Terraform-IGW
+#
+resource "aws_internet_gateway" "NewIGW" {
+  vpc_id = aws_vpc.NewVPC.id
+  tags = {
+    Name = "Morpheus Lab IGW"
+  }
+}
+
+###################################################
+# Outputs
+output "New_VPC_ID" {
+  description = "New VPC ARN" 
+  value = aws_vpc.NewVPC.id
+}
+
+output "New_VPC_ARN_SensitiveOutput" {
+  description = "New VPC ARN Masked" 
+  value = aws_vpc.NewVPC.arn
+  sensitive = true
+}
+
+output "New_IGW_IDSensitiveOutput" {
+  sensitive = true
+  description = "New IGW ID Masked" 
+  value = aws_internet_gateway.NewIGW.id
+}
+
+EOFSCRIBE
+  dateCreated = "2021-12-15T22:43:41.000Z"
+  lastUpdated = "2023-12-06T08:24:00.000Z"
+}
