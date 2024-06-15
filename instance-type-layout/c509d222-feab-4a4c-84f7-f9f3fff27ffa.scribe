@@ -1,0 +1,11 @@
+resource "instance-type-layout" "c509d222-feab-4a4c-84f7-f9f3fff27ffa" {
+  code = "c509d222-feab-4a4c-84f7-f9f3fff27ffa"
+  name = "Aspect Call Agent and Call Control Server"
+  uuid = "86997c2e-5277-44dd-98d1-8804ec7fcec7"
+  description = "Based on Debian 11"
+  instanceType = { code = "aspect" }
+  instanceVersion = "1"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  workloads = [ { code = "debian-amazon-11.0" } ]
+}
