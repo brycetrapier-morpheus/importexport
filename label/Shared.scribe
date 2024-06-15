@@ -1,0 +1,3 @@
+resource "label" "Shared" {
+  name = "Shared"
+}

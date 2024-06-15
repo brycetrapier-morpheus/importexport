@@ -1,0 +1,3 @@
+resource "label" "Designed to Fail" {
+  name = "Designed to Fail"
+}
