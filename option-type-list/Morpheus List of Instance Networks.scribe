@@ -1,0 +1,7 @@
+resource "option-type-list" "Morpheus List of Instance Networks" {
+  name = "Morpheus List of Instance Networks"
+  uuid = "f5a380ff-bd62-453e-a5ff-32560399f1e2"
+  apiType = "instanceNetworks"
+  realTime = true
+  type = "api"
+}

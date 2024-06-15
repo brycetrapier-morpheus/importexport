@@ -1,0 +1,12 @@
+resource "option-type" "MorpheusListOfInstanceNetworks" {
+  code = "MorpheusListOfInstanceNetworks"
+  name = "Morpheus List of Instance Networks"
+  uuid = "f1a173a2-04e3-47a8-9c5d-8d020988ac06"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Instance Network"
+  fieldName = "MorpheusListOfInstanceNetworks"
+  helpBlock = "References the Morpheus API dataset \"Instance Networks\""
+  optionList = { name = "Morpheus List of Instance Networks" }
+  optionSource = "list"
+  type = "radio"
+}
