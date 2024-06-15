@@ -1,0 +1,17 @@
+resource "container-type" "27c4093e-baec-46d3-9225-502ed1cbf65b" {
+  code = "27c4093e-baec-46d3-9225-502ed1cbf65b"
+  name = "Snoopy-branded Web Server"
+  uuid = "0a6972fe-1af4-4020-a780-0e4a06dd20fa"
+  containerMounts = [ { code = "template: 1d7f54da-b011-4379-a4a7-0c1be8d65ec9" } ]
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "snoopyweb"
+  showServerLogs = true
+  statTypeCode = "amazon"
+  templates = [ { code = "1d7f54da-b011-4379-a4a7-0c1be8d65ec9" } ]
+  virtualImage = { uuid = "2897a783-7b80-48f2-86dc-90ecb4cf30cc" }
+}
