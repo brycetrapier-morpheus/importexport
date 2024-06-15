@@ -1,0 +1,14 @@
+resource "catalog-item-type" "ubuntu2004" {
+  code = "ubuntu2004"
+  name = "Ubuntu 20.04 in AWS"
+  uuid = "abf493cc-7a42-42ec-b024-348a7b8aa73b"
+  allowQuantity = true
+  dateCreated = "2023-12-05T22:46:18.000Z"
+  description = "Barebones Ubuntu 20.04 Deployment"
+  featured = true
+  formType = "form"
+  iconPath = "/branding/140x40/ubuntu.svg"
+  labels = [ { name = "Demo" } ]
+  lastUpdated = "2023-12-05T22:46:18.000Z"
+  refType = "InstanceType"
+}
