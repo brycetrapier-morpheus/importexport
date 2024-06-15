@@ -1,0 +1,13 @@
+resource "option-type" "morpheusinstances" {
+  code = "morpheusinstances"
+  name = "Morpheus Instances"
+  uuid = "16d944e0-17b3-47fa-9d69-0881e8b7cf35"
+  fieldContext = "config.customOptions"
+  fieldGetName = "morpheusinstances"
+  fieldLabel = "Instance to Select"
+  fieldName = "morpheusinstances"
+  fieldSetName = "morpheusinstances"
+  optionList = { name = "Filtered list of node types" }
+  optionSource = "list"
+  type = "select"
+}

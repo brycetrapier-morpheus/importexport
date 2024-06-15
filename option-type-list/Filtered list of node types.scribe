@@ -1,0 +1,13 @@
+resource "option-type-list" "Filtered list of node types" {
+  name = "Filtered list of node types"
+  uuid = "81b10606-7faa-4a18-9a5e-1aebafd0e234"
+  initialDataset = <<EOFSCRIBE
+[
+  {"name":"AWS Apache", "value" : 102},
+  {"name":"AWS CentOS", "value" : 105},
+  {"name":"AWS MySQL",  "value" : 104},
+  {"name":"Terraform",  "value" : 103}  
+]
+EOFSCRIBE
+  type = "manual"
+}
