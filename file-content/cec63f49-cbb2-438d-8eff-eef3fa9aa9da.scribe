@@ -1,0 +1,28 @@
+resource "file-content" "cec63f49-cbb2-438d-8eff-eef3fa9aa9da" {
+  uuid = "cec63f49-cbb2-438d-8eff-eef3fa9aa9da"
+  content = <<EOFSCRIBE
+#Ubuntu
+echo ----------------------------
+echo Updating Apache Landing Page
+echo ----------------------------
+
+cat > /var/www/html/index.html <<'EOF'
+<h1>Hello World</h1>
+<html>
+    <head>
+        <title>Hello World</title>
+    </head>
+    <body>
+        <h1>Web services are working</h1>
+    </body>
+</html>
+EOF
+
+echo ----------------------------
+echo  Apache Landing Page Updated
+echo ----------------------------
+
+EOFSCRIBE
+  dateCreated = "2022-08-12T21:21:35.000Z"
+  lastUpdated = "2022-08-15T20:12:24.000Z"
+}

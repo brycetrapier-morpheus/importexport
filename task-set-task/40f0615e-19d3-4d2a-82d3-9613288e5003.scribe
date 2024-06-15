@@ -1,0 +1,4 @@
+resource "task-set-task" "40f0615e-19d3-4d2a-82d3-9613288e5003" {
+  uuid = "40f0615e-19d3-4d2a-82d3-9613288e5003"
+  task = { name = "Apache Install (Ubuntu) - 1 Install" }
+}

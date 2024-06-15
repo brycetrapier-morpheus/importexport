@@ -1,0 +1,16 @@
+resource "task" "Apache Install (Ubuntu) - 2 Open HBFW" {
+  name = "Apache Install (Ubuntu) - 2 Open HBFW"
+  uuid = "81f28fd7-669c-4f9e-a458-20ac75e2d0a7"
+  dateCreated = "2022-08-12T21:21:05.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-02-24T23:13:14.000Z"
+  options = [
+    {
+      content = { uuid = "170ca0e3-e385-43f6-b1a4-0a4b58d14c1b" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}

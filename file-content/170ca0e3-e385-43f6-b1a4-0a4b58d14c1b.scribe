@@ -1,0 +1,18 @@
+resource "file-content" "170ca0e3-e385-43f6-b1a4-0a4b58d14c1b" {
+  uuid = "170ca0e3-e385-43f6-b1a4-0a4b58d14c1b"
+  content = <<EOFSCRIBE
+#Ubuntu
+echo ----------------------------------
+echo Opening Apache Host-Based FW Ports
+echo ----------------------------------
+
+ufw allow 'Apache Full'
+
+echo --------------------
+echo Apache FW Ports Open
+echo --------------------
+
+EOFSCRIBE
+  dateCreated = "2022-08-12T21:21:05.000Z"
+  lastUpdated = "2022-08-15T20:10:46.000Z"
+}

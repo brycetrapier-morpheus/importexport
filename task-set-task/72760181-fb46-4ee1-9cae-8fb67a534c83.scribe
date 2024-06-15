@@ -1,0 +1,5 @@
+resource "task-set-task" "72760181-fb46-4ee1-9cae-8fb67a534c83" {
+  uuid = "72760181-fb46-4ee1-9cae-8fb67a534c83"
+  task = { name = "Apache Install (Ubuntu) - 3 Update Landing Page" }
+  taskOrder = 2
+}

@@ -1,0 +1,16 @@
+resource "task-set" "Apache Install (Ubuntu)" {
+  name = "Apache Install (Ubuntu)"
+  uuid = "90da8d2e-2a97-4d73-9493-4a8bddf02c18"
+  dateCreated = "2022-08-12T21:26:34.000Z"
+  description = "Install apache web services on Ubuntu"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-02-24T23:09:02.000Z"
+  platform = "linux"
+  taskSetTasks = [
+    { uuid = "154f7e48-be89-4c78-a45a-da1115d198d7" },
+    { uuid = "40f0615e-19d3-4d2a-82d3-9613288e5003" },
+    { uuid = "72760181-fb46-4ee1-9cae-8fb67a534c83" },
+    { uuid = "d9a70735-ccb4-47a2-b72a-4987edc422e9" }
+  ]
+  visibility = "public"
+}

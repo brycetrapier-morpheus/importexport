@@ -1,0 +1,5 @@
+resource "task-set-task" "154f7e48-be89-4c78-a45a-da1115d198d7" {
+  uuid = "154f7e48-be89-4c78-a45a-da1115d198d7"
+  task = { name = "Apache Install (Ubuntu) - 4 Reload Web Services" }
+  taskOrder = 3
+}

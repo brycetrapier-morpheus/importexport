@@ -1,0 +1,16 @@
+resource "task" "Apache Install (Ubuntu) - 3 Update Landing Page" {
+  name = "Apache Install (Ubuntu) - 3 Update Landing Page"
+  uuid = "59ae2f2e-c85a-4fa3-970e-b71c902201ca"
+  dateCreated = "2022-08-12T21:21:35.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-02-24T23:13:10.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "cec63f49-cbb2-438d-8eff-eef3fa9aa9da" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

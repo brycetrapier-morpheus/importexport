@@ -1,0 +1,16 @@
+resource "task" "Apache Install (Ubuntu) - 1 Install" {
+  name = "Apache Install (Ubuntu) - 1 Install"
+  uuid = "560b1004-d271-44cc-9460-2636d0364961"
+  dateCreated = "2022-08-12T21:19:20.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-02-24T23:13:19.000Z"
+  options = [
+    {
+      content = { uuid = "2b506fe3-a291-45cf-a846-7790325cc3e1" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}

@@ -1,0 +1,18 @@
+resource "file-content" "9105b018-04b4-4615-b4e3-7d5ef4cddc56" {
+  uuid = "9105b018-04b4-4615-b4e3-7d5ef4cddc56"
+  content = <<EOFSCRIBE
+#Ubuntu
+echo --------------------------
+echo Reloading Apache Services
+echo --------------------------
+
+systemctl apache2 reload
+
+echo -------------------------
+echo Apache Services Reloaded
+echo -------------------------
+
+EOFSCRIBE
+  dateCreated = "2022-08-12T21:25:39.000Z"
+  lastUpdated = "2022-08-18T18:46:09.000Z"
+}

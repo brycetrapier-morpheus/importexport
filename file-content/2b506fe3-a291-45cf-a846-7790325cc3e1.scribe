@@ -1,0 +1,19 @@
+resource "file-content" "2b506fe3-a291-45cf-a846-7790325cc3e1" {
+  uuid = "2b506fe3-a291-45cf-a846-7790325cc3e1"
+  content = <<EOFSCRIBE
+# Ubuntu
+echo -----------------
+echo Installing Apache
+echo -----------------
+
+apt -y update
+apt install -y apache2
+
+echo -----------------
+echo Apache Installed
+echo -----------------
+
+EOFSCRIBE
+  dateCreated = "2022-08-12T21:19:21.000Z"
+  lastUpdated = "2022-08-12T22:13:09.000Z"
+}

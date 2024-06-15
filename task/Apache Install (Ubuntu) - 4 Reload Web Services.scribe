@@ -1,0 +1,16 @@
+resource "task" "Apache Install (Ubuntu) - 4 Reload Web Services" {
+  name = "Apache Install (Ubuntu) - 4 Reload Web Services"
+  uuid = "e383f14a-82d8-42cd-af2d-d5c9425f0b94"
+  dateCreated = "2022-08-12T21:25:39.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-05-24T11:06:34.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "9105b018-04b4-4615-b4e3-7d5ef4cddc56" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
