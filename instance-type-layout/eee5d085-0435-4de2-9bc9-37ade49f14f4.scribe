@@ -1,0 +1,14 @@
+resource "instance-type-layout" "eee5d085-0435-4de2-9bc9-37ade49f14f4" {
+  code = "eee5d085-0435-4de2-9bc9-37ade49f14f4"
+  name = "GCP Terraform"
+  uuid = "14debaee-ba5b-462d-8827-033500002e44"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "Test VM"
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [
+    { uuid = "465217b1-73ae-4e3e-94a3-86e2583f7d6b" },
+    { uuid = "72042dfd-4e73-4b13-9005-14b50178d41a" },
+    { uuid = "aa3f93df-66df-4c2e-89c0-3cabe6b3b6d5" }
+  ]
+}
