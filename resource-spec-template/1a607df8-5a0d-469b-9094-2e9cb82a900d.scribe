@@ -1,0 +1,11 @@
+resource "resource-spec-template" "1a607df8-5a0d-469b-9094-2e9cb82a900d" {
+  name = "ARM RG Template"
+  uuid = "1a607df8-5a0d-469b-9094-2e9cb82a900d"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2023-02-25T01:57:17.000Z"
+  labels = [ "ARM", "Azure", "Template" ]
+  lastUpdated = "2023-02-25T01:57:17.000Z"
+  template = { uuid = "c484b23b-7111-44d0-b271-eb1b6dd94f63" }
+  templateType = "ARM Template"
+  type = { code = "arm" }
+}

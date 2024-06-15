@@ -1,0 +1,35 @@
+resource "file-content" "c484b23b-7111-44d0-b271-eb1b6dd94f63" {
+  uuid = "c484b23b-7111-44d0-b271-eb1b6dd94f63"
+  content = <<EOFSCRIBE
+{
+    "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
+    "contentVersion": "1.0.0.1",
+    "parameters": {
+        "rgName": {
+            "type": "string"
+        },
+        "rgLocation": {
+            "type": "string"
+        },
+        "tags": {
+            "type": "object",
+            "defaultValue": {}
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Resources/resourceGroups",
+            "apiVersion": "2018-05-01",
+            "location": "[parameters('rgLocation')]",
+            "name": "[parameters('rgName')]",
+            "properties": {},
+            "tags": "[parameters('tags')]"
+        }
+    ],
+    "outputs": {}
+}
+EOFSCRIBE
+  dateCreated = "2023-02-25T01:57:17.000Z"
+  lastUpdated = "2023-02-25T01:57:17.000Z"
+}
