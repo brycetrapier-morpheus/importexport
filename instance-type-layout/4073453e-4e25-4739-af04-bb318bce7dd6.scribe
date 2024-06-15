@@ -1,0 +1,11 @@
+resource "instance-type-layout" "4073453e-4e25-4739-af04-bb318bce7dd6" {
+  code = "4073453e-4e25-4739-af04-bb318bce7dd6"
+  name = "Terraform Provider block in Azure"
+  uuid = "b5bca787-c56a-4fb8-88ce-f93da30e2ebe"
+  instanceType = { code = "iac.samples" }
+  instanceVersion = "Azure"
+  labels = [ "Azure", "Terraform" ]
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [ { uuid = "cc430c08-e488-4288-8e0a-9524bb781ba4" } ]
+}
