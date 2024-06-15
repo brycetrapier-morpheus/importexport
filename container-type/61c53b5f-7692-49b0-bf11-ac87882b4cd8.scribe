@@ -1,0 +1,15 @@
+resource "container-type" "61c53b5f-7692-49b0-bf11-ac87882b4cd8" {
+  code = "61c53b5f-7692-49b0-bf11-ac87882b4cd8"
+  name = "Brownfield Test"
+  uuid = "a7fa87a8-2aff-4c57-a55f-77060f8e6926"
+  containerVersion = "test"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "brownfieldtest"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "218303f8-bbf0-43c8-8655-8b6c500d195a" }
+}
