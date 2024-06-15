@@ -1,0 +1,16 @@
+resource "instance-type-layout" "66af7738-7fe1-47eb-8485-fe66f89f6f61" {
+  code = "66af7738-7fe1-47eb-8485-fe66f89f6f61"
+  name = "Bad Code Example"
+  uuid = "c220db40-9969-49b2-af38-398665359396"
+  config = "{\"tfvarSecret\":\"\"}"
+  description = "Designed to fail - the Terraform engine will detect the failure and provide suggested remedies"
+  instanceType = { code = "terraformplans" }
+  instanceVersion = "AWS"
+  labels = [ "AWS", "DesignedToFail", "IaC" ]
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [
+    { uuid = "89fe6e6b-83af-42fd-ba55-3a510020d066" },
+    { uuid = "e87dc16d-37c6-4640-be12-70a7e6027092" }
+  ]
+}
