@@ -1,0 +1,44 @@
+resource "file-content" "3234c852-c8d7-4e44-a426-61eed12eb2cd" {
+  uuid = "3234c852-c8d7-4e44-a426-61eed12eb2cd"
+  content = <<EOFSCRIBE
+
+# Enumerate all available AZ's in the VPC for a given region
+#
+data "aws_availability_zones" "AZs" {
+  state = "available"
+}
+
+# Create two subnets in the the Region
+# Also, set name tags on the net subnets
+#
+
+#  Create a subnet, for the Web tier, in the first AZ
+#  Provide a public IP address to instances launched in this subnet
+#
+resource "aws_subnet" "WebFarm" {
+  availability_zone = element(data.aws_availability_zones.AZs.names, 0)
+  vpc_id            = aws_vpc.TFVPC.id
+  cidr_block        = "10.0.1.0/24"
+  map_public_ip_on_launch = true 
+    tags = {
+    Name = "Morpheus Web Subnet"
+  }
+}
+
+#  Create a subnet, for the Data tier, in the second AZ
+#  Do not provide public IP’s for instances launched in this subnet
+#
+resource "aws_subnet" "DataFarm" {
+  availability_zone = element(data.aws_availability_zones.AZs.names, 1)
+  vpc_id            = aws_vpc.TFVPC.id
+  cidr_block        = "10.0.2.0/24"
+    tags = {
+    Name = "Morpheus Data Subnet"
+  }
+}
+
+
+EOFSCRIBE
+  dateCreated = "2021-12-15T22:44:11.000Z"
+  lastUpdated = "2021-12-15T22:44:11.000Z"
+}

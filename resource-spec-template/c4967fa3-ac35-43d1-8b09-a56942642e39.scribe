@@ -1,0 +1,10 @@
+resource "resource-spec-template" "c4967fa3-ac35-43d1-8b09-a56942642e39" {
+  name = "AWS - Create new subnets – a public subnet for the web farm, and a private subnet for the data farm"
+  uuid = "c4967fa3-ac35-43d1-8b09-a56942642e39"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2021-12-15T22:44:11.000Z"
+  lastUpdated = "2021-12-15T22:44:11.000Z"
+  template = { uuid = "3234c852-c8d7-4e44-a426-61eed12eb2cd" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
