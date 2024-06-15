@@ -1,0 +1,12 @@
+resource "instance-type-layout" "40163c7e-2563-4a6c-8b0e-9d6659751606" {
+  code = "40163c7e-2563-4a6c-8b0e-9d6659751606"
+  name = "New VPC from Code in GitHub"
+  uuid = "252fedb1-48a8-44c7-adec-4e1ae74b6ab1"
+  description = "Use code in GitHub to build infrastructure"
+  instanceType = { code = "terraformplans" }
+  instanceVersion = "AWS"
+  labels = [ "AWS", "IaC" ]
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [ { uuid = "119cccac-5128-4a44-8ef0-9b3f21367e77" } ]
+}
