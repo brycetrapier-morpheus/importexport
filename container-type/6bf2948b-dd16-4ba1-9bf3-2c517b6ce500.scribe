@@ -1,0 +1,15 @@
+resource "container-type" "6bf2948b-dd16-4ba1-9bf3-2c517b6ce500" {
+  code = "6bf2948b-dd16-4ba1-9bf3-2c517b6ce500"
+  name = "BoS LoadGen"
+  uuid = "48e54594-a406-4111-af2b-463913771c18"
+  containerVersion = "0.1"
+  entryPoint = ""
+  logTypeCode = "vmware"
+  provisionType = { code = "esxi" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "bosloadgen"
+  showServerLogs = true
+  statTypeCode = "vmware"
+  virtualImage = { code = "vcd.image.morpheus.centos-7_9.ovf" }
+}
