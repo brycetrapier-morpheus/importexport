@@ -1,0 +1,16 @@
+resource "option-type" "nestedEsxiVersion" {
+  code = "nestedEsxiVersion"
+  name = "ESXi Version"
+  uuid = "2550ddeb-960c-40fe-911d-ed8c5673287c"
+  defaultValue = "ESX6.5u3Template.ova"
+  description = "select version of esxi"
+  fieldContext = "config.customOptions"
+  fieldLabel = "ESXi Version"
+  fieldName = "nestedEsxiVersion"
+  labels = [ "nested deployment", "prod" ]
+  optionList = { name = "Nested Esxi Version" }
+  refCode = "nestedEsxiVersion"
+  required = true
+  showOnEdit = false
+  type = "select"
+}
