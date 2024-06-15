@@ -1,0 +1,9 @@
+resource "task-set" "EVAR Demo for Database (Operational)" {
+  name = "EVAR Demo for Database (Operational)"
+  uuid = "273e0220-41d1-460d-9900-570dd6ad88a4"
+  dateCreated = "2021-12-17T23:31:43.000Z"
+  lastUpdated = "2021-12-17T23:31:43.000Z"
+  optionTypes = [ { code = "unmaskedinput" } ]
+  taskSetTasks = [ { uuid = "b8836931-7fbd-44b8-9042-9abfb8ee04d6" } ]
+  taskSetType = "operation"
+}

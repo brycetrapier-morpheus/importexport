@@ -1,0 +1,13 @@
+resource "option-type" "unmaskedinput" {
+  code = "unmaskedinput"
+  name = "Input, Generic, Unmasked"
+  uuid = "c7a2d390-5118-439d-b55a-38531ef1daf8"
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "unmaskedinput"
+  fieldLabel = "Unmasked input"
+  fieldName = "unmaskedinput"
+  fieldSetName = "unmaskedinput"
+  helpBlock = "This is a generic unmasked input variable used for testing and demo.  This uses an Input of type \"Text\"  This input is also set to \"Required\"  This input displays during instance reconfig (\"Show on Edit\" box is checked), but is not editable (\"Editable\" box is not checked)"
+  required = true
+}
