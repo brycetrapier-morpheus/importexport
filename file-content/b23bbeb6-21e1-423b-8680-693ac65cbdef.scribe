@@ -1,0 +1,18 @@
+resource "file-content" "b23bbeb6-21e1-423b-8680-693ac65cbdef" {
+  uuid = "b23bbeb6-21e1-423b-8680-693ac65cbdef"
+  content = <<EOFSCRIBE
+output "WebFarm_Subnet_ID" {
+    value = aws_subnet.WebFarm.id
+}
+output "DataFarm_Subnet_ID" {
+    value = aws_subnet.DataFarm.id
+}
+
+output "Security_Group_ID" {
+    value = aws_security_group.Permit_HTTPS_Any.id
+}
+
+EOFSCRIBE
+  dateCreated = "2022-02-15T20:06:41.000Z"
+  lastUpdated = "2022-02-15T20:06:41.000Z"
+}

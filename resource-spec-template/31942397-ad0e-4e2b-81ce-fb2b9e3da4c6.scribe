@@ -1,0 +1,11 @@
+resource "resource-spec-template" "31942397-ad0e-4e2b-81ce-fb2b9e3da4c6" {
+  name = "AWS - Output the ARN’s of the SG, Web farm, and Data farm"
+  uuid = "31942397-ad0e-4e2b-81ce-fb2b9e3da4c6"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-02-15T20:06:41.000Z"
+  labels = [ "AWS" ]
+  lastUpdated = "2023-03-22T23:37:03.000Z"
+  template = { uuid = "b23bbeb6-21e1-423b-8680-693ac65cbdef" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
