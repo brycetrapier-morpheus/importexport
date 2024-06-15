@@ -1,0 +1,11 @@
+resource "instance-type-layout" "912990b0-f5cd-4a39-ae3b-53b62adc0896" {
+  code = "912990b0-f5cd-4a39-ae3b-53b62adc0896"
+  name = "Verint DMS in GCP"
+  uuid = "d51199b8-307a-4187-8df1-a2cdca3c185d"
+  description = "Verint Database Management Server"
+  instanceType = { code = "verint" }
+  instanceVersion = "1"
+  memoryRequirement = 134217728
+  provisionType = { code = "google" }
+  workloads = [ { code = "90ed532b-afdd-424e-bbf4-1e04271407fc" } ]
+}
