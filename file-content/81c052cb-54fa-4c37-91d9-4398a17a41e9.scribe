@@ -1,0 +1,21 @@
+resource "file-content" "81c052cb-54fa-4c37-91d9-4398a17a41e9" {
+  uuid = "81c052cb-54fa-4c37-91d9-4398a17a41e9"
+  content = <<EOFSCRIBE
+# This is only a framework of updating a firewall rule to a Cisco firewall using the CLI
+# To apply this to a real firewall, change the Execute Target to <<Remote>> and provide 
+# an IPv4 Address and credentials for the firewall
+#
+echo !
+echo config t
+echo !
+echo access-list "<%= customOptions.FWACLname %>" extended "<%= customOptions.FWAction %>" tcp host "<%= customOptions.FWSourceIP %>" host  "<%= customOptions.FWDestinationIP %>" eq  "<%= customOptions.FWPort %>"
+echo !
+echo exit
+echo write mem
+echo !
+#
+# To see the results of this Task, in the Morpheus web UI, go to Provisioning > Executions
+EOFSCRIBE
+  dateCreated = "2022-09-06T22:39:13.000Z"
+  lastUpdated = "2022-09-27T16:43:04.000Z"
+}

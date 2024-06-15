@@ -1,0 +1,17 @@
+resource "task-set" "Firewall Rule, CLI-based" {
+  name = "Firewall Rule, CLI-based"
+  uuid = "b353c85b-c023-400e-ad71-42e8595eaec9"
+  dateCreated = "2022-09-06T22:39:31.000Z"
+  description = "Add a firewall rule using CLI commands"
+  labels = [ "Demo" ]
+  lastUpdated = "2024-02-14T22:49:41.000Z"
+  optionTypes = [
+    { code = "FWACLname" },
+    { code = "FWAction" },
+    { code = "FWSourceIP" },
+    { code = "FWDestinationIP" },
+    { code = "FWPort" }
+  ]
+  taskSetTasks = [ { uuid = "55811a7c-d613-485b-84fe-c1add5ce79c2" } ]
+  taskSetType = "operation"
+}

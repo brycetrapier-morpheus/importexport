@@ -1,0 +1,15 @@
+resource "option-type-list" "Firewall Policy Action" {
+  name = "Firewall Policy Action"
+  uuid = "3de0ba49-755e-42db-8756-f940158ec094"
+  description = "Permit. Inspect, Deny, Shun, etc"
+  initialDataset = <<EOFSCRIBE
+Deny,deny
+Inspect,inspect
+Log,Log
+Permit,permit
+Shun,shun
+EOFSCRIBE
+  labels = [ "Security" ]
+  type = "manual"
+  visibility = "public"
+}

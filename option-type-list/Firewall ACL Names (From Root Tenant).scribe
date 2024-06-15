@@ -1,0 +1,16 @@
+resource "option-type-list" "Firewall ACL Names (From Root Tenant)" {
+  name = "Firewall ACL Names (From Root Tenant)"
+  uuid = "76551722-e4b3-4083-9896-9f80cd82f233"
+  description = "List of ACL names for operational workflows"
+  initialDataset = <<EOFSCRIBE
+INSIDE, INSIDE
+OUTSIDE, OUTSIDE
+DMZ, DMZ
+UNTRUST, UNTRUST
+ZONE1, ZONE1
+ZONE2, ZONE2
+EOFSCRIBE
+  labels = [ "Security" ]
+  type = "manual"
+  visibility = "public"
+}

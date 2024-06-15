@@ -1,0 +1,17 @@
+resource "option-type" "FWAction" {
+  code = "FWAction"
+  name = "Firewall Action"
+  uuid = "48bedf67-3e2c-49f9-92de-6fc99ad3c662"
+  defaultValue = "permit"
+  description = "Permit or Deny"
+  displayOrder = 1
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Policy Action"
+  fieldName = "FWAction"
+  labels = [ "Security" ]
+  optionList = { name = "Firewall Policy Action" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}

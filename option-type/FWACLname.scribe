@@ -1,0 +1,14 @@
+resource "option-type" "FWACLname" {
+  code = "FWACLname"
+  name = "Firewall ACL Name"
+  uuid = "82ed8e91-1187-4a99-8bb5-3488c3adc26d"
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "ACL Name"
+  fieldName = "FWACLname"
+  labels = [ "Security" ]
+  optionList = { name = "Firewall ACL Names (From Root Tenant)" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}

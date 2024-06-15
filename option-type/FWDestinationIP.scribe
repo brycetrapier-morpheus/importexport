@@ -1,0 +1,18 @@
+resource "option-type" "FWDestinationIP" {
+  code = "FWDestinationIP"
+  name = "Firewall Destination IP"
+  uuid = "996961f4-9467-4f7f-986c-285f285cbdb7"
+  defaultValue = "0.0.0.0"
+  description = "IPv4"
+  displayOrder = 3
+  displayValueOnDetails = true
+  editable = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Destination IPv4 address"
+  fieldName = "FWDestinationIP"
+  helpBlock = "In IPv4 a.b.c.d format"
+  labels = [ "Security" ]
+  placeHolder = "ipv4 address"
+  refCode = "FWDestinationIP"
+  required = true
+}

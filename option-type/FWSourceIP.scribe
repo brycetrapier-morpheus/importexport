@@ -1,0 +1,17 @@
+resource "option-type" "FWSourceIP" {
+  code = "FWSourceIP"
+  name = "Firewall Source IP"
+  uuid = "1e9c3f2e-be8e-4fd2-ac9f-7a9c9637be43"
+  defaultValue = "0.0.0.0"
+  description = "IPv4 Source IP"
+  displayOrder = 2
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Source IPv4 Address"
+  fieldName = "FWSourceIP"
+  helpBlock = "In IPv4 a.b.c.d notation"
+  labels = [ "Security" ]
+  placeHolder = "IPv4 address"
+  refCode = "FWSourceIP"
+  required = true
+}

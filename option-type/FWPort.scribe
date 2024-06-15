@@ -1,0 +1,15 @@
+resource "option-type" "FWPort" {
+  code = "FWPort"
+  name = "Firewall Port"
+  uuid = "43636c6a-3fec-4007-aadb-dc6ce6187c2f"
+  description = "Layer4 Service Port"
+  displayOrder = 4
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Layer4 Port Number"
+  fieldName = "FWPort"
+  helpBlock = "Number only; no text alias"
+  labels = [ "Security" ]
+  required = true
+  type = "number"
+}
