@@ -1,0 +1,11 @@
+resource "task-set" "EVAR DB Tier" {
+  name = "EVAR DB Tier"
+  uuid = "8a2d8be5-695a-4d79-b5fd-7ee2d9e1337d"
+  dateCreated = "2021-12-11T03:21:08.000Z"
+  lastUpdated = "2021-12-11T22:20:11.000Z"
+  taskSetTasks = [
+    { uuid = "9fd10458-d001-46a3-9304-18996be21cfc" },
+    { uuid = "d37086bf-354c-49bc-a4b9-d678f1d7a0ff" },
+    { uuid = "fba6d267-529c-4692-aa94-c2638cc052ee" }
+  ]
+}

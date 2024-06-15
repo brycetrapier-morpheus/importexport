@@ -1,0 +1,5 @@
+resource "task-set-task" "d37086bf-354c-49bc-a4b9-d678f1d7a0ff" {
+  uuid = "d37086bf-354c-49bc-a4b9-d678f1d7a0ff"
+  task = { name = "Install wget on CentOS" }
+  taskOrder = 1
+}
