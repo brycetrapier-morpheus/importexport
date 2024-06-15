@@ -1,0 +1,20 @@
+resource "task" "Write Attributes Task" {
+  name = "Write Attributes Task"
+  uuid = "8a53630d-2cc0-42ba-9701-530faee4a514"
+  dateCreated = "2022-08-12T20:16:55.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-08-12T20:16:55.000Z"
+  options = [
+    {
+      optionType = { code = "writeAttributes.attributes" }
+      value = <<EOFSCRIBE
+{
+  "Purpose": "Shenanigans",
+  "Payment": "<%= customOptions.PaymentMethods %>",
+  "User": "<%= username %>"
+}
+EOFSCRIBE
+    }
+  ]
+  taskType = { code = "writeAttributes" }
+}
