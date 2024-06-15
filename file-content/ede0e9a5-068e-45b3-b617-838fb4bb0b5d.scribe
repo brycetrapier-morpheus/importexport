@@ -1,0 +1,271 @@
+resource "file-content" "ede0e9a5-068e-45b3-b617-838fb4bb0b5d" {
+  uuid = "ede0e9a5-068e-45b3-b617-838fb4bb0b5d"
+  content = <<EOFSCRIBE
+import json
+import logging
+import sys
+import requests
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+# Running the script adhoc outside of the Morpheus platform.
+#base_url = "https://dmo553.virtualtier.local"
+#bearer = "c75813cc-2d2e-404d-ab27-f5b10118d6cc"
+# Uncomment these lines if you are running the script inside of the Morpheus Platform as a python task. 
+base_url = morpheus['morpheus']['applianceUrl']
+bearer = morpheus['morpheus']['apiAccessToken']
+####  DO NOT EDIT BELOW THIS LINE ####
+# Log message format.
+FORMATTER=logging.Formatter('%(asctime)s:%(lineno)d:%(module)s:%(funcName)s:%(levelname)s:%(message)s')
+# Console Logging
+console_handler = logging.StreamHandler(sys.stdout)
+console_handler.setFormatter(FORMATTER)
+# Setup Logger
+logger = logging.getLogger("ansible_tasks")
+logger.setLevel(logging.INFO)
+logger.addHandler(console_handler)
+header = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {bearer}",
+        }
+def repo_agent_command_bus_wordpress():
+    """
+    The repo_agent_command_bus_wordpress function adds a repo that contains the commandbus playbooks for installing wordpress.
+    It returns the integration id of the newly added integration.
+    :return: The integration id of the wordpress install
+    :doc-author: Trelent
+    """
+    logger.info("Add the repo that contians the commandbus playbooks for installing wordpress")
+    repo_agent_command_bus = json.dumps({
+        "integration": {
+            "type": "ansible",
+            "name": "Commandbus_Wordpress_Install_Ubuntu",
+            "enabled": True,
+            "serviceUrl": "https://gitlab.com/jaredlutgen/simple-ansible-tasks.git",
+            "config": {
+                ##### DEFAULT BRANCH ERROR #####
+                #"defaultBranch": "dev_branch",
+                "ansibleDefaultBranch": "dev_branch",
+                ##### DEFAULT BRANCH ERROR#####
+                "ansiblePlaybooks": "/cb_playbooks/wordpress_ubuntu",
+                "ansibleRoles": "/cb_playbooks/wordpress_ubuntu/roles",
+                "ansibleGroupVars": "",
+                "ansibleHostVars": "",
+                "ansibleGalaxyEnabled": False,
+                "ansibleVerbose": False,
+                "ansibleCommandBus": True,
+                "cacheEnabled": False
+                }
+        }
+    })
+    result = requests.post(f'{base_url}/api/integrations', verify=False, headers = header, data = repo_agent_command_bus)
+    integration_jsonobject = result.json()
+    if integration_jsonobject['success'] is True:
+        integration_id = integration_jsonobject['integration']['id']
+        logger.info("Integration was added successfully")
+        logger.info(f"The integration id: {integration_id}")
+        logger.debug(f"Integration response: \n {integration_jsonobject}")
+        return integration_id
+    if integration_jsonobject['success'] is False:
+        logger.error(f"Was unable to add integration: {integration_jsonobject}")
+        sys.exit(1)
+def add_ansibletask_commandbus(integration_id):
+    """
+    The add_ansibletask_commandbus function adds a task to the commandbus that installs wordpress for ubuntu.
+    It returns the id of the task that was added.
+    :param integration_id: Identify the integration that is used to install wordpress
+    :return: The task id of the ansible task
+    :doc-author: Trelent
+    """
+    logger.info("Add the task that installs wordpress for ubuntu with the commandbus")
+    ansible_task = json.dumps({
+            "task": {
+                "name": "Install Wordpress for Ubuntu using Commandbus",
+                "visibility": "private",
+                "taskType": {
+                "id": 8,
+                "code": "ansibleTask"
+                },
+                "taskOptions": {
+                    # "ansibleOptions": None,
+                    "ansibleGitId": integration_id,
+                    "ansiblePlaybook": "playbook.yml"
+                },
+                "executeTarget": "resource",
+                "retryable": False,
+                "allowCustomConfig": False
+            }
+        }
+    )
+    result = requests.post(f'{base_url}/api/tasks', verify=False, headers=header, data = ansible_task)
+    ansible_task_json_object = result.json()
+    if ansible_task_json_object['success'] is True:
+        ansible_task_cb_id = ansible_task_json_object['task']['id']
+        logger.info("Task was added successfully")
+        logger.info(f"The task id: {ansible_task_cb_id}")
+        logger.debug(f"Task response: \n {ansible_task_json_object}")
+        return ansible_task_cb_id
+    if ansible_task_json_object['success'] is False:
+        logger.error(f"Was unable to add task: {ansible_task_json_object}")
+        sys.exit(1)
+def add_ansible_commandbus_workflow(ansible_task_cb_id):
+    """
+    The add_ansible_commandbus_workflow function adds a workflow that uses the ansible commandbus task and installs wordpress for ubuntu with the commandbus.
+    It returns the id of the workflow that was added.
+    :param ansible_task_cb_id: Find the task that is used in the workflow
+    :return: The workflow id
+    :doc-author: Trelent
+    """
+    logger.info("Add the workflow that uses the ansible commandbus task and installs wordpress for ubuntu with the commandbus")
+    ansible_workflow = json.dumps({
+        "taskSet": {
+            "name": "Install Wordpress for Ubuntu in PW",
+            "description": "Provisioning workflow for ansible task to install wordpress with commandbus",
+            "type": "provision",
+            "tasks": [
+            {
+                "taskId": ansible_task_cb_id
+            }
+            ]
+        }
+        }
+    )
+    result = requests.post(f"{base_url}/api/task-sets", verify=False, headers=header, data = ansible_workflow)
+    ansible_workflow_json_object = result.json()
+    if ansible_workflow_json_object['success'] is True:
+        ansible_workflow_cb_id = ansible_workflow_json_object['taskSet']['id']
+        logger.info("workflow was added successfully")
+        logger.info(f"The workflow id: {ansible_workflow_cb_id}")
+        logger.debug(f"workflow response: \n {ansible_workflow_json_object}")
+        return ansible_workflow_cb_id
+    if ansible_workflow_json_object['success'] is False:
+        logger.error(f"Was unable to add workflow: {ansible_workflow_json_object}")
+        sys.exit(1)
+def repo_no_commandbus_wordpress():
+    logger.info("Add the repo that contians the playbooks for installing wordpress")
+    repo_agent_command_bus = json.dumps({
+        "integration": {
+            "type": "ansible",
+            "name": "Non_Commandbus_Wordpress_Install_Ubuntu",
+            "enabled": True,
+            "serviceUrl": "https://gitlab.com/jaredlutgen/simple-ansible-tasks.git",
+            "config": {
+                "ansibleDefaultBranch": "dev_branch",
+                "ansiblePlaybooks": "/non_cb_playbooks/wordpress_ubuntu",
+                "ansibleRoles": "/non_cb_playbooks/wordpress_ubuntu/roles",
+                "ansibleGroupVars": "",
+                "ansibleHostVars": "",
+                "ansibleGalaxyEnabled": False,
+                "ansibleVerbose": False,
+                "ansibleCommandBus": False,
+                "cacheEnabled": False
+                }
+        }
+    })
+    result = requests.post(f'{base_url}/api/integrations', verify=False, headers = header, data = repo_agent_command_bus)
+    integration_jsonobject = result.json()
+    if integration_jsonobject['success'] is True:
+        integration_id = integration_jsonobject['integration']['id']
+        logger.info("Integration was added successfully")
+        logger.info(f"The integration id: {integration_id}")
+        logger.debug(f"Integration response: \n {integration_jsonobject}")
+        return integration_id
+    if integration_jsonobject['success'] is False:
+        logger.error(f"Was unable to add integration: {integration_jsonobject}")
+        sys.exit(1)
+def add_ansibletask_no_commandbus(ncb_integration_id):
+    """
+    The add_ansibletask_commandbus function adds a task to the commandbus that installs wordpress for ubuntu.
+    It returns the id of the task that was added.
+    :param integration_id: Identify the integration that is used to install wordpress
+    :return: The task id of the ansible task
+    :doc-author: Trelent
+    """
+    logger.info("Add the task that installs wordpress for ubuntu with no commandbus")
+    ansible_task = json.dumps({
+            "task": {
+                "name": "Install Wordpress for Ubuntu using No Commandbus",
+                "visibility": "private",
+                "taskType": {
+                "id": 8,
+                "code": "ansibleTask"
+                },
+                "taskOptions": {
+                "ansibleOptions": None,
+                "ansibleGitId": ncb_integration_id,
+                "ansiblePlaybook": "playbook.yml"
+                },
+                "executeTarget": "resource",
+                "retryable": False,
+                "allowCustomConfig": False
+            }
+        }
+    )
+    result = requests.post(f'{base_url}/api/tasks', verify=False, headers=header, data = ansible_task)
+    ansible_task_json_object = result.json()
+    if ansible_task_json_object['success'] is True:
+        ansible_task_cb_id = ansible_task_json_object['task']['id']
+        logger.info("Task was added successfully")
+        logger.info(f"The task id: {ansible_task_cb_id}")
+        logger.debug(f"Task response: \n {ansible_task_json_object}")
+        return ansible_task_cb_id
+    if ansible_task_json_object['success'] is False:
+        logger.error(f"Was unable to add task: {ansible_task_json_object}")
+        sys.exit(1)
+def add_ansible_no_commandbus_workflow(ansible_task_ncb_id):
+    """
+    The add_ansible_commandbus_workflow function adds a workflow that uses the ansible commandbus task and installs wordpress for ubuntu with the commandbus.
+    It returns the id of the workflow that was added.
+    :param ansible_task_cb_id: Find the task that is used in the workflow
+    :return: The workflow id
+    :doc-author: Trelent
+    """
+    logger.info("Add the workflow that uses the ansible commandbus task and installs wordpress for ubuntu with the commandbus")
+    ansible_workflow = json.dumps({
+        "taskSet": {
+            "name": "Install Wordpress for Ubuntu in PW NCB",
+            "description": "Provisioning workflow for ansible task to install wordpress with no commandbus",
+            "type": "provision",
+            "tasks": [
+            {
+                "taskId": ansible_task_ncb_id
+            }
+            ]
+        }
+        }
+    )
+    result = requests.post(f"{base_url}/api/task-sets", verify=False, headers=header, data = ansible_workflow)
+    ansible_workflow_json_object = result.json()
+    if ansible_workflow_json_object['success'] is True:
+        ansible_workflow_cb_id = ansible_workflow_json_object['taskSet']['id']
+        logger.info("workflow was added successfully")
+        logger.info(f"The workflow id: {ansible_workflow_cb_id}")
+        logger.debug(f"workflow response: \n {ansible_workflow_json_object}")
+        return(ansible_workflow_cb_id)
+    if ansible_workflow_json_object['success'] is False:
+        logger.error(f"Was unable to add workflow: {ansible_workflow_json_object}")
+        sys.exit(1)
+def add_wiki_entry():
+    pass
+def add_instance_type():
+    pass
+def add_layout():
+    pass
+def main_app():
+    """
+    The main_app function is the main function of this script. It calls all the other functions in a specific order
+    to create and configure a new instance of an Ansible Tower workflow.
+    :return: The integration_id of the command bus wordpress repository
+    :doc-author: Trelent
+    """
+    integration_id = repo_agent_command_bus_wordpress()
+    ansible_task_cb_id = add_ansibletask_commandbus(integration_id)
+    #add_ansible_commandbus_workflow(ansible_task_cb_id)
+    ncb_integration_id = repo_no_commandbus_wordpress()
+    #ansible_task_ncb_id = add_ansibletask_no_commandbus(ncb_integration_id)
+    #add_ansible_no_commandbus_workflow(ansible_task_ncb_id)
+if __name__ == "__main__":
+    main_app()
+EOFSCRIBE
+  dateCreated = "2023-03-23T03:23:13.000Z"
+  lastUpdated = "2023-03-23T03:24:04.000Z"
+}

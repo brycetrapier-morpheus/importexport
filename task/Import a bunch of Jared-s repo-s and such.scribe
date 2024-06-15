@@ -1,0 +1,20 @@
+resource "task" "Import a bunch of Jared's repo's and such" {
+  name = "Import a bunch of Jared's repo's and such"
+  uuid = "cbc0fc9b-5833-45fc-b1bf-201a505e7741"
+  dateCreated = "2023-03-23T03:23:13.000Z"
+  executeTarget = "local"
+  labels = [ "Jared", "Python", "Shenanigans" ]
+  lastUpdated = "2023-03-23T04:00:19.000Z"
+  options = [
+    { optionType = { code = "pythonBinary" }, value = "/bin/python3" },
+    {
+      optionType = { code = "pythonAdditionalPackages" }
+      value = "requests"
+    },
+    {
+      content = { uuid = "ede0e9a5-068e-45b3-b617-838fb4bb0b5d" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  taskType = { code = "jythonTask" }
+}
