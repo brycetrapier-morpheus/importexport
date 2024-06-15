@@ -1,0 +1,15 @@
+resource "instance-type-layout" "e0cad5fa-3005-46d2-a05e-85ab3c53c289" {
+  code = "e0cad5fa-3005-46d2-a05e-85ab3c53c289"
+  name = "CloudFormation: New 2-Tier"
+  uuid = "ca13c7b5-b3d2-44aa-a402-94d9c3972405"
+  description = "Do a bunch of stuff"
+  instanceType = { code = "iac.samples" }
+  instanceVersion = "AWS"
+  memoryRequirement = 0
+  provisionType = { code = "cloudFormation" }
+  specTemplates = [
+    { uuid = "2384db92-78dd-4bc1-b48a-5c358b8e87b5" },
+    { uuid = "5318777c-d380-423a-8fcf-6c1dcd50c9ba" },
+    { uuid = "ee22764d-f1e1-4786-ac43-6d540fd2b9f9" }
+  ]
+}
