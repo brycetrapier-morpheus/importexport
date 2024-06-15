@@ -1,0 +1,19 @@
+resource "task" "Ansible - Install NGINX no Agent Command Bus" {
+  name = "Ansible - Install NGINX no Agent Command Bus"
+  uuid = "cd57d3a3-146f-4efe-8cdd-2acd731302cd"
+  dateCreated = "2023-08-15T19:50:19.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo", "POC" ]
+  lastUpdated = "2023-08-15T19:50:45.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleGitId" }
+      value = { name = "Ansible POC Playbooks - No Agent Command Bus" }
+    },
+    {
+      optionType = { code = "ansiblePlaybook" }
+      value = "install-nginx-noAgent.yml"
+    }
+  ]
+  taskType = { code = "ansibleTask" }
+}
