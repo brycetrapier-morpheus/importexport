@@ -1,0 +1,13 @@
+resource "option-type" "customer" {
+  code = "customer"
+  name = "Customer"
+  uuid = "566a6e96-71ce-4f69-9cbb-83bc9247069c"
+  defaultValue = "0"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Customer"
+  fieldName = "customer"
+  labels = [ "nested deployment", "prod" ]
+  optionSource = "list"
+  required = true
+  type = "select"
+}
