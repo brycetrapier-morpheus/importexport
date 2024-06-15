@@ -1,0 +1,29 @@
+resource "account-integration" "Ansible HotShots Repo - Agent Command Bus" {
+  name = "Ansible HotShots Repo - Agent Command Bus"
+  uuid = "8f8bec84-6e7c-4e0d-8bd7-2a512d4f5960"
+  category = "cm-server"
+  config = {
+    ansibleCommandBus = "on"
+    ansibleGalaxyEnabled = null
+    ansibleGroupVars = "/"
+    ansibleHostVars = "/"
+    ansiblePlaybooks = "/"
+    ansibleRoles = "/"
+    ansibleVerbose = null
+    cacheEnabled = null
+    cm = {
+      ansibleCommandBus = "on"
+      ansibleDefaultBranch = "main"
+      ansibleGalaxyEnabled = false
+      ansibleGroupVars = ""
+      ansibleHostVars = ""
+      ansiblePlaybooks = "/"
+      ansibleRoles = "/roles"
+      ansibleVerbose = "on"
+    }
+    defaultBranch = "main"
+  }
+  integrationType = { code = "ansible" }
+  serviceUrl = "https://github.com/brycetrapier-morpheus/hotshots211"
+  type = "ansible"
+}

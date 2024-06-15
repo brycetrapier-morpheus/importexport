@@ -1,0 +1,5 @@
+resource "file-content" "c4efb355-ea58-4451-8aed-080af45f63f2" {
+  uuid = "c4efb355-ea58-4451-8aed-080af45f63f2"
+  dateCreated = "2022-09-22T18:11:40.000Z"
+  lastUpdated = "2022-09-22T18:11:40.000Z"
+}

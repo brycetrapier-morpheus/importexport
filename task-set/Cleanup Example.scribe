@@ -1,0 +1,10 @@
+resource "task-set" "Cleanup Example" {
+  name = "Cleanup Example"
+  uuid = "c98779f9-8e7c-487e-861a-c9fb0a90fcf4"
+  dateCreated = "2022-09-22T18:12:21.000Z"
+  lastUpdated = "2023-02-25T00:54:28.000Z"
+  taskSetTasks = [
+    { uuid = "6e046571-e078-4cb7-b9d8-d9c95f5e1da2" },
+    { uuid = "f8a923f1-f467-4773-9a49-2bf8a3183231" }
+  ]
+}

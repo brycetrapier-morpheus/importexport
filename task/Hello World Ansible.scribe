@@ -1,0 +1,20 @@
+resource "task" "Hello World Ansible" {
+  name = "Hello World Ansible"
+  uuid = "ddad3417-ba4f-45ca-a2d8-d57bc796d0d2"
+  dateCreated = "2022-04-01T14:49:44.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-02-24T23:11:19.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleGitId" }
+      value = { name = "Ansible HotShots Repo - Agent Command Bus" }
+    },
+    {
+      optionType = { code = "ansiblePlaybook" }
+      value = "bootstrapweb.yaml"
+    },
+    { optionType = { code = "ansibleGitRef" }, value = "main" }
+  ]
+  taskType = { code = "ansibleTask" }
+}

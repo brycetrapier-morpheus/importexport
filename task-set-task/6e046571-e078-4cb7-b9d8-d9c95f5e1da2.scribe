@@ -1,0 +1,5 @@
+resource "task-set-task" "6e046571-e078-4cb7-b9d8-d9c95f5e1da2" {
+  uuid = "6e046571-e078-4cb7-b9d8-d9c95f5e1da2"
+  task = { name = "Update DNS" }
+  taskPhase = "teardown"
+}
