@@ -1,0 +1,12 @@
+resource "option-type" "jlinstance" {
+  code = "jlinstance"
+  name = "JL-InstanceType"
+  uuid = "ced87f45-983c-4e4d-ad9e-b882589840b6"
+  dependsOnCode = "jlclouds"
+  fieldContext = "config.customOptions"
+  fieldLabel = "JL-Instance"
+  fieldName = "jlinstance"
+  optionList = { name = "JL-InstanceType" }
+  optionSource = "list"
+  type = "select"
+}

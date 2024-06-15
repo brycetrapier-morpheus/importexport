@@ -1,0 +1,7 @@
+resource "option-type-list" "JL-InstanceType" {
+  name = "JL-InstanceType"
+  uuid = "79e08799-59a2-42e5-bb41-e5047150ec53"
+  apiType = "instanceTypeClouds"
+  realTime = true
+  type = "api"
+}
