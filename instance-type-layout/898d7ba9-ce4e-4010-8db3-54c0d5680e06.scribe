@@ -1,0 +1,10 @@
+resource "instance-type-layout" "898d7ba9-ce4e-4010-8db3-54c0d5680e06" {
+  code = "898d7ba9-ce4e-4010-8db3-54c0d5680e06"
+  name = "Sample 1 Azure"
+  uuid = "1782cce6-3f2c-4ecb-9136-fe6689d6534b"
+  instanceType = { code = "HelloWorldCustom" }
+  instanceVersion = "sample1azure"
+  memoryRequirement = 0
+  provisionType = { code = "azure" }
+  workloads = [ { code = "b99ff7e0-f872-4f0b-abbe-8a902565c73c" } ]
+}

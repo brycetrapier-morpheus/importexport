@@ -1,0 +1,13 @@
+resource "container-type" "b99ff7e0-f872-4f0b-abbe-8a902565c73c" {
+  code = "b99ff7e0-f872-4f0b-abbe-8a902565c73c"
+  name = "Azure Blah Restricted Plans"
+  uuid = "4bac210e-215e-40ba-8f01-ca7736286d4c"
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "azure"
+  provisionType = { code = "azure" }
+  serverType = "vm"
+  shortName = "azblah"
+  showServerLogs = true
+  statTypeCode = "azure"
+}
