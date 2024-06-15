@@ -1,0 +1,9 @@
+resource "option-type" "dropboxfoldername" {
+  code = "dropboxfoldername"
+  name = "DropBox Folder Name"
+  uuid = "a31566f3-7f47-44a7-897e-6cc8b74c615e"
+  editable = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "DropBox Folder Name"
+  fieldName = "dropboxfoldername"
+}

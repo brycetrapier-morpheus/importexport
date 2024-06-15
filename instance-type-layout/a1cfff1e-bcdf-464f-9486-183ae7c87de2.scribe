@@ -1,0 +1,13 @@
+resource "instance-type-layout" "a1cfff1e-bcdf-464f-9486-183ae7c87de2" {
+  code = "a1cfff1e-bcdf-464f-9486-183ae7c87de2"
+  name = "XaaS Dropbox"
+  uuid = "5ec31613-b51b-47e9-955e-d365b116229e"
+  description = "Note: This doesn't work - my Dropbox key is expired"
+  instanceType = { code = "XaaS" }
+  instanceVersion = "Dropbox (Note: This doesn't work - my Dropbox key is expired)"
+  memoryRequirement = 0
+  optionTypes = [ { code = "dropboxfoldername" } ]
+  provisionType = { code = "workflow" }
+  supportsConvertToManaged = true
+  taskSets = [ { name = "Empty Workflow" } ]
+}

@@ -1,0 +1,11 @@
+resource "instance-type" "XaaS" {
+  code = "XaaS"
+  name = "XaaS Instances"
+  uuid = "a1854484-1549-4fe8-8a9b-c6924de7db41"
+  category = "utility"
+  deploymentService = ""
+  description = "XaaS Instance Types from the Root Tenant"
+  environmentPrefix = "XAAS"
+  featured = true
+  visibility = "public"
+}
