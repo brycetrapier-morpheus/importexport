@@ -1,0 +1,9 @@
+resource "option-type-list" "Filtered Layouts (AAA Test)" {
+  name = "Filtered Layouts (AAA Test)"
+  uuid = "f75cff05-42a4-45a1-a77f-f23a9b237bee"
+  initialDataset = <<EOFSCRIBE
+AWS, 1044
+GCP, 1060
+EOFSCRIBE
+  type = "manual"
+}

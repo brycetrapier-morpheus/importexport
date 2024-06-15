@@ -1,0 +1,13 @@
+resource "option-type" "awsnetwork" {
+  code = "awsnetwork"
+  name = "AWS Network"
+  uuid = "508489f2-67f1-418e-8531-a0dae578f175"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Deployment Network (AWS Manual)"
+  fieldName = "awsnetwork"
+  helpBlock = "References static Option List"
+  optionList = { name = "AWS Networks" }
+  optionSource = "list"
+  required = true
+  type = "radio"
+}

@@ -1,0 +1,16 @@
+resource "option-type" "DeploymentCloudPublic" {
+  code = "DeploymentCloudPublic"
+  name = "Deployment Cloud Public"
+  uuid = "d02b8d26-555b-4e09-ac53-353f9076816d"
+  dependsOnCode = "DeploymentGroup"
+  description = "Used for subtenant environments or catalog items which will be published to subtenants"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Deployment Cloud"
+  fieldName = "DeploymentCloudPublic"
+  helpBlock = "This inputs uses the Option List Morpheus List of Clouds (Public), which has been set to public visibility."
+  labels = [ "Public" ]
+  optionList = { name = "Morpheus List of Clouds (Public)" }
+  optionSource = "list"
+  type = "select"
+  visibleOnCode = "DeploymentGroup"
+}

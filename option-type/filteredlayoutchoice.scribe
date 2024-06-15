@@ -1,0 +1,11 @@
+resource "option-type" "filteredlayoutchoice" {
+  code = "filteredlayoutchoice"
+  name = "Filtered Layout Choice"
+  uuid = "67d8c1f4-99b6-4162-a8f3-e0b3ce320e99"
+  fieldContext = "config.customOptions"
+  fieldLabel = "VM Layout"
+  fieldName = "filteredlayoutchoice"
+  optionList = { name = "Filtered Layouts (AAA Test)" }
+  optionSource = "list"
+  type = "select"
+}

@@ -1,0 +1,15 @@
+resource "option-type" "DeploymentGroup" {
+  code = "DeploymentGroup"
+  name = "Deployment Group"
+  uuid = "3e725005-40cb-4e5c-ae00-3bbc30659b65"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Deployment Group"
+  fieldName = "DeploymentGroup"
+  helpBlock = "This is the Infrastructure Group in Morpheus.  This group provides access to clouds within the group.  This input consumes the option list \"Morpheus List of Groups (Public), which has been set to public visibility."
+  labels = [ "Public" ]
+  optionList = { name = "Morpheus List of Groups (Public)" }
+  optionSource = "list"
+  refCode = "DeploymentGroup"
+  required = true
+  type = "select"
+}
