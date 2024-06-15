@@ -1,0 +1,10 @@
+resource "instance-type-layout" "65da25cc-e5c7-4f1b-9286-44f39d0d8834" {
+  code = "65da25cc-e5c7-4f1b-9286-44f39d0d8834"
+  name = "MSSQL with Extra Volumes"
+  uuid = "d2547d72-77fa-4aae-a4e9-9c7dbc27aad9"
+  description = "Predefined Volumes for System, Data, Logs, Backup, and TempDB"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "1"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+}
