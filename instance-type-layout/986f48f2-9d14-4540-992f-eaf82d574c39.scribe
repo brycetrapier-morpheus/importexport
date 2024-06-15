@@ -1,0 +1,10 @@
+resource "instance-type-layout" "986f48f2-9d14-4540-992f-eaf82d574c39" {
+  code = "986f48f2-9d14-4540-992f-eaf82d574c39"
+  name = "AWS CentOS 8"
+  uuid = "0914322c-fa45-4cc9-b904-5b7ea004c8dd"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "1"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  workloads = [ { code = "fe89e42b-a22e-4784-9668-c43457f16510" } ]
+}

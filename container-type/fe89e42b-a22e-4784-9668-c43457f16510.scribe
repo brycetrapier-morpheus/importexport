@@ -1,0 +1,15 @@
+resource "container-type" "fe89e42b-a22e-4784-9668-c43457f16510" {
+  code = "fe89e42b-a22e-4784-9668-c43457f16510"
+  name = "AWS CentOS 8"
+  uuid = "4992f76b-4eea-4550-bee6-475e19050329"
+  containerVersion = "8.4.2105"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awscentos8"
+  showServerLogs = true
+  statTypeCode = "amazon"
+  virtualImage = { code = "amazon.ec2.image.morpheus.centos.8.4-v2" }
+}
