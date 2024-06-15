@@ -1,0 +1,13 @@
+resource "file-content" "052e45ac-7a84-40d6-8115-cfd0cd2ec0aa" {
+  uuid = "052e45ac-7a84-40d6-8115-cfd0cd2ec0aa"
+  content = <<EOFSCRIBE
+#For CentOS and RHEL distributions
+
+yum -y install epel-release
+yum -y install ansible
+yum -y install git
+
+EOFSCRIBE
+  dateCreated = "2022-01-24T21:01:07.000Z"
+  lastUpdated = "2023-02-25T00:56:30.000Z"
+}
