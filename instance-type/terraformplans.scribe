@@ -1,0 +1,11 @@
+resource "instance-type" "terraformplans" {
+  code = "terraformplans"
+  name = "Terraform Plans"
+  uuid = "a93084b5-8ef4-48db-8d2e-6d810d2a201f"
+  category = "utility"
+  deploymentService = ""
+  description = "Terraform as an Instance Type"
+  environmentPrefix = "TF_"
+  featured = true
+  labels = [ "IaC" ]
+}

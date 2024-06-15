@@ -1,0 +1,20 @@
+resource "instance-type-layout" "92c32751-0eba-4978-8be9-cf5032e93b0d" {
+  code = "92c32751-0eba-4978-8be9-cf5032e93b0d"
+  name = "VPC - New VPC with Inputs"
+  uuid = "74554964-7bf8-436e-b3fb-06588f71cd2e"
+  config = "{\"tfvarSecret\":\"\"}"
+  description = "Prompt for user input.  Build a new VPC, and assign tags to the VPC based on the user input."
+  instanceType = { code = "terraformplans" }
+  instanceVersion = "AWS"
+  labels = [ "Demo", "Terraform" ]
+  memoryRequirement = 0
+  optionTypes = [
+    { code = "PaymentMethodsSelectList" },
+    { code = "AWSVPCCIDRblock" }
+  ]
+  provisionType = { code = "terraform" }
+  specTemplates = [
+    { uuid = "89fe6e6b-83af-42fd-ba55-3a510020d066" },
+    { uuid = "b5f4d1a4-a053-464a-8b68-604197f26936" }
+  ]
+}
