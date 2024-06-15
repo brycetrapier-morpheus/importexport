@@ -1,0 +1,11 @@
+resource "instance-type-layout" "a97756df-62c9-4cc7-86c8-e78f9341bb7e" {
+  code = "a97756df-62c9-4cc7-86c8-e78f9341bb7e"
+  name = "AWS Snoopy Web Server"
+  uuid = "f2f22684-60c0-4492-bbd8-c91a954714a6"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "1"
+  memoryRequirement = 536870912
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "Make It Snoopy, Apache CentOS" } ]
+  workloads = [ { code = "apache-amazon-2.4" } ]
+}
