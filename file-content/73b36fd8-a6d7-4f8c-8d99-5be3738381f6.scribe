@@ -1,0 +1,10 @@
+resource "file-content" "73b36fd8-a6d7-4f8c-8d99-5be3738381f6" {
+  uuid = "73b36fd8-a6d7-4f8c-8d99-5be3738381f6"
+  content = <<EOFSCRIBE
+provider "aws" {
+  region = "us-east-1"
+}
+EOFSCRIBE
+  dateCreated = "2021-11-16T04:51:02.000Z"
+  lastUpdated = "2021-11-16T04:51:02.000Z"
+}
