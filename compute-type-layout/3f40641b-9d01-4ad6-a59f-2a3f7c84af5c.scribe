@@ -1,0 +1,12 @@
+resource "compute-type-layout" "3f40641b-9d01-4ad6-a59f-2a3f7c84af5c" {
+  code = "3f40641b-9d01-4ad6-a59f-2a3f7c84af5c"
+  name = "Custom KVM Cluster in AWS"
+  computeVersion = "v2023-12"
+  dateCreated = "2023-12-05T20:47:37.000Z"
+  groupType = { code = "kvm-cluster" }
+  labels = [ "test" ]
+  lastUpdated = "2023-12-05T20:47:37.000Z"
+  memoryRequirement = 1073741824
+  optionTypes = [ { code = "costcenter" } ]
+  provisionType = { code = "amazon" }
+}
