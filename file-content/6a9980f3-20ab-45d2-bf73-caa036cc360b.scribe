@@ -1,0 +1,6 @@
+resource "file-content" "6a9980f3-20ab-45d2-bf73-caa036cc360b" {
+  uuid = "6a9980f3-20ab-45d2-bf73-caa036cc360b"
+  content = "# PowerShell stuff goes here"
+  dateCreated = "2022-02-04T17:26:07.000Z"
+  lastUpdated = "2023-02-24T23:17:01.000Z"
+}

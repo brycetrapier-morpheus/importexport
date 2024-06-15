@@ -1,0 +1,15 @@
+resource "task" "Hellow World PowerShell" {
+  name = "Hellow World PowerShell"
+  uuid = "9c253708-3021-4091-8ab5-ea8660744342"
+  dateCreated = "2022-02-04T17:26:07.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-02-24T23:17:01.000Z"
+  options = [
+    {
+      content = { uuid = "6a9980f3-20ab-45d2-bf73-caa036cc360b" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}

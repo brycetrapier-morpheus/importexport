@@ -1,0 +1,5 @@
+resource "task-set-task" "2bc90de2-08e7-41cb-838c-044f556040f5" {
+  uuid = "2bc90de2-08e7-41cb-838c-044f556040f5"
+  task = { name = "Hellow World PowerShell" }
+  taskOrder = 1
+}

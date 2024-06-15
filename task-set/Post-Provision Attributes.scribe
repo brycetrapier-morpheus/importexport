@@ -1,0 +1,10 @@
+resource "task-set" "Post-Provision Attributes" {
+  name = "Post-Provision Attributes"
+  uuid = "54c451fb-7ae7-4886-852b-c1f0bd73072e"
+  dateCreated = "2023-04-13T20:46:07.000Z"
+  lastUpdated = "2023-04-13T20:46:07.000Z"
+  taskSetTasks = [
+    { uuid = "2bc90de2-08e7-41cb-838c-044f556040f5" },
+    { uuid = "aa4776f3-e08a-4018-b18b-f6ec3a3c99d8" }
+  ]
+}

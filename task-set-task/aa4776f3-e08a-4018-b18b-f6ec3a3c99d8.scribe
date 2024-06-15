@@ -1,0 +1,4 @@
+resource "task-set-task" "aa4776f3-e08a-4018-b18b-f6ec3a3c99d8" {
+  uuid = "aa4776f3-e08a-4018-b18b-f6ec3a3c99d8"
+  task = { code = "helloworldemail" }
+}
