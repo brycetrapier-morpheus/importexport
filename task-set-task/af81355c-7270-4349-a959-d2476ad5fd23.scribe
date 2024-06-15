@@ -1,0 +1,5 @@
+resource "task-set-task" "af81355c-7270-4349-a959-d2476ad5fd23" {
+  uuid = "af81355c-7270-4349-a959-d2476ad5fd23"
+  task = { name = "Write Input sqlpassword to Local File" }
+  taskPhase = "provision"
+}
