@@ -1,0 +1,15 @@
+resource "task" "Activate web console" {
+  name = "Activate web console"
+  uuid = "8c07b94a-6a63-4839-acbc-42e95148d262"
+  dateCreated = "2021-12-11T00:40:59.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-12-11T00:40:59.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "01b84ee4-3d30-4ba7-ad20-c87b6657b413" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

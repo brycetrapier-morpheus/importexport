@@ -1,0 +1,11 @@
+resource "file-content" "01b84ee4-3d30-4ba7-ad20-c87b6657b413" {
+  uuid = "01b84ee4-3d30-4ba7-ad20-c87b6657b413"
+  content = <<EOFSCRIBE
+# Activate the web console with: systemctl enable --now cockpit.socket
+#
+systemctl enable --now cockpit.socket
+
+EOFSCRIBE
+  dateCreated = "2021-12-11T00:40:59.000Z"
+  lastUpdated = "2021-12-11T00:40:59.000Z"
+}
