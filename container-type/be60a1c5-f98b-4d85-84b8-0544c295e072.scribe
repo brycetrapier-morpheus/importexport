@@ -1,0 +1,15 @@
+resource "container-type" "be60a1c5-f98b-4d85-84b8-0544c295e072" {
+  code = "be60a1c5-f98b-4d85-84b8-0544c295e072"
+  name = "Debian"
+  uuid = "79bae3cb-a5fe-44f6-8cf8-ede2efe25c29"
+  containerVersion = "11"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awsdebian"
+  showServerLogs = true
+  statTypeCode = "amazon"
+  virtualImage = { code = "amazon.ec2.image.morpheus.debian.11.0-amd64" }
+}

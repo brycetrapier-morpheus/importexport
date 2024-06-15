@@ -1,0 +1,10 @@
+resource "instance-type-layout" "7dffc4ef-2379-4fec-9123-5cc09cc59d1d" {
+  code = "7dffc4ef-2379-4fec-9123-5cc09cc59d1d"
+  name = "AWS Debian"
+  uuid = "65585e04-bdde-43f3-a416-96de37767196"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "1"
+  memoryRequirement = 524288
+  provisionType = { code = "amazon" }
+  workloads = [ { code = "be60a1c5-f98b-4d85-84b8-0544c295e072" } ]
+}
