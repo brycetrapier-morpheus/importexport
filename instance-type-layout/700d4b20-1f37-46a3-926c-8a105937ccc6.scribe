@@ -1,0 +1,16 @@
+resource "instance-type-layout" "700d4b20-1f37-46a3-926c-8a105937ccc6" {
+  code = "700d4b20-1f37-46a3-926c-8a105937ccc6"
+  name = "3 Apache Servers in AWS"
+  uuid = "224815c6-0630-4b4f-abb7-8bf5bd52dfbc"
+  description = "Three Apache Servers"
+  instanceType = { code = "multinode" }
+  instanceVersion = "Apache"
+  labels = [ "Scale" ]
+  memoryRequirement = 536870912
+  provisionType = { code = "amazon" }
+  workloads = [
+    { code = "apache-amazon-2.4" },
+    { code = "apache-amazon-2.4" },
+    { code = "apache-amazon-2.4" }
+  ]
+}

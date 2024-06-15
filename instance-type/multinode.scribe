@@ -1,0 +1,11 @@
+resource "instance-type" "multinode" {
+  code = "multinode"
+  name = "Multi-Node"
+  uuid = "64ac64a0-8a1b-4e18-939f-661cf7dd3e1b"
+  category = "utility"
+  deploymentService = ""
+  description = "Base Instance Type for rapid VM deployment"
+  environmentPrefix = "MULTI-NODE"
+  featured = true
+  labels = [ "Scale" ]
+}
