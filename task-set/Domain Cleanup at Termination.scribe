@@ -1,0 +1,8 @@
+resource "task-set" "Domain Cleanup at Termination" {
+  name = "Domain Cleanup at Termination"
+  uuid = "3b329db9-bd56-45ff-b692-efc0f1108445"
+  dateCreated = "2023-06-21T18:23:34.000Z"
+  description = "Attached to a Domain at Infra > Networks > Domain"
+  lastUpdated = "2023-06-21T18:26:08.000Z"
+  taskSetTasks = [ { uuid = "9010ec1b-94ee-487c-bbee-6f9bd8ad631b" } ]
+}

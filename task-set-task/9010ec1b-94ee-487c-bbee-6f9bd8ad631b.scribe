@@ -1,0 +1,5 @@
+resource "task-set-task" "9010ec1b-94ee-487c-bbee-6f9bd8ad631b" {
+  uuid = "9010ec1b-94ee-487c-bbee-6f9bd8ad631b"
+  task = { name = "Hello World Powershell" }
+  taskPhase = "teardown"
+}
