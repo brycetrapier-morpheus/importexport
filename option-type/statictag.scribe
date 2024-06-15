@@ -1,0 +1,11 @@
+resource "option-type" "statictag" {
+  code = "statictag"
+  name = "Static Tag"
+  uuid = "128e5f91-63f2-4cfb-862c-9aa63d1b4d00"
+  defaultValue = "BLAH"
+  displayValueOnDetails = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldName = "statictag"
+  type = "hidden"
+}
