@@ -1,0 +1,19 @@
+resource "catalog-item-type" "apachemorestorage" {
+  code = "apachemorestorage"
+  name = "Apache with More Storage"
+  uuid = "be328504-2b59-4389-b87d-28048139237d"
+  category = "Web"
+  darkLogoSettings = "{\"type\":\"custom\"}"
+  dateCreated = "2024-02-08T18:55:23.000Z"
+  description = "Apache server with a root volume and a content volume"
+  formType = "form"
+  labels = [
+    { name = "Apache" },
+    { name = "Linux" },
+    { name = "Ubuntu" },
+    { name = "web" }
+  ]
+  lastUpdated = "2024-02-19T19:48:52.000Z"
+  logoSettings = "{\"type\":\"custom\"}"
+  refType = "InstanceType"
+}

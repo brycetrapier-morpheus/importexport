@@ -1,0 +1,3 @@
+resource "label" "Ubuntu" {
+  name = "Ubuntu"
+}

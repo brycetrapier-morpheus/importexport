@@ -1,0 +1,3 @@
+resource "label" "Linux" {
+  name = "Linux"
+}
