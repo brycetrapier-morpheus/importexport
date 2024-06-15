@@ -1,0 +1,13 @@
+resource "instance-type-layout" "d4fd9dd1-3762-4318-a67b-0669abc2311d" {
+  code = "d4fd9dd1-3762-4318-a67b-0669abc2311d"
+  name = "Aspect Voice Mail Server"
+  uuid = "f485ba4b-b163-4168-bff2-5b36e51222b0"
+  creatable = false
+  description = "Based on Debian 11"
+  instanceType = { code = "aspect" }
+  instanceVersion = "1"
+  labels = [ "voice" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  workloads = [ { code = "debian-amazon-11.0" } ]
+}

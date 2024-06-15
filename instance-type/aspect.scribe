@@ -1,0 +1,11 @@
+resource "instance-type" "aspect" {
+  code = "aspect"
+  name = "Aspect"
+  uuid = "b6a43d13-64c1-4791-9e2c-e6318e45fe81"
+  category = "apps"
+  deploymentService = ""
+  description = "Voice servers - call control, recording, etc"
+  environmentPrefix = "ASPECT"
+  featured = true
+  labels = [ "voice" ]
+}
