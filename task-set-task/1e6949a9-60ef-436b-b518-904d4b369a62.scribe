@@ -1,0 +1,5 @@
+resource "task-set-task" "1e6949a9-60ef-436b-b518-904d4b369a62" {
+  uuid = "1e6949a9-60ef-436b-b518-904d4b369a62"
+  task = { name = "POC Windows wget google" }
+  taskOrder = 1
+}

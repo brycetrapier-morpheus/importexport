@@ -1,0 +1,4 @@
+resource "task-set-task" "01de50e3-96f6-47c3-8c11-51882457937b" {
+  uuid = "01de50e3-96f6-47c3-8c11-51882457937b"
+  task = { name = "POC Windows Hello World File" }
+}

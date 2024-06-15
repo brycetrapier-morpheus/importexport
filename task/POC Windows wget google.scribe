@@ -1,0 +1,16 @@
+resource "task" "POC Windows wget google" {
+  name = "POC Windows wget google"
+  uuid = "863beabc-6220-47a9-a131-2c9bd5cc2ab8"
+  dateCreated = "2023-03-28T00:23:57.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-03-28T16:46:53.000Z"
+  options = [
+    { optionType = { code = "winrm.elevated" }, value = "on" },
+    {
+      content = { uuid = "8c4cb9c7-8799-4149-bd6e-ff5d21d6c8b6" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}

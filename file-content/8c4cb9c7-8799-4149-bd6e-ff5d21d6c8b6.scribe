@@ -1,0 +1,6 @@
+resource "file-content" "8c4cb9c7-8799-4149-bd6e-ff5d21d6c8b6" {
+  uuid = "8c4cb9c7-8799-4149-bd6e-ff5d21d6c8b6"
+  content = "wget www.google.com"
+  dateCreated = "2023-03-28T00:23:57.000Z"
+  lastUpdated = "2023-03-28T00:23:57.000Z"
+}

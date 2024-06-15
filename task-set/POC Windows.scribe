@@ -1,0 +1,12 @@
+resource "task-set" "POC Windows" {
+  name = "POC Windows"
+  uuid = "d96fabd1-bb54-4d78-ba05-bf0603b3c6d7"
+  dateCreated = "2023-03-28T16:52:44.000Z"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-03-28T16:52:44.000Z"
+  platform = "windows"
+  taskSetTasks = [
+    { uuid = "01de50e3-96f6-47c3-8c11-51882457937b" },
+    { uuid = "1e6949a9-60ef-436b-b518-904d4b369a62" }
+  ]
+}

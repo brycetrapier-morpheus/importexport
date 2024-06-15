@@ -1,0 +1,15 @@
+resource "task" "POC Windows Hello World File" {
+  name = "POC Windows Hello World File"
+  uuid = "03ec59fa-92e9-4121-8816-56c2ff9841ba"
+  dateCreated = "2023-03-28T00:23:01.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-03-28T00:23:02.000Z"
+  options = [
+    {
+      content = { uuid = "687cc38c-1fb2-4350-9e50-5afd0e1d46f5" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}
