@@ -1,0 +1,10 @@
+resource "resource-spec-template" "78796b59-98b5-4585-ba5f-6b34cce2d09e" {
+  name = "vCenter - 1. Provider Block"
+  uuid = "78796b59-98b5-4585-ba5f-6b34cce2d09e"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2023-04-11T20:54:43.000Z"
+  lastUpdated = "2023-06-14T23:27:20.000Z"
+  template = { uuid = "f3d59d30-f664-43f0-90ac-76eb1f746439" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}

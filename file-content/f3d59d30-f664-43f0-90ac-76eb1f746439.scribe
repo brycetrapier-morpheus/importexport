@@ -1,0 +1,41 @@
+resource "file-content" "f3d59d30-f664-43f0-90ac-76eb1f746439" {
+  uuid = "f3d59d30-f664-43f0-90ac-76eb1f746439"
+  content = <<EOFSCRIBE
+##############
+# Infrastructure > Cloud > Profiles > Terraform Profile:
+# 
+#  user                 = "Timmy"
+#  password             = "1VeryLongPassword!"
+#  vsphere_server       = "198.51.100.1"
+#  allow_unverified_ssl = true
+
+
+provider "vsphere" {
+  user                 = var.vsphere_user
+  password             = var.vsphere_password
+  vsphere_server       = var.vsphere_server
+  allow_unverified_ssl = true
+}
+
+variable "user" {
+  type = string
+  sensitive = false
+}
+
+variable "password" {
+  type = string
+  sensitive = true
+}
+variable "vsphere_server" {
+  type = string
+}
+
+# variable "allow_unverified_ssl" {
+#  type = bool
+# }
+
+
+EOFSCRIBE
+  dateCreated = "2023-04-11T20:54:43.000Z"
+  lastUpdated = "2023-06-14T23:27:20.000Z"
+}
