@@ -1,0 +1,13 @@
+resource "option-type" "vCenterSelect" {
+  code = "vCenterSelect"
+  name = "vCenter Selection"
+  uuid = "241d5490-5ae5-45ca-8aec-67632e834900"
+  defaultValue = "0"
+  fieldContext = "config.customOptions"
+  fieldLabel = "vCenter"
+  fieldName = "vCenterSelect"
+  labels = [ "nested deployment", "prod" ]
+  refCode = "vCenterSelect"
+  required = true
+  type = "select"
+}
