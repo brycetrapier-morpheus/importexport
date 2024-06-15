@@ -1,0 +1,9 @@
+resource "task-set" "Freddie Mac ULAD" {
+  name = "Freddie Mac ULAD"
+  uuid = "4f13e345-8122-486e-a0a6-206333dcdabc"
+  dateCreated = "2023-08-29T15:38:28.000Z"
+  description = "Framework for Self Service Catalog Item"
+  labels = [ "Demo", "Finance" ]
+  lastUpdated = "2023-08-29T15:38:28.000Z"
+  taskSetType = "operation"
+}
