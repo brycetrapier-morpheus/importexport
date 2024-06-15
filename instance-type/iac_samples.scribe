@@ -1,0 +1,11 @@
+resource "instance-type" "iac.samples" {
+  code = "iac.samples"
+  name = "IaC Samples"
+  uuid = "eb90c51f-7fc9-426f-a024-b6fac1f00d4e"
+  category = "utility"
+  deploymentService = ""
+  description = "ARM Templates, CloudFormation, and Terraform layouts"
+  environmentPrefix = "IAC_STUFF"
+  featured = true
+  labels = [ "IaC" ]
+}

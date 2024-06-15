@@ -1,0 +1,17 @@
+resource "instance-type-layout" "5535a889-0b97-4b6b-b70b-8d17138564be" {
+  code = "5535a889-0b97-4b6b-b70b-8d17138564be"
+  name = "Terraform: New 2-Tier New VPC, IGW, and Security Group with Pricing"
+  uuid = "e2c82738-26f1-4132-8ada-a17242054857"
+  config = "{\"tfvarSecret\":\"\"}"
+  description = "Builds VPC, IGW, 2 subnets, and sets 0/0 route.  Now with pricing."
+  instanceType = { code = "iac.samples" }
+  instanceVersion = "AWS"
+  labels = [ "Demo" ]
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [
+    { uuid = "9242a1c7-7dbf-4623-aea4-b8d84106270b" },
+    { uuid = "b8e39509-8429-448d-9017-ffffc38a5be4" },
+    { uuid = "d2e5118e-7f17-4952-af97-b11dbe52b267" }
+  ]
+}
