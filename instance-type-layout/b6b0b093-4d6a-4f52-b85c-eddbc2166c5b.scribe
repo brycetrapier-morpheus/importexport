@@ -1,0 +1,16 @@
+resource "instance-type-layout" "b6b0b093-4d6a-4f52-b85c-eddbc2166c5b" {
+  code = "b6b0b093-4d6a-4f52-b85c-eddbc2166c5b"
+  name = "EC2 - two new t3.micro Instances"
+  uuid = "c5bbc724-4600-4c23-8254-617e159dc5a9"
+  config = "{\"tfvarSecret\":\"\"}"
+  description = "Two new T3.Micro instances"
+  instanceType = { code = "terraformplans" }
+  instanceVersion = "AWS"
+  labels = [ "Demo" ]
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [
+    { uuid = "4d94476c-9c23-4a1a-b610-2067af9d31d0" },
+    { uuid = "be54608e-52f9-4768-99a0-7f7a4e7fc312" }
+  ]
+}
