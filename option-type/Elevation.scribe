@@ -1,0 +1,15 @@
+resource "option-type" "Elevation" {
+  code = "Elevation"
+  name = "Elevation in Feet"
+  uuid = "383a8eb3-5684-405d-9f9f-2dc1a7b1a263"
+  description = "Elevation in Feet"
+  displayOrder = 2
+  displayValueOnDetails = true
+  editable = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Elevation in Feet"
+  fieldName = "Elevation"
+  helpBlock = "Ensure the number provided here is *feet* not meters."
+  required = true
+  type = "number"
+}

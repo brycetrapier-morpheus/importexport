@@ -1,0 +1,10 @@
+resource "option-type-list" "Wind Farm Water Table Options" {
+  name = "Wind Farm Water Table Options"
+  uuid = "eb02d228-da27-4859-8d0a-46189535038b"
+  initialDataset = <<EOFSCRIBE
+Arid, Arid
+Moist, Moist
+Saturated, Saturated
+EOFSCRIBE
+  type = "manual"
+}

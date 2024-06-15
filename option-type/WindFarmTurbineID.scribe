@@ -1,0 +1,10 @@
+resource "option-type" "WindFarmTurbineID" {
+  code = "WindFarmTurbineID"
+  name = "Wind Farm Turbine ID"
+  uuid = "2bd49a67-e1a9-4d17-9684-f4806cb1728e"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Turbine ID"
+  fieldName = "WindFarmTurbineID"
+  helpBlock = "The Turbine ID field cannot be edited after this application is deployed."
+  required = true
+}

@@ -1,0 +1,16 @@
+resource "option-type" "WindFarmSoilErosionRate" {
+  code = "WindFarmSoilErosionRate"
+  name = "Wind Farm Soil Erosion Rate"
+  uuid = "c57db2ad-24a8-4641-a765-7dd46ce1b6ec"
+  defaultValue = "Slow"
+  description = "How quickly is soil eroding on the install site?"
+  displayOrder = 3
+  fieldContext = "config.customOptions"
+  fieldLabel = "Soil Erosion Rate"
+  fieldName = "WindFarmSoilErosionRate"
+  helpBlock = "How quickly is soil eroding on the install site?"
+  optionList = { name = "Wind Farm Soil Erosion Rate" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}

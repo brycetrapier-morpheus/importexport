@@ -1,0 +1,15 @@
+resource "option-type" "WindFarmGroundWaterTable" {
+  code = "WindFarmGroundWaterTable"
+  name = "Wind Farm Ground Water Table"
+  uuid = "84a823ad-3f98-4198-add3-211404def65a"
+  displayOrder = 4
+  displayValueOnDetails = true
+  editable = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Ground Water Table"
+  fieldName = "WindFarmGroundWaterTable"
+  optionList = { name = "Wind Farm Water Table Options" }
+  optionSource = "list"
+  required = true
+  type = "radio"
+}

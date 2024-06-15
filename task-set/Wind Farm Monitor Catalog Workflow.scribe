@@ -1,0 +1,16 @@
+resource "task-set" "Wind Farm Monitor Catalog Workflow" {
+  name = "Wind Farm Monitor Catalog Workflow"
+  uuid = "d58f96b0-a98d-43ce-baee-32a8578cc06b"
+  dateCreated = "2022-10-02T01:28:19.000Z"
+  description = "Used for the Wind Farm Analysis Catalog Item"
+  lastUpdated = "2022-12-22T00:57:42.000Z"
+  optionTypes = [
+    { code = "WindFarmTurbineID" },
+    { code = "CardinalDirection" },
+    { code = "Elevation" },
+    { code = "WindFarmSoilErosionRate" },
+    { code = "WindFarmGroundWaterTable" }
+  ]
+  taskSetTasks = [ { uuid = "cc3fe7d2-1a68-46ef-95c7-7d5a765cb0b3" } ]
+  taskSetType = "operation"
+}

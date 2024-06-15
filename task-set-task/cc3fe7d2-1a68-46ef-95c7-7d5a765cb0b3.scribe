@@ -1,0 +1,5 @@
+resource "task-set-task" "cc3fe7d2-1a68-46ef-95c7-7d5a765cb0b3" {
+  uuid = "cc3fe7d2-1a68-46ef-95c7-7d5a765cb0b3"
+  task = { name = "Wind Farm Monitor Outputs" }
+  taskPhase = "operation"
+}

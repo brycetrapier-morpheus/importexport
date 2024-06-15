@@ -1,0 +1,14 @@
+resource "task" "Wind Farm Monitor Outputs" {
+  name = "Wind Farm Monitor Outputs"
+  uuid = "c9ba215a-9001-4c34-9452-37bdff061ccb"
+  dateCreated = "2022-10-02T01:43:27.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-10-02T01:43:27.000Z"
+  options = [
+    {
+      content = { uuid = "530c4a26-7a95-4639-81e6-c44bebdb8c54" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  taskType = { code = "jythonTask" }
+}

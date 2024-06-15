@@ -1,0 +1,12 @@
+resource "option-type-list" "Cardinal Directions" {
+  name = "Cardinal Directions"
+  uuid = "e5898214-77f2-4435-864a-89f8cb851245"
+  description = "Sample list of NSEW"
+  initialDataset = <<EOFSCRIBE
+North, North
+South, South
+East, East
+West, West
+EOFSCRIBE
+  type = "manual"
+}

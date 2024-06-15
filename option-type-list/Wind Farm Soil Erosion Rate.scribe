@@ -1,0 +1,12 @@
+resource "option-type-list" "Wind Farm Soil Erosion Rate" {
+  name = "Wind Farm Soil Erosion Rate"
+  uuid = "cbbe8e91-fba2-4384-92e6-cd2160b86833"
+  initialDataset = <<EOFSCRIBE
+Slow, Slow
+Moderate, Moderate
+Fast, Fast
+None, None
+Additive, Additive
+EOFSCRIBE
+  type = "manual"
+}

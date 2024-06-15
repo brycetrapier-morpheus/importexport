@@ -1,0 +1,13 @@
+resource "file-content" "530c4a26-7a95-4639-81e6-c44bebdb8c54" {
+  uuid = "530c4a26-7a95-4639-81e6-c44bebdb8c54"
+  content = <<EOFSCRIBE
+print ("In the " '<%= customOptions.CardinalDirection %>' " region, at "'<%= customOptions.Elevation %>'" feet, with " '<%= customOptions.WindFarmWaterTable %>' " soil, the expected erosion rate is BLAH.")
+
+print ("The stated soil erosion rate is "'<%= customOptions.WindFarmSoilErosionRate %>'")
+
+
+
+EOFSCRIBE
+  dateCreated = "2022-10-02T01:43:27.000Z"
+  lastUpdated = "2022-10-02T01:43:27.000Z"
+}
