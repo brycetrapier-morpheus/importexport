@@ -1,0 +1,15 @@
+resource "code-repository" "hotshots201" {
+  name = "hotshots201"
+  uuid = "f3374c4e-b6b1-494c-82f7-46d3704faf3c"
+  codeLanguage = "HCL"
+  dateCreated = "2022-03-12T02:01:39.000Z"
+  defaultBranch = "main"
+  displayName = "brycetrapier-morpheus/hotshots201"
+  externalId = "468942070"
+  integration = { name = "GitHub GH 201" }
+  lastUpdated = "2022-03-12T03:29:07.000Z"
+  orgId = "92887125"
+  orgName = "brycetrapier-morpheus"
+  repoSize = 3
+  serviceUrl = "https://github.com/brycetrapier-morpheus/hotshots201"
+}

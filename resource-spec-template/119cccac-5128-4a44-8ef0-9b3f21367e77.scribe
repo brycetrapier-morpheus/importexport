@@ -1,0 +1,11 @@
+resource "resource-spec-template" "119cccac-5128-4a44-8ef0-9b3f21367e77" {
+  name = "AWS New VPC and IGW from code in GitHub"
+  uuid = "119cccac-5128-4a44-8ef0-9b3f21367e77"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-03-12T02:03:57.000Z"
+  labels = [ "AWS", "HS201", "Remote" ]
+  lastUpdated = "2023-02-25T01:30:53.000Z"
+  template = { uuid = "c179fb21-68d6-4cd9-b8d7-5ac59e004fe7" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}

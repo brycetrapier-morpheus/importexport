@@ -1,0 +1,10 @@
+resource "account-integration" "GitHub GH 201" {
+  name = "GitHub GH 201"
+  uuid = "f33f648c-9042-47b9-9fca-e7775f777c44"
+  category = "cm-server"
+  config = { cacheEnabled = false, defaultBranch = "" }
+  integrationType = { code = "github" }
+  serviceFlag = true
+  serviceUrl = ""
+  type = "github"
+}
