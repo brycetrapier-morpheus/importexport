@@ -1,0 +1,15 @@
+resource "container-type" "c7e400bc-5701-4691-bf0e-7d9a60cf185a" {
+  code = "c7e400bc-5701-4691-bf0e-7d9a60cf185a"
+  name = "BoS LoadGen"
+  uuid = "55cd18e6-1cbe-4f5b-9bb8-4c27dee77ff4"
+  containerVersion = "0.1"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "bosloadgen"
+  showServerLogs = true
+  statTypeCode = "amazon"
+  virtualImage = { code = "amazon.ec2.image.morpheus.centos.8.4-v2" }
+}
