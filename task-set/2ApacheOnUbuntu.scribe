@@ -1,0 +1,7 @@
+resource "task-set" "2ApacheOnUbuntu" {
+  name = "2ApacheOnUbuntu"
+  uuid = "0292361f-04aa-44d0-8a6a-2605db4a99b7"
+  dateCreated = "2023-12-04T19:45:07.000Z"
+  lastUpdated = "2023-12-04T19:45:07.000Z"
+  taskSetTasks = [ { uuid = "2c7afdd1-d355-40c0-b3a2-0de902c77b9c" } ]
+}

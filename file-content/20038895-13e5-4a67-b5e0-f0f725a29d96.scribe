@@ -1,0 +1,47 @@
+resource "file-content" "20038895-13e5-4a67-b5e0-f0f725a29d96" {
+  uuid = "20038895-13e5-4a67-b5e0-f0f725a29d96"
+  content = <<EOFSCRIBE
+#Ubuntu
+echo -----------------
+echo Installing Apache
+echo -----------------
+apt -y update
+apt install -y apache2
+echo -----------------
+echo Apache Installed
+echo -----------------
+echo ----------------------------------
+echo Opening Apache Host-Based FW Ports
+echo ----------------------------------
+ufw allow 'Apache Full'
+echo --------------------
+echo Apache FW Ports Open
+echo --------------------
+echo ----------------------------
+echo Updating Apache Landing Page
+echo ----------------------------
+cat > /var/www/html/index.html <<'EOF'
+<h1>Hello World<h1>
+<html>
+    <head>
+        <title>Hello World<	itle>
+    <head>
+    <body>
+        <h1>Web services are working<h1>
+   <ody>
+<html>
+EOF
+echo ----------------------------
+echo  Apache Landing Page Updated
+echo ----------------------------
+echo --------------------------
+echo Reloading Apache Services
+echo --------------------------
+systemctl apache2 reload
+echo -------------------------
+echo Apache Services Reloaded
+echo -------------------------
+EOFSCRIBE
+  dateCreated = "2023-12-04T19:43:19.000Z"
+  lastUpdated = "2023-12-04T19:43:19.000Z"
+}

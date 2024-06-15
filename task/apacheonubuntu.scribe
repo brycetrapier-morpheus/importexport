@@ -1,0 +1,17 @@
+resource "task" "apacheonubuntu" {
+  code = "apacheonubuntu"
+  name = "1ApacheOnUbuntu"
+  uuid = "53f53a2e-86e4-4718-8dd3-2b10bbdc13fd"
+  dateCreated = "2023-12-04T19:43:19.000Z"
+  executeTarget = "local"
+  labels = [ "Demo" ]
+  lastUpdated = "2023-12-04T19:43:19.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "20038895-13e5-4a67-b5e0-f0f725a29d96" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

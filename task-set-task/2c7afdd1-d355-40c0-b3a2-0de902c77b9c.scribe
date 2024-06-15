@@ -1,0 +1,5 @@
+resource "task-set-task" "2c7afdd1-d355-40c0-b3a2-0de902c77b9c" {
+  uuid = "2c7afdd1-d355-40c0-b3a2-0de902c77b9c"
+  task = { code = "apacheonubuntu" }
+  taskPhase = "provision"
+}
