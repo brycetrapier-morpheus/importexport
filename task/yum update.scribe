@@ -1,0 +1,15 @@
+resource "task" "yum update" {
+  name = "yum update"
+  uuid = "51240c34-c773-4edb-a3b1-9396c72a0d98"
+  dateCreated = "2021-11-18T20:51:05.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-11-18T20:51:05.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "cc1fcc33-4e7d-416b-863a-d2695953e0fb" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

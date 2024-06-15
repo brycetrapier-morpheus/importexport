@@ -1,0 +1,6 @@
+resource "task-set-task" "8c657df2-64d7-47f8-ad3c-074f00474194" {
+  uuid = "8c657df2-64d7-47f8-ad3c-074f00474194"
+  task = { name = "Install Nano on CentOS" }
+  taskOrder = 1
+  taskPhase = "provision"
+}

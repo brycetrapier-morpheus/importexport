@@ -1,0 +1,12 @@
+resource "task-set" "Webserver Deployment" {
+  name = "Webserver Deployment"
+  uuid = "84c7e5f3-3e1e-43ff-a739-f282722581ba"
+  dateCreated = "2021-11-18T20:59:01.000Z"
+  lastUpdated = "2021-11-18T20:59:38.000Z"
+  taskSetTasks = [
+    { uuid = "3d5b5d2b-588a-4a23-991a-577be2b38981" },
+    { uuid = "4fe3881d-2cc9-43d3-9fb8-a4a851633a9d" },
+    { uuid = "8c657df2-64d7-47f8-ad3c-074f00474194" },
+    { uuid = "91d4cb94-af4f-4bc0-90f6-d6c4f3703d16" }
+  ]
+}

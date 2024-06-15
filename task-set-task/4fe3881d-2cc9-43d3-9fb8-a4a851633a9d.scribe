@@ -1,0 +1,5 @@
+resource "task-set-task" "4fe3881d-2cc9-43d3-9fb8-a4a851633a9d" {
+  uuid = "4fe3881d-2cc9-43d3-9fb8-a4a851633a9d"
+  task = { name = "yum update" }
+  taskPhase = "provision"
+}

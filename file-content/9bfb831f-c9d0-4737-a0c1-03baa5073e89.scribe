@@ -1,0 +1,6 @@
+resource "file-content" "9bfb831f-c9d0-4737-a0c1-03baa5073e89" {
+  uuid = "9bfb831f-c9d0-4737-a0c1-03baa5073e89"
+  content = "sudo yum -y install nano"
+  dateCreated = "2021-11-18T20:50:30.000Z"
+  lastUpdated = "2021-11-18T20:50:30.000Z"
+}
