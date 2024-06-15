@@ -1,0 +1,11 @@
+resource "option-type" "nutanix-prism-provision-secure-boot" {
+  code = "nutanix-prism-provision-secure-boot"
+  name = "secure boot"
+  uuid = "4a08edd5-33b2-407d-a32e-7a914ffacf57"
+  displayOrder = 104
+  fieldGroup = "Nutanix Prism Boot Options"
+  fieldLabel = "Secure Boot"
+  fieldName = "secureBoot"
+  type = "checkbox"
+  visibleOnCode = "nutanix-prism-provision-uefi:on"
+}
