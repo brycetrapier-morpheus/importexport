@@ -1,0 +1,14 @@
+resource "instance-type-layout" "b3b025bd-8c0f-4265-8856-68c529e3019a" {
+  code = "b3b025bd-8c0f-4265-8856-68c529e3019a"
+  name = "HPE CEC"
+  uuid = "629fd2dd-413f-4525-8646-af533ffb758b"
+  hasAutoScale = false
+  instanceType = { code = "testinstance" }
+  instanceVersion = "23 May"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  workloads = [
+    { code = "1fa8d4a9-7ed3-4574-a213-2c109f48d915" },
+    { code = "1fa8d4a9-7ed3-4574-a213-2c109f48d915" }
+  ]
+}

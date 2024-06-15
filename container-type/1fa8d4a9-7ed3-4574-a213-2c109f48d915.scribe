@@ -1,0 +1,15 @@
+resource "container-type" "1fa8d4a9-7ed3-4574-a213-2c109f48d915" {
+  code = "1fa8d4a9-7ed3-4574-a213-2c109f48d915"
+  name = "HPE CEC Brasil AlmaLinux"
+  uuid = "eb753a69-1bbc-4900-b08c-843f67d529b8"
+  containerVersion = "23 May"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "cecbrasil"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "amazon.ec2.image.morpheus.almalinux.9.20221117" }
+}
