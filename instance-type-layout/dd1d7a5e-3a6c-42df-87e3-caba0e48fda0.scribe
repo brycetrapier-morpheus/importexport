@@ -1,0 +1,13 @@
+resource "instance-type-layout" "dd1d7a5e-3a6c-42df-87e3-caba0e48fda0" {
+  code = "dd1d7a5e-3a6c-42df-87e3-caba0e48fda0"
+  name = "Matomo on Ubuntu 20.04 in AWS"
+  uuid = "c778f1d6-1b0a-4af6-b0c9-ef0977f04d2e"
+  description = "Matomo Web Analytics Platform, on Ubuntu 20.04 in AWS"
+  hasAutoScale = false
+  instanceType = { code = "matomo" }
+  instanceVersion = "Ubuntu 20.04"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "Install Matomo on Ubuntu" } ]
+  workloads = [ { code = "ubuntu-amazon-20.04" } ]
+}

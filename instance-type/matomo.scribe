@@ -1,0 +1,8 @@
+resource "instance-type" "matomo" {
+  code = "matomo"
+  name = "Matomo Web Analytics"
+  uuid = "8210bdeb-03c9-4995-893c-cc998c7fadb1"
+  category = "utility"
+  deploymentService = ""
+  environmentPrefix = "MATOMO_WEB_ANALYTICS"
+}
