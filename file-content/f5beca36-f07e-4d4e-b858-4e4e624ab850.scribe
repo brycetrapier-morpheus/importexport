@@ -1,0 +1,17 @@
+resource "file-content" "f5beca36-f07e-4d4e-b858-4e4e624ab850" {
+  uuid = "f5beca36-f07e-4d4e-b858-4e4e624ab850"
+  content = <<EOFSCRIBE
+# Consumed in an Operational Workflow, which will be modeled as a self-service catalog entity.
+#
+
+echo .
+echo . Script to add a user account goes here ...
+echo .
+echo User FirstName: <%=customOptions.firstname%>
+echo User LastName:  <%=customOptions.lastname%>
+echo User Password:  <%=customOptions.UserProvidedPassword%>
+
+EOFSCRIBE
+  dateCreated = "2023-08-22T18:23:20.000Z"
+  lastUpdated = "2023-08-22T18:49:27.000Z"
+}

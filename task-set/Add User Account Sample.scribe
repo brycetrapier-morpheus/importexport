@@ -1,0 +1,15 @@
+resource "task-set" "Add User Account Sample" {
+  name = "Add User Account Sample"
+  uuid = "314294c3-d3a2-4641-acae-642e23e623b9"
+  dateCreated = "2023-08-22T18:44:50.000Z"
+  description = "Framework for adding a user account - doesn't function in real life"
+  labels = [ "Demo", "example" ]
+  lastUpdated = "2023-08-22T18:47:33.000Z"
+  optionTypes = [
+    { code = "firstname" },
+    { code = "lastname" },
+    { code = "UserProvidedPassword" }
+  ]
+  taskSetTasks = [ { uuid = "891da6df-443d-47ca-9ef9-a240aa96479f" } ]
+  taskSetType = "operation"
+}

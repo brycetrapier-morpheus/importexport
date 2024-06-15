@@ -1,0 +1,15 @@
+resource "task" "Add User Sample Task" {
+  name = "Add User Sample Task"
+  uuid = "4a5b7c1f-59c0-413a-9eb0-beac6d027864"
+  dateCreated = "2023-08-22T18:23:20.000Z"
+  executeTarget = "local"
+  labels = [ "Demo", "POC", "example" ]
+  lastUpdated = "2023-08-22T18:49:27.000Z"
+  options = [
+    {
+      content = { uuid = "f5beca36-f07e-4d4e-b858-4e4e624ab850" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

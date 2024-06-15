@@ -1,0 +1,5 @@
+resource "task-set-task" "891da6df-443d-47ca-9ef9-a240aa96479f" {
+  uuid = "891da6df-443d-47ca-9ef9-a240aa96479f"
+  task = { name = "Add User Sample Task" }
+  taskPhase = "operation"
+}
