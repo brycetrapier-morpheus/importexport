@@ -1,0 +1,17 @@
+resource "resource-spec-template" "ee22764d-f1e1-4786-ac43-6d540fd2b9f9" {
+  name = "AWS - Do something with CloudFormation"
+  uuid = "ee22764d-f1e1-4786-ac43-6d540fd2b9f9"
+  config = {
+    cloudformation = {
+      _CAPABILITY_AUTO_EXPAND = ""
+      _CAPABILITY_NAMED_IAM = ""
+      _IAM = ""
+    }
+    terraform = { tfVersion = "" }
+  }
+  dateCreated = "2022-03-11T20:41:03.000Z"
+  lastUpdated = "2022-03-11T20:41:03.000Z"
+  template = { uuid = "bc0e0a6f-f821-4f96-95fe-14ef58d82cc1" }
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
