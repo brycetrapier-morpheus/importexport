@@ -1,0 +1,10 @@
+resource "instance-type-layout" "eae191b3-4147-41f8-b964-7ea29d4d4a7b" {
+  code = "eae191b3-4147-41f8-b964-7ea29d4d4a7b"
+  name = "AWS Bryce GoldenImage"
+  uuid = "aae9aead-7468-4c27-859f-895591a9bc1d"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "2.1"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  workloads = [ { code = "7b444407-00c6-4158-93d9-13425905e730" } ]
+}

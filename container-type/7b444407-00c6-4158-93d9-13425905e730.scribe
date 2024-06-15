@@ -1,0 +1,19 @@
+resource "container-type" "7b444407-00c6-4158-93d9-13425905e730" {
+  code = "7b444407-00c6-4158-93d9-13425905e730"
+  name = "AWS Linux BryceVersion Golden Image"
+  uuid = "857caaaa-221b-486a-a6ad-a01ad6f21254"
+  containerPorts = [
+    { uuid = "c436ecb9-3764-4b3e-84bf-5ba04147250f" },
+    { uuid = "e425c3c6-2308-4e4a-9c03-361e58c86271" }
+  ]
+  containerVersion = "2.bryce"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awslinux2bryce"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "221ac79a-f9c7-4a88-a123-c89e55f949de" }
+}
