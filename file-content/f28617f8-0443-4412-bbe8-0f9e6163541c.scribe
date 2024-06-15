@@ -1,0 +1,47 @@
+resource "file-content" "f28617f8-0443-4412-bbe8-0f9e6163541c" {
+  uuid = "f28617f8-0443-4412-bbe8-0f9e6163541c"
+  content = <<EOFSCRIBE
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Resources": {
+        "EC2IG5KQC": {
+            "Type": "AWS::EC2::InternetGateway",
+            "Properties": {},
+            "DependsOn": [
+                "NewRouteTable"
+            ]
+        },
+        "NewVPC": {
+            "Type": "AWS::EC2::VPC",
+            "Properties": {}
+        },
+        "NewRouteTable": {
+            "Type": "AWS::EC2::RouteTable",
+            "Properties": {
+                "VpcId": {
+                    "Ref": "NewVPC"
+                }
+            }
+        },
+        "EC2Instance": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {},
+            "DependsOn": [
+                "NewVPC",
+                "NewSecurityGroup"
+            ]
+        },
+        "NewSecurityGroup": {
+            "Type": "AWS::EC2::SecurityGroup",
+            "Properties": {
+                "VpcId": {
+                    "Ref": "NewVPC"
+                }
+            }
+        }
+    }
+}
+EOFSCRIBE
+  dateCreated = "2022-08-01T22:34:41.000Z"
+  lastUpdated = "2022-08-01T22:34:41.000Z"
+}

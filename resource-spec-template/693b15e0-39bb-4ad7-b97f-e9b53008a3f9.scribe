@@ -1,0 +1,18 @@
+resource "resource-spec-template" "693b15e0-39bb-4ad7-b97f-e9b53008a3f9" {
+  name = "AWS CF New VPC and EC2"
+  uuid = "693b15e0-39bb-4ad7-b97f-e9b53008a3f9"
+  category = "VPC, Subnet, RT, SG, and EC2 Instance"
+  config = {
+    cloudformation = {
+      _CAPABILITY_AUTO_EXPAND = ""
+      _CAPABILITY_NAMED_IAM = ""
+      _IAM = ""
+    }
+    terraform = { tfVersion = "" }
+  }
+  dateCreated = "2022-08-01T22:34:41.000Z"
+  lastUpdated = "2022-08-01T22:35:05.000Z"
+  template = { uuid = "f28617f8-0443-4412-bbe8-0f9e6163541c" }
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
