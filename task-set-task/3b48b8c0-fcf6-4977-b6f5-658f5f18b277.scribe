@@ -1,0 +1,5 @@
+resource "task-set-task" "3b48b8c0-fcf6-4977-b6f5-658f5f18b277" {
+  uuid = "3b48b8c0-fcf6-4977-b6f5-658f5f18b277"
+  task = { name = "Install Redis on Ubuntu" }
+  taskPhase = "provision"
+}

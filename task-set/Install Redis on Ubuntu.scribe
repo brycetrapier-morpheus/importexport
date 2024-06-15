@@ -1,0 +1,9 @@
+resource "task-set" "Install Redis on Ubuntu" {
+  name = "Install Redis on Ubuntu"
+  uuid = "b0aeb4e3-cd39-4cf7-839d-e1058d7c4075"
+  dateCreated = "2023-08-23T18:59:56.000Z"
+  description = "Consumed in a Layout - Only a single Task in a single Lifecycle Phase"
+  labels = [ "Layout" ]
+  lastUpdated = "2023-08-23T18:59:56.000Z"
+  taskSetTasks = [ { uuid = "3b48b8c0-fcf6-4977-b6f5-658f5f18b277" } ]
+}

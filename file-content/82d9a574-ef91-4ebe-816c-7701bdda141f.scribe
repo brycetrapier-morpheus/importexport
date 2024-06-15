@@ -1,0 +1,11 @@
+resource "file-content" "82d9a574-ef91-4ebe-816c-7701bdda141f" {
+  uuid = "82d9a574-ef91-4ebe-816c-7701bdda141f"
+  content = <<EOFSCRIBE
+# Assuming all other packages are up to date (apt update will not be run in this task)
+#
+apt install -y redis-server
+
+EOFSCRIBE
+  dateCreated = "2023-08-23T18:49:47.000Z"
+  lastUpdated = "2023-08-23T18:49:47.000Z"
+}
