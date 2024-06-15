@@ -1,0 +1,9 @@
+resource "task-set" "Download Snoopy web content" {
+  name = "Download Snoopy web content"
+  uuid = "d291e4fb-47ec-47ef-8eda-4ae75f72010d"
+  dateCreated = "2021-11-17T06:04:24.000Z"
+  lastUpdated = "2022-08-12T23:09:21.000Z"
+  platform = "linux"
+  taskSetTasks = [ { uuid = "14423fdc-8289-46d4-82ae-2f67c7e5599d" } ]
+  taskSetType = "operation"
+}

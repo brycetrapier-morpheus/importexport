@@ -1,0 +1,15 @@
+resource "task" "Copy Snoopy Images" {
+  name = "Copy Snoopy Images"
+  uuid = "734ff29f-2d12-4b66-ad65-98921ddf3a48"
+  dateCreated = "2021-11-17T06:03:48.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-05-07T00:19:00.000Z"
+  options = [
+    {
+      content = { uuid = "859db70f-8e6f-4afc-981c-bbe5f30d05ee" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
