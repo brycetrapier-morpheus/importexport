@@ -1,0 +1,11 @@
+resource "option-type" "databasetiername" {
+  code = "databasetiername"
+  name = "Tier Database"
+  uuid = "5ac4692e-2f3a-4505-9120-642c0b247301"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Database Tier Name"
+  fieldName = "databasetiername"
+  helpBlock = "Database Tier Name"
+  placeHolder = "Database Tier Name"
+  required = true
+}
