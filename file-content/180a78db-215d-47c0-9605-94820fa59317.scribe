@@ -1,0 +1,83 @@
+resource "file-content" "180a78db-215d-47c0-9605-94820fa59317" {
+  uuid = "180a78db-215d-47c0-9605-94820fa59317"
+  content = <<EOFSCRIBE
+# Create a new VPC, and associate the 10.0.0.0/16 space
+resource "aws_vpc" "TFVPC" {
+  cidr_block           = "10.0.0.0/16"
+  enable_dns_support   = true
+  enable_dns_hostnames = true
+  tags = {
+    Name = "Morpheus TF VPC"
+  }
+}
+
+
+#Create a new IGW, and associate it with the newly-created VPC
+resource "aws_internet_gateway" "igw" {
+  vpc_id = aws_vpc.TFVPC.id
+  tags = {
+    Name = "Morpheus TF IGW"
+  }
+}
+
+#Filter route tables to only the main route table of the VPC that was just created
+data "aws_route_table" "VPC_main_RT" {
+  filter {
+    name   = "association.main"
+    values = ["true"]
+  }
+  filter {
+    name   = "vpc-id"
+    values = [aws_vpc.TFVPC.id]
+  }
+}
+
+
+#Create a route in the new VPC's main RT, to point 0/0 to the newly-created IGW
+resource "aws_default_route_table" "Default_Route" {
+  default_route_table_id = data.aws_route_table.VPC_main_RT.id
+  route {
+    cidr_block = "0.0.0.0/0"
+    gateway_id = aws_internet_gateway.igw.id
+  }
+  tags = {
+    Name = "Morpheus TF "
+  }
+}
+
+
+#Get all available AZ's in VPC for master region
+data "aws_availability_zones" "azs" {
+  state = "available"
+}
+
+#Create a subnet in the second AZ in the Region
+resource "aws_subnet" "WebFarm" {
+  availability_zone = element(data.aws_availability_zones.azs.names, 0)
+  vpc_id            = aws_vpc.TFVPC.id
+  cidr_block        = "10.0.1.0/24"
+  map_public_ip_on_launch = true 
+    tags = {
+    Name = "Morpheus TF Web Subnet"
+  }
+}
+resource "aws_subnet" "DataFarm" {
+  availability_zone = element(data.aws_availability_zones.azs.names, 1)
+  vpc_id            = aws_vpc.TFVPC.id
+  cidr_block        = "10.0.2.0/24"
+    tags = {
+    Name = "Morpheus TF Data Subnet"
+  }
+}
+
+output "WebFarm_Subnet_ID" {
+    value = aws_subnet.WebFarm.id
+}
+output "DataFarm_Subnet_ID" {
+    value = aws_subnet.DataFarm.id
+}
+
+EOFSCRIBE
+  dateCreated = "2021-11-16T04:11:17.000Z"
+  lastUpdated = "2023-03-22T23:35:48.000Z"
+}

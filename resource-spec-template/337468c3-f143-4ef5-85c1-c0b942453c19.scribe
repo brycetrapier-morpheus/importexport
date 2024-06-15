@@ -1,0 +1,11 @@
+resource "resource-spec-template" "337468c3-f143-4ef5-85c1-c0b942453c19" {
+  name = "AWS - VPC, Web subnet, Data subnet"
+  uuid = "337468c3-f143-4ef5-85c1-c0b942453c19"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2021-11-16T04:11:17.000Z"
+  labels = [ "AWS" ]
+  lastUpdated = "2023-03-22T23:35:48.000Z"
+  template = { uuid = "180a78db-215d-47c0-9605-94820fa59317" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
