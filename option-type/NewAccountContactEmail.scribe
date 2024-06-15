@@ -1,0 +1,12 @@
+resource "option-type" "NewAccountContactEmail" {
+  code = "NewAccountContactEmail"
+  name = "NewAccountContactEmail"
+  uuid = "b32d960b-95c3-4f5a-a6b4-0fe6fceb3926"
+  displayValueOnDetails = true
+  editable = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Contact Email"
+  fieldName = "NewAccountContactEmail"
+  labels = [ "New Account" ]
+  required = true
+}

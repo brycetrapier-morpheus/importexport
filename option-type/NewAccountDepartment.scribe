@@ -1,0 +1,15 @@
+resource "option-type" "NewAccountDepartment" {
+  code = "NewAccountDepartment"
+  name = "NewAccountDepartment"
+  uuid = "48d61238-e002-4026-93ed-ecfa05824dee"
+  displayValueOnDetails = true
+  editable = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Department"
+  fieldName = "NewAccountDepartment"
+  labels = [ "New Account" ]
+  optionList = { name = "Departments" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}

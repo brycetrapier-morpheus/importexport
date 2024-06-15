@@ -1,0 +1,12 @@
+resource "option-type-list" "Project IDs" {
+  name = "Project IDs"
+  uuid = "e74698c1-a0ae-4d8e-95a8-2ef40593717c"
+  initialDataset = <<EOFSCRIBE
+CDG-0172T-918,CDG-0172T-918
+DAL-87AGL-094,DAL-87AGL-094
+SRL-90013-BYZ,SRL-90013-BYZ
+2112-PEART-YYZ,2112-PEART-YYZ
+EOFSCRIBE
+  labels = [ "New Account" ]
+  type = "manual"
+}

@@ -1,0 +1,12 @@
+resource "option-type" "NewAWSAccountName" {
+  code = "NewAWSAccountName"
+  name = "NewAWSAccountName"
+  uuid = "c14403b1-b735-4bbe-8504-7d258f429893"
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Account Name"
+  fieldName = "NewAWSAccountName"
+  helpBlock = "AWS Account Name.  NOTE: This value cannot be edited after the account is created."
+  labels = [ "New Account" ]
+  required = true
+}

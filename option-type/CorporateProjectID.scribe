@@ -1,0 +1,14 @@
+resource "option-type" "CorporateProjectID" {
+  code = "CorporateProjectID"
+  name = "CorporateProjectID"
+  uuid = "192ee84d-7f2d-4a85-8d94-b21ea0aa3177"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Corp Project ID"
+  fieldName = "CorporateProjectID"
+  helpBlock = "Corporate Project ID.  If your project ID is not in this list, please contact IT Budgeting and Plans at 1-800-555-1212 to have it added."
+  labels = [ "New Account" ]
+  optionList = { name = "Project IDs" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}

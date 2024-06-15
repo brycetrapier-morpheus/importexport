@@ -1,0 +1,13 @@
+resource "option-type" "NewAccountContactName" {
+  code = "NewAccountContactName"
+  name = "NewAccountContactName"
+  uuid = "fc30afe4-a718-4c87-ad43-01809435afd2"
+  displayValueOnDetails = true
+  editable = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Contact"
+  fieldName = "NewAccountContactName"
+  helpBlock = "Person in the organization who should be contacted if IT Operations has questions about this account"
+  labels = [ "New Account" ]
+  required = true
+}

@@ -1,0 +1,20 @@
+resource "option-type-list" "Departments" {
+  name = "Departments"
+  uuid = "8b4f7d47-df6a-48f6-a9cd-2d24016e630c"
+  description = "Sample dataset of organizational business units"
+  initialDataset = <<EOFSCRIBE
+Architecture,Architecture
+Engineering,Engineering
+Compliance,Compliance
+Finance,Finance
+Legal, Legal
+Operations, Operations
+Patient Bedside, Patient Bedside
+Real Estate, Real Estate
+Security, Security
+Spatial, Spatial
+Terrestrial, Terrestrial
+EOFSCRIBE
+  labels = [ "Demo" ]
+  type = "manual"
+}
