@@ -1,0 +1,13 @@
+resource "task-set" "POC - NGINX via Bash Scripts" {
+  name = "POC - NGINX via Bash Scripts"
+  uuid = "0dfa26fa-aa4e-4773-a411-5483b4529da3"
+  dateCreated = "2023-03-27T22:26:49.000Z"
+  description = "Adds NGINX to a server via shell scripts"
+  labels = [ "Demo", "NGINX", "POC", "Scripts" ]
+  lastUpdated = "2023-04-18T18:38:32.000Z"
+  platform = "linux"
+  taskSetTasks = [
+    { uuid = "39279180-6dfd-420f-a6e7-cc1f8ce272e2" },
+    { uuid = "f32e69e1-86a0-4134-befe-6992a04d6e13" }
+  ]
+}

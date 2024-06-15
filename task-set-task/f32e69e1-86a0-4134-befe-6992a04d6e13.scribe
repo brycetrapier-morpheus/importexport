@@ -1,0 +1,5 @@
+resource "task-set-task" "f32e69e1-86a0-4134-befe-6992a04d6e13" {
+  uuid = "f32e69e1-86a0-4134-befe-6992a04d6e13"
+  task = { name = "NGINX Install (Ubuntu) - 1 Install" }
+  taskPhase = "provision"
+}
