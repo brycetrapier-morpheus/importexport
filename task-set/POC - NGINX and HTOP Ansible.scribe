@@ -1,0 +1,10 @@
+resource "task-set" "POC - NGINX and HTOP Ansible" {
+  name = "POC - NGINX and HTOP Ansible"
+  uuid = "314f088d-a2e3-4fbd-a85c-c459620e0a6e"
+  dateCreated = "2023-03-23T01:59:12.000Z"
+  description = "Adds NGINX and HTOP to a server via Ansible"
+  labels = [ "Ansible", "Demo", "HTOP", "NGINX", "POC" ]
+  lastUpdated = "2023-04-18T18:28:03.000Z"
+  platform = "linux"
+  taskSetTasks = [ { uuid = "d3ec791a-3bc5-4779-ae00-f151174b5677" } ]
+}
