@@ -1,0 +1,11 @@
+resource "task-set" "Chained Output Sample Provisioning Workflow" {
+  name = "Chained Output Sample Provisioning Workflow"
+  uuid = "9aa17cac-9c56-4be4-9359-3afc5c42bc98"
+  dateCreated = "2022-09-21T19:32:51.000Z"
+  description = "Output from Task 1 is fed as input to Task 2"
+  lastUpdated = "2023-02-08T17:51:42.000Z"
+  taskSetTasks = [
+    { uuid = "21c6ab62-db8d-48ce-8f85-6c093dbaedc2" },
+    { uuid = "d8fa80e3-5fc3-45c5-9bb4-d3019ced8d57" }
+  ]
+}

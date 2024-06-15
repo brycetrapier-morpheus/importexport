@@ -1,0 +1,6 @@
+resource "task-set-task" "d8fa80e3-5fc3-45c5-9bb4-d3019ced8d57" {
+  uuid = "d8fa80e3-5fc3-45c5-9bb4-d3019ced8d57"
+  task = { code = "ChainedOutputTask2" }
+  taskOrder = 1
+  taskPhase = "provision"
+}
