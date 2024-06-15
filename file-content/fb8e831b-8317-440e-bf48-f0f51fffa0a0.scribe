@@ -1,0 +1,25 @@
+resource "file-content" "fb8e831b-8317-440e-bf48-f0f51fffa0a0" {
+  uuid = "fb8e831b-8317-440e-bf48-f0f51fffa0a0"
+  content = <<EOFSCRIBE
+import morphqs
+import os
+import time
+os.environ["loggingDebug"] = "True"
+ 
+# Run as a task within the morpheus ui
+os.environ["bearertoken"] = morpheus['morpheus']['apiAccessToken']
+os.environ["baseurl"] = morpheus['morpheus']['applianceUrl']
+ 
+def main():
+    branch="highered"
+    hchighered_contentPath = "morph_contentpack/main.py"
+    integration_id = morphqs.add_integration("highered", "https://gitlab.com/jaredlutgen/morpheus_quickshots.git", "Morpheus Quickshots Base Repo")
+    time.sleep(2)
+    morphqs.deploy_usecase_tools(branch,integration_id)
+ 
+if __name__ == '__main__':
+    main()
+EOFSCRIBE
+  dateCreated = "2023-04-12T21:53:48.000Z"
+  lastUpdated = "2023-04-12T21:53:48.000Z"
+}

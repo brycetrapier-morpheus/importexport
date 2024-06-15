@@ -1,0 +1,20 @@
+resource "task" "Use Case Installer" {
+  name = "Use Case Installer"
+  uuid = "5f96b0ce-3f26-4f15-aa3d-9f3aa00f7469"
+  dateCreated = "2023-04-12T21:53:48.000Z"
+  executeTarget = "local"
+  labels = [ "installer", "testing", "usecase" ]
+  lastUpdated = "2023-04-12T21:53:48.000Z"
+  options = [
+    {
+      optionType = { code = "pythonAdditionalPackages" }
+      value = "morphqs"
+    },
+    { optionType = { code = "pythonBinary" }, value = "python3" },
+    {
+      content = { uuid = "fb8e831b-8317-440e-bf48-f0f51fffa0a0" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  taskType = { code = "jythonTask" }
+}
