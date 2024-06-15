@@ -1,0 +1,11 @@
+resource "instance-type-layout" "e62cce3f-0d98-4659-857a-3761b260051c" {
+  code = "e62cce3f-0d98-4659-857a-3761b260051c"
+  name = "Verint App in GCP"
+  uuid = "baff5e69-d2c1-43d4-ad3a-c01c3fd51c9e"
+  description = "Verint Application Server"
+  instanceType = { code = "verint" }
+  instanceVersion = "1"
+  memoryRequirement = 134217728
+  provisionType = { code = "google" }
+  workloads = [ { code = "90ed532b-afdd-424e-bbf4-1e04271407fc" } ]
+}

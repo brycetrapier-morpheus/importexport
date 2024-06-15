@@ -1,0 +1,12 @@
+resource "instance-type" "verint" {
+  code = "verint"
+  name = "Verint"
+  uuid = "b374e748-19c1-4077-b851-6bc0f19ad5c0"
+  category = "apps"
+  deploymentService = ""
+  description = "Top-Level Instance Type for Verint Servers"
+  environmentPrefix = "VERINT"
+  featured = true
+  optionTypes = [ { code = "costcenter" }, { code = "PaymentMethodsRadioButtons" } ]
+  visibility = "public"
+}

@@ -1,0 +1,14 @@
+resource "container-type" "90ed532b-afdd-424e-bbf4-1e04271407fc" {
+  code = "90ed532b-afdd-424e-bbf4-1e04271407fc"
+  name = "Custom Node Debian GCP"
+  uuid = "e704073b-9b8b-453d-8c53-abba1ecb5708"
+  containerVersion = "11"
+  entryPoint = ""
+  logTypeCode = "google"
+  provisionType = { code = "google" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "customnodedebian"
+  showServerLogs = true
+  statTypeCode = "google"
+}
