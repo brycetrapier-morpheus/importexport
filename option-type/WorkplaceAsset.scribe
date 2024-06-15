@@ -1,0 +1,14 @@
+resource "option-type" "WorkplaceAsset" {
+  code = "WorkplaceAsset"
+  name = "Workplace Asset"
+  uuid = "a3907080-ac3c-4798-bfcf-965993ae7ebb"
+  description = "Asset to order"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Asset"
+  fieldName = "WorkplaceAsset"
+  helpBlock = "Please choose the asset to order"
+  optionList = { name = "Workplace Assets" }
+  optionSource = "list"
+  required = true
+  type = "radio"
+}

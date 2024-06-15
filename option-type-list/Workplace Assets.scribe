@@ -1,0 +1,11 @@
+resource "option-type-list" "Workplace Assets" {
+  name = "Workplace Assets"
+  uuid = "6b209015-0250-44d7-b006-dd9d86d5816c"
+  description = "List of available assets for employees to order"
+  initialDataset = <<EOFSCRIBE
+Mouse, Mouse
+Laptop, Laptop
+Software License, Software License
+EOFSCRIBE
+  type = "manual"
+}
