@@ -1,0 +1,11 @@
+resource "instance-type-layout" "b827b539-3bca-4770-b9ee-e09714ea6235" {
+  code = "b827b539-3bca-4770-b9ee-e09714ea6235"
+  name = "MySQL More Storage"
+  uuid = "ec4a893b-53fe-4041-bbb9-d4cb45fd1c65"
+  description = "MySQL server with predefined storage volumtes for System, Data, Logs, Backups, and TempDB"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "AWS"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  workloads = [ { code = "mysql-amazon-5.6" } ]
+}
