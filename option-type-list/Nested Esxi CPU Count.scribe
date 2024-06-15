@@ -1,0 +1,23 @@
+resource "option-type-list" "Nested Esxi CPU Count" {
+  name = "Nested Esxi CPU Count"
+  uuid = "53509113-c462-4996-8a95-8b320c646eff"
+  initialDataset = <<EOFSCRIBE
+'2 CPUs', 2
+'4 CPUs', 4
+'6 CPUs', 6
+'8 CPUs', 8
+'10 CPUs', 10
+'12 CPUs', 12
+'14 CPUs', 14
+'16 CPUs', 16
+'18 CPUs', 18
+'20 CPUs', 20
+'24 CPUs', 24
+'28 CPUs', 28
+'32 CPUs', 32
+'36 CPUs', 36
+'40 CPUs', 40
+EOFSCRIBE
+  labels = [ "nested deployment", "prod" ]
+  type = "manual"
+}

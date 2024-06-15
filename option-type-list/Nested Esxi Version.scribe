@@ -1,0 +1,12 @@
+resource "option-type-list" "Nested Esxi Version" {
+  name = "Nested Esxi Version"
+  uuid = "69023c0f-8997-4b9d-b550-f6ffdbc2e9d6"
+  description = "Version of Esxi"
+  initialDataset = <<EOFSCRIBE
+'ESXi 6.5u3','ESX6.5u3Template.ova'
+'ESXi 6.7u3','ESX6.7u3Template.ova'
+'ESXi 7.0u3','ESX7.0u3mTemplate.ova'
+EOFSCRIBE
+  labels = [ "nested deployment", "prod" ]
+  type = "manual"
+}

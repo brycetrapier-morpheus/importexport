@@ -1,0 +1,237 @@
+resource "option-type-form" "nlabdeployment" {
+  code = "nlabdeployment"
+  name = "Nested Lab Deployment"
+  uuid = "97e6ea29-a34a-4936-b340-a974cf4c9adc"
+  config = {
+    enableVar = ""
+    form = ""
+    formField = ""
+    formOptions = ""
+    formType = ""
+  }
+  description = "Nested Lab VMware Lab Deployment Demo"
+  field-groups = [
+    {
+      code = "b69a8779-8c5d-4df9-9f7a-10dddff45dc2"
+      name = "Destination Information"
+      description = "This provides the destination where they want to deploy the infra."
+      options = [
+        {
+          code = "vCenterSelect"
+          name = "vCenter Selection"
+          uuid = "241d5490-5ae5-45ca-8aec-67632e834900"
+          defaultValue = "0"
+          fieldContext = "config.customOptions"
+          fieldLabel = "vCenter"
+          fieldName = "vCenterSelect"
+          labels = [ "nested deployment", "prod" ]
+          refCode = "vCenterSelect"
+          required = true
+          type = "select"
+        },
+        {
+          code = "vcenterNetworkSelect"
+          name = "vCenter Network Selection"
+          uuid = "c351ad6e-f07d-434a-a3b6-2d0e0388bf88"
+          dependsOnCode = "vCenterSelect"
+          displayOrder = 1
+          fieldContext = "config.customOptions"
+          fieldLabel = "Network Selection"
+          fieldName = "vcenterNetworkSelect"
+          labels = [ "nested deployment", "prod" ]
+          refCode = "vcenterNetworkSelect"
+          requireOnCode = "vCenterSelect"
+          required = true
+          type = "select"
+        }
+      ]
+    },
+    {
+      code = "08fdb043-80a1-4a40-b9cd-d9d67eeb2565"
+      name = "Common Configurations"
+      defaultCollapsed = false
+      options = [
+        {
+          code = "nestedBuildPwd"
+          name = "nestedBuildPwd"
+          uuid = "859a266c-7d89-4b96-8d73-e02303e21e86"
+          defaultValue = "VMware321!"
+          fieldContext = "config.customOptions"
+          fieldLabel = "Admin Password"
+          fieldName = "nestedBuildPwd"
+          helpBlock = "This will be the password for both ESXi ROOT and administrator@vsphere.local - Default is VMware321!"
+          labels = [ "nested deployment", "prod" ]
+          refCode = "nestedBuildPwd"
+          required = true
+          type = "password"
+        }
+      ]
+      visibleOnCode = "booleanCustomCreds"
+    },
+    {
+      code = "3db7b519-5a89-4619-a158-2b997b7eadbc"
+      name = "Resource Requirements"
+      defaultCollapsed = false
+      description = "Resource Requirements for the ESXi Hosts"
+      options = [
+        {
+          code = "11fc7871-7ca1-44e9-8576-8768e22dd765"
+          name = "11fc7871-7ca1-44e9-8576-8768e22dd765"
+          uuid = "e1286152-f7b2-4f19-8e2a-793d6e89ad9b"
+          config = {
+            addon = ""
+            addonPosition = ""
+            multiSelect = false
+            sortable = ""
+          }
+          defaultValue = "vCenter 7.0"
+          dependsOnCode = "deployVcenter"
+          fieldContext = "config.customOptions"
+          fieldLabel = "vCenter Version"
+          fieldName = "vCSAInstaller"
+          formField = true
+          optionList = { name = "vCenter Installer" }
+          required = true
+          type = "select"
+          visibleOnCode = "deployVcenter"
+        },
+        {
+          code = "94c7daf2-7d65-4e40-bb8d-4703ddadaad1"
+          name = "94c7daf2-7d65-4e40-bb8d-4703ddadaad1"
+          uuid = "bb3f7650-a5a3-40c3-9eb7-e6ff037305b5"
+          config = {
+            addonPosition = ""
+            multiSelect = false
+            sortable = ""
+          }
+          defaultValue = "Tiny"
+          dependsOnCode = "vCSAInstaller"
+          displayOrder = 1
+          fieldContext = "config.customOptions"
+          fieldLabel = "vCenter Size"
+          fieldName = "vcenterSize"
+          formField = true
+          optionList = { name = "vCenter Size" }
+          required = true
+          type = "select"
+          visibleOnCode = "deployVcenter"
+        },
+        {
+          code = "nestedEsxiVersion"
+          name = "ESXi Version"
+          uuid = "2550ddeb-960c-40fe-911d-ed8c5673287c"
+          defaultValue = "ESX6.5u3Template.ova"
+          description = "select version of esxi"
+          fieldContext = "config.customOptions"
+          fieldLabel = "ESXi Version"
+          fieldName = "nestedEsxiVersion"
+          labels = [ "nested deployment", "prod" ]
+          optionList = { name = "Nested Esxi Version" }
+          refCode = "nestedEsxiVersion"
+          required = true
+          showOnEdit = false
+          type = "select"
+        },
+        {
+          code = "nestedESXivCPU"
+          name = "nestedESXivCPU"
+          uuid = "b0abafe6-69f5-469b-9443-f6b6ce384491"
+          defaultValue = "2"
+          fieldContext = "config.customOptions"
+          fieldLabel = "CPUs Per Host"
+          fieldName = "nestedESXivCPU"
+          labels = [ "nested deployment", "prod" ]
+          optionList = { name = "Nested Esxi CPU Count" }
+          refCode = "nestedESXivCPU"
+          required = true
+          type = "select"
+        },
+        {
+          code = "nestedESXivMEM"
+          name = "nestedESXivMEM"
+          uuid = "b2e55994-63ef-4915-80ce-c78ca789c68a"
+          defaultValue = "4096"
+          fieldContext = "config.customOptions"
+          fieldLabel = "RAM Per Host"
+          fieldName = "nestedESXivMEM"
+          labels = [ "nested deployment", "prod" ]
+          optionList = { name = "Nested Esxi Sizes" }
+          refCode = "nestedESXivMEM"
+          required = true
+          type = "select"
+        },
+        {
+          code = "nestedESXiHostCount"
+          name = "nestedESXiHostCount"
+          uuid = "38c7e2a9-74f8-438e-8e18-f95ad13d8334"
+          defaultValue = "2"
+          fieldContext = "config.customOptions"
+          fieldLabel = "Host Count"
+          fieldName = "nestedESXiHostCount"
+          labels = [ "nested deployment", "prod" ]
+          refCode = "nestedESXiHostCount"
+          required = true
+          type = "number"
+        }
+      ]
+      visibleOnCode = "booleanCustomEsxi"
+    }
+  ]
+  labels = [ "Demo", "nested vmware lab", "ova deployment" ]
+  options = [
+    {
+      code = "customer"
+      name = "Customer"
+      uuid = "566a6e96-71ce-4f69-9cbb-83bc9247069c"
+      defaultValue = "0"
+      fieldContext = "config.customOptions"
+      fieldLabel = "Customer"
+      fieldName = "customer"
+      labels = [ "nested deployment", "prod" ]
+      optionSource = "list"
+      required = true
+      type = "select"
+    },
+    {
+      code = "397509b5-cfe7-4819-b531-15e0ea51de7f"
+      name = "397509b5-cfe7-4819-b531-15e0ea51de7f"
+      uuid = "b63323bb-c483-416d-bbbc-f0478e1e7664"
+      config = { addonPosition = "" }
+      defaultValue = "false"
+      displayOrder = 1
+      fieldContext = "config.customOptions"
+      fieldLabel = "Customize ESXi"
+      fieldName = "booleanCustomEsxi"
+      formField = true
+      type = "checkbox"
+    },
+    {
+      code = "e25e7315-deb8-45bd-9deb-bab3b42ec371"
+      name = "e25e7315-deb8-45bd-9deb-bab3b42ec371"
+      uuid = "c1847dfe-6cea-43c7-accc-5cfb348624fb"
+      config = { addonPosition = "" }
+      defaultValue = "false"
+      displayOrder = 2
+      fieldContext = "config.customOptions"
+      fieldLabel = "Customize Creds"
+      fieldName = "booleanCustomCreds"
+      formField = true
+      type = "checkbox"
+    },
+    {
+      code = "24f18a8b-8721-451e-ad47-6334be2a7745"
+      name = "24f18a8b-8721-451e-ad47-6334be2a7745"
+      uuid = "083c0eb8-1241-425c-bbc5-eae47a2defcc"
+      config = { addonPosition = "" }
+      defaultValue = "false"
+      dependsOnCode = "booleanCustomEsxi"
+      displayOrder = 3
+      fieldContext = "config.customOptions"
+      fieldLabel = "Deploy vCenter?"
+      fieldName = "deployVcenter"
+      formField = true
+      type = "checkbox"
+      visibleOnCode = "booleanCustomEsxi"
+    }
+  ]
+}

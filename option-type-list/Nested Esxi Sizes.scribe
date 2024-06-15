@@ -1,0 +1,23 @@
+resource "option-type-list" "Nested Esxi Sizes" {
+  name = "Nested Esxi Sizes"
+  uuid = "9468621d-e79e-4571-ad50-765b851dd4fb"
+  initialDataset = <<EOFSCRIBE
+'4 GB', 4096
+'6 GB', 6144
+'8 GB', 8192
+'10 GB', 10240
+'12 GB', 12288
+'14 GB', 14336
+'16 GB', 16384
+'18 GB', 18432
+'20 GB', 20480
+'24 GB', 24576
+'32 GB', 32768
+'48 GB', 49152
+'64 GB', 65536
+'96 GB', 98304
+'128 GB', 131072
+EOFSCRIBE
+  labels = [ "nested deployment", "prod" ]
+  type = "manual"
+}

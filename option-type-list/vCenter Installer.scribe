@@ -1,0 +1,11 @@
+resource "option-type-list" "vCenter Installer" {
+  name = "vCenter Installer"
+  uuid = "0a6faa84-7394-4cd5-9868-e98393d66c57"
+  config = "{\"realTime\":false,\"ignoreSSLErrors\":false,\"clientId\":\"\",\"accessTokenUrl\":\"\",\"scope\":\"\",\"clientSecret\":\"\",\"grantType\":\"\",\"clientAuth\":\"\"}"
+  initialDataset = <<EOFSCRIBE
+'vCenter 7.0', vc70
+'vCenter 6.7', vc67
+EOFSCRIBE
+  labels = [ "nested deployment", "prod" ]
+  type = "manual"
+}

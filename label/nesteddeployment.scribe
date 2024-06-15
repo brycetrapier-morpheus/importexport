@@ -1,0 +1,3 @@
+resource "label" "nesteddeployment" {
+  name = "nesteddeployment"
+}

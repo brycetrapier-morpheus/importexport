@@ -1,0 +1,15 @@
+resource "option-type-list" "vCenter Size" {
+  name = "vCenter Size"
+  uuid = "8697d1f0-1a31-4378-94f3-4c1f8f186d5f"
+  config = "{\"realTime\":false,\"ignoreSSLErrors\":false,\"clientId\":\"\",\"accessTokenUrl\":\"\",\"scope\":\"\",\"clientSecret\":\"\",\"grantType\":\"\",\"clientAuth\":\"\"}"
+  initialDataset = <<EOFSCRIBE
+'Tiny', tiny
+'Tiny Lg Storage', tiny-lstorage
+'Tiny XLg Storage', tiny-xlstorage
+'Small', small
+'Medium', medium
+'Large', large
+EOFSCRIBE
+  labels = [ "nested deployment", "prod" ]
+  type = "manual"
+}
