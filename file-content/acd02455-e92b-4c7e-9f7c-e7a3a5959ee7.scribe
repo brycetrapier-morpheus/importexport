@@ -1,0 +1,10 @@
+resource "file-content" "acd02455-e92b-4c7e-9f7c-e7a3a5959ee7" {
+  uuid = "acd02455-e92b-4c7e-9f7c-e7a3a5959ee7"
+  content = <<EOFSCRIBE
+provider "google" {
+  credentials = file(<%=cypher.read('secret/GCPKey')%>)
+}
+EOFSCRIBE
+  dateCreated = "2023-03-20T20:37:43.000Z"
+  lastUpdated = "2023-03-20T20:37:43.000Z"
+}

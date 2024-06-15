@@ -1,0 +1,11 @@
+resource "resource-spec-template" "aa3f93df-66df-4c2e-89c0-3cabe6b3b6d5" {
+  name = "GCP - Provider - Key from File"
+  uuid = "aa3f93df-66df-4c2e-89c0-3cabe6b3b6d5"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2023-03-20T20:37:43.000Z"
+  labels = [ "GCP" ]
+  lastUpdated = "2023-03-31T15:32:58.000Z"
+  template = { uuid = "acd02455-e92b-4c7e-9f7c-e7a3a5959ee7" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
