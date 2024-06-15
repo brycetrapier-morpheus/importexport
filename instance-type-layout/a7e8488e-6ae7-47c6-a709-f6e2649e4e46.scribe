@@ -1,0 +1,9 @@
+resource "instance-type-layout" "a7e8488e-6ae7-47c6-a709-f6e2649e4e46" {
+  code = "a7e8488e-6ae7-47c6-a709-f6e2649e4e46"
+  name = "Sample 1 Terraform"
+  uuid = "03960f5c-c882-4bd0-8974-4fde5b46b385"
+  instanceType = { code = "HelloWorldCustom" }
+  instanceVersion = "sample1tf"
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+}
