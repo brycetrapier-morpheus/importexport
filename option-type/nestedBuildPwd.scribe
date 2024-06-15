@@ -1,0 +1,14 @@
+resource "option-type" "nestedBuildPwd" {
+  code = "nestedBuildPwd"
+  name = "nestedBuildPwd"
+  uuid = "859a266c-7d89-4b96-8d73-e02303e21e86"
+  defaultValue = "VMware321!"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Admin Password"
+  fieldName = "nestedBuildPwd"
+  helpBlock = "This will be the password for both ESXi ROOT and administrator@vsphere.local - Default is VMware321!"
+  labels = [ "nested deployment", "prod" ]
+  refCode = "nestedBuildPwd"
+  required = true
+  type = "password"
+}
