@@ -1,0 +1,6 @@
+resource "file-content" "ddf9aab0-74fd-45d4-a601-8d87c8f422d9" {
+  uuid = "ddf9aab0-74fd-45d4-a601-8d87c8f422d9"
+  content = "This builds a VNET"
+  dateCreated = "2022-06-02T21:45:20.000Z"
+  lastUpdated = "2022-06-02T21:45:20.000Z"
+}
