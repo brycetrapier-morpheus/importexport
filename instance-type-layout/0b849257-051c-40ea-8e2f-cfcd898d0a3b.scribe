@@ -1,0 +1,11 @@
+resource "instance-type-layout" "0b849257-051c-40ea-8e2f-cfcd898d0a3b" {
+  code = "0b849257-051c-40ea-8e2f-cfcd898d0a3b"
+  name = "Terraform Empty Framework"
+  uuid = "e8ef4711-ff1a-4dd0-9dab-772e820116cc"
+  config = "{\"tfvarSecret\":\"\"}"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "IaC"
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [ { uuid = "b5914988-7bf9-4f38-9640-0fb260f2fb9f" } ]
+}

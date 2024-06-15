@@ -1,0 +1,13 @@
+resource "instance-type" "testinstance" {
+  code = "testinstance"
+  name = "Test VMs"
+  uuid = "b4288d28-855f-40d2-8cd1-f3800a4dce06"
+  category = "utility"
+  deploymentService = ""
+  description = "Test Instances FROM ROOT TENANT"
+  environmentPrefix = "TEST"
+  featured = true
+  hasSettings = true
+  optionTypes = [ { code = "PaymentYesOrNo" }, { code = "OptionalPaymentMethods" } ]
+  visibility = "public"
+}
