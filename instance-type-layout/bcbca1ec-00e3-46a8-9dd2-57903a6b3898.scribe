@@ -1,0 +1,14 @@
+resource "instance-type-layout" "bcbca1ec-00e3-46a8-9dd2-57903a6b3898" {
+  code = "bcbca1ec-00e3-46a8-9dd2-57903a6b3898"
+  name = "Terraform Troubleshooting"
+  uuid = "022a0488-b9f3-4f94-8a66-ae76bee514d6"
+  config = "{\"tfvarSecret\":\"\"}"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "IaC"
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [
+    { uuid = "89fe6e6b-83af-42fd-ba55-3a510020d066" },
+    { uuid = "b5f4d1a4-a053-464a-8b68-604197f26936" }
+  ]
+}
