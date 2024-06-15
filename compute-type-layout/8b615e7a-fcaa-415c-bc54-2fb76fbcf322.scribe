@@ -1,0 +1,21 @@
+resource "compute-type-layout" "8b615e7a-fcaa-415c-bc54-2fb76fbcf322" {
+  code = "8b615e7a-fcaa-415c-bc54-2fb76fbcf322"
+  name = "Custom EKS 1.22 Copy"
+  computeServers = [
+    {
+      code = "8b615e7a-fcaa-415c-bc54-2fb76fbcf322-Kubernetes 1.22.3-ubuntu-20.04.1-amazon-amd64"
+    },
+    {
+      code = "8b615e7a-fcaa-415c-bc54-2fb76fbcf322-Kubernetes 1.22.3-ubuntu-20.04.1-worker-amazon-amd64"
+    }
+  ]
+  computeVersion = "1.22 test"
+  dateCreated = "2022-12-23T00:23:24.000Z"
+  description = "Copy from pre-canned 1.22 EKS: Master Nodes and Worker Nodes in EKS"
+  groupType = { code = "eks-cluster" }
+  labels = [ "test" ]
+  lastUpdated = "2023-12-05T21:02:58.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  type = { code = "amazonKubeWorker" }
+}
