@@ -1,0 +1,16 @@
+resource "task" "Install Matomo Web Analytics on Ubuntu" {
+  name = "Install Matomo Web Analytics on Ubuntu"
+  uuid = "51d3b1bf-bf16-48b5-a553-b6f622d43590"
+  dateCreated = "2023-08-23T19:53:33.000Z"
+  executeTarget = "resource"
+  labels = [ "Demo", "Matomo", "example" ]
+  lastUpdated = "2023-08-23T19:53:33.000Z"
+  options = [
+    {
+      content = { uuid = "32f17fa4-7d1f-4d7c-8d2b-3d684d2a81b8" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}

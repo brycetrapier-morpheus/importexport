@@ -1,0 +1,5 @@
+resource "task-set-task" "d1f83104-aa5d-4e73-92a6-8b1e3fd505e6" {
+  uuid = "d1f83104-aa5d-4e73-92a6-8b1e3fd505e6"
+  task = { name = "Install Matomo Web Analytics on Ubuntu" }
+  taskPhase = "provision"
+}

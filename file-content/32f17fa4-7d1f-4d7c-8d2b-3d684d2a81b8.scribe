@@ -1,0 +1,60 @@
+resource "file-content" "32f17fa4-7d1f-4d7c-8d2b-3d684d2a81b8" {
+  uuid = "32f17fa4-7d1f-4d7c-8d2b-3d684d2a81b8"
+  content = <<EOFSCRIBE
+#################################
+# NOTE: This task is not finished yet.  It will not work.
+#################################
+
+
+#################################
+# For more information, see the following URL:
+# https://www.techrepublic.com/article/how-to-install-matomo-web-analytics-platform-ubuntu-server-20-04/
+
+#################################
+# Install Dependencies
+
+apt-get install apache2 mariadb-server php libapache2-mod-php php-cli php-fpm php-fpm php-json php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath curl unzip -y
+
+#################################
+# Create the Database
+
+systemctl enable --now mariadb
+
+# secure_mysql_installation
+# Create a new password for the admin user and then answer ‘y’ for the remaining questions.
+
+mysql
+CREATE DATABASE matomodb;
+CREATE USER 'matomo'@'localhost' IDENTIFIED BY '1VeryStrongPassword';
+
+GRANT ALL ON matomodb.* TO 'matomo'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+exit
+
+
+#################################
+# Install Motomo
+wget http://builds.matomo.org/matomo-latest.zip
+unzip matomo-latest.zip
+mv matomo /var/www/html/
+chown -R www-data:www-data /var/www/html/matomo
+chmod -R 755 /var/www/html/matomo
+
+
+#################################
+# Configure Apache
+
+# Edit the /etc/apache2/sites-available/matomo.conf file and do a bunch of stuff
+# See the above link on this
+
+#################################
+# Enable the site
+a2ensite matomo.conf\
+a2enmod rewrite
+systemctl restart apache2
+
+EOFSCRIBE
+  dateCreated = "2023-08-23T19:53:33.000Z"
+  lastUpdated = "2023-08-23T19:53:33.000Z"
+}

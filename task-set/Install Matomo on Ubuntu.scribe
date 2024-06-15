@@ -1,0 +1,9 @@
+resource "task-set" "Install Matomo on Ubuntu" {
+  name = "Install Matomo on Ubuntu"
+  uuid = "6d0b6bb9-6ca1-48b3-9a30-7800eb1ed572"
+  dateCreated = "2023-08-23T19:54:16.000Z"
+  description = "Consumed in a Layout - Only a single Task in a single Lifecycle Phase"
+  labels = [ "Layout" ]
+  lastUpdated = "2023-08-23T19:54:16.000Z"
+  taskSetTasks = [ { uuid = "d1f83104-aa5d-4e73-92a6-8b1e3fd505e6" } ]
+}
