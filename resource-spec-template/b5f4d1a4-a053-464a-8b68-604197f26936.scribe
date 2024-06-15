@@ -1,0 +1,11 @@
+resource "resource-spec-template" "b5f4d1a4-a053-464a-8b68-604197f26936" {
+  name = "AWS - 2. VPC using Terraform variables and Morpheus inputs and outputs"
+  uuid = "b5f4d1a4-a053-464a-8b68-604197f26936"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-07-28T03:15:13.000Z"
+  labels = [ "AWS", "Demo", "Outputs", "Terraform" ]
+  lastUpdated = "2024-01-09T21:13:35.000Z"
+  template = { uuid = "7de39678-dc5d-4871-97a1-bb8020725468" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}

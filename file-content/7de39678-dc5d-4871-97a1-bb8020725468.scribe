@@ -1,0 +1,81 @@
+resource "file-content" "7de39678-dc5d-4871-97a1-bb8020725468" {
+  uuid = "7de39678-dc5d-4871-97a1-bb8020725468"
+  content = <<EOFSCRIBE
+###################################################
+# NOTE: This Spec Template requires a Provider block Spec Template 
+# to be added to the Morpheus entity (Layout or Blueprint) that is being 
+# provisioned. 
+#
+
+###################################################
+# Define variables within Terraform.  Note that these variables will be 
+# displayed to the user during provisioning, and can be displayed on 
+# the instance's STATE tab as an Output, but will be unknown to Morpheus 
+# natively.  Terraform variables marked as sensitive will be masked
+# in the Morpheus Data Platform web UI.
+#
+
+variable "ATerraformVariable" {
+  description = "A variable defined within Terraform. Unknown to Morpheus natively."
+  type        = string
+  default     = "Hello World"
+}
+
+variable "ASensitiveTerraformVariable" {
+  description = "A variable defined within Terraform, which is marked be masked in output. Unknown to Morpheus natively."
+  type        = string
+  default     = "HideMe"
+  sensitive = true
+}
+
+
+###################################################
+#  MAIN.  Create a new VPC, and assign CIDR space according to the 
+# input captured at time of provisioning.
+#
+# Note the various tags being set on the VPC, using Morpheus 
+# customOptions, Terraform variables, and static tag values.
+#
+#  The Morpheus customOptions must be attached to the 
+#  Morpheus Layout (or Instance Type) as Inputs to be consumed here.
+#
+resource "aws_vpc" "NewVPC" {
+  cidr_block           = "<%=customOptions.AWSVPCCIDRblock%>"
+  enable_dns_support   = true
+  enable_dns_hostnames = true
+  tags = {
+    Terraform_Variable =            var.ATerraformVariable
+    Management_Tool =            "Terraform"
+    Deployment_Platform =      "Morpheus"
+    MorpheusInfraGroup =        "<%=groupName%>"
+    MorpheusInstanceName =  "<%=instance.name%>"
+    MorpheusOwner   =              "<%=username%>"
+    Name =                                   "Morpheus Demo VPC <%=instance.name%>"
+    PaymentMethod =                 "<%=customOptions.PaymentMethodsSelectList%>"
+    ProvisionedBy =                    "<%=instance.createdByUsername%>"
+    ProvisioningTenant =             "<%=tenant%>"
+  }
+}
+
+###################################################
+# Outputs
+output "New_VPC_ID" {
+  description = "New VPC ARN" 
+  value = aws_vpc.NewVPC.id
+}
+
+output "HelloWorld" {
+  description = "TF Variable Output" 
+  value = var.ATerraformVariable
+}
+
+output "SensitiveOutput" {
+  description = "A variable defined within Terraform, which is marked be masked in output. Unknown to Morpheus natively."
+  value = var.ASensitiveTerraformVariable
+  sensitive = true
+}
+
+EOFSCRIBE
+  dateCreated = "2022-07-28T03:15:13.000Z"
+  lastUpdated = "2024-01-09T21:13:35.000Z"
+}
