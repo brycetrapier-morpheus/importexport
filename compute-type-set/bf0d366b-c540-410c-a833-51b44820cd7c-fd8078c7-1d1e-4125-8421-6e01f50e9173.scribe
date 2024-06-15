@@ -1,0 +1,13 @@
+resource "compute-type-set" "bf0d366b-c540-410c-a833-51b44820cd7c-fd8078c7-1d1e-4125-8421-6e01f50e9173" {
+  code = "bf0d366b-c540-410c-a833-51b44820cd7c-fd8078c7-1d1e-4125-8421-6e01f50e9173"
+  name = "Demo EKS Cluster Layout-worker-fd8078c7-1d1e-4125-8421-6e01f50e9173-set"
+  canAddNodes = true
+  computeServerType = { code = "amazonKubeWorker" }
+  dynamicCount = true
+  installContainerRuntime = true
+  installStorageRuntime = true
+  nameSuffix = "-worker"
+  nodeType = "worker"
+  priorityOrder = 1
+  workloadType = { code = "fd8078c7-1d1e-4125-8421-6e01f50e9173" }
+}

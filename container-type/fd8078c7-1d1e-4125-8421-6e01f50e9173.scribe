@@ -1,0 +1,16 @@
+resource "container-type" "fd8078c7-1d1e-4125-8421-6e01f50e9173" {
+  code = "fd8078c7-1d1e-4125-8421-6e01f50e9173"
+  name = "Custom AWS EKS Worker Node Ohio"
+  uuid = "ce589c8b-2403-4d61-a532-a95b06724857"
+  containerVersion = "ohio"
+  entryPoint = ""
+  labels = [ "test" ]
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "k8seksworker"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "8da3f3f5-fe57-43c1-aa48-a919ff1089d0" }
+}

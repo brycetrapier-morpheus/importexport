@@ -1,0 +1,18 @@
+resource "compute-type-layout" "bf0d366b-c540-410c-a833-51b44820cd7c" {
+  code = "bf0d366b-c540-410c-a833-51b44820cd7c"
+  name = "Custom EKS Cluster Layout"
+  computeServers = [
+    {
+      code = "bf0d366b-c540-410c-a833-51b44820cd7c-fd8078c7-1d1e-4125-8421-6e01f50e9173"
+    }
+  ]
+  computeVersion = "Lab"
+  dateCreated = "2022-10-18T21:54:07.000Z"
+  description = "Library > Blueprints > Cluster Layouts"
+  groupType = { code = "eks-cluster" }
+  hasAutoScale = true
+  labels = [ "test" ]
+  lastUpdated = "2023-12-05T20:48:19.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+}
