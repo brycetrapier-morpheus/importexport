@@ -1,0 +1,12 @@
+resource "compute-type-set" "ac99b854-1f00-4774-beb5-aadec7cdabbb-debian-11.0-qcow" {
+  code = "ac99b854-1f00-4774-beb5-aadec7cdabbb-debian-11.0-qcow"
+  name = "KVM Custom 1-node Debian 11 on Bare-Metal-worker-debian-11.0-qcow-set"
+  canAddNodes = true
+  dynamicCount = true
+  installContainerRuntime = true
+  installStorageRuntime = true
+  nameSuffix = "-worker"
+  nodeType = "worker"
+  priorityOrder = 1
+  workloadType = { code = "debian-11.0-qcow" }
+}
