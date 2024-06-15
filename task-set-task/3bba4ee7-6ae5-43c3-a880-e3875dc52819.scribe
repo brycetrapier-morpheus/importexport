@@ -1,0 +1,4 @@
+resource "task-set-task" "3bba4ee7-6ae5-43c3-a880-e3875dc52819" {
+  uuid = "3bba4ee7-6ae5-43c3-a880-e3875dc52819"
+  task = { name = "Ansible - Install NGINX" }
+}

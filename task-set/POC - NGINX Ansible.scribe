@@ -1,0 +1,9 @@
+resource "task-set" "POC - NGINX Ansible" {
+  name = "POC - NGINX Ansible"
+  uuid = "f354255f-2bfd-4f13-8694-8240a5d31c18"
+  dateCreated = "2023-04-18T18:26:10.000Z"
+  description = "Adds NGINX to a server via Ansible"
+  labels = [ "Ansible", "Demo", "NGINX", "POC" ]
+  lastUpdated = "2023-04-18T18:27:48.000Z"
+  taskSetTasks = [ { uuid = "3bba4ee7-6ae5-43c3-a880-e3875dc52819" } ]
+}

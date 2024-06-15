@@ -1,0 +1,30 @@
+resource "account-integration" "Ansible POC Playbooks - Agent Command Bus" {
+  name = "Ansible POC Playbooks - Agent Command Bus"
+  uuid = "b263b5b8-bdc0-4236-96c8-1db8f3f3e258"
+  category = "cm-server"
+  config = {
+    ansibleCommandBus = "on"
+    ansibleGalaxyEnabled = null
+    ansibleGroupVars = "/"
+    ansibleHostVars = "/"
+    ansiblePlaybooks = "/"
+    ansibleRoles = "/Roles"
+    ansibleVerbose = null
+    cacheEnabled = null
+    cm = {
+      ansibleCommandBus = "on"
+      ansibleDefaultBranch = "master"
+      ansibleGalaxyEnabled = false
+      ansibleGroupVars = ""
+      ansibleHostVars = ""
+      ansiblePlaybooks = "/"
+      ansibleRoles = "/roles"
+      ansibleVerbose = "on"
+    }
+    defaultBranch = "master"
+  }
+  integrationType = { code = "ansible" }
+  serviceFlag = true
+  serviceUrl = "https://github.com/brycetrapier-morpheus/morpheuspoc.git"
+  type = "ansible"
+}
