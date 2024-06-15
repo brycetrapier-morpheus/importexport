@@ -1,0 +1,9 @@
+resource "task-set" "Cascading Inputs, Manual Filter" {
+  name = "Cascading Inputs, Manual Filter"
+  uuid = "4dad1603-ba13-4205-8edc-16dc58e3ec2d"
+  dateCreated = "2023-02-25T05:23:17.000Z"
+  description = "Manual filter of cascading input"
+  lastUpdated = "2023-02-25T05:23:17.000Z"
+  optionTypes = [ { code = "SelectedGroup" }, { code = "MultiCloudSelectedCloud" } ]
+  taskSetType = "operation"
+}

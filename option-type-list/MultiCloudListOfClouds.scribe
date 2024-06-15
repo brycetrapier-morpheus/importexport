@@ -1,0 +1,12 @@
+resource "option-type-list" "MultiCloudListOfClouds" {
+  name = "MultiCloudListOfClouds"
+  uuid = "421705ce-6d74-44f1-b314-e6d48b5c7287"
+  apiType = "clouds"
+  description = "Filter only AWS NorCal (ID:1) and GCP US West 1(ID:5)"
+  initialDataset = <<EOFSCRIBE
+AWSNorCal , 1
+GCP , 5
+EOFSCRIBE
+  realTime = true
+  type = "manual"
+}

@@ -1,0 +1,14 @@
+resource "option-type" "MultiCloudSelectedCloud" {
+  code = "MultiCloudSelectedCloud"
+  name = "MultiCloud Selected Cloud"
+  uuid = "ba853398-b2ec-41e5-a705-cca6828fdd32"
+  dependsOnCode = "SelectedGroup"
+  description = "Under Construction"
+  fieldContext = "config.customOptions"
+  fieldLabel = "MultiCloudSelectedCloud"
+  fieldName = "MultiCloudSelectedCloud"
+  optionList = { name = "MultiCloudListOfClouds" }
+  optionSource = "list"
+  type = "select"
+  visibleOnCode = "SelectedGroup"
+}
