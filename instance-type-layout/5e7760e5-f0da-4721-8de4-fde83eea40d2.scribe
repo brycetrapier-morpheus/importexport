@@ -1,0 +1,17 @@
+resource "instance-type-layout" "5e7760e5-f0da-4721-8de4-fde83eea40d2" {
+  code = "5e7760e5-f0da-4721-8de4-fde83eea40d2"
+  name = "Cisco Firewall Rule"
+  uuid = "ba7b9cc9-9106-41cb-8ff8-85801d1ca18a"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "Firewall"
+  memoryRequirement = 0
+  optionTypes = [
+    { code = "FWACLname" },
+    { code = "FWAction" },
+    { code = "FWSourceIP" },
+    { code = "FWDestinationIP" },
+    { code = "FWPort" }
+  ]
+  provisionType = { code = "workflow" }
+  taskSets = [ { name = "Firewall Rule, CLI-based" } ]
+}
