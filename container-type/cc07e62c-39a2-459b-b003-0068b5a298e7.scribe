@@ -1,0 +1,21 @@
+resource "container-type" "cc07e62c-39a2-459b-b003-0068b5a298e7" {
+  code = "cc07e62c-39a2-459b-b003-0068b5a298e7"
+  name = "Ubuntu Extra Ports"
+  uuid = "3de161c1-bb90-4b4d-b12a-1ca63fc672a6"
+  actions = [ { code = "generic-remove-node" } ]
+  containerPorts = [
+    { uuid = "b4d5f06b-0fd4-45d3-9c41-6ccef018a923" },
+    { uuid = "310c1b4f-bb08-4e62-8a27-a91f4e5f33bb" },
+    { uuid = "c8192eca-85cf-4bc4-b1d7-aea53b66e64f" }
+  ]
+  containerVersion = "20.04"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "ubuntuextraports"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "786fb63d-5b53-4420-878a-5bfd1c0d3628" }
+}

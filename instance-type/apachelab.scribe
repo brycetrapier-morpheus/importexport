@@ -1,0 +1,13 @@
+resource "instance-type" "apachelab" {
+  code = "apachelab"
+  name = "Apache Lab Instances"
+  uuid = "50b294ce-43b0-46b8-a5a9-00de7f6839b1"
+  category = "web"
+  deploymentService = ""
+  description = "Various layouts for Apache web servers.  NOTE: This is designed to fail in Subtenants.  DO NOT SET THE VISIBILITY OF THIS INSTANCE TYPE TO PUBLIC.  Doing so will break the intentional failure of Catalog Item# 56"
+  environmentPrefix = "APACHELAB"
+  featured = true
+  hasAutoScale = true
+  labels = [ "Apache", "Lab", "web" ]
+  optionTypes = [ { code = "costcenter" } ]
+}

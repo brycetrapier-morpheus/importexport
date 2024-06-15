@@ -1,0 +1,14 @@
+resource "instance-type-layout" "6f378a17-e001-46e7-96d0-0c45fc1a73f2" {
+  code = "6f378a17-e001-46e7-96d0-0c45fc1a73f2"
+  name = "Apache Extra Ports on Ubuntu 20.04"
+  uuid = "0d74a9fb-5948-441a-99bb-4f2de10b0669"
+  actions = [ { code = "generic-add-node" } ]
+  description = "Apache on Ubuntu 20.04, with extra exposed service ports"
+  hasAutoScale = true
+  instanceType = { code = "apachelab" }
+  instanceVersion = "Ubuntu 20.04"
+  memoryRequirement = 536870912
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "Apache Install (Ubuntu)" } ]
+  workloads = [ { code = "cc07e62c-39a2-459b-b003-0068b5a298e7" } ]
+}
