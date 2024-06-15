@@ -1,0 +1,13 @@
+resource "task-set" "Make It Snoopy, Apache CentOS" {
+  name = "Make It Snoopy, Apache CentOS"
+  uuid = "f5bb4be2-275a-4282-a552-cc48d2692300"
+  dateCreated = "2021-11-17T06:35:09.000Z"
+  lastUpdated = "2022-09-09T05:03:46.000Z"
+  platform = "linux"
+  taskSetTasks = [
+    { uuid = "1246f85d-c445-41f9-a4d2-2d45fbf63947" },
+    { uuid = "3653cc84-4098-427b-9835-b1187d215041" },
+    { uuid = "b6cb1e58-9b57-440e-bea8-5cb727e7380c" },
+    { uuid = "ed14d3ef-59df-4d57-9c89-94ea92ba21ce" }
+  ]
+}

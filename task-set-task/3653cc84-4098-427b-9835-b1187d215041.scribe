@@ -1,0 +1,6 @@
+resource "task-set-task" "3653cc84-4098-427b-9835-b1187d215041" {
+  uuid = "3653cc84-4098-427b-9835-b1187d215041"
+  task = { name = "Copy Snoopy Images" }
+  taskOrder = 2
+  taskPhase = "reconfigure"
+}

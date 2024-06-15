@@ -1,0 +1,6 @@
+resource "task-set-task" "ed14d3ef-59df-4d57-9c89-94ea92ba21ce" {
+  uuid = "ed14d3ef-59df-4d57-9c89-94ea92ba21ce"
+  task = { name = "Update Apache to Snoopy Crash, CentOS" }
+  taskOrder = 3
+  taskPhase = "reconfigure"
+}
