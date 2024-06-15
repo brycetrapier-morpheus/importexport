@@ -1,0 +1,13 @@
+resource "option-type" "nestedESXiHostCount" {
+  code = "nestedESXiHostCount"
+  name = "nestedESXiHostCount"
+  uuid = "38c7e2a9-74f8-438e-8e18-f95ad13d8334"
+  defaultValue = "2"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Host Count"
+  fieldName = "nestedESXiHostCount"
+  labels = [ "nested deployment", "prod" ]
+  refCode = "nestedESXiHostCount"
+  required = true
+  type = "number"
+}
