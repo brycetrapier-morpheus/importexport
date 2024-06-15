@@ -1,0 +1,10 @@
+resource "option-type" "jlgroups" {
+  code = "jlgroups"
+  name = "JL Groups"
+  uuid = "4e0a2635-705c-45e8-86bf-114320ae7c1e"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Groups"
+  fieldName = "jlgroups"
+  optionList = { name = "JL-Groups" }
+  type = "select"
+}
