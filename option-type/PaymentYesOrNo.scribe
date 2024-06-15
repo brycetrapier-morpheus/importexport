@@ -1,0 +1,10 @@
+resource "option-type" "PaymentYesOrNo" {
+  code = "PaymentYesOrNo"
+  name = "Payment Yes or No"
+  uuid = "e2595238-6604-48b4-88ab-7b716c5ff357"
+  description = "Require payment for this entity?"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Require payment for this entity?"
+  fieldName = "PaymentYesOrNo"
+  type = "checkbox"
+}
