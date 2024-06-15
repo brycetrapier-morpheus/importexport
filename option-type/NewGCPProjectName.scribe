@@ -1,0 +1,11 @@
+resource "option-type" "NewGCPProjectName" {
+  code = "NewGCPProjectName"
+  name = "NewGCPProjectName"
+  uuid = "bd4a0c6a-4972-492e-861c-b262ad6e0b19"
+  fieldContext = "config.customOptions"
+  fieldLabel = "New GCP Project Name"
+  fieldName = "NewGCPProjectName"
+  helpBlock = "New GCP Project Name.  NOTE: This value cannot be changed after the account is created."
+  labels = [ "New Account" ]
+  required = true
+}

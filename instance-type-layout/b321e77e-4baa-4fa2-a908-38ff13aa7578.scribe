@@ -1,0 +1,19 @@
+resource "instance-type-layout" "b321e77e-4baa-4fa2-a908-38ff13aa7578" {
+  code = "b321e77e-4baa-4fa2-a908-38ff13aa7578"
+  name = "New Cloud Hyperscaler Account"
+  uuid = "0e87cf2c-cf93-4430-ad21-702f46c2c76e"
+  config = "{\"tfvarSecret\":\"\"}"
+  instanceType = { code = "iac.samples" }
+  instanceVersion = "GCP"
+  labels = [ "New Account" ]
+  memoryRequirement = 0
+  optionTypes = [
+    { code = "NewAccountContactEmail" },
+    { code = "NewAccountContactName" },
+    { code = "NewAccountDepartment" },
+    { code = "CorporateProjectID" },
+    { code = "NewGCPProjectName" }
+  ]
+  provisionType = { code = "terraform" }
+  specTemplates = [ { uuid = "72042dfd-4e73-4b13-9005-14b50178d41a" } ]
+}
