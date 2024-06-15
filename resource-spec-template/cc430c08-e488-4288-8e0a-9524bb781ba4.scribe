@@ -1,0 +1,11 @@
+resource "resource-spec-template" "cc430c08-e488-4288-8e0a-9524bb781ba4" {
+  name = "Azure - Provider Block"
+  uuid = "cc430c08-e488-4288-8e0a-9524bb781ba4"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2023-03-27T19:46:15.000Z"
+  labels = [ "Azure", "Terraform" ]
+  lastUpdated = "2023-04-05T19:24:23.000Z"
+  template = { uuid = "84ac23a4-7e6e-4a30-aaba-fea9ed01348c" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
