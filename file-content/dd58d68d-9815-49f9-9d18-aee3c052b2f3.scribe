@@ -1,0 +1,20 @@
+resource "file-content" "dd58d68d-9815-49f9-9d18-aee3c052b2f3" {
+  uuid = "dd58d68d-9815-49f9-9d18-aee3c052b2f3"
+  content = <<EOFSCRIBE
+#!/bin/python3
+
+import json
+
+config = morpheus['spec']    
+
+config['instance']['evars']['unmaskdpw'] = morpheus['customOptions']['unmaskedinput']
+
+configJson = json.dumps(config)
+
+spec = '{ "spec" : %s }' % (configJson)
+
+print(spec)
+EOFSCRIBE
+  dateCreated = "2021-12-17T23:49:05.000Z"
+  lastUpdated = "2021-12-18T00:04:07.000Z"
+}

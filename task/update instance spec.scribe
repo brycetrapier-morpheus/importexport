@@ -1,0 +1,16 @@
+resource "task" "update instance spec" {
+  name = "update instance spec"
+  uuid = "a933f67c-9b8d-490a-89bf-8a5839a97d6f"
+  dateCreated = "2021-12-17T23:49:05.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-12-17T23:49:05.000Z"
+  options = [
+    { optionType = { code = "pythonBinary" }, value = "python3" },
+    {
+      content = { uuid = "dd58d68d-9815-49f9-9d18-aee3c052b2f3" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  resultType = "json"
+  taskType = { code = "jythonTask" }
+}
