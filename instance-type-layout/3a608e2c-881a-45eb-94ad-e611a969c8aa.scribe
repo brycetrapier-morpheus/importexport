@@ -1,0 +1,10 @@
+resource "instance-type-layout" "3a608e2c-881a-45eb-94ad-e611a969c8aa" {
+  code = "3a608e2c-881a-45eb-94ad-e611a969c8aa"
+  name = "Cost Placeholder - Terraform"
+  uuid = "f334aa51-d746-43bf-982d-1bdbfa1bf1d3"
+  config = "{\"tfvarSecret\":\"\"}"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "IaC"
+  memoryRequirement = 1073741824
+  provisionType = { code = "terraform" }
+}
