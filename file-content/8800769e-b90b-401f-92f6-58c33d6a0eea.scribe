@@ -1,0 +1,23 @@
+resource "file-content" "8800769e-b90b-401f-92f6-58c33d6a0eea" {
+  uuid = "8800769e-b90b-401f-92f6-58c33d6a0eea"
+  content = <<EOFSCRIBE
+# resource_group_name - The name of the RG in which to create the VN.
+# location -  The location/region where the VN is created. 
+# Changing the VN Name, Address Space, RG Name, or Location forces a new resource to be created.
+#
+resource "azurerm_virtual_network" "POCVN" {
+  name                = "POC_Sample_Virtual_Network"
+  address_space       = ["198.51.100.0/24"]
+  location            = "westus2"
+  resource_group_name = "ChannelsDemo"
+  # location            = azurerm_resource_group.example.location
+  # resource_group_name = azurerm_resource_group.example.name
+}
+
+ output "virtual_network_id" {
+   value = azurerm_virtual_network.POCVN.id
+ }
+EOFSCRIBE
+  dateCreated = "2023-03-27T21:28:37.000Z"
+  lastUpdated = "2023-03-29T16:39:38.000Z"
+}

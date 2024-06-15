@@ -1,0 +1,11 @@
+resource "resource-spec-template" "d714ba5e-d404-45a8-8371-dd2a72d4b475" {
+  name = "Azure - New VN"
+  uuid = "d714ba5e-d404-45a8-8371-dd2a72d4b475"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2023-03-27T21:28:37.000Z"
+  labels = [ "Azure", "Terraform" ]
+  lastUpdated = "2023-03-29T16:39:38.000Z"
+  template = { uuid = "8800769e-b90b-401f-92f6-58c33d6a0eea" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
