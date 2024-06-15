@@ -1,0 +1,29 @@
+resource "file-content" "ac11c1f5-c339-451b-8b77-49a6395b0a54" {
+  uuid = "ac11c1f5-c339-451b-8b77-49a6395b0a54"
+  content = <<EOFSCRIBE
+variable "gcp_instance_name { 
+ type = string
+ default = "mopho_instance"
+}
+
+resource "google_compute_instance" "vm_instance" {
+  name         = var.gcp_instance_name
+  machine_type = e2-micro
+
+  boot_disk {
+    initialize_params {
+      image = "debian-cloud/debian-11"
+    }
+  }
+
+  network_interface {
+    # A default network is created for all GCP projects
+    network = "default"
+    access_config {
+    }
+  }
+}
+EOFSCRIBE
+  dateCreated = "2023-03-31T15:36:16.000Z"
+  lastUpdated = "2023-03-31T15:37:35.000Z"
+}

@@ -1,0 +1,11 @@
+resource "resource-spec-template" "86aabab1-54a9-43d9-b2ec-92cdffd51061" {
+  name = "GCP - New e2-micro Instance - name from Variable"
+  uuid = "86aabab1-54a9-43d9-b2ec-92cdffd51061"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2023-03-31T15:36:16.000Z"
+  labels = [ "Demo", "GCP" ]
+  lastUpdated = "2023-03-31T15:37:35.000Z"
+  template = { uuid = "ac11c1f5-c339-451b-8b77-49a6395b0a54" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
