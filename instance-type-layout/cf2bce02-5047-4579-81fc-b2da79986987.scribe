@@ -1,0 +1,11 @@
+resource "instance-type-layout" "cf2bce02-5047-4579-81fc-b2da79986987" {
+  code = "cf2bce02-5047-4579-81fc-b2da79986987"
+  name = "AWS CF - EC2 Ubuntu in NorCal"
+  uuid = "1e1ab1e4-1517-416d-ab8c-40f457c35a51"
+  description = "Ubuntu in NorCal"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "IaC"
+  memoryRequirement = 0
+  provisionType = { code = "cloudFormation" }
+  specTemplates = [ { uuid = "1392e6ac-4ee2-48d9-9b39-270bf6825d2b" } ]
+}
