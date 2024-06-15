@@ -1,0 +1,11 @@
+resource "instance-type" "metalinaws" {
+  code = "metalinaws"
+  name = "Bare-Metal in AWS"
+  uuid = "3f33eef0-3860-4add-a13c-28a81e1699c5"
+  category = "utility"
+  deploymentService = ""
+  description = "Cluster Hosts in AWS"
+  environmentPrefix = "BARE-METAL_IN_AWS"
+  featured = true
+  labels = [ "AWS", "Bare-Metal", "KVM" ]
+}
