@@ -1,0 +1,10 @@
+resource "instance-type-layout" "f1348fc2-2016-4d97-928e-851792048ddf" {
+  code = "f1348fc2-2016-4d97-928e-851792048ddf"
+  name = "Apache in Azure"
+  uuid = "91480ce2-5883-4b8a-a6f0-d26dfcabfbb0"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "Azure"
+  memoryRequirement = 536870912
+  provisionType = { code = "azure" }
+  workloads = [ { code = "apache-azure-2.4" } ]
+}
