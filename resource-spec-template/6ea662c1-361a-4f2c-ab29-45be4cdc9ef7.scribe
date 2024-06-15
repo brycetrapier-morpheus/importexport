@@ -1,0 +1,10 @@
+resource "resource-spec-template" "6ea662c1-361a-4f2c-ab29-45be4cdc9ef7" {
+  name = "AWS - In the new VPC, route 0.0.0.0/0 to the new Internet Gateway"
+  uuid = "6ea662c1-361a-4f2c-ab29-45be4cdc9ef7"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2021-12-15T22:43:53.000Z"
+  lastUpdated = "2021-12-15T22:44:24.000Z"
+  template = { uuid = "b2b1158f-ea39-4982-b84b-98e22fedeb2b" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
