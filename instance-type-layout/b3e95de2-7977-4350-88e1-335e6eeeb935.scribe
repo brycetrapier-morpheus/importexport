@@ -1,0 +1,16 @@
+resource "instance-type-layout" "b3e95de2-7977-4350-88e1-335e6eeeb935" {
+  code = "b3e95de2-7977-4350-88e1-335e6eeeb935"
+  name = "Snoopy Web Server on CentOS in AWS"
+  uuid = "2f228385-575e-4f0d-8a60-5c3ac10dc674"
+  description = "1 Apache Node, 1 Debian Node, 1 Pre-modeled NorCal Lab Node"
+  instanceType = { code = "testinstance" }
+  instanceVersion = "2"
+  memoryRequirement = 1073741824
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "Make It Snoopy, Apache CentOS" } ]
+  workloads = [
+    { code = "cc07e62c-39a2-459b-b003-0068b5a298e7" },
+    { code = "apache-amazon-2.4" },
+    { code = "debian-amazon-11.0" }
+  ]
+}
