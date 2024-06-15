@@ -1,0 +1,12 @@
+resource "container-type" "a8f8e241-9746-4102-9131-e133a02062b7" {
+  code = "a8f8e241-9746-4102-9131-e133a02062b7"
+  name = "BoS LoadGen"
+  uuid = "cc90545b-a5e7-4c67-b88c-b342ae3e0a79"
+  containerVersion = "0.1"
+  entryPoint = ""
+  logTypeCode = "docker"
+  provisionService = "dockerContainerService"
+  provisionType = { code = "docker" }
+  shortName = "bosloadgen"
+  statTypeCode = "docker"
+}
