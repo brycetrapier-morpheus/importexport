@@ -1,0 +1,17 @@
+resource "container-type" "7be51150-07e1-4c74-9d36-610c08d27b2d" {
+  code = "7be51150-07e1-4c74-9d36-610c08d27b2d"
+  name = "WordPress Custom 8Gi"
+  uuid = "00b8c247-3de8-4dde-936f-ba6f62b5b9e1"
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "wordpress8g"
+  showServerLogs = true
+  statTypeCode = "amazon"
+  virtualImage = {
+    code = "amazon.ec2.image.morpheus.amazonlinux.2-v1.amazonlinux.2.amd64"
+  }
+}
