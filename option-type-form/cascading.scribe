@@ -1,0 +1,84 @@
+resource "option-type-form" "cascading" {
+  code = "cascading"
+  name = "Cascading Group, Cloud, and Network"
+  uuid = "1f129f44-b765-45d2-ad36-1a6f2ba2acc9"
+  description = "Example of cascading options for Groups, Cloud, and Networks"
+  field-groups = [
+    {
+      code = "9797d0b1-3628-40a0-83b9-ce3c3f5e6b6b"
+      name = "new fieldgroup"
+      collapsible = false
+      defaultCollapsed = false
+    }
+  ]
+  options = [
+    {
+      code = "SelectedGroup"
+      name = "Selected Group"
+      uuid = "89c9341b-e619-4285-b2d9-9ed782c55cd4"
+      fieldContext = "config.customOptions"
+      fieldLabel = "Selected Group"
+      fieldName = "SelectedGroup"
+      labels = [ "Cascading" ]
+      optionList = { name = "Infrastructure Groups" }
+      optionSource = "list"
+      required = true
+      type = "select"
+    },
+    {
+      code = "SelectedCloud"
+      name = "Selected Cloud"
+      uuid = "5e24adf5-797e-4cc7-9f54-f2e5cbd4c424"
+      config = { _multiSelect = "" }
+      dependsOnCode = "SelectedGroup"
+      description = "Consumes an Option List which uses a Request Script and Translation Script to filter only the Clouds which are accessible to the selected Group"
+      displayOrder = 1
+      fieldContext = "config.customOptions"
+      fieldLabel = "Selected Cloud"
+      fieldName = "SelectedCloud"
+      labels = [ "Cascading" ]
+      optionList = { name = "Infrastructure Clouds, Filtered" }
+      optionSource = "list"
+      required = true
+      type = "select"
+      visibleOnCode = "SelectedGroup"
+    },
+    {
+      code = "849a5854-9026-4533-96b1-115fd7abfea9"
+      name = "849a5854-9026-4533-96b1-115fd7abfea9"
+      uuid = "44f03425-f324-4954-97f8-ca0af1a0a3b9"
+      config = {
+        addonPosition = ""
+        cloudField = ""
+        groupField = ""
+        layoutField = ""
+        planField = ""
+      }
+      displayOrder = 2
+      fieldContext = "config.customOptions"
+      fieldLabel = "VPC"
+      fieldName = "SelectedVPC"
+      formField = true
+      type = "resourcePool"
+    },
+    {
+      code = "edca8700-816c-42be-abed-9d92437d18c8"
+      name = "edca8700-816c-42be-abed-9d92437d18c8"
+      uuid = "15a728d0-2e02-46e3-bb16-2750030f5010"
+      config = {
+        addonPosition = ""
+        cloudField = ""
+        groupField = ""
+        layoutField = ""
+        planField = ""
+        poolField = ""
+      }
+      displayOrder = 3
+      fieldContext = "config.customOptions"
+      fieldLabel = "Network"
+      fieldName = "SelectedNetwork"
+      formField = true
+      type = "networkManager"
+    }
+  ]
+}
