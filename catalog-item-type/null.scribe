@@ -1,9 +1,9 @@
 resource "catalog-item-type" "null" {
-  name = "Redis Cluster"
-  uuid = "4a52ae3b-e917-44af-bd79-e7094b726974"
-  dateCreated = "2022-07-07T17:29:48.000Z"
-  description = "Boilerpate Redis cluster in AWS:  6ea 1x2 VM's, expires in 4 days."
-  iconPath = "/assets/branding/140x40/redis.svg"
-  lastUpdated = "2023-02-25T00:00:01.000Z"
-  refType = "InstanceType"
+  name = "Retirement Calculator"
+  uuid = "51dae674-6957-4394-8ae6-7ef7828e08bf"
+  dateCreated = "2023-08-29T20:30:03.000Z"
+  description = "A forecast of financial health"
+  labels = [ { name = "Demo" }, { name = "Framework" }, { name = "example" } ]
+  lastUpdated = "2023-08-29T20:30:03.000Z"
+  refType = "OperationalWorkflow"
 }
