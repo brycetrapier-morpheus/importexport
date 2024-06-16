@@ -6,11 +6,11 @@ resource "task" "POC CentOS Updates" {
   labels = [ "Demo" ]
   lastUpdated = "2023-03-28T16:46:08.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "874114dc-d825-4bf4-9ee0-571990a6069f" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
