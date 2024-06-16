@@ -1,10 +1,13 @@
 resource "catalog-item-type" "null" {
-  name = "Verint Small Stack Modeled for GCP"
-  uuid = "40c05fb4-322e-4e6a-8883-f478d0bd9094"
-  dateCreated = "2022-05-20T18:47:42.000Z"
-  description = "Application server, DB Mgmt Server, and Forecasting Server"
-  enabled = false
-  iconPath = "custom"
-  lastUpdated = "2023-02-25T00:22:35.000Z"
-  refType = "AppTemplate"
+  name = "VMware Lab Deployment"
+  uuid = "2d2a20a7-364d-46bb-8de9-eb1fbe31a49d"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/InstanceType/130/logo/otto-logo-CB2D9C0696-seeklogo.com_medium.png"
+  dateCreated = "2023-08-28T14:18:16.000Z"
+  description = "Need a VMware Lab Environment?"
+  form = { code = "nlabdeployment" }
+  formType = "form"
+  iconPath = "https://54.241.81.186/storage/logos/uploads/InstanceType/130/logo/otto-logo-CB2D9C0696-seeklogo.com_medium.png"
+  labels = [ { name = "Demo" }, { name = "nesteddeployment" } ]
+  lastUpdated = "2023-08-28T14:18:17.000Z"
+  refType = "InstanceType"
 }
