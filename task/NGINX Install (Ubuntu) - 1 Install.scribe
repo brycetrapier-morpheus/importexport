@@ -6,11 +6,11 @@ resource "task" "NGINX Install (Ubuntu) - 1 Install" {
   labels = [ "POC" ]
   lastUpdated = "2023-02-08T17:26:20.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "c0903b2b-b632-4de3-97e5-8cd300832785" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
