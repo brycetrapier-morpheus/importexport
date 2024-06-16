@@ -1,18 +1,20 @@
 resource "catalog-item-type" "null" {
-  name = "Multi-Cloud with Filtered Plans"
-  uuid = "43515818-8a08-46e4-926c-7cecc48947c4"
-  dateCreated = "2022-05-06T21:25:07.000Z"
-  description = "Under Construction"
-  iconPath = "custom"
-  lastUpdated = "2023-02-25T05:08:32.000Z"
+  name = "New Cloud Account - AWS"
+  uuid = "0a3cd966-412b-45a5-90c1-2b7391f36804"
+  category = "Account Management"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/97/logo/New Cloud Hyperscaler Account - AWS_original.png"
+  dateCreated = "2023-09-28T18:00:22.000Z"
+  featured = true
+  formType = "optionTypes"
+  labels = [ { name = "NewAccount" } ]
+  lastUpdated = "2023-09-28T19:46:40.000Z"
+  logoSettings = "{\"type\":\"custom\"}"
   optionTypes = [
-    { code = "ApplicationName" },
-    { code = "DeploymentGroup" },
-    { code = "DeploymentCloudPublic" },
-    { code = "filteredlayoutchoice" },
-    { code = "filteredplansmulticloud" },
-    { code = "awsnetwork" }
+    { code = "NewAccountContactName" },
+    { code = "NewAccountContactEmail" },
+    { code = "NewAccountDepartment" },
+    { code = "CorporateProjectID" },
+    { code = "NewAWSAccountName" }
   ]
   refType = "InstanceType"
-  visibility = "public"
 }
