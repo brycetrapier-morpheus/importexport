@@ -5,11 +5,11 @@ resource "task" "Install Virtual Env" {
   executeTarget = "local"
   lastUpdated = "2022-10-03T13:10:59.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "690e275a-7473-4ace-b1c1-7f66c1e815a9" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
