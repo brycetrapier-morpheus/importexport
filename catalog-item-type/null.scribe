@@ -1,13 +1,22 @@
 resource "catalog-item-type" "null" {
-  name = "Firewall Rule Workflow, CLI"
-  uuid = "61c390e0-b27d-45ba-9586-1e76c14cbf9d"
+  name = "Firewall Rule XaaS Instance, Cisco"
+  uuid = "c437cb90-86fa-4885-bd4d-8fcff5ac4cb2"
   category = "Security"
   darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2022-09-06T22:55:06.000Z"
-  description = "Add an ACL rule to a CLI-based Firewall using an Operational Workflow"
+  dateCreated = "2022-09-27T15:58:33.000Z"
+  description = "Add an ACL rule to a Cisco Firewall using XaaS"
+  formType = "optionTypes"
   iconPath = "custom"
-  labels = [ { name = "Demo" }, { name = "Firewall" } ]
-  lastUpdated = "2024-02-16T21:06:22.000Z"
+  labels = [ { name = "Demo" } ]
+  lastUpdated = "2023-05-11T15:44:38.000Z"
   logoSettings = "{\"type\":\"custom\"}"
-  refType = "OperationalWorkflow"
+  optionTypes = [
+    { code = "FWACLname" },
+    { code = "FWAction" },
+    { code = "FWSourceIP" },
+    { code = "FWDestinationIP" },
+    { code = "FWPort" }
+  ]
+  refType = "InstanceType"
+  visibility = "public"
 }
