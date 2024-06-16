@@ -1,15 +1,16 @@
 resource "catalog-item-type" "null" {
-  name = "Forms Demo: Web Server"
-  uuid = "0eab96ac-1761-45fb-af45-2b07030e0daf"
-  category = "Example"
+  name = "Higher Education MSP"
+  uuid = "280db44f-b66e-41a4-b541-5ce24bc4d606"
   darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2023-07-13T00:39:17.000Z"
-  description = "Showing the Forms input method."
-  featured = true
-  form = { code = "webserver" }
-  formType = "form"
-  labels = [ { name = "Demo" }, { name = "Forms" }, { name = "web" } ]
-  lastUpdated = "2023-08-22T18:57:27.000Z"
+  dateCreated = "2023-04-12T21:54:35.000Z"
+  enabled = false
+  labels = [
+    { name = "Demo" },
+    { name = "EDU" },
+    { name = "POC" },
+    { name = "example" }
+  ]
+  lastUpdated = "2023-08-22T19:04:37.000Z"
   logoSettings = "{\"type\":\"custom\"}"
-  refType = "InstanceType"
+  refType = "OperationalWorkflow"
 }
