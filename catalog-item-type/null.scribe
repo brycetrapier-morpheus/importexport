@@ -1,13 +1,13 @@
 resource "catalog-item-type" "null" {
-  name = "LexisNexis Legal and Professional"
-  uuid = "544fd4ac-8992-49e9-948a-e45e731b0f2b"
+  name = "LexisNexis Risk Solutions"
+  uuid = "e38a2644-0df0-4b3a-aa3d-67b43a594176"
   category = "Legal"
   darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2023-04-17T20:12:30.000Z"
-  description = "Legal solutions, news, and business insights"
+  dateCreated = "2023-04-17T20:19:33.000Z"
+  description = "Data analytics supporting compliance, acquisition, fraud detection, and risk decisioning."
   iconPath = "custom"
   labels = [ { name = "EDU" }, { name = "Legal" } ]
-  lastUpdated = "2023-07-22T00:13:14.000Z"
+  lastUpdated = "2023-07-22T00:08:47.000Z"
   logoSettings = "{\"type\":\"custom\"}"
   refType = "InstanceType"
   visibility = "public"
