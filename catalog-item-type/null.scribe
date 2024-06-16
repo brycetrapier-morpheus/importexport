@@ -1,20 +1,8 @@
 resource "catalog-item-type" "null" {
-  name = "POC Ubuntu 20.04 VM"
-  uuid = "3cc3215f-0015-463f-a0d9-c11a0e012e26"
-  category = "Example"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/69/logo/POC Logo_original.png"
-  darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2023-04-03T17:10:56.000Z"
-  description = "POC Catalog Item from a custom instance type"
-  formType = "optionTypes"
-  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/69/logo/POC Logo_original.png"
-  labels = [ { name = "Demo" } ]
-  lastUpdated = "2023-07-22T00:06:23.000Z"
-  logoSettings = "{\"type\":\"custom\"}"
-  optionTypes = [
-    { code = "ApplicationName" },
-    { code = "costcenter" },
-    { code = "PaymentMethodDemo" }
-  ]
+  name = "Provisioning Workflow for XaaS pricing"
+  uuid = "8ffa181e-5442-4c6c-97a8-a351507defd5"
+  dateCreated = "2023-08-30T17:34:51.000Z"
+  formType = "form"
+  lastUpdated = "2023-08-30T17:34:51.000Z"
   refType = "InstanceType"
 }
