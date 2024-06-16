@@ -1,16 +1,18 @@
 resource "catalog-item-type" "null" {
-  name = "Shared Apache Lab Instance Type, set to Private.  Designed to Fail in Subtenants."
-  uuid = "c0de9eb0-1ada-407e-beb6-ce96a5511620"
-  dateCreated = "2022-12-30T00:05:17.000Z"
-  description = "THIS IS DESIGNED TO FAIL (for lab showcase).  The Instance Type consumed by this self-service Catalog entity is set to Private."
-  iconPath = "custom"
-  labels = [
-    { name = "Demo" },
-    { name = "Designed to Fail" },
-    { name = "Shared" }
+  name = "Shared Apache Server Item from Instance"
+  uuid = "50ca999e-fa97-4554-b298-c6ac2c49e791"
+  dateCreated = "2022-07-29T19:57:54.000Z"
+  description = "Shared Catalog Item from a single Instance.  Showcases masked and unmasked text input; showcases differences in Inputs being \"Editable\" or not (after Instance provisioning).  Also showcases the differences in setting visibility of dependent entities."
+  iconPath = "/assets/branding/140x40/apache.svg"
+  labels = [ { name = "Shared" } ]
+  lastUpdated = "2023-02-25T00:11:52.000Z"
+  optionTypes = [
+    { code = "DeploymentGroup" },
+    { code = "DeploymentCloud" },
+    { code = "DeploymentEnvironment" },
+    { code = "maskedinput" },
+    { code = "unmaskedinput" }
   ]
-  lastUpdated = "2023-04-04T18:59:24.000Z"
-  optionTypes = [ { code = "DeploymentGroup" }, { code = "DeploymentCloudPublic" } ]
   refType = "InstanceType"
   visibility = "public"
 }
