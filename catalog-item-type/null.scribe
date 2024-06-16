@@ -1,9 +1,19 @@
 resource "catalog-item-type" "null" {
-  name = "Ubuntu Forms"
-  uuid = "628b3448-2e6a-492a-af16-1123294011b8"
-  dateCreated = "2023-08-28T19:50:48.000Z"
-  form = { code = "cclusecase" }
-  formType = "form"
-  lastUpdated = "2023-08-28T19:50:48.000Z"
+  name = "Verint Server in GCP"
+  uuid = "d78acac6-cb12-4173-a9d2-16eedb817d95"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/24/logo/Verint_original.png"
+  darkLogoSettings = "{\"type\":\"custom\"}"
+  dateCreated = "2022-05-11T02:05:06.000Z"
+  description = "Single Verint server.  Select the server persona at time of provisioning"
+  formType = "optionTypes"
+  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/24/logo/Verint_original.png"
+  labels = [ { name = "Demo" } ]
+  lastUpdated = "2023-07-22T00:03:56.000Z"
+  logoSettings = "{\"type\":\"custom\"}"
+  optionTypes = [
+    { code = "VerintServerType" },
+    { code = "costcenter" },
+    { code = "PaymentMethodsSelectList" }
+  ]
   refType = "InstanceType"
 }
