@@ -5,4 +5,5 @@ resource "instance-type" "k8sloonar" {
   category = "cloud"
   deploymentService = ""
   environmentPrefix = "K8S_FOR_LOONAR"
+  layouts = [ { code = "d2de8027-e54b-4694-9725-d76c6845d801" } ]
 }
