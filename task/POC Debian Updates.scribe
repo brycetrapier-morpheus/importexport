@@ -6,11 +6,11 @@ resource "task" "POC Debian Updates" {
   labels = [ "Demo" ]
   lastUpdated = "2023-03-28T16:47:29.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "e3945e6e-ce50-489b-9239-f09b52b5c850" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
