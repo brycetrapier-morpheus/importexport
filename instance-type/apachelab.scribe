@@ -9,5 +9,11 @@ resource "instance-type" "apachelab" {
   featured = true
   hasAutoScale = true
   labels = [ "Apache", "Lab", "web" ]
+  layouts = [
+    { code = "301a53ee-d867-4994-b4bc-1013f749ae13" },
+    { code = "620297bd-12ca-4696-93f0-5a5da016a59d" },
+    { code = "6f378a17-e001-46e7-96d0-0c45fc1a73f2" },
+    { code = "71244723-84ee-4316-88bf-cbe5d75b47ea" }
+  ]
   optionTypes = [ { code = "costcenter" } ]
 }
