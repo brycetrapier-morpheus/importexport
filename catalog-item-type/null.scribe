@@ -1,27 +1,18 @@
 resource "catalog-item-type" "null" {
-  name = "Cascading Inputs Example"
-  uuid = "674371dc-81e0-4038-b464-563525d8f4cc"
+  name = "Catalog Item from Blueprint"
+  uuid = "4ebc157c-b193-4c68-bb90-9aa5076bc92e"
   category = "Example"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/11/logo/nerd_original.png"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/18/logo/BlueprintClipArt_original.png"
   darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2022-02-12T11:49:20.000Z"
-  description = "Different input types: Plaintext, Password, Select List, Radio Buttons, Checkbox, Cascading Inputs"
-  featured = true
+  dateCreated = "2022-04-12T22:12:19.000Z"
   formType = "optionTypes"
-  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/11/logo/nerd_original.png"
-  labels = [ { name = "Demo" }, { name = "example" } ]
-  lastUpdated = "2023-08-22T19:06:15.000Z"
+  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/18/logo/BlueprintClipArt_original.png"
+  lastUpdated = "2023-08-22T18:58:52.000Z"
   logoSettings = "{\"type\":\"custom\"}"
   optionTypes = [
-    { code = "firstname" },
-    { code = "sqlpassword" },
-    { code = "SelectedGroup" },
-    { code = "SelectedCloud" },
-    { code = "PaymentMethodsRadioButtons" },
-    { code = "PaymentMethodsSelectList" },
-    { code = "PaymentMethodsTypeAhead" },
-    { code = "PaymentYesOrNo" },
-    { code = "OptionalPaymentMethods" }
+    { code = "ApplicationName" },
+    { code = "AppTierInstanceName" },
+    { code = "WebTierInstanceName" }
   ]
   refType = "AppTemplate"
 }
