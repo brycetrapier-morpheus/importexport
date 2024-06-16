@@ -6,11 +6,11 @@ resource "task" "POC Windows wget google" {
   labels = [ "Demo" ]
   lastUpdated = "2023-03-28T16:46:53.000Z"
   options = [
-    { optionType = { code = "winrm.elevated" }, value = "on" },
     {
       content = { uuid = "8c4cb9c7-8799-4149-bd6e-ff5d21d6c8b6" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "winrm.elevated" }, value = "on" }
   ]
   taskType = { code = "winrmTask" }
 }
