@@ -1,17 +1,27 @@
 resource "catalog-item-type" "null" {
-  name = "Aspect Call Center Stack"
-  uuid = "235d2de4-8cfb-427d-b57b-bd4b25398dd8"
-  category = "Voice"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/61/logo/aspect-vector-logo_original.png"
+  name = "Cascading Inputs Example"
+  uuid = "674371dc-81e0-4038-b464-563525d8f4cc"
+  category = "Example"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/11/logo/nerd_original.png"
   darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2023-02-24T21:05:39.000Z"
-  description = "Call Control, Voicemail, and Call Recording servers for a Call Center core deployment"
+  dateCreated = "2022-02-12T11:49:20.000Z"
+  description = "Different input types: Plaintext, Password, Select List, Radio Buttons, Checkbox, Cascading Inputs"
   featured = true
   formType = "optionTypes"
-  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/61/logo/aspect-vector-logo_original.png"
-  labels = [ { name = "Demo" }, { name = "voice" } ]
-  lastUpdated = "2023-05-11T15:38:23.000Z"
+  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/11/logo/nerd_original.png"
+  labels = [ { name = "Demo" }, { name = "example" } ]
+  lastUpdated = "2023-08-22T19:06:15.000Z"
   logoSettings = "{\"type\":\"custom\"}"
-  optionTypes = [ { code = "CallCenterHub" } ]
+  optionTypes = [
+    { code = "firstname" },
+    { code = "sqlpassword" },
+    { code = "SelectedGroup" },
+    { code = "SelectedCloud" },
+    { code = "PaymentMethodsRadioButtons" },
+    { code = "PaymentMethodsSelectList" },
+    { code = "PaymentMethodsTypeAhead" },
+    { code = "PaymentYesOrNo" },
+    { code = "OptionalPaymentMethods" }
+  ]
   refType = "AppTemplate"
 }
