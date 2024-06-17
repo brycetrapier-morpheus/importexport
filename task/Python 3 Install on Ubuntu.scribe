@@ -6,11 +6,11 @@ resource "task" "Python 3 Install on Ubuntu" {
   labels = [ "Python3", "Ubuntu" ]
   lastUpdated = "2023-03-23T02:31:20.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "d24f3a82-1608-47c1-bddb-19d7e3c2e633" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
