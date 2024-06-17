@@ -8,16 +8,16 @@ resource "task" "helloworldemail" {
   lastUpdated = "2023-02-24T23:11:41.000Z"
   options = [
     {
+      optionType = { code = "emailSubject" }
+      value = "Morpheus Instance Status"
+    },
+    {
       optionType = { code = "emailAddress" }
       value = "somebody@somemail.com"
     },
     {
       content = { uuid = "09214084-568b-44a9-821f-02266f7c3850" }
       optionType = { code = "emailBody" }
-    },
-    {
-      optionType = { code = "emailSubject" }
-      value = "Morpheus Instance Status"
     }
   ]
   taskType = { code = "email" }
