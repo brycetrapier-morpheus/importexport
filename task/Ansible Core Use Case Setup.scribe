@@ -6,12 +6,12 @@ resource "task" "Ansible Core Use Case Setup" {
   labels = [ "Ansible", "Demo", "POC", "example", "setup" ]
   lastUpdated = "2023-04-12T21:54:36.000Z"
   options = [
-    { optionType = { code = "pythonArgs" }, value = "ansible" },
-    { optionType = { code = "pythonBinary" }, value = "python3" },
     {
       optionType = { code = "pythonAdditionalPackages" }
       value = "requests morphcp click"
     },
+    { optionType = { code = "pythonArgs" }, value = "ansible" },
+    { optionType = { code = "pythonBinary" }, value = "python3" },
     {
       content = { uuid = "d38704da-1202-49aa-a6f5-39c59a04c0df" }
       optionType = { code = "pythonScript" }
