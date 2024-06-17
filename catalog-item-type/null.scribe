@@ -1,20 +1,20 @@
 resource "catalog-item-type" "null" {
-  name = "Filtered Plans - Blueprint"
-  uuid = "f5c6505a-f87a-42de-8dc4-da0d2c5add4c"
+  name = "Filtered Plans - Instance"
+  uuid = "3eee2077-b8e4-4eb9-a0e6-f715a5206133"
   category = "Example"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/25/logo/FilterMany_original.jpg"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/19/logo/FilterMany_original.jpg"
   darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2022-05-11T02:29:37.000Z"
+  dateCreated = "2022-05-06T19:37:26.000Z"
   description = "User selects which plan to deploy, from an admin-filtered list of Plans"
   formType = "optionTypes"
-  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/25/logo/FilterMany_original.jpg"
+  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/19/logo/FilterMany_original.jpg"
   labels = [ { name = "Demo" } ]
-  lastUpdated = "2023-08-22T18:55:44.000Z"
+  lastUpdated = "2024-02-16T23:33:53.000Z"
   logoSettings = "{\"type\":\"custom\"}"
   optionTypes = [
-    { code = "ApplicationName" },
-    { code = "planslistfrontend" },
-    { code = "planslistbackend" }
+    { code = "filteredplansaws" },
+    { code = "PaymentYesOrNo" },
+    { code = "OptionalPaymentMethods" }
   ]
-  refType = "AppTemplate"
+  refType = "InstanceType"
 }
