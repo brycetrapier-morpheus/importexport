@@ -1,12 +1,13 @@
 resource "catalog-item-type" "null" {
-  name = "Chemdoodle"
-  uuid = "5cce22c3-5988-47be-b143-200c11c25397"
-  category = "Chemistry"
-  dateCreated = "2023-04-17T20:29:55.000Z"
-  description = "ChemDoodle is a chemical sketcher that contains many features for working with chemical graphics."
-  iconPath = "custom"
-  labels = [ { name = "Bio" }, { name = "EDU" } ]
-  lastUpdated = "2023-04-17T20:48:45.000Z"
+  name = "Debian 11 Dual-Stack"
+  uuid = "54ba56e8-902b-42fa-8700-d37ab0407ce4"
+  category = "Example"
+  allowQuantity = true
+  darkIconPath = "/assetshttps://54.241.81.186/storage/logos/uploads/InstanceType/119/logo/TEST RED_medium.png"
+  dateCreated = "2023-03-28T23:25:20.000Z"
+  description = "IPv4/IPv6  Dual-Stack.  EC2 Admins added."
+  iconPath = "/branding/140x40/debian.svg"
+  lastUpdated = "2023-08-30T20:53:59.000Z"
   refType = "InstanceType"
   visibility = "public"
 }
