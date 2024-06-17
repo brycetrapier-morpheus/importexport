@@ -1,12 +1,9 @@
 resource "catalog-item-type" "null" {
-  name = "Touch NewFile"
-  uuid = "4682f081-b1ec-4a4b-a078-4f4ea91c5048"
-  category = "Example"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/84/logo/Touch NewFile_original.png"
-  dateCreated = "2023-06-07T05:19:11.000Z"
-  description = "Touches a file in the root home directory"
-  featured = true
-  lastUpdated = "2023-06-29T15:59:01.000Z"
-  logoSettings = "{\"type\":\"custom\"}"
-  refType = "OperationalWorkflow"
+  name = "Ubuntu Forms"
+  uuid = "628b3448-2e6a-492a-af16-1123294011b8"
+  dateCreated = "2023-08-28T19:50:48.000Z"
+  form = { code = "cclusecase" }
+  formType = "form"
+  lastUpdated = "2023-08-28T19:50:48.000Z"
+  refType = "InstanceType"
 }
