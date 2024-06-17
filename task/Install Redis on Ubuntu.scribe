@@ -6,11 +6,11 @@ resource "task" "Install Redis on Ubuntu" {
   labels = [ "Demo", "Redis", "example" ]
   lastUpdated = "2023-08-23T18:49:47.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "82d9a574-ef91-4ebe-816c-7701bdda141f" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
