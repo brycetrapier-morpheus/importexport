@@ -7,4 +7,8 @@ resource "instance-type" "rediscustom" {
   description = "Redis Clusters, modeled as custom Layouts"
   environmentPrefix = "REDIS_CUSTOM_INSTANCE_TYPE"
   labels = [ "Custom" ]
+  layouts = [
+    { code = "448fbc9b-af1f-4d77-9c70-7aa3e6522e9d" },
+    { code = "593734eb-e432-4ae5-b67a-c05a48c930a8" }
+  ]
 }
