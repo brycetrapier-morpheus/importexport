@@ -1,13 +1,20 @@
 resource "catalog-item-type" "null" {
-  name = "Add User Account - Operational Workflow"
-  uuid = "5b80344c-8d08-44cb-aa15-d677cc5cc052"
+  name = "Add User Account and VM"
+  uuid = "1b33d924-0e63-4398-ab16-7a21676c751f"
   category = "Onboarding"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/90/logo/Add User - Operational Workflow_original.png"
-  dateCreated = "2023-08-22T19:27:21.000Z"
-  description = "Sample framework to add a user to an external identity source, via operational workflow."
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/91/logo/User Onboarding - VM and User Account_original.png"
+  dateCreated = "2023-08-23T21:00:33.000Z"
+  description = "Instantiate a new VM and build a new user account in an external IdP"
   featured = true
+  formType = "optionTypes"
   labels = [ { name = "Demo" }, { name = "Framework" }, { name = "example" } ]
-  lastUpdated = "2023-08-23T21:01:59.000Z"
+  lastUpdated = "2023-08-23T23:39:05.000Z"
   logoSettings = "{\"type\":\"custom\"}"
-  refType = "OperationalWorkflow"
+  optionTypes = [
+    { code = "ApplicationName" },
+    { code = "firstname" },
+    { code = "lastname" },
+    { code = "UserProvidedPassword" }
+  ]
+  refType = "AppTemplate"
 }
