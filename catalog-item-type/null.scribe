@@ -1,19 +1,17 @@
 resource "catalog-item-type" "null" {
-  name = "Apache with Service Accounts"
-  uuid = "c4271ba7-140d-46bb-af98-faf87dbd835c"
-  category = "Web"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/InstanceType/102/logo/Lab Apache_medium.png"
+  name = "Aspect Ad-Hoc Server"
+  uuid = "51155eed-9a3a-412d-9a0f-99f68707f923"
+  category = "Voice"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/62/logo/aspect-vector-logo_original.png"
   darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2023-04-13T17:54:00.000Z"
-  description = "A single Apache instances in AWS EC2. No customization allowed.  With service accounts."
+  dateCreated = "2023-02-25T00:35:24.000Z"
+  description = "Single Instance of an Aspect Server.  Select the persona at time of deployment."
+  featured = true
   formType = "optionTypes"
-  iconPath = "https://54.241.81.186/storage/logos/uploads/InstanceType/102/logo/Lab Apache_medium.png"
-  lastUpdated = "2024-02-08T18:56:41.000Z"
+  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/62/logo/aspect-vector-logo_original.png"
+  labels = [ { name = "Demo" }, { name = "voice" } ]
+  lastUpdated = "2023-05-11T15:43:05.000Z"
   logoSettings = "{\"type\":\"custom\"}"
-  optionTypes = [
-    { code = "SelectedGroup" },
-    { code = "SelectedCloud" },
-    { code = "WebTierInstanceName" }
-  ]
+  optionTypes = [ { code = "AspectServerType" } ]
   refType = "InstanceType"
 }
