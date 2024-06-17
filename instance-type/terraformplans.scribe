@@ -8,4 +8,14 @@ resource "instance-type" "terraformplans" {
   environmentPrefix = "TF_"
   featured = true
   labels = [ "IaC" ]
+  layouts = [
+    { code = "3ad52a45-9f23-4ebb-a137-3c45e54ca655" },
+    { code = "40163c7e-2563-4a6c-8b0e-9d6659751606" },
+    { code = "52253ee6-47f8-4049-ae36-728232fb52f2" },
+    { code = "66af7738-7fe1-47eb-8485-fe66f89f6f61" },
+    { code = "7ad3a7fc-5be3-4986-9b89-ccc3a06800ab" },
+    { code = "92c32751-0eba-4978-8be9-cf5032e93b0d" },
+    { code = "a56cf0eb-914f-41a2-89ec-4027b1f7bf28" },
+    { code = "b6b0b093-4d6a-4f52-b85c-eddbc2166c5b" }
+  ]
 }
