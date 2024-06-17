@@ -7,5 +7,4 @@ resource "instance-type" "brownfieldtest" {
   description = "For converting Discovered intstances to Managed instances.  This Instance Type is not deployable."
   environmentPrefix = "BROWNFIELD"
   featured = true
-  layouts = [ { code = "901df3f6-4cb0-4be0-902c-a6555d3098d4" } ]
 }
