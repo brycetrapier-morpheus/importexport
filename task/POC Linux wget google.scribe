@@ -6,11 +6,11 @@ resource "task" "POC Linux wget google" {
   labels = [ "Demo" ]
   lastUpdated = "2023-03-28T16:47:05.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "c7dc553c-5dcb-4299-82cd-11166a6d6561" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
