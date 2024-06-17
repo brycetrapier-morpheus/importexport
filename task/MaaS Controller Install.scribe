@@ -6,11 +6,11 @@ resource "task" "MaaS Controller Install" {
   labels = [ "maas" ]
   lastUpdated = "2024-02-01T16:41:48.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "db2b1655-7f47-48c8-a4d3-ce79d93e74a2" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
