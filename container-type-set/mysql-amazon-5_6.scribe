@@ -1,5 +1,5 @@
 resource "container-type-set" "mysql-amazon-5.6" {
   code = "mysql-amazon-5.6"
-  uuid = "739d81c1-81c5-4dd9-a5be-2c75fc523858"
+  uuid = "ac343dfe-a13b-4c71-9ab6-619677ca28d1"
   workloadType = { code = "mysql-amazon-5.6" }
 }
