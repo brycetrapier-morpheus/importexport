@@ -5,11 +5,11 @@ resource "task" "Python testing" {
   executeTarget = "local"
   lastUpdated = "2023-03-23T03:04:23.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "071f86b7-9818-447b-88a1-7d2ce485a036" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
