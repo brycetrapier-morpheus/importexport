@@ -5,4 +5,5 @@ resource "instance-type" "matomo" {
   category = "utility"
   deploymentService = ""
   environmentPrefix = "MATOMO_WEB_ANALYTICS"
+  layouts = [ { code = "dd1d7a5e-3a6c-42df-87e3-caba0e48fda0" } ]
 }
