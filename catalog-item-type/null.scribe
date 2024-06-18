@@ -1,9 +1,12 @@
 resource "catalog-item-type" "null" {
-  name = "CCL Testing"
-  uuid = "cd2e5044-f67b-4726-bd3c-6541c20d0ca0"
-  dateCreated = "2023-09-06T15:17:21.000Z"
-  form = { code = "cclusecase" }
-  formType = "form"
-  lastUpdated = "2023-09-06T15:17:21.000Z"
-  refType = "OperationalWorkflow"
+  name = "Chemdoodle"
+  uuid = "5cce22c3-5988-47be-b143-200c11c25397"
+  category = "Chemistry"
+  dateCreated = "2023-04-17T20:29:55.000Z"
+  description = "ChemDoodle is a chemical sketcher that contains many features for working with chemical graphics."
+  iconPath = "custom"
+  labels = [ { name = "Bio" }, { name = "EDU" } ]
+  lastUpdated = "2023-04-17T20:48:45.000Z"
+  refType = "InstanceType"
+  visibility = "public"
 }
