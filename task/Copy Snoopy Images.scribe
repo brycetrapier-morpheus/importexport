@@ -5,11 +5,11 @@ resource "task" "Copy Snoopy Images" {
   executeTarget = "resource"
   lastUpdated = "2022-05-07T00:19:00.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "859db70f-8e6f-4afc-981c-bbe5f30d05ee" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
