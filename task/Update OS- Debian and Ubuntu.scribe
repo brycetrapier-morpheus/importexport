@@ -5,11 +5,11 @@ resource "task" "Update OS: Debian and Ubuntu" {
   executeTarget = "resource"
   lastUpdated = "2022-10-02T01:12:08.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "30872680-24b0-4f2c-8aac-da981c90c8e0" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
