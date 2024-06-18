@@ -1,19 +1,10 @@
 resource "catalog-item-type" "null" {
-  name = "Verint Server in GCP"
-  uuid = "d78acac6-cb12-4173-a9d2-16eedb817d95"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/24/logo/Verint_original.png"
-  darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2022-05-11T02:05:06.000Z"
-  description = "Single Verint server.  Select the server persona at time of provisioning"
-  formType = "optionTypes"
-  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/24/logo/Verint_original.png"
-  labels = [ { name = "Demo" } ]
-  lastUpdated = "2023-07-22T00:03:56.000Z"
-  logoSettings = "{\"type\":\"custom\"}"
-  optionTypes = [
-    { code = "VerintServerType" },
-    { code = "costcenter" },
-    { code = "PaymentMethodsSelectList" }
-  ]
-  refType = "InstanceType"
+  name = "Verint Small Stack Modeled for GCP"
+  uuid = "40c05fb4-322e-4e6a-8883-f478d0bd9094"
+  dateCreated = "2022-05-20T18:47:42.000Z"
+  description = "Application server, DB Mgmt Server, and Forecasting Server"
+  enabled = false
+  iconPath = "custom"
+  lastUpdated = "2023-02-25T00:22:35.000Z"
+  refType = "AppTemplate"
 }
