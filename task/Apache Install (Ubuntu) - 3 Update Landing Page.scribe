@@ -6,11 +6,11 @@ resource "task" "Apache Install (Ubuntu) - 3 Update Landing Page" {
   labels = [ "Demo" ]
   lastUpdated = "2023-02-24T23:13:10.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "cec63f49-cbb2-438d-8eff-eef3fa9aa9da" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
