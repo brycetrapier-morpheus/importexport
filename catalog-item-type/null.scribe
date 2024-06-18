@@ -1,13 +1,14 @@
 resource "catalog-item-type" "null" {
-  name = "Wind Farm Monitor and Analysis"
-  uuid = "7a343aa2-22c6-465d-b417-533fde346367"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/39/logo/wind farm small_original.png"
+  name = "Workflow Binding Test"
+  uuid = "171686c3-6ec6-4716-af4c-c3f2a745c6f6"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/47/logo/BlueprintClipArt_original.png"
   darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2022-06-16T00:57:25.000Z"
-  description = "This application monitors geographic information and associated energy output of wind turbines, to assist in analyzing the relationship between physical location of the wind turbine and associated power production."
-  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/39/logo/wind farm small_original.png"
-  labels = [ { name = "Demo" } ]
-  lastUpdated = "2024-02-16T21:36:29.000Z"
+  dateCreated = "2022-08-05T00:21:52.000Z"
+  description = "Under Construction"
+  formType = "optionTypes"
+  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/47/logo/BlueprintClipArt_original.png"
+  lastUpdated = "2023-07-21T20:53:33.000Z"
   logoSettings = "{\"type\":\"custom\"}"
-  refType = "OperationalWorkflow"
+  optionTypes = [ { code = "WorkflowToExecute" } ]
+  refType = "InstanceType"
 }
