@@ -8,40 +8,6 @@ resource "instance-type" "testinstance" {
   environmentPrefix = "TEST"
   featured = true
   hasSettings = true
-  layouts = [
-    { code = "0a06e8ed-a675-4803-9255-89ed796194d0" },
-    { code = "0b849257-051c-40ea-8e2f-cfcd898d0a3b" },
-    { code = "248db7e0-92e0-45f1-8022-35ac86f2e5cb" },
-    { code = "29c463bb-5f82-4b45-85e1-f9b0f4f4c049" },
-    { code = "3a608e2c-881a-45eb-94ad-e611a969c8aa" },
-    { code = "451a0cbf-66c9-4d96-94f8-58b172f4d853" },
-    { code = "5e7760e5-f0da-4721-8de4-fde83eea40d2" },
-    { code = "65b95bb6-622d-4d44-984b-5d4328cfd8a0" },
-    { code = "65da25cc-e5c7-4f1b-9286-44f39d0d8834" },
-    { code = "7c4cea69-19da-4b98-8851-7fc995443fea" },
-    { code = "7dffc4ef-2379-4fec-9123-5cc09cc59d1d" },
-    { code = "85c33735-441f-4760-9715-9287b62b4ae8" },
-    { code = "8e3a861a-e3f1-48ad-943e-376b98527846" },
-    { code = "90e6162e-a4dd-4d3d-b588-c4c1081cf8dd" },
-    { code = "9446154d-9f4a-43ed-a74f-52e9ffdc699b" },
-    { code = "986f48f2-9d14-4540-992f-eaf82d574c39" },
-    { code = "9e512a27-3846-40da-87da-f5bcf1ea65bc" },
-    { code = "a97756df-62c9-4cc7-86c8-e78f9341bb7e" },
-    { code = "a9da7a6b-5450-4c0c-af35-d311d6cffeec" },
-    { code = "ab2d10b6-3fb6-4ad2-9175-d9e5ede88c0d" },
-    { code = "aee6b9cf-7557-4e74-8bc0-bba48c75dc47" },
-    { code = "b3b025bd-8c0f-4265-8856-68c529e3019a" },
-    { code = "b3e95de2-7977-4350-88e1-335e6eeeb935" },
-    { code = "b7111c5b-f5b7-4729-9482-61c785ca0684" },
-    { code = "b827b539-3bca-4770-b9ee-e09714ea6235" },
-    { code = "bcbca1ec-00e3-46a8-9dd2-57903a6b3898" },
-    { code = "cf2bce02-5047-4579-81fc-b2da79986987" },
-    { code = "dc797196-cb25-4a26-87a6-04b4ef0611bb" },
-    { code = "eae191b3-4147-41f8-b964-7ea29d4d4a7b" },
-    { code = "eee5d085-0435-4de2-9bc9-37ade49f14f4" },
-    { code = "f0fda7b0-2cc0-4c53-a9da-17cbc4cd21ae" },
-    { code = "f1348fc2-2016-4d97-928e-851792048ddf" }
-  ]
   optionTypes = [ { code = "PaymentYesOrNo" }, { code = "OptionalPaymentMethods" } ]
   visibility = "public"
 }
