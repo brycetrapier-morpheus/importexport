@@ -6,11 +6,11 @@ resource "task" "Echo an instances's property" {
   labels = [ "Demo" ]
   lastUpdated = "2023-02-24T23:11:58.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "f600458e-cb44-48b6-abbb-9c47cdaee9da" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
