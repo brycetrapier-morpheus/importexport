@@ -1,9 +1,16 @@
 resource "catalog-item-type" "null" {
-  name = "Retirement Calculator"
-  uuid = "51dae674-6957-4394-8ae6-7ef7828e08bf"
-  dateCreated = "2023-08-29T20:30:03.000Z"
-  description = "A forecast of financial health"
-  labels = [ { name = "Demo" }, { name = "Framework" }, { name = "example" } ]
-  lastUpdated = "2023-08-29T20:30:03.000Z"
-  refType = "OperationalWorkflow"
+  name = "Shared Apache Lab Instance Type, set to Private.  Designed to Fail in Subtenants."
+  uuid = "c0de9eb0-1ada-407e-beb6-ce96a5511620"
+  dateCreated = "2022-12-30T00:05:17.000Z"
+  description = "THIS IS DESIGNED TO FAIL (for lab showcase).  The Instance Type consumed by this self-service Catalog entity is set to Private."
+  iconPath = "custom"
+  labels = [
+    { name = "Demo" },
+    { name = "Designed to Fail" },
+    { name = "Shared" }
+  ]
+  lastUpdated = "2023-04-04T18:59:24.000Z"
+  optionTypes = [ { code = "DeploymentGroup" }, { code = "DeploymentCloudPublic" } ]
+  refType = "InstanceType"
+  visibility = "public"
 }
