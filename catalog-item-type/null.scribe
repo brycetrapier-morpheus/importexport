@@ -1,12 +1,12 @@
 resource "catalog-item-type" "null" {
-  name = "Terraform-Based Instance with Cost"
-  uuid = "c4e5350c-9f5c-4dcf-818a-d36e7f08c963"
-  category = "IaC"
-  dateCreated = "2022-06-23T01:32:10.000Z"
-  description = "Terraform with associated costs"
-  enabled = false
-  iconPath = "custom"
-  labels = [ { name = "Demo" }, { name = "IaC" }, { name = "Terraform" } ]
-  lastUpdated = "2023-03-31T15:38:59.000Z"
-  refType = "InstanceType"
+  name = "Touch NewFile"
+  uuid = "4682f081-b1ec-4a4b-a078-4f4ea91c5048"
+  category = "Example"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/84/logo/Touch NewFile_original.png"
+  dateCreated = "2023-06-07T05:19:11.000Z"
+  description = "Touches a file in the root home directory"
+  featured = true
+  lastUpdated = "2023-06-29T15:59:01.000Z"
+  logoSettings = "{\"type\":\"custom\"}"
+  refType = "OperationalWorkflow"
 }
