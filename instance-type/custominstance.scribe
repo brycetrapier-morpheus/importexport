@@ -7,11 +7,5 @@ resource "instance-type" "custominstance" {
   description = "Layouts for AWS Ubuntu, Azure Ubuntu, GCP Debian, and VMware CentOS"
   environmentPrefix = "POC_CUSTOM_INSTANCE"
   featured = true
-  layouts = [
-    { code = "0e7f292c-1f65-4a9b-a5f0-c21adebcaafa" },
-    { code = "30110989-1395-4fd4-87c0-80ef001ee39e" },
-    { code = "4d52228f-618f-4f6e-a6be-90fdf5e14a68" },
-    { code = "f261afa2-b07b-43a2-959a-8072b6145bd2" }
-  ]
   optionTypes = [ { code = "costcenter" } ]
 }
