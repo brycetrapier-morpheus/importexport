@@ -5,11 +5,11 @@ resource "task" "yum update" {
   executeTarget = "resource"
   lastUpdated = "2021-11-18T20:51:05.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "cc1fcc33-4e7d-416b-863a-d2695953e0fb" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
