@@ -7,11 +7,11 @@ resource "task" "apacheonubuntu" {
   labels = [ "Demo" ]
   lastUpdated = "2023-12-04T19:43:19.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "20038895-13e5-4a67-b5e0-f0f725a29d96" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
