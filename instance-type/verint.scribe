@@ -7,11 +7,6 @@ resource "instance-type" "verint" {
   description = "Top-Level Instance Type for Verint Servers"
   environmentPrefix = "VERINT"
   featured = true
-  layouts = [
-    { code = "2a2f8fa9-8ac2-403e-86ba-30675599d1e9" },
-    { code = "912990b0-f5cd-4a39-ae3b-53b62adc0896" },
-    { code = "e62cce3f-0d98-4659-857a-3761b260051c" }
-  ]
   optionTypes = [ { code = "costcenter" }, { code = "PaymentMethodsRadioButtons" } ]
   visibility = "public"
 }
