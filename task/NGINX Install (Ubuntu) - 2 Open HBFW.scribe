@@ -6,11 +6,11 @@ resource "task" "NGINX Install (Ubuntu) - 2 Open HBFW" {
   labels = [ "POC" ]
   lastUpdated = "2023-02-08T17:26:26.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "c6009c3a-1909-4585-9350-a66311cc9e9b" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
