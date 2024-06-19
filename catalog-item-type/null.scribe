@@ -1,18 +1,20 @@
 resource "catalog-item-type" "null" {
-  name = "Terraform Blueprint Monolithic with Inputs"
-  uuid = "449c83a9-1efa-4218-9d83-7c8dedb66e4e"
+  name = "Terraform with Inputs"
+  uuid = "35523cac-0823-4f48-a56b-0debe0da8f8e"
   category = "IaC"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/InstanceType/99/logo/Terraform Logo_medium.png"
-  dateCreated = "2022-02-11T02:17:53.000Z"
-  description = "Build new AWS VPC and IGW; set 0/0 to IGW; add 2 subnets"
+  darkLogoSettings = "{\"type\":\"custom\"}"
+  dateCreated = "2023-08-03T03:04:19.000Z"
+  description = "Terraform plan consuming Morpheus Inputs and Terraform variables."
   formType = "optionTypes"
-  iconPath = "https://54.241.81.186/storage/logos/uploads/InstanceType/99/logo/Terraform Logo_medium.png"
-  labels = [ { name = "Demo" }, { name = "IaC" }, { name = "Terraform" } ]
-  lastUpdated = "2023-08-22T18:56:46.000Z"
+  labels = [ { name = "AWS" }, { name = "IaC" }, { name = "Terraform" } ]
+  lastUpdated = "2023-08-22T18:56:52.000Z"
+  logoSettings = "{\"type\":\"custom\"}"
   optionTypes = [
-    { code = "ApplicationName" },
-    { code = "PrivateSubnetName" },
-    { code = "PublicSubnetName" }
+    { code = "PaymentMethodsSelectList" },
+    { code = "AWSVPCCIDRblock" },
+    { code = "ATerraformVariable" },
+    { code = "ASensitiveTerraformVariableHidden" },
+    { code = "ASensitiveTerraformVariable" }
   ]
-  refType = "AppTemplate"
+  refType = "InstanceType"
 }
