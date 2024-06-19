@@ -5,11 +5,11 @@ resource "task" "Multicloud Self-Serv Options" {
   executeTarget = "resource"
   lastUpdated = "2022-05-07T00:55:43.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "bc3f456d-e2b2-4018-a86c-243965b4f51f" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
