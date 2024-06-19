@@ -6,11 +6,11 @@ resource "task" "Apache Install (Ubuntu) - 2 Open HBFW" {
   labels = [ "Demo" ]
   lastUpdated = "2023-02-24T23:13:14.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "170ca0e3-e385-43f6-b1a4-0a4b58d14c1b" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
