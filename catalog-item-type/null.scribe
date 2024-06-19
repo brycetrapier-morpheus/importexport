@@ -1,11 +1,20 @@
 resource "catalog-item-type" "null" {
-  name = "EVAR Example (Instance)"
-  uuid = "ec99facb-ee07-4a61-9bf2-b2b9e521cff3"
-  dateCreated = "2021-12-12T22:37:53.000Z"
-  description = "Setting an EVAR on an Instance"
-  enabled = false
-  iconPath = "/assets/containers-png/morph-resource2.png"
-  lastUpdated = "2022-06-06T19:40:07.000Z"
-  optionTypes = [ { code = "AppTierInstanceName" }, { code = "sqlpassword" } ]
-  refType = "InstanceType"
+  name = "Filtered Plans - Blueprint"
+  uuid = "f5c6505a-f87a-42de-8dc4-da0d2c5add4c"
+  category = "Example"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/25/logo/FilterMany_original.jpg"
+  darkLogoSettings = "{\"type\":\"custom\"}"
+  dateCreated = "2022-05-11T02:29:37.000Z"
+  description = "User selects which plan to deploy, from an admin-filtered list of Plans"
+  formType = "optionTypes"
+  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/25/logo/FilterMany_original.jpg"
+  labels = [ { name = "Demo" } ]
+  lastUpdated = "2023-08-22T18:55:44.000Z"
+  logoSettings = "{\"type\":\"custom\"}"
+  optionTypes = [
+    { code = "ApplicationName" },
+    { code = "planslistfrontend" },
+    { code = "planslistbackend" }
+  ]
+  refType = "AppTemplate"
 }
