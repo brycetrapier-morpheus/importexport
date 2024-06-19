@@ -1,12 +1,9 @@
 resource "catalog-item-type" "null" {
-  name = "Quickbooks"
-  uuid = "feff1762-959d-4f07-8347-b92e6a4e7964"
-  category = "Business"
-  dateCreated = "2023-04-17T20:24:02.000Z"
-  description = "QuickBooks is an accounting software package developed and marketed by Intuit. First introduced in 1983, QuickBooks products are geared mainly toward small and medium-sized businesses and offer on-premises accounting applications as well as cloud-based versions that accept business payments, manage and pay bills, and payroll functions."
-  iconPath = "custom"
-  labels = [ { name = "EDU" }, { name = "Finance" }, { name = "Tax" } ]
-  lastUpdated = "2023-04-17T20:49:10.000Z"
+  name = "Redis Cluster"
+  uuid = "4a52ae3b-e917-44af-bd79-e7094b726974"
+  dateCreated = "2022-07-07T17:29:48.000Z"
+  description = "Boilerpate Redis cluster in AWS:  6ea 1x2 VM's, expires in 4 days."
+  iconPath = "/assets/branding/140x40/redis.svg"
+  lastUpdated = "2023-02-25T00:00:01.000Z"
   refType = "InstanceType"
-  visibility = "public"
 }
