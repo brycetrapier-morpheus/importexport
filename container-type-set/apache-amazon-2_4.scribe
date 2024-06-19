@@ -1,5 +1,5 @@
 resource "container-type-set" "apache-amazon-2.4" {
   code = "apache-amazon-2.4"
-  uuid = "3a05dd08-94fb-4e47-b537-b40d83b90ef5"
+  uuid = "c149ef46-bcdf-4e65-a612-d18f8c06cf5b"
   workloadType = { code = "apache-amazon-2.4" }
 }
