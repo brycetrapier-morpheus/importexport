@@ -10,11 +10,11 @@ resource "task" "Add AD User, via PowerShell Script" {
       optionType = { code = "host" }
       value = "Active.Directory.server.ip.address"
     },
+    { optionType = { code = "username" }, value = "AdminUser" },
     {
       content = { uuid = "9cf41af6-8dc3-48a8-96b4-6a59bc253b87" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "username" }, value = "AdminUser" }
+    }
   ]
   taskType = { code = "winrmTask" }
 }
