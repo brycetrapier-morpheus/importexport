@@ -1,20 +1,20 @@
 resource "catalog-item-type" "null" {
-  name = "Add User Account and VM"
-  uuid = "1b33d924-0e63-4398-ab16-7a21676c751f"
-  category = "Onboarding"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/91/logo/User Onboarding - VM and User Account_original.png"
-  dateCreated = "2023-08-23T21:00:33.000Z"
-  description = "Instantiate a new VM and build a new user account in an external IdP"
-  featured = true
+  name = "Ansible Core Use Case Setup"
+  uuid = "6e07fcc6-839e-42c9-9c5e-10ae0db99851"
+  darkIconPath = "/assetsnull"
+  dateCreated = "2023-04-12T21:54:36.000Z"
+  description = "Are you tired of being stuck in a never-ending cycle of manual labor when it comes to managing your IT infrastructure? It's time to break free from the Matrix and embrace the power of Ansible. With Ansible, you can control your entire environment like Neo controls the Matrix - effortlessly and with a wave of your hand. Say goodbye to the Agent Smiths of repetitive tasks and hello to the Morpheuses of automation. Join us and experience the freedom of a world where Ansible is king. Who knows, you might even discover that there is no spoon!"
+  enabled = false
   formType = "optionTypes"
-  labels = [ { name = "Demo" }, { name = "Framework" }, { name = "example" } ]
-  lastUpdated = "2023-08-23T23:39:05.000Z"
-  logoSettings = "{\"type\":\"custom\"}"
-  optionTypes = [
-    { code = "ApplicationName" },
-    { code = "firstname" },
-    { code = "lastname" },
-    { code = "UserProvidedPassword" }
+  iconPath = "/assetsnull"
+  labels = [
+    { name = "Ansible" },
+    { name = "Demo" },
+    { name = "POC" },
+    { name = "example" },
+    { name = "setup" }
   ]
-  refType = "AppTemplate"
+  lastUpdated = "2024-02-16T21:27:54.000Z"
+  optionTypes = [ { code = "hs111scratchpad" }, { code = "ApplicationName" } ]
+  refType = "OperationalWorkflow"
 }
