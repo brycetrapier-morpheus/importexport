@@ -5,11 +5,11 @@ resource "task" "Update Apache to Snoopy Crash, Ubuntu" {
   executeTarget = "resource"
   lastUpdated = "2022-09-09T05:10:35.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "92a5d8fb-0f6e-458f-8d47-1068bd350bc5" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
