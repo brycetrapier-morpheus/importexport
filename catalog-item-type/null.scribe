@@ -1,15 +1,15 @@
 resource "catalog-item-type" "null" {
-  name = "Forms Demo: Firewall Entry"
-  uuid = "c158d396-3c7b-40be-9c31-d4e5ff05d7c9"
-  category = "Security"
+  name = "Forms Demo: Web Server"
+  uuid = "0eab96ac-1761-45fb-af45-2b07030e0daf"
+  category = "Example"
   darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2023-07-27T16:17:39.000Z"
-  description = "Form-based input for a firewall rule entry"
+  dateCreated = "2023-07-13T00:39:17.000Z"
+  description = "Showing the Forms input method."
   featured = true
-  form = { code = "firewall" }
+  form = { code = "webserver" }
   formType = "form"
-  labels = [ { name = "Demo" }, { name = "Firewall" }, { name = "Forms" } ]
-  lastUpdated = "2023-07-31T19:39:30.000Z"
+  labels = [ { name = "Demo" }, { name = "Forms" }, { name = "web" } ]
+  lastUpdated = "2023-08-22T18:57:27.000Z"
   logoSettings = "{\"type\":\"custom\"}"
-  refType = "OperationalWorkflow"
+  refType = "InstanceType"
 }
