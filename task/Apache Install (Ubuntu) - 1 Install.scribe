@@ -6,11 +6,11 @@ resource "task" "Apache Install (Ubuntu) - 1 Install" {
   labels = [ "Demo" ]
   lastUpdated = "2023-02-24T23:13:19.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "2b506fe3-a291-45cf-a846-7790325cc3e1" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
