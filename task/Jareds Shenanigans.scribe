@@ -5,11 +5,11 @@ resource "task" "Jareds Shenanigans" {
   executeTarget = "local"
   lastUpdated = "2022-12-08T22:36:10.000Z"
   options = [
+    { optionType = { code = "pythonBinary" }, value = "python3" },
     {
       optionType = { code = "pythonAdditionalPackages" }
       value = "requests urllib3"
     },
-    { optionType = { code = "pythonBinary" }, value = "python3" },
     {
       content = { uuid = "4c1bcc2a-3605-4315-930d-5fe7c8a8c9c2" }
       optionType = { code = "pythonScript" }
