@@ -1,8 +1,12 @@
 resource "catalog-item-type" "null" {
-  name = "Provisioning Workflow for XaaS pricing"
-  uuid = "8ffa181e-5442-4c6c-97a8-a351507defd5"
-  dateCreated = "2023-08-30T17:34:51.000Z"
-  formType = "form"
-  lastUpdated = "2023-08-30T17:34:51.000Z"
+  name = "Quickbooks"
+  uuid = "feff1762-959d-4f07-8347-b92e6a4e7964"
+  category = "Business"
+  dateCreated = "2023-04-17T20:24:02.000Z"
+  description = "QuickBooks is an accounting software package developed and marketed by Intuit. First introduced in 1983, QuickBooks products are geared mainly toward small and medium-sized businesses and offer on-premises accounting applications as well as cloud-based versions that accept business payments, manage and pay bills, and payroll functions."
+  iconPath = "custom"
+  labels = [ { name = "EDU" }, { name = "Finance" }, { name = "Tax" } ]
+  lastUpdated = "2023-04-17T20:49:10.000Z"
   refType = "InstanceType"
+  visibility = "public"
 }
