@@ -1,18 +1,16 @@
 resource "catalog-item-type" "null" {
-  name = "Shared Apache Server Item from Instance"
-  uuid = "50ca999e-fa97-4554-b298-c6ac2c49e791"
-  dateCreated = "2022-07-29T19:57:54.000Z"
-  description = "Shared Catalog Item from a single Instance.  Showcases masked and unmasked text input; showcases differences in Inputs being \"Editable\" or not (after Instance provisioning).  Also showcases the differences in setting visibility of dependent entities."
-  iconPath = "/assets/branding/140x40/apache.svg"
-  labels = [ { name = "Shared" } ]
-  lastUpdated = "2023-02-25T00:11:52.000Z"
+  name = "Shared Blueprint (App 35)"
+  uuid = "d1da8b2f-8f5a-4c2c-9d52-300c8edbb361"
+  dateCreated = "2022-09-29T00:43:25.000Z"
+  description = "Shared Catalog Item from an Application Blueprint"
+  iconPath = "custom"
+  lastUpdated = "2022-12-30T21:24:43.000Z"
   optionTypes = [
-    { code = "DeploymentGroup" },
-    { code = "DeploymentCloud" },
-    { code = "DeploymentEnvironment" },
-    { code = "maskedinput" },
-    { code = "unmaskedinput" }
+    { code = "ApplicationName" },
+    { code = "SelectedGroup" },
+    { code = "SelectedCloud" },
+    { code = "filteredplansaws" }
   ]
-  refType = "InstanceType"
+  refType = "AppTemplate"
   visibility = "public"
 }
