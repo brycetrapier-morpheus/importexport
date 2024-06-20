@@ -1,14 +1,18 @@
 resource "catalog-item-type" "null" {
-  name = "Terraform - new VPC"
-  uuid = "7c4a14c4-ff59-433e-982d-d21521da26fb"
+  name = "Terraform Blueprint Monolithic with Inputs"
+  uuid = "449c83a9-1efa-4218-9d83-7c8dedb66e4e"
   category = "IaC"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/54/darkLogo/Terraform Logo_original.png"
-  darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2022-10-14T18:11:58.000Z"
-  description = "New AWS VPC and other infrastructure"
-  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/54/logo/Terraform Logo_original.png"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/InstanceType/99/logo/Terraform Logo_medium.png"
+  dateCreated = "2022-02-11T02:17:53.000Z"
+  description = "Build new AWS VPC and IGW; set 0/0 to IGW; add 2 subnets"
+  formType = "optionTypes"
+  iconPath = "https://54.241.81.186/storage/logos/uploads/InstanceType/99/logo/Terraform Logo_medium.png"
   labels = [ { name = "Demo" }, { name = "IaC" }, { name = "Terraform" } ]
-  lastUpdated = "2023-08-22T18:56:58.000Z"
-  logoSettings = "{\"type\":\"custom\"}"
-  refType = "InstanceType"
+  lastUpdated = "2023-08-22T18:56:46.000Z"
+  optionTypes = [
+    { code = "ApplicationName" },
+    { code = "PrivateSubnetName" },
+    { code = "PublicSubnetName" }
+  ]
+  refType = "AppTemplate"
 }
