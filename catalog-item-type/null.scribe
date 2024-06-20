@@ -1,13 +1,14 @@
 resource "catalog-item-type" "null" {
-  name = "JL apache lab"
-  uuid = "4c8d7bcb-4898-485f-b82f-2eaf79f63ea3"
-  darkIconPath = "/assets/branding/140x40/resource.svg"
-  dateCreated = "2023-04-18T20:40:08.000Z"
-  enabled = false
-  formType = "optionTypes"
-  iconPath = "/assets/branding/140x40/resource.svg"
-  labels = [ { name = "Jared" }, { name = "testing" } ]
-  lastUpdated = "2023-08-22T19:03:08.000Z"
-  optionTypes = [ { code = "ApplicationName" } ]
+  name = "LexisNexis Legal and Professional"
+  uuid = "544fd4ac-8992-49e9-948a-e45e731b0f2b"
+  category = "Legal"
+  darkLogoSettings = "{\"type\":\"custom\"}"
+  dateCreated = "2023-04-17T20:12:30.000Z"
+  description = "Legal solutions, news, and business insights"
+  iconPath = "custom"
+  labels = [ { name = "EDU" }, { name = "Legal" } ]
+  lastUpdated = "2023-07-22T00:13:14.000Z"
+  logoSettings = "{\"type\":\"custom\"}"
   refType = "InstanceType"
+  visibility = "public"
 }
