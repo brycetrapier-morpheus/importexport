@@ -1,15 +1,19 @@
 resource "catalog-item-type" "null" {
-  name = "Apache with More Storage (Deprecated Instance Type)"
-  uuid = "b7f4dd7c-6534-40d7-aa30-37323ec252cc"
+  name = "Apache with Service Accounts"
+  uuid = "c4271ba7-140d-46bb-af98-faf87dbd835c"
   category = "Web"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/65/logo/Apache More Storage_original.png"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/InstanceType/102/logo/Lab Apache_medium.png"
   darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2023-03-10T01:50:37.000Z"
-  description = "Apache server with a root volume and a content volume"
-  enabled = false
-  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/65/logo/Apache More Storage_original.png"
-  labels = [ { name = "web" } ]
-  lastUpdated = "2024-02-08T18:55:18.000Z"
+  dateCreated = "2023-04-13T17:54:00.000Z"
+  description = "A single Apache instances in AWS EC2. No customization allowed.  With service accounts."
+  formType = "optionTypes"
+  iconPath = "https://54.241.81.186/storage/logos/uploads/InstanceType/102/logo/Lab Apache_medium.png"
+  lastUpdated = "2024-02-08T18:56:41.000Z"
   logoSettings = "{\"type\":\"custom\"}"
+  optionTypes = [
+    { code = "SelectedGroup" },
+    { code = "SelectedCloud" },
+    { code = "WebTierInstanceName" }
+  ]
   refType = "InstanceType"
 }
