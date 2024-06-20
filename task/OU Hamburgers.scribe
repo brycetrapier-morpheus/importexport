@@ -6,11 +6,11 @@ resource "task" "OU Hamburgers" {
   lastUpdated = "2023-03-31T17:17:34.000Z"
   options = [
     { optionType = { code = "host" }, value = "1.2.3.4" },
+    { optionType = { code = "winrm.elevated" }, value = "on" },
     {
       content = { uuid = "fbc95e3c-fda9-446d-b7a8-56c997143379" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "winrm.elevated" }, value = "on" }
+    }
   ]
   taskType = { code = "winrmTask" }
 }
