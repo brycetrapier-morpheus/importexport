@@ -1,5 +1,5 @@
 resource "container-type-set" "apache-azure-2.4" {
   code = "apache-azure-2.4"
-  uuid = "cd2a9500-a49b-479f-ae63-9a74d9e44ecd"
+  uuid = "2ec279de-4c4d-4837-821c-f52eced981da"
   workloadType = { code = "apache-azure-2.4" }
 }
