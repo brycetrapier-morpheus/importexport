@@ -7,11 +7,5 @@ resource "instance-type" "HelloWorldCustom" {
   description = "Custom Instance Layouts for different cloud types"
   environmentPrefix = "Hello"
   labels = [ "Demo" ]
-  layouts = [
-    { code = "12cbf998-d64c-45d3-a3e5-bce1ea8b736c" },
-    { code = "70723a79-cd55-4866-a805-518cde962a60" },
-    { code = "898d7ba9-ce4e-4010-8db3-54c0d5680e06" },
-    { code = "a7e8488e-6ae7-47c6-a709-f6e2649e4e46" }
-  ]
   optionTypes = [ { code = "firstname" } ]
 }
