@@ -1,20 +1,14 @@
 resource "catalog-item-type" "null" {
-  name = "Tags Examples"
-  uuid = "64092fbe-7a51-4c6b-a463-61931029577c"
-  category = "Example"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/13/logo/tag-icon_original.png"
+  name = "Terraform - new VPC"
+  uuid = "7c4a14c4-ff59-433e-982d-d21521da26fb"
+  category = "IaC"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/54/darkLogo/Terraform Logo_original.png"
   darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2022-03-10T02:07:22.000Z"
-  description = "Transparent and User-Defined tags"
-  formType = "optionTypes"
-  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/13/logo/tag-icon_original.png"
-  labels = [ { name = "Demo" } ]
-  lastUpdated = "2023-08-22T18:56:40.000Z"
+  dateCreated = "2022-10-14T18:11:58.000Z"
+  description = "New AWS VPC and other infrastructure"
+  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/54/logo/Terraform Logo_original.png"
+  labels = [ { name = "Demo" }, { name = "IaC" }, { name = "Terraform" } ]
+  lastUpdated = "2023-08-22T18:56:58.000Z"
   logoSettings = "{\"type\":\"custom\"}"
-  optionTypes = [
-    { code = "ApplicationName" },
-    { code = "costcenter" },
-    { code = "PaymentMethodsSelectList" }
-  ]
   refType = "InstanceType"
 }
