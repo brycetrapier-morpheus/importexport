@@ -5,6 +5,7 @@ resource "task" "Email Test" {
   executeTarget = "local"
   lastUpdated = "2023-04-08T00:30:20.000Z"
   options = [
+    { optionType = { code = "emailSubject" }, value = "Email Test" },
     {
       optionType = { code = "emailAddress" }
       value = "nobody@nomail.com"
@@ -12,8 +13,7 @@ resource "task" "Email Test" {
     {
       content = { uuid = "531805eb-28dd-4d40-80b3-d841adab1fb1" }
       optionType = { code = "emailBody" }
-    },
-    { optionType = { code = "emailSubject" }, value = "Email Test" }
+    }
   ]
   taskType = { code = "email" }
 }
