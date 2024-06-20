@@ -6,11 +6,11 @@ resource "task" "Import a bunch of Jared's repo's and such" {
   labels = [ "Jared", "Python", "Shenanigans" ]
   lastUpdated = "2023-03-23T04:00:19.000Z"
   options = [
-    { optionType = { code = "pythonBinary" }, value = "/bin/python3" },
     {
       optionType = { code = "pythonAdditionalPackages" }
       value = "requests"
     },
+    { optionType = { code = "pythonBinary" }, value = "/bin/python3" },
     {
       content = { uuid = "ede0e9a5-068e-45b3-b617-838fb4bb0b5d" }
       optionType = { code = "pythonScript" }
