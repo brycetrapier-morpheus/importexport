@@ -5,11 +5,11 @@ resource "task" "Install wget on CentOS" {
   executeTarget = "resource"
   lastUpdated = "2021-12-10T19:34:16.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "55321a6e-d033-40b5-813b-b71b997dc4a6" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
