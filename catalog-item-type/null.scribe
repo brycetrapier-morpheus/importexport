@@ -1,17 +1,17 @@
 resource "catalog-item-type" "null" {
-  name = "Aspect Ad-Hoc Server"
-  uuid = "51155eed-9a3a-412d-9a0f-99f68707f923"
+  name = "Aspect Call Center Stack"
+  uuid = "235d2de4-8cfb-427d-b57b-bd4b25398dd8"
   category = "Voice"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/62/logo/aspect-vector-logo_original.png"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/61/logo/aspect-vector-logo_original.png"
   darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2023-02-25T00:35:24.000Z"
-  description = "Single Instance of an Aspect Server.  Select the persona at time of deployment."
+  dateCreated = "2023-02-24T21:05:39.000Z"
+  description = "Call Control, Voicemail, and Call Recording servers for a Call Center core deployment"
   featured = true
   formType = "optionTypes"
-  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/62/logo/aspect-vector-logo_original.png"
+  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/61/logo/aspect-vector-logo_original.png"
   labels = [ { name = "Demo" }, { name = "voice" } ]
-  lastUpdated = "2023-05-11T15:43:05.000Z"
+  lastUpdated = "2023-05-11T15:38:23.000Z"
   logoSettings = "{\"type\":\"custom\"}"
-  optionTypes = [ { code = "AspectServerType" } ]
-  refType = "InstanceType"
+  optionTypes = [ { code = "CallCenterHub" } ]
+  refType = "AppTemplate"
 }
