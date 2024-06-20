@@ -6,11 +6,11 @@ resource "task" "Apache Install (Ubuntu) - 4 Reload Web Services" {
   labels = [ "Demo" ]
   lastUpdated = "2023-05-24T11:06:34.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "9105b018-04b4-4615-b4e3-7d5ef4cddc56" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
