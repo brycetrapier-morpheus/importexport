@@ -5,11 +5,11 @@ resource "task" "Install MySQL on CentOS" {
   executeTarget = "resource"
   lastUpdated = "2021-12-10T20:39:57.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "3fca63e0-a9af-48c3-a198-b60d0516af31" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
