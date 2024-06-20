@@ -7,5 +7,12 @@ resource "instance-type" "XaaS" {
   description = "XaaS Instance Types from the Root Tenant"
   environmentPrefix = "XAAS"
   featured = true
+  layouts = [
+    { code = "01717208-e0bf-45e1-81d8-9f05aa9cf31a" },
+    { code = "1e197b30-362e-42af-9e7d-0c95e61d6519" },
+    { code = "a1cfff1e-bcdf-464f-9486-183ae7c87de2" },
+    { code = "c5462455-5072-4518-b0fe-0c438b169743" },
+    { code = "f448abfe-048b-4a01-9a4d-b927bfe84d49" }
+  ]
   visibility = "public"
 }
