@@ -5,11 +5,11 @@ resource "task" "Toolkit - install Ansible on Debian or Ubuntu" {
   executeTarget = "resource"
   lastUpdated = "2023-02-25T00:56:22.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "5cb382a0-67de-43a9-8a3e-6cb7bf38c7ac" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
