@@ -1,14 +1,10 @@
 resource "catalog-item-type" "null" {
-  name = "Workflow Binding Test"
-  uuid = "171686c3-6ec6-4716-af4c-c3f2a745c6f6"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/47/logo/BlueprintClipArt_original.png"
-  darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2022-08-05T00:21:52.000Z"
-  description = "Under Construction"
-  formType = "optionTypes"
-  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/47/logo/BlueprintClipArt_original.png"
-  lastUpdated = "2023-07-21T20:53:33.000Z"
-  logoSettings = "{\"type\":\"custom\"}"
-  optionTypes = [ { code = "WorkflowToExecute" } ]
+  name = "XaaS - DropBox"
+  uuid = "dc1b7451-db4d-45f8-a8a3-77badbf4a3c0"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/48/logo/X_original.png"
+  dateCreated = "2022-08-05T03:15:49.000Z"
+  description = "Currently Inop"
+  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/48/logo/X_original.png"
+  lastUpdated = "2023-07-21T20:51:46.000Z"
   refType = "InstanceType"
 }
