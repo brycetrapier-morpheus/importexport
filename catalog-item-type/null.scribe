@@ -1,14 +1,13 @@
 resource "catalog-item-type" "null" {
-  name = "A Long List of Options"
-  uuid = "3d8231a6-a775-40e7-9d9c-842312e9d10e"
-  category = "Example"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/64/logo/The Count_original.jpg"
-  darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2023-02-27T20:08:22.000Z"
-  description = "Displays an Input which maps to an Option List with a very large dataste"
-  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/64/logo/The Count_original.jpg"
-  labels = [ { name = "Demo" }, { name = "Inputs" } ]
-  lastUpdated = "2023-05-11T15:41:45.000Z"
+  name = "Add User Account - Operational Workflow"
+  uuid = "5b80344c-8d08-44cb-aa15-d677cc5cc052"
+  category = "Onboarding"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/90/logo/Add User - Operational Workflow_original.png"
+  dateCreated = "2023-08-22T19:27:21.000Z"
+  description = "Sample framework to add a user to an external identity source, via operational workflow."
+  featured = true
+  labels = [ { name = "Demo" }, { name = "Framework" }, { name = "example" } ]
+  lastUpdated = "2023-08-23T21:01:59.000Z"
   logoSettings = "{\"type\":\"custom\"}"
   refType = "OperationalWorkflow"
 }
