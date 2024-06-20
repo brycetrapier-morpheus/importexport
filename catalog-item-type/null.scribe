@@ -1,13 +1,15 @@
 resource "catalog-item-type" "null" {
-  name = "Firewall Rule, PAN"
-  uuid = "32c21c40-0d82-46ba-bb6d-8c856534756d"
+  name = "Forms Demo: Firewall Entry"
+  uuid = "c158d396-3c7b-40be-9c31-d4e5ff05d7c9"
   category = "Security"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/50/logo/Firewall Rule, PAN_original.png"
-  dateCreated = "2022-09-06T23:20:39.000Z"
-  description = "Palo Alto Networks Firewall Rule, using API"
-  iconPath = "custom"
-  labels = [ { name = "Demo" } ]
-  lastUpdated = "2023-05-11T15:44:46.000Z"
+  darkLogoSettings = "{\"type\":\"custom\"}"
+  dateCreated = "2023-07-27T16:17:39.000Z"
+  description = "Form-based input for a firewall rule entry"
+  featured = true
+  form = { code = "firewall" }
+  formType = "form"
+  labels = [ { name = "Demo" }, { name = "Firewall" }, { name = "Forms" } ]
+  lastUpdated = "2023-07-31T19:39:30.000Z"
   logoSettings = "{\"type\":\"custom\"}"
   refType = "OperationalWorkflow"
 }
