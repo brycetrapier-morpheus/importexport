@@ -1,14 +1,21 @@
 resource "catalog-item-type" "null" {
-  name = "LexisNexis Risk Solutions"
-  uuid = "e38a2644-0df0-4b3a-aa3d-67b43a594176"
-  category = "Legal"
-  darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2023-04-17T20:19:33.000Z"
-  description = "Data analytics supporting compliance, acquisition, fraud detection, and risk decisioning."
-  iconPath = "custom"
-  labels = [ { name = "EDU" }, { name = "Legal" } ]
-  lastUpdated = "2023-07-22T00:08:47.000Z"
+  name = "Multi-Cloud Scratchpad"
+  uuid = "3b131b70-5eee-4900-b3cf-d05a18a0c6ec"
+  darkIconPath = "/assets/branding/140x40/resource.svg"
+  dateCreated = "2023-02-25T05:11:26.000Z"
+  description = "Under Construction"
+  enabled = false
+  formType = "optionTypes"
+  iconPath = "/assets/branding/140x40/resource.svg"
+  lastUpdated = "2023-07-22T00:07:17.000Z"
   logoSettings = "{\"type\":\"custom\"}"
+  optionTypes = [
+    { code = "ApplicationName" },
+    { code = "DeploymentGroup" },
+    { code = "DeploymentCloudPublic" },
+    { code = "filteredlayoutchoice" },
+    { code = "awsnetwork" },
+    { code = "filteredplansmulticloud" }
+  ]
   refType = "InstanceType"
-  visibility = "public"
 }
