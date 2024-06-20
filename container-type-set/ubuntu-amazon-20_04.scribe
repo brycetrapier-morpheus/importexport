@@ -1,5 +1,5 @@
 resource "container-type-set" "ubuntu-amazon-20.04" {
   code = "ubuntu-amazon-20.04"
-  uuid = "ca8c39fb-22b9-4b2c-a42f-eec952e1d78a"
+  uuid = "3f0aa7cf-98bd-4664-9668-12dc5c315ac4"
   workloadType = { code = "ubuntu-amazon-20.04" }
 }
