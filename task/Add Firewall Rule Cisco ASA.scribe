@@ -8,11 +8,11 @@ resource "task" "Add Firewall Rule Cisco ASA" {
   options = [
     { optionType = { code = "host" }, value = "1.2.3.4" },
     { optionType = { code = "port" }, value = "22" },
+    { optionType = { code = "username" }, value = "firewalluser" },
     {
       content = { uuid = "34ae5e3a-43dd-4bed-8324-c883c3cf8bc8" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "username" }, value = "firewalluser" }
+    }
   ]
   taskType = { code = "script" }
 }
