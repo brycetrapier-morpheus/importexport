@@ -1,0 +1,20 @@
+resource "container-type" "google.layout.public.template.11.debian" {
+  code = "google.layout.public.template.11.debian"
+  name = "Google Debian 11"
+  uuid = "c72bbbcb-7642-42b2-a13b-fd02329d2286"
+  category = "debian"
+  actions = [ { code = "generic-remove-node" } ]
+  backupType = "googleSnapshot"
+  checkTypeCode = "vmCheck"
+  commEnabled = true
+  commPort = 22
+  commType = "SSH"
+  containerVersion = "11"
+  entryPoint = "/bin/bash"
+  logTypeCode = "debian"
+  provisionType = { code = "google" }
+  repositoryImage = "image"
+  shortName = "debian"
+  statTypeCode = "debian"
+  virtualImage = { code = "google.image.public.template.7113338960587592120" }
+}

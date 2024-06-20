@@ -1,0 +1,6 @@
+resource "container-type-set" "google.layout.public.template.11.debian" {
+  code = "google.layout.public.template.11.debian"
+  uuid = "9c3f539c-c74b-4eec-872c-9aea4bf71b83"
+  dynamicCount = true
+  workloadType = { code = "google.layout.public.template.11.debian" }
+}

@@ -1,0 +1,15 @@
+resource "instance-type-layout" "c94c1ee7-968c-49f9-8e4b-fc32546bb44b" {
+  code = "c94c1ee7-968c-49f9-8e4b-fc32546bb44b"
+  name = "Apache on Debian 11 in GCP"
+  uuid = "d738d499-44c2-4b2c-8e74-f84478ca0364"
+  actions = [ { code = "generic-add-node" } ]
+  hasAutoScale = true
+  instanceType = { code = "apachelab" }
+  instanceVersion = "Debian 11 Bullseye"
+  memoryRequirement = 0
+  provisionType = { code = "google" }
+  workloads = [
+    { code = "google.layout.public.template.11.debian" },
+    { code = "apache-google-2.4" }
+  ]
+}
