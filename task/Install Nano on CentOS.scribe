@@ -5,11 +5,11 @@ resource "task" "Install Nano on CentOS" {
   executeTarget = "resource"
   lastUpdated = "2021-11-18T20:50:30.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "9bfb831f-c9d0-4737-a0c1-03baa5073e89" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
