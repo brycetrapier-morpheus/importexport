@@ -6,11 +6,11 @@ resource "task" "Touch NewFile" {
   labels = [ "Demo" ]
   lastUpdated = "2023-06-07T05:14:26.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "3c7a8a82-29d8-4083-8a7e-314ae2f0d7a6" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
