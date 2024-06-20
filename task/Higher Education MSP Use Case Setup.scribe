@@ -6,11 +6,11 @@ resource "task" "Higher Education MSP Use Case Setup" {
   labels = [ "Demo", "POC", "example", "highered_msp", "setup" ]
   lastUpdated = "2023-04-12T21:54:33.000Z"
   options = [
-    { optionType = { code = "pythonArgs" }, value = "highered" },
     {
       optionType = { code = "pythonAdditionalPackages" }
       value = "requests morphcp click"
     },
+    { optionType = { code = "pythonArgs" }, value = "highered" },
     {
       content = { uuid = "17347f26-af1f-4120-9f6f-27519a78fdd3" }
       optionType = { code = "pythonScript" }
