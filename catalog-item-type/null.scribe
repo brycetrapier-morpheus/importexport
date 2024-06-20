@@ -1,20 +1,13 @@
 resource "catalog-item-type" "null" {
-  name = "Filtered Plans - Instance"
-  uuid = "3eee2077-b8e4-4eb9-a0e6-f715a5206133"
-  category = "Example"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/19/logo/FilterMany_original.jpg"
+  name = "Firewall Rule Workflow, CLI"
+  uuid = "61c390e0-b27d-45ba-9586-1e76c14cbf9d"
+  category = "Security"
   darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2022-05-06T19:37:26.000Z"
-  description = "User selects which plan to deploy, from an admin-filtered list of Plans"
-  formType = "optionTypes"
-  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/19/logo/FilterMany_original.jpg"
-  labels = [ { name = "Demo" } ]
-  lastUpdated = "2024-02-16T23:33:53.000Z"
+  dateCreated = "2022-09-06T22:55:06.000Z"
+  description = "Add an ACL rule to a CLI-based Firewall using an Operational Workflow"
+  iconPath = "custom"
+  labels = [ { name = "Demo" }, { name = "Firewall" } ]
+  lastUpdated = "2024-02-16T21:06:22.000Z"
   logoSettings = "{\"type\":\"custom\"}"
-  optionTypes = [
-    { code = "filteredplansaws" },
-    { code = "PaymentYesOrNo" },
-    { code = "OptionalPaymentMethods" }
-  ]
-  refType = "InstanceType"
+  refType = "OperationalWorkflow"
 }
