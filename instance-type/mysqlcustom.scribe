@@ -6,6 +6,5 @@ resource "instance-type" "mysqlcustom" {
   deploymentService = ""
   description = "Captures user input to be used for the database password; also sets EVARs of MaskedPW and UnmaskedPW"
   environmentPrefix = "MYSQL"
-  layouts = [ { code = "98047f1e-b6d8-4a23-b9e4-326252faf69e" } ]
   optionTypes = [ { code = "sqlpassword" } ]
 }
