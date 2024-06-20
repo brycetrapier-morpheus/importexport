@@ -5,11 +5,11 @@ resource "task" "Write Inputs to EVARs" {
   executeTarget = "resource"
   lastUpdated = "2023-01-04T03:29:03.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "e562249c-ea4b-4540-ac7d-5024de4158d8" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
