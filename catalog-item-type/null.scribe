@@ -1,22 +1,13 @@
 resource "catalog-item-type" "null" {
-  name = "Firewall Rule XaaS Instance, Cisco"
-  uuid = "c437cb90-86fa-4885-bd4d-8fcff5ac4cb2"
+  name = "Firewall Rule, PAN"
+  uuid = "32c21c40-0d82-46ba-bb6d-8c856534756d"
   category = "Security"
-  darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2022-09-27T15:58:33.000Z"
-  description = "Add an ACL rule to a Cisco Firewall using XaaS"
-  formType = "optionTypes"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/50/logo/Firewall Rule, PAN_original.png"
+  dateCreated = "2022-09-06T23:20:39.000Z"
+  description = "Palo Alto Networks Firewall Rule, using API"
   iconPath = "custom"
   labels = [ { name = "Demo" } ]
-  lastUpdated = "2023-05-11T15:44:38.000Z"
+  lastUpdated = "2023-05-11T15:44:46.000Z"
   logoSettings = "{\"type\":\"custom\"}"
-  optionTypes = [
-    { code = "FWACLname" },
-    { code = "FWAction" },
-    { code = "FWSourceIP" },
-    { code = "FWDestinationIP" },
-    { code = "FWPort" }
-  ]
-  refType = "InstanceType"
-  visibility = "public"
+  refType = "OperationalWorkflow"
 }
