@@ -6,11 +6,11 @@ resource "task" "Hello World Bash" {
   labels = [ "Demo" ]
   lastUpdated = "2023-02-24T23:11:30.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "d9501a63-ea7f-4c56-964a-b227dfc62ae9" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
