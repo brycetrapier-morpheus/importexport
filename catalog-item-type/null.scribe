@@ -1,20 +1,21 @@
 resource "catalog-item-type" "null" {
-  name = "New Cloud Account - AWS"
-  uuid = "0a3cd966-412b-45a5-90c1-2b7391f36804"
+  name = "New Cloud Account - Azure"
+  uuid = "99b6e2dc-b53e-4acb-ba22-a676789d6ee5"
   category = "Account Management"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/97/logo/New Cloud Hyperscaler Account - AWS_original.png"
-  dateCreated = "2023-09-28T18:00:22.000Z"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/98/logo/New Cloud Account - Azure_original.png"
+  dateCreated = "2023-09-28T19:46:00.000Z"
   featured = true
   formType = "optionTypes"
   labels = [ { name = "NewAccount" } ]
-  lastUpdated = "2023-09-28T19:46:40.000Z"
+  lastUpdated = "2023-09-28T19:47:42.000Z"
   logoSettings = "{\"type\":\"custom\"}"
   optionTypes = [
     { code = "NewAccountContactName" },
     { code = "NewAccountContactEmail" },
     { code = "NewAccountDepartment" },
     { code = "CorporateProjectID" },
-    { code = "NewAWSAccountName" }
+    { code = "NewAzureAppRegName" },
+    { code = "NewAzureSubscriptionName" }
   ]
   refType = "InstanceType"
 }
