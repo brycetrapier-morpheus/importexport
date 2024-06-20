@@ -5,11 +5,11 @@ resource "task" "Toolkit - install Ansible on CentOS or RHEL" {
   executeTarget = "resource"
   lastUpdated = "2023-02-25T00:56:30.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "052e45ac-7a84-40d6-8115-cfd0cd2ec0aa" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
