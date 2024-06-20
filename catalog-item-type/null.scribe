@@ -1,18 +1,9 @@
 resource "catalog-item-type" "null" {
-  name = "Catalog Item from Blueprint"
-  uuid = "4ebc157c-b193-4c68-bb90-9aa5076bc92e"
-  category = "Example"
-  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/18/logo/BlueprintClipArt_original.png"
-  darkLogoSettings = "{\"type\":\"custom\"}"
-  dateCreated = "2022-04-12T22:12:19.000Z"
-  formType = "optionTypes"
-  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/18/logo/BlueprintClipArt_original.png"
-  lastUpdated = "2023-08-22T18:58:52.000Z"
-  logoSettings = "{\"type\":\"custom\"}"
-  optionTypes = [
-    { code = "ApplicationName" },
-    { code = "AppTierInstanceName" },
-    { code = "WebTierInstanceName" }
-  ]
-  refType = "AppTemplate"
+  name = "CCL Testing"
+  uuid = "cd2e5044-f67b-4726-bd3c-6541c20d0ca0"
+  dateCreated = "2023-09-06T15:17:21.000Z"
+  form = { code = "cclusecase" }
+  formType = "form"
+  lastUpdated = "2023-09-06T15:17:21.000Z"
+  refType = "OperationalWorkflow"
 }
