@@ -8,4 +8,10 @@ resource "instance-type" "aspect" {
   environmentPrefix = "ASPECT"
   featured = true
   labels = [ "voice" ]
+  layouts = [
+    { code = "093c9c44-f982-40de-921e-d1a0a19714a5" },
+    { code = "13fb35f4-481e-48f6-8178-a8733e07b4c1" },
+    { code = "c509d222-feab-4a4c-84f7-f9f3fff27ffa" },
+    { code = "d4fd9dd1-3762-4318-a67b-0669abc2311d" }
+  ]
 }
