@@ -8,4 +8,15 @@ resource "instance-type" "iac.samples" {
   environmentPrefix = "IAC_STUFF"
   featured = true
   labels = [ "IaC" ]
+  layouts = [
+    { code = "0e5838f8-489a-4a4a-ac38-2770869070b5" },
+    { code = "4073453e-4e25-4739-af04-bb318bce7dd6" },
+    { code = "50bc4893-e8d8-4fd9-9763-faa07d992e60" },
+    { code = "5535a889-0b97-4b6b-b70b-8d17138564be" },
+    { code = "7120b0e8-89c0-4470-a9b6-7710af032a5f" },
+    { code = "a60c451c-de96-4267-897e-d048462b5858" },
+    { code = "b321e77e-4baa-4fa2-a908-38ff13aa7578" },
+    { code = "d6c0e4ed-d61f-4283-853a-4cfb50cb1f6f" },
+    { code = "e0cad5fa-3005-46d2-a05e-85ab3c53c289" }
+  ]
 }
