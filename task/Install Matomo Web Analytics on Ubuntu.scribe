@@ -6,11 +6,11 @@ resource "task" "Install Matomo Web Analytics on Ubuntu" {
   labels = [ "Demo", "Matomo", "example" ]
   lastUpdated = "2023-08-23T19:53:33.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "32f17fa4-7d1f-4d7c-8d2b-3d684d2a81b8" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
