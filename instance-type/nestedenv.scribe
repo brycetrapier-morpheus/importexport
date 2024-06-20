@@ -6,5 +6,4 @@ resource "instance-type" "nestedenv" {
   deploymentService = ""
   environmentPrefix = "NESTED_ENVIRONMENT"
   labels = [ "nested deployment", "prod" ]
-  layouts = [ { code = "c2d7e949-77d6-46bf-8266-10fc9b0f6c0e" } ]
 }
