@@ -1,16 +1,14 @@
 resource "catalog-item-type" "null" {
-  name = "Shared Blueprint (App 35)"
-  uuid = "d1da8b2f-8f5a-4c2c-9d52-300c8edbb361"
-  dateCreated = "2022-09-29T00:43:25.000Z"
-  description = "Shared Catalog Item from an Application Blueprint"
-  iconPath = "custom"
-  lastUpdated = "2022-12-30T21:24:43.000Z"
-  optionTypes = [
-    { code = "ApplicationName" },
-    { code = "SelectedGroup" },
-    { code = "SelectedCloud" },
-    { code = "filteredplansaws" }
-  ]
-  refType = "AppTemplate"
+  name = "Shared Workflow - DC Firewall Rule"
+  uuid = "c443444b-9fcf-43c5-b93d-9663ccbc9953"
+  category = "Security"
+  darkIconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/57/darkLogo/Firewall Blue_original.jpg"
+  darkLogoSettings = "{\"type\":\"custom\"}"
+  dateCreated = "2022-12-30T01:47:01.000Z"
+  description = "Add a firewall rule to the Data Center firewall."
+  iconPath = "https://54.241.81.186/storage/logos/uploads/CatalogItemType/57/logo/Firewall Blue_original.jpg"
+  lastUpdated = "2023-07-21T20:54:08.000Z"
+  logoSettings = "{\"type\":\"custom\"}"
+  refType = "OperationalWorkflow"
   visibility = "public"
 }
