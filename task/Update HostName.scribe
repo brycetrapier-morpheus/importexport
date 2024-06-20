@@ -6,11 +6,11 @@ resource "task" "Update HostName" {
   labels = [ "Demo", "Warning" ]
   lastUpdated = "2023-05-25T18:19:21.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "2b0e2cf5-4fa8-4d76-b070-17e7ef7c1985" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
