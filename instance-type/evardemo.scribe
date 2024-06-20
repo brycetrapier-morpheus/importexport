@@ -7,5 +7,6 @@ resource "instance-type" "evardemo" {
   description = "Captures a cleartext field and a masked input field.  Use a post-provisioning task to set EVARs to the values of the Inputs."
   environmentPrefix = "EVARdemo"
   labels = [ "test" ]
+  layouts = [ { code = "0ee6edcd-a900-4f21-87b4-4729ff45fd08" } ]
   optionTypes = [ { code = "maskedinput" }, { code = "unmaskedinput" } ]
 }
