@@ -8,8 +8,4 @@ resource "instance-type" "multinode" {
   environmentPrefix = "MULTI-NODE"
   featured = true
   labels = [ "Scale" ]
-  layouts = [
-    { code = "366732f3-a46e-4270-bd5f-72ba02de1ed4" },
-    { code = "700d4b20-1f37-46a3-926c-8a105937ccc6" }
-  ]
 }
